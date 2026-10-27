@@ -15,6 +15,7 @@ import os
 import sys
 import csv
 import io
+import gzip
 import json
 import urllib.request
 from pathlib import Path
@@ -225,8 +226,13 @@ def fetch_reach_reporting_data(creds, start_7d_str):
                 continue
 
             req = urllib.request.Request(dl_url, headers={"Authorization": f"Bearer {creds.token}"})
-            with urllib.request.urlopen(req, timeout=20) as response:
+            with urllib.request.urlopen(req, timeout=30) as response:
                 csv_bytes = response.read()
+            if csv_bytes[:2] == b'\x1f\x8b':
+                try:
+                    csv_bytes = gzip.decompress(csv_bytes)
+                except Exception:
+                    pass
             downloaded_dates.add(start_time)
 
             reader = csv.DictReader(io.StringIO(csv_bytes.decode("utf-8", errors="replace")))
