@@ -1,5 +1,4 @@
 *token*
 *secret*
-*.json
-*.py
-*.bat
+__pycache__/
+*.pyc
