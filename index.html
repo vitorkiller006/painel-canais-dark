@@ -6,237 +6,60 @@
     <title>Painel Master Analytics — 7 Canais</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --bg: #090D16;
-            --surface: #111827;
-            --surface-2: #1E293B;
-            --border: rgba(255,255,255,0.09);
-            --text: #F8FAFC;
-            --muted: #94A3B8;
-            --cyan: #38BDF8;
-            --green: #10B981;
-            --amber: #F59E0B;
-            --red: #F43F5E;
-            --purple: #A855F7;
-        }
+        :root { --bg: #090D16; --surface: #111827; --surface-2: #1E293B; --border: rgba(255,255,255,0.09); --text: #F8FAFC; --muted: #94A3B8; --cyan: #38BDF8; --green: #10B981; --amber: #F59E0B; --red: #F43F5E; --purple: #A855F7; }
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body {
-            background: var(--bg);
-            color: var(--text);
-            font-family: 'Inter', sans-serif;
-            padding: 20px;
-            line-height: 1.4;
-        }
+        body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; padding: 20px; line-height: 1.4; }
         .wrap { max-width: 1480px; margin: 0 auto; }
-        
-        /* Topbar */
-        .topbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 16px 22px;
-            margin-bottom: 18px;
-            flex-wrap: wrap;
-            gap: 14px;
-        }
-        .topbar h1 {
-            font-size: 20px;
-            font-weight: 800;
-            color: #FFF;
-        }
-        .topbar .meta {
-            font-size: 12px;
-            color: var(--muted);
-            margin-top: 3px;
-        }
-        .filter-btns {
-            display: flex;
-            gap: 8px;
-        }
-        .filter-btn {
-            background: var(--surface-2);
-            color: var(--text);
-            border: 1px solid var(--border);
-            padding: 7px 14px;
-            border-radius: 8px;
-            font-size: 12px;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        .filter-btn.active {
-            background: var(--cyan);
-            color: #090D16;
-            border-color: var(--cyan);
-        }
-
-        /* Section Box */
-        .sec-box {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 18px 20px;
-            margin-bottom: 20px;
-        }
-        .sec-head {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 12px;
-            flex-wrap: wrap;
-            gap: 8px;
-        }
-        .sec-head h2 {
-            font-size: 16px;
-            font-weight: 700;
-        }
-        .sec-head .hint {
-            font-size: 12px;
-            color: var(--muted);
-        }
-
-        /* Tables */
+        .topbar { display: flex; justify-content: space-between; align-items: center; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 22px; margin-bottom: 18px; flex-wrap: wrap; gap: 14px; }
+        .topbar h1 { font-size: 20px; font-weight: 800; color: #FFF; }
+        .topbar .meta { font-size: 12px; color: var(--muted); margin-top: 3px; }
+        .filter-btns { display: flex; gap: 8px; }
+        .filter-btn { background: var(--surface-2); color: var(--text); border: 1px solid var(--border); padding: 7px 14px; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; }
+        .filter-btn.active { background: var(--cyan); color: #090D16; border-color: var(--cyan); }
+        .sec-box { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-bottom: 20px; }
+        .sec-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; flex-wrap: wrap; gap: 8px; }
+        .sec-head h2 { font-size: 16px; font-weight: 700; }
+        .sec-head .hint { font-size: 12px; color: var(--muted); }
         .tbl-wrap { overflow-x: auto; }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 13px;
-        }
-        th {
-            text-align: left;
-            font-size: 11px;
-            text-transform: uppercase;
-            color: var(--muted);
-            padding: 9px 10px;
-            border-bottom: 1px solid var(--border);
-            white-space: nowrap;
-        }
-        td {
-            padding: 9px 10px;
-            border-bottom: 1px solid rgba(255,255,255,0.04);
-            vertical-align: middle;
-        }
+        table { width: 100%; border-collapse: collapse; font-size: 13px; }
+        th { text-align: left; font-size: 11px; text-transform: uppercase; color: var(--muted); padding: 9px 10px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+        td { padding: 9px 10px; border-bottom: 1px solid rgba(255,255,255,0.04); vertical-align: middle; }
         tr:hover td { background: rgba(255,255,255,0.02); }
-        .num {
-            text-align: right;
-            font-family: 'JetBrains Mono', monospace;
-            white-space: nowrap;
-        }
+        .num { text-align: right; font-family: 'JetBrains Mono', monospace; white-space: nowrap; }
         .val-positive { color: var(--green); font-weight: 700; }
         .val-zero { color: var(--muted); }
         .tiny-note { font-size: 10px; color: var(--muted); font-weight: 400; }
-
         .video-cell { display: flex; align-items: center; gap: 10px; }
         .thumb-sm { width: 52px; height: 30px; object-fit: cover; border-radius: 4px; border: 1px solid var(--border); }
         .v-link { color: var(--text); text-decoration: none; font-weight: 500; }
         .v-link:hover { color: var(--cyan); text-decoration: underline; }
         .sub-text { font-size: 11px; color: var(--muted); }
         .channel-tag { font-weight: 700; color: #FFF; font-size: 12px; }
-
-        /* Pills & Dots */
-        .pill {
-            display: inline-block;
-            font-size: 10px;
-            font-weight: 700;
-            padding: 2px 8px;
-            border-radius: 99px;
-            text-transform: uppercase;
-        }
+        .pill { display: inline-block; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 99px; text-transform: uppercase; }
         .pill-group-pessoal { background: rgba(56,189,248,0.15); color: var(--cyan); }
         .pill-group-gvg { background: rgba(168,85,247,0.18); color: #C084FC; }
         .pill-amber { background: rgba(245,158,11,0.2); color: #FBBF24; }
         .pill-blue { background: rgba(56,189,248,0.15); color: var(--cyan); }
         .pill-red { background: rgba(244,63,94,0.2); color: var(--red); }
-
-        .status-dot {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            margin-right: 6px;
-        }
+        .status-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
         .dot-green { background: var(--green); }
         .dot-red { background: var(--red); }
         .pending-tag { font-size: 11px; color: var(--amber); font-family: 'Inter', sans-serif; }
-
-        /* Channel Top 3 Cards */
-        .ch-card {
-            background: var(--surface);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 16px 18px;
-            margin-bottom: 16px;
-        }
+        .ch-card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 18px; margin-bottom: 16px; }
         .ch-offline { border-color: rgba(244,63,94,0.4); }
-        .ch-card-head {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border);
-            padding-bottom: 10px;
-            margin-bottom: 12px;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .ch-card-head h3 {
-            font-size: 16px;
-            font-weight: 700;
-            margin-top: 4px;
-        }
-        .ch-card-head h3 small {
-            font-size: 12px;
-            color: var(--muted);
-            font-weight: 400;
-            margin-left: 6px;
-        }
-        .ch-head-stats {
-            display: flex;
-            gap: 16px;
-            font-size: 12px;
-            color: var(--muted);
-        }
+        .ch-card-head { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border); padding-bottom: 10px; margin-bottom: 12px; flex-wrap: wrap; gap: 10px; }
+        .ch-card-head h3 { font-size: 16px; font-weight: 700; margin-top: 4px; }
+        .ch-card-head h3 small { font-size: 12px; color: var(--muted); font-weight: 400; margin-left: 6px; }
+        .ch-head-stats { display: flex; gap: 16px; font-size: 12px; color: var(--muted); }
         .ch-head-stats b { color: var(--text); font-family: 'JetBrains Mono', monospace; }
-
-        .top3-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 12px;
-        }
-        .top3-box {
-            background: rgba(15, 23, 42, 0.65);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 12px;
-        }
-        .top3-box h4 {
-            font-size: 12px;
-            font-weight: 700;
-            color: #E2E8F0;
-            margin-bottom: 10px;
-            padding-bottom: 6px;
-            border-bottom: 1px solid var(--border);
-        }
-        .rank-row {
-            display: flex;
-            gap: 8px;
-            padding: 6px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.03);
-        }
+        .top3-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+        .top3-box { background: rgba(15, 23, 42, 0.65); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
+        .top3-box h4 { font-size: 12px; font-weight: 700; color: #E2E8F0; margin-bottom: 10px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+        .rank-row { display: flex; gap: 8px; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.03); }
         .rank-row:last-child { border-bottom: none; }
         .medal { font-size: 15px; line-height: 1.2; }
         .rank-info { flex: 1; min-width: 0; }
-        .rank-title {
-            display: block;
-            font-size: 12px;
-            color: var(--text);
-            text-decoration: none;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            font-weight: 500;
-        }
+        .rank-title { display: block; font-size: 12px; color: var(--text); text-decoration: none; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-weight: 500; }
         .rank-title:hover { color: var(--cyan); text-decoration: underline; }
         .rank-metrics { font-size: 11px; color: var(--muted); margin-top: 2px; }
         .m-hi { color: var(--cyan); font-weight: 700; font-family: 'JetBrains Mono', monospace; }
@@ -244,35 +67,18 @@
         .ok-sample { color: var(--muted); font-size: 10px; }
         .empty-mini { font-size: 11px; color: var(--muted); font-style: italic; padding: 8px 0; }
         .empty-box { text-align: center; color: var(--muted); padding: 18px; font-style: italic; }
-        .offline-msg { font-size: 13px; color: #FDA4AF; padding: 8px 4px; }
-        .offline-msg code {
-            display: inline-block;
-            margin-top: 4px;
-            background: rgba(0,0,0,0.4);
-            padding: 4px 8px;
-            border-radius: 4px;
-            color: #FFF;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 12px;
-        }
-
-        @media (max-width: 1200px) {
-            .top3-grid { grid-template-columns: repeat(2, 1fr); }
-        }
-        @media (max-width: 700px) {
-            .top3-grid { grid-template-columns: 1fr; }
-        }
+        @media (max-width: 1200px) { .top3-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 700px) { .top3-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
     <div class="wrap">
-        <!-- Topbar -->
         <div class="topbar">
             <div>
                 <h1>📊 Painel Master Analytics — 7 Canais Dark</h1>
                 <div class="meta">
-                    Atualizado em: <b>27/10/2026 às 20:27:24 (BRT)</b> • Canais Online: <b>7/7</b> •
-                    Janela de Snapshots acumulada: <b>3.8h</b> (coleta automática a cada 15 min)
+                    Atualizado em: <b>27/10/2026 às 20:34:44 (BRT)</b> • Canais Online: <b>7/7</b> •
+                    Janela de Snapshots acumulada: <b>3.9h</b> (atualização 100% na nuvem via GitHub Actions a cada 30 min)
                 </div>
             </div>
             <div class="filter-btns">
@@ -281,255 +87,117 @@
                 <button class="filter-btn" id="btn-gvg" onclick="filterGroup('gvg', this)">Startup GVG (2)</button>
             </div>
         </div>
-
-        <!-- Seção 1: Radar Ao Vivo (60m e 48h) -->
         <div class="sec-box">
             <div class="sec-head">
                 <h2>🔥 1. Vídeos com Views nas Últimas 48h e 60 Minutos (Todos os Canais)</h2>
-                <div class="hint">Exibe apenas vídeos públicos que ganharam views reais nos últimos 60 min / 48h (sem misturar vídeos antigos parados ou agendados).</div>
+                <div class="hint">Exibe apenas vídeos públicos que ganharam views reais nos últimos 60 min / 48h.</div>
             </div>
             <div class="tbl-wrap">
                 <table>
-                    <thead>
-                        <tr>
-                            <th style="width:170px;">Canal</th>
-                            <th>Vídeo (Apenas Públicos com Views Recentes)</th>
-                            <th class="num" style="width:120px;">Views (60 min)</th>
-                            <th class="num" style="width:160px;">Views (48h)</th>
-                            <th class="num" style="width:120px;">Views Totais</th>
-                        </tr>
-                    </thead>
+                    <thead><tr><th style="width:170px;">Canal</th><th>Vídeo (Apenas Públicos com Views Recentes)</th><th class="num" style="width:120px;">Views (60 min)</th><th class="num" style="width:160px;">Views (48h)</th><th class="num" style="width:120px;">Views Totais</th></tr></thead>
                     <tbody>
-                        
             <tr data-grupo="pessoal">
-                <td>
-                    <span class="channel-tag">Lorena Vane</span>
-                    <div class="sub-text">@lorenavane1</div>
-                </td>
-                <td>
-                    <div class="video-cell">
-                        <img src="https://i.ytimg.com/vi/WEmJ9PGCNZU/mqdefault.jpg" class="thumb-sm" alt="">
-                        <div>
-                            <a href="https://youtu.be/WEmJ9PGCNZU" target="_blank" class="v-link">Eu Odiava Meu VIZINHO RANZINZA… Até Ele Me RESGATAR na Tempestade!</a>
-                            <div class="sub-text">Publicado: 27/10 19:30 <span class="pill pill-amber">Postado &lt;48h</span></div>
-                        </div>
-                    </div>
-                </td>
-                <td class="num val-positive">+16</td>
-                <td class="num val-positive">+16 <span class="tiny-note">(0.4h medidos)</span></td>
-                <td class="num"><b>19</b></td>
+                <td><span class="channel-tag">Lorena Vane</span><div class="sub-text">@lorenavane1</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/WEmJ9PGCNZU/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/WEmJ9PGCNZU" target="_blank" class="v-link">Eu Odiava Meu VIZINHO RANZINZA… Até Ele Me RESGATAR na Tempestade!</a><div class="sub-text">Publicado: 27/10 19:30 <span class="pill pill-amber">Postado &lt;48h</span></div></div></div></td>
+                <td class="num val-positive">+22</td>
+                <td class="num val-positive">+22 <span class="tiny-note">(0.5h medidos)</span></td>
+                <td class="num"><b>25</b></td>
             </tr>
-            
-            <tr data-grupo="gvg">
-                <td>
-                    <span class="channel-tag">HeartTangle</span>
-                    <div class="sub-text">@heartangle2d</div>
-                </td>
-                <td>
-                    <div class="video-cell">
-                        <img src="https://i.ytimg.com/vi/v1_AjS_U1xE/mqdefault.jpg" class="thumb-sm" alt="">
-                        <div>
-                            <a href="https://youtu.be/v1_AjS_U1xE" target="_blank" class="v-link">पूरे गाँव ने जिस लड़के को जालिम और बेदर्द कहा, उसी ने अनाथ लड़की को अपनी दुल्हन बनाया | दिल छू लेने</a>
-                            <div class="sub-text">Publicado: 24/10 09:30 </div>
-                        </div>
-                    </div>
-                </td>
-                <td class="num val-zero">+0</td>
-                <td class="num val-positive">+36 <span class="tiny-note">(3.8h medidos)</span></td>
-                <td class="num"><b>608</b></td>
-            </tr>
-            
-            <tr data-grupo="gvg">
-                <td>
-                    <span class="channel-tag">HeartTangle</span>
-                    <div class="sub-text">@heartangle2d</div>
-                </td>
-                <td>
-                    <div class="video-cell">
-                        <img src="https://i.ytimg.com/vi/sdfmDHYBJqQ/mqdefault.jpg" class="thumb-sm" alt="">
-                        <div>
-                            <a href="https://youtu.be/sdfmDHYBJqQ" target="_blank" class="v-link">सास ने बहू को रहने के लिए एक टूटा-फूटा खंडर दिया, लेकिन उस लड़की ने जो किया उसने सबकी आँखें खोल दीं</a>
-                            <div class="sub-text">Publicado: 27/10 09:30 <span class="pill pill-amber">Postado &lt;48h</span></div>
-                        </div>
-                    </div>
-                </td>
-                <td class="num val-zero">+0</td>
-                <td class="num val-positive">+11 <span class="tiny-note">(3.8h medidos)</span></td>
-                <td class="num"><b>363</b></td>
-            </tr>
-            
             <tr data-grupo="pessoal">
-                <td>
-                    <span class="channel-tag">Cosmic Abyss</span>
-                    <div class="sub-text">@cosmicabyssdoc</div>
-                </td>
-                <td>
-                    <div class="video-cell">
-                        <img src="https://i.ytimg.com/vi/TiVJlqVKeDI/mqdefault.jpg" class="thumb-sm" alt="">
-                        <div>
-                            <a href="https://youtu.be/TiVJlqVKeDI" target="_blank" class="v-link">The 1-Billion-Light-Year Scar That Proves Other Universes Exist</a>
-                            <div class="sub-text">Publicado: 16/10 19:00 </div>
-                        </div>
-                    </div>
-                </td>
+                <td><span class="channel-tag">Untold Bharat</span><div class="sub-text">@uuntoldbharat2d</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/3RBIrSOEWQs/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/3RBIrSOEWQs" target="_blank" class="v-link">2015 में भारत ने 38,000 टन Maggi को भट्ठियों में क्यों जलाया? | The Untold Nestle War</a><div class="sub-text">Publicado: 19/10 09:30 </div></div></div></td>
+                <td class="num val-positive">+7</td>
+                <td class="num val-positive">+7 <span class="tiny-note">(0.1h medidos)</span></td>
+                <td class="num"><b>273</b></td>
+            </tr>
+            <tr data-grupo="gvg">
+                <td><span class="channel-tag">HeartTangle</span><div class="sub-text">@heartangle2d</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/sdfmDHYBJqQ/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/sdfmDHYBJqQ" target="_blank" class="v-link">सास ने बहू को रहने के लिए एक टूटा-फूटा खंडर दिया, लेकिन उस लड़की ने जो किया उसने सबकी आँखें खोल दीं</a><div class="sub-text">Publicado: 27/10 09:30 <span class="pill pill-amber">Postado &lt;48h</span></div></div></div></td>
+                <td class="num val-positive">+3</td>
+                <td class="num val-positive">+14 <span class="tiny-note">(3.9h medidos)</span></td>
+                <td class="num"><b>366</b></td>
+            </tr>
+            <tr data-grupo="gvg">
+                <td><span class="channel-tag">HeartTangle</span><div class="sub-text">@heartangle2d</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/v1_AjS_U1xE/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/v1_AjS_U1xE" target="_blank" class="v-link">पूरे गाँव ने जिस लड़के को जालिम और बेदर्द कहा, उसी ने अनाथ लड़की को अपनी दुल्हन बनाया | दिल छू लेने</a><div class="sub-text">Publicado: 24/10 09:30 </div></div></div></td>
+                <td class="num val-positive">+1</td>
+                <td class="num val-positive">+37 <span class="tiny-note">(3.9h medidos)</span></td>
+                <td class="num"><b>609</b></td>
+            </tr>
+            <tr data-grupo="pessoal">
+                <td><span class="channel-tag">Bíblia Oculta</span><div class="sub-text">@bibliaoculta7</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/UW8SYlNDUaM/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/UW8SYlNDUaM" target="_blank" class="v-link">Os 400 Anos de Silêncio: O Que Aconteceu Antes de Jesus Nascer?</a><div class="sub-text">Publicado: 24/10 12:00 </div></div></div></td>
+                <td class="num val-positive">+1</td>
+                <td class="num val-positive">+1 <span class="tiny-note">(3.9h medidos)</span></td>
+                <td class="num"><b>76</b></td>
+            </tr>
+            <tr data-grupo="pessoal">
+                <td><span class="channel-tag">Cosmic Abyss</span><div class="sub-text">@cosmicabyssdoc</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/TiVJlqVKeDI/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/TiVJlqVKeDI" target="_blank" class="v-link">The 1-Billion-Light-Year Scar That Proves Other Universes Exist</a><div class="sub-text">Publicado: 16/10 19:00 </div></div></div></td>
                 <td class="num val-zero">+0</td>
-                <td class="num val-positive">+2 <span class="tiny-note">(3.8h medidos)</span></td>
+                <td class="num val-positive">+2 <span class="tiny-note">(3.9h medidos)</span></td>
                 <td class="num"><b>248</b></td>
             </tr>
-            
             <tr data-grupo="pessoal">
-                <td>
-                    <span class="channel-tag">Cosmic Abyss</span>
-                    <div class="sub-text">@cosmicabyssdoc</div>
-                </td>
-                <td>
-                    <div class="video-cell">
-                        <img src="https://i.ytimg.com/vi/AZ1QN3jRi3Y/mqdefault.jpg" class="thumb-sm" alt="">
-                        <div>
-                            <a href="https://youtu.be/AZ1QN3jRi3Y" target="_blank" class="v-link">CERN Just Confirmed the Universe is Sitting on a Trapdoor (The False Vacuum)</a>
-                            <div class="sub-text">Publicado: 18/10 19:00 </div>
-                        </div>
-                    </div>
-                </td>
+                <td><span class="channel-tag">Cosmic Abyss</span><div class="sub-text">@cosmicabyssdoc</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/AZ1QN3jRi3Y/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/AZ1QN3jRi3Y" target="_blank" class="v-link">CERN Just Confirmed the Universe is Sitting on a Trapdoor (The False Vacuum)</a><div class="sub-text">Publicado: 18/10 19:00 </div></div></div></td>
                 <td class="num val-zero">+0</td>
-                <td class="num val-positive">+2 <span class="tiny-note">(3.8h medidos)</span></td>
+                <td class="num val-positive">+2 <span class="tiny-note">(3.9h medidos)</span></td>
                 <td class="num"><b>239</b></td>
             </tr>
-            
             <tr data-grupo="pessoal">
-                <td>
-                    <span class="channel-tag">Cosmic Abyss</span>
-                    <div class="sub-text">@cosmicabyssdoc</div>
-                </td>
-                <td>
-                    <div class="video-cell">
-                        <img src="https://i.ytimg.com/vi/ksoGH80QGqU/mqdefault.jpg" class="thumb-sm" alt="">
-                        <div>
-                            <a href="https://youtu.be/ksoGH80QGqU" target="_blank" class="v-link">The 3.3-Billion-Light-Year Structure That Breaks All Laws of Physics</a>
-                            <div class="sub-text">Publicado: 19/10 19:00 </div>
-                        </div>
-                    </div>
-                </td>
+                <td><span class="channel-tag">Cosmic Abyss</span><div class="sub-text">@cosmicabyssdoc</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/ksoGH80QGqU/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/ksoGH80QGqU" target="_blank" class="v-link">The 3.3-Billion-Light-Year Structure That Breaks All Laws of Physics</a><div class="sub-text">Publicado: 19/10 19:00 </div></div></div></td>
                 <td class="num val-zero">+0</td>
-                <td class="num val-positive">+1 <span class="tiny-note">(3.8h medidos)</span></td>
+                <td class="num val-positive">+1 <span class="tiny-note">(3.9h medidos)</span></td>
                 <td class="num"><b>31</b></td>
             </tr>
-            
             <tr data-grupo="pessoal">
-                <td>
-                    <span class="channel-tag">Untold Bharat</span>
-                    <div class="sub-text">@uuntoldbharat2d</div>
-                </td>
-                <td>
-                    <div class="video-cell">
-                        <img src="https://i.ytimg.com/vi/uh1Wk880WTY/mqdefault.jpg" class="thumb-sm" alt="">
-                        <div>
-                            <a href="https://youtu.be/uh1Wk880WTY" target="_blank" class="v-link">1984 में अमेरिकी कंपनी ने भोपाल को कैसे बेचा? | The $470 Million Union Carbide Betrayal</a>
-                            <div class="sub-text">Publicado: 26/10 12:22 <span class="pill pill-amber">Postado &lt;48h</span></div>
-                        </div>
-                    </div>
-                </td>
-                <td class="num val-zero"><span class="tiny-note" title="Último snapshot foi há mais de 75 min; próximo ciclo em 15 min">⏳ ciclo 15m</span></td>
-                <td class="num val-zero">+0 <span class="tiny-note">(0.0h medidos)</span></td>
+                <td><span class="channel-tag">Untold Bharat</span><div class="sub-text">@uuntoldbharat2d</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/uh1Wk880WTY/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/uh1Wk880WTY" target="_blank" class="v-link">1984 में अमेरिकी कंपनी ने भोपाल को कैसे बेचा? | The $470 Million Union Carbide Betrayal</a><div class="sub-text">Publicado: 26/10 12:22 <span class="pill pill-amber">Postado &lt;48h</span></div></div></div></td>
+                <td class="num val-zero">+0</td>
+                <td class="num val-zero">+0 <span class="tiny-note">(0.1h medidos)</span></td>
                 <td class="num"><b>17</b></td>
             </tr>
-            
             <tr data-grupo="gvg">
-                <td>
-                    <span class="channel-tag">HeartTangle</span>
-                    <div class="sub-text">@heartangle2d</div>
-                </td>
-                <td>
-                    <div class="video-cell">
-                        <img src="https://i.ytimg.com/vi/E4NHCpevLf8/mqdefault.jpg" class="thumb-sm" alt="">
-                        <div>
-                            <a href="https://youtu.be/E4NHCpevLf8" target="_blank" class="v-link">सौतेली माँ ने जिसे जालिम बताकर रिश्ता तय किया, वही बना सच्चा जीवनसाथी | दिल छू लेने वाली कहानी</a>
-                            <div class="sub-text">Publicado: 26/10 09:30 <span class="pill pill-amber">Postado &lt;48h</span></div>
-                        </div>
-                    </div>
-                </td>
+                <td><span class="channel-tag">HeartTangle</span><div class="sub-text">@heartangle2d</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/E4NHCpevLf8/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/E4NHCpevLf8" target="_blank" class="v-link">सौतेली माँ ने जिसे जालिम बताकर रिश्ता तय किया, वही बना सच्चा जीवनसाथी | दिल छू लेने वाली कहानी</a><div class="sub-text">Publicado: 26/10 09:30 <span class="pill pill-amber">Postado &lt;48h</span></div></div></div></td>
                 <td class="num val-zero">+0</td>
-                <td class="num val-zero">+0 <span class="tiny-note">(3.8h medidos)</span></td>
+                <td class="num val-zero">+0 <span class="tiny-note">(3.9h medidos)</span></td>
                 <td class="num"><b>7</b></td>
             </tr>
-            
             <tr data-grupo="pessoal">
-                <td>
-                    <span class="channel-tag">Bíblia Oculta</span>
-                    <div class="sub-text">@bibliaoculta7</div>
-                </td>
-                <td>
-                    <div class="video-cell">
-                        <img src="https://i.ytimg.com/vi/rYEJpsGBYuY/mqdefault.jpg" class="thumb-sm" alt="">
-                        <div>
-                            <a href="https://youtu.be/rYEJpsGBYuY" target="_blank" class="v-link">MOISÉS e ZÍPORA — A História NÃO CONTADA da ESPOSA DE MOISÉS</a>
-                            <div class="sub-text">Publicado: 26/10 12:00 <span class="pill pill-amber">Postado &lt;48h</span></div>
-                        </div>
-                    </div>
-                </td>
+                <td><span class="channel-tag">Bíblia Oculta</span><div class="sub-text">@bibliaoculta7</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/rYEJpsGBYuY/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/rYEJpsGBYuY" target="_blank" class="v-link">MOISÉS e ZÍPORA — A História NÃO CONTADA da ESPOSA DE MOISÉS</a><div class="sub-text">Publicado: 26/10 12:00 <span class="pill pill-amber">Postado &lt;48h</span></div></div></div></td>
                 <td class="num val-zero">+0</td>
-                <td class="num val-zero">+0 <span class="tiny-note">(3.8h medidos)</span></td>
+                <td class="num val-zero">+0 <span class="tiny-note">(3.9h medidos)</span></td>
                 <td class="num"><b>5</b></td>
             </tr>
-            
             <tr data-grupo="pessoal">
-                <td>
-                    <span class="channel-tag">Cosmic Abyss</span>
-                    <div class="sub-text">@cosmicabyssdoc</div>
-                </td>
-                <td>
-                    <div class="video-cell">
-                        <img src="https://i.ytimg.com/vi/qHin0kPixuo/mqdefault.jpg" class="thumb-sm" alt="">
-                        <div>
-                            <a href="https://youtu.be/qHin0kPixuo" target="_blank" class="v-link">What Would STEPHENSON 2-18 Look Like From Different Distances? (The Largest Star in the Universe)</a>
-                            <div class="sub-text">Publicado: 26/10 19:00 <span class="pill pill-amber">Postado &lt;48h</span></div>
-                        </div>
-                    </div>
-                </td>
+                <td><span class="channel-tag">Cosmic Abyss</span><div class="sub-text">@cosmicabyssdoc</div></td>
+                <td><div class="video-cell"><img src="https://i.ytimg.com/vi/qHin0kPixuo/mqdefault.jpg" class="thumb-sm" alt=""><div><a href="https://youtu.be/qHin0kPixuo" target="_blank" class="v-link">What Would STEPHENSON 2-18 Look Like From Different Distances? (The Largest Star in the Universe)</a><div class="sub-text">Publicado: 26/10 19:00 <span class="pill pill-amber">Postado &lt;48h</span></div></div></div></td>
                 <td class="num val-zero">+0</td>
-                <td class="num val-zero">+0 <span class="tiny-note">(3.8h medidos)</span></td>
+                <td class="num val-zero">+0 <span class="tiny-note">(3.9h medidos)</span></td>
                 <td class="num"><b>1</b></td>
-            </tr>
-            
-                    </tbody>
+            </tr></tbody>
                 </table>
             </div>
         </div>
-
-        <!-- Seção 2: Comparativo Geral Lado a Lado (7 Dias) -->
         <div class="sec-box">
             <div class="sec-head">
                 <h2>📋 2. Comparativo Lado a Lado dos 7 Canais (Últimos 7 Dias)</h2>
-                <div class="hint">Métricas estritas dos últimos 7 dias via YouTube Analytics API v2 + YouTube Reporting API v1 (channel_reach_basic_a1).</div>
+                <div class="hint">Métricas estritas dos últimos 7 dias via YouTube Analytics API v2 + YouTube Reporting API v1.</div>
             </div>
             <div class="tbl-wrap">
                 <table>
-                    <thead>
-                        <tr>
-                            <th>Canal</th>
-                            <th>Grupo</th>
-                            <th>Status</th>
-                            <th class="num">Inscritos</th>
-                            <th class="num">Vídeos (Públ. / Agend.)</th>
-                            <th class="num">Views 60m / 48h</th>
-                            <th class="num">Views (7d)</th>
-                            <th class="num">Impressões (7d)</th>
-                            <th class="num">CTR Médio (7d)</th>
-                            <th class="num">Retenção Média (7d)</th>
-                            <th class="num">Views Totais</th>
-                        </tr>
-                    </thead>
+                    <thead><tr><th>Canal</th><th>Grupo</th><th>Status</th><th class="num">Inscritos</th><th class="num">Vídeos (Públ. / Agend.)</th><th class="num">Views 60m / 48h</th><th class="num">Views (7d)</th><th class="num">Impressões (7d)</th><th class="num">CTR Médio (7d)</th><th class="num">Retenção Média (7d)</th><th class="num">Views Totais</th></tr></thead>
                     <tbody>
-                        
         <tr data-grupo="pessoal">
-            <td>
-                <div class="ch-name">How It's Made Oficial</div>
-                <div class="sub-text">@howitsmadeoficial • Stickman - Shorts</div>
-            </td>
+            <td><div class="ch-name">How It's Made Oficial</div><div class="sub-text">@howitsmadeoficial • Stickman - Shorts</div></td>
             <td><span class="pill pill-group-pessoal">Pessoais (Vitor)</span></td>
             <td><span class="status-dot dot-green"></span>Conectado</td>
             <td class="num">0</td>
-            <td class="num">0 públ. / <span class="pill pill-blue">12 agendados</span></td>
+            <td class="num">1 públ. / <span class="pill pill-blue">11 agendados</span></td>
             <td class="num">+0 / +0</td>
             <td class="num"><b>0</b></td>
             <td class="num"><span class="pending-tag" title="Job #840eb708 ativo — Google gerando 1º CSV (24–48h)">⏳ Gerando 1º CSV (24-48h)</span></td>
@@ -537,46 +205,34 @@
             <td class="num"><span class="sub-text">—</span></td>
             <td class="num">0</td>
         </tr>
-        
         <tr data-grupo="pessoal">
-            <td>
-                <div class="ch-name">Bíblia Oculta</div>
-                <div class="sub-text">@bibliaoculta7 • Anime + Bíblia</div>
-            </td>
+            <td><div class="ch-name">Bíblia Oculta</div><div class="sub-text">@bibliaoculta7 • Anime + Bíblia</div></td>
             <td><span class="pill pill-group-pessoal">Pessoais (Vitor)</span></td>
             <td><span class="status-dot dot-green"></span>Conectado</td>
             <td class="num">289</td>
             <td class="num">3 públ. / <span class="pill pill-blue">5 agendados</span></td>
-            <td class="num">+0 / +0</td>
+            <td class="num">+1 / +1</td>
             <td class="num"><b>416</b></td>
             <td class="num"><span class="pending-tag" title="Job #74d87176 ativo — Google gerando 1º CSV (24–48h)">⏳ Gerando 1º CSV (24-48h)</span></td>
             <td class="num"><span class="pending-tag">⏳ Aguardando CSV</span></td>
             <td class="num"><b>21.6%</b> <span class='sub-text'>(8m 00s)</span></td>
             <td class="num">304</td>
         </tr>
-        
         <tr data-grupo="pessoal">
-            <td>
-                <div class="ch-name">Untold Bharat</div>
-                <div class="sub-text">@uuntoldbharat2d • Canal Indiano + Doc da Índia</div>
-            </td>
+            <td><div class="ch-name">Untold Bharat</div><div class="sub-text">@uuntoldbharat2d • Canal Indiano + Doc da Índia</div></td>
             <td><span class="pill pill-group-pessoal">Pessoais (Vitor)</span></td>
             <td><span class="status-dot dot-green"></span>Conectado</td>
             <td class="num">6</td>
             <td class="num">10 públ. / <span class="pill pill-blue">5 agendados</span></td>
-            <td class="num">+0 / +0</td>
+            <td class="num">+7 / +7</td>
             <td class="num"><b>930</b></td>
             <td class="num"><span class="pending-tag" title="Job #1271843e ativo — Google gerando 1º CSV (24–48h)">⏳ Gerando 1º CSV (24-48h)</span></td>
             <td class="num"><span class="pending-tag">⏳ Aguardando CSV</span></td>
             <td class="num"><b>20.0%</b> <span class='sub-text'>(10m 04s)</span></td>
             <td class="num">2,575</td>
         </tr>
-        
         <tr data-grupo="pessoal">
-            <td>
-                <div class="ch-name">Cosmic Abyss</div>
-                <div class="sub-text">@cosmicabyssdoc • Espaço + Segredo Oculto</div>
-            </td>
+            <td><div class="ch-name">Cosmic Abyss</div><div class="sub-text">@cosmicabyssdoc • Espaço + Segredo Oculto</div></td>
             <td><span class="pill pill-group-pessoal">Pessoais (Vitor)</span></td>
             <td><span class="status-dot dot-green"></span>Conectado</td>
             <td class="num">7</td>
@@ -588,46 +244,34 @@
             <td class="num"><b>28.0%</b> <span class='sub-text'>(10m 25s)</span></td>
             <td class="num">1,161</td>
         </tr>
-        
         <tr data-grupo="pessoal">
-            <td>
-                <div class="ch-name">Lorena Vane</div>
-                <div class="sub-text">@lorenavane1 • Novela + Livro</div>
-            </td>
+            <td><div class="ch-name">Lorena Vane</div><div class="sub-text">@lorenavane1 • Novela + Livro</div></td>
             <td><span class="pill pill-group-pessoal">Pessoais (Vitor)</span></td>
             <td><span class="status-dot dot-green"></span>Conectado</td>
             <td class="num">24</td>
             <td class="num">24 públ. / <span class="sub-text">0 agendados</span></td>
-            <td class="num">+16 / +16</td>
+            <td class="num">+22 / +22</td>
             <td class="num"><b>0</b></td>
             <td class="num"><span class="pending-tag" title="Job #1db8ee64 ativo — Google gerando 1º CSV (24–48h)">⏳ Gerando 1º CSV (24-48h)</span></td>
             <td class="num"><span class="pending-tag">⏳ Aguardando CSV</span></td>
             <td class="num"><span class="sub-text">—</span></td>
             <td class="num">1,985</td>
         </tr>
-        
         <tr data-grupo="gvg">
-            <td>
-                <div class="ch-name">HeartTangle</div>
-                <div class="sub-text">@heartangle2d • Indiano + Conflitos de Relacionamento</div>
-            </td>
+            <td><div class="ch-name">HeartTangle</div><div class="sub-text">@heartangle2d • Indiano + Conflitos de Relacionamento</div></td>
             <td><span class="pill pill-group-gvg">Startup GVG (Vitor + Amigo)</span></td>
             <td><span class="status-dot dot-green"></span>Conectado</td>
             <td class="num">11</td>
             <td class="num">9 públ. / <span class="pill pill-blue">2 agendados</span></td>
-            <td class="num">+0 / +47</td>
+            <td class="num">+4 / +51</td>
             <td class="num"><b>2,932</b></td>
             <td class="num"><span class="pending-tag" title="Job #71013a43 ativo — Google gerando 1º CSV (24–48h)">⏳ Gerando 1º CSV (24-48h)</span></td>
             <td class="num"><span class="pending-tag">⏳ Aguardando CSV</span></td>
             <td class="num"><b>17.3%</b> <span class='sub-text'>(4m 41s)</span></td>
             <td class="num">3,543</td>
         </tr>
-        
         <tr data-grupo="gvg">
-            <td>
-                <div class="ch-name">Segredos da Olga</div>
-                <div class="sub-text">@segredosdaolga • Brasileiro + Realista + Conflitos</div>
-            </td>
+            <td><div class="ch-name">Segredos da Olga</div><div class="sub-text">@segredosdaolga • Brasileiro + Realista + Conflitos</div></td>
             <td><span class="pill pill-group-gvg">Startup GVG (Vitor + Amigo)</span></td>
             <td><span class="status-dot dot-green"></span>Conectado</td>
             <td class="num">0</td>
@@ -638,551 +282,111 @@
             <td class="num"><span class="pending-tag">⏳ Aguardando CSV</span></td>
             <td class="num"><b>0.8%</b> <span class='sub-text'>(0m 12s)</span></td>
             <td class="num">6</td>
-        </tr>
-        
-                    </tbody>
+        </tr></tbody>
                 </table>
             </div>
         </div>
-
-        <!-- Seção 3: Top 3 por Canal (Últimos 7 Dias) -->
         <div class="sec-head" style="margin: 12px 4px;">
             <h2>🏆 3. Top 3 de Cada Canal nos Últimos 7 Dias (Retenção, Views, CTR e Impressões)</h2>
-            <div class="hint">Retenção prioriza vídeos com ≥10 views nos últimos 7d (vídeos com poucas views recebem alerta ⚠️ de baixa amostragem).</div>
+            <div class="hint">Retenção prioriza vídeos com ≥10 views nos últimos 7d.</div>
         </div>
         
         <div class="ch-card" data-grupo="pessoal">
             <div class="ch-card-head">
-                <div>
-                    <span class="pill pill-group-pessoal">Pessoais (Vitor)</span>
-                    <h3>How It's Made Oficial <small>@howitsmadeoficial • Stickman - Shorts</small></h3>
-                </div>
-                <div class="ch-head-stats">
-                    <span>👥 <b>0</b> insc.</span>
-                    <span>🎬 <b>0</b> públ. (12 agend.)</span>
-                    <span>👁️ <b>0</b> views (7d)</span>
-                </div>
+                <div><span class="pill pill-group-pessoal">Pessoais (Vitor)</span><h3>How It's Made Oficial <small>@howitsmadeoficial • Stickman - Shorts</small></h3></div>
+                <div class="ch-head-stats"><span>👥 <b>0</b> insc.</span><span>🎬 <b>1</b> públ. (11 agend.)</span><span>👁️ <b>0</b> views (7d)</span></div>
             </div>
-
             <div class="top3-grid">
-                <div class="top3-box">
-                    <h4>🎯 Top 3 Maior Retenção (7d)</h4>
-                    <div class="empty-mini">Sem views consolidadas nos últimos 7 dias.</div>
-                </div>
-                <div class="top3-box">
-                    <h4>👁️ Top 3 Mais Views (7d)</h4>
-                    <div class="empty-mini">Sem views nos últimos 7 dias.</div>
-                </div>
-                <div class="top3-box">
-                    <h4>🖱️ Top 3 Maior CTR (7d)</h4>
-                    <div class="empty-mini">⏳ Job #840eb708 ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
-                <div class="top3-box">
-                    <h4>📢 Top 3 Mais Impressões (7d)</h4>
-                    <div class="empty-mini">⏳ Job #840eb708 ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
+                <div class="top3-box"><h4>🎯 Top 3 Maior Retenção (7d)</h4><div class="empty-mini">Sem views consolidadas nos últimos 7 dias.</div></div>
+                <div class="top3-box"><h4>👁️ Top 3 Mais Views (7d)</h4><div class="empty-mini">Sem views nos últimos 7 dias.</div></div>
+                <div class="top3-box"><h4>🖱️ Top 3 Maior CTR (7d)</h4><div class="empty-mini">⏳ Job #840eb708 ativo — Google gerando 1º CSV (24–48h)</div></div>
+                <div class="top3-box"><h4>📢 Top 3 Mais Impressões (7d)</h4><div class="empty-mini">⏳ Job #840eb708 ativo — Google gerando 1º CSV (24–48h)</div></div>
             </div>
         </div>
-        
         <div class="ch-card" data-grupo="pessoal">
             <div class="ch-card-head">
-                <div>
-                    <span class="pill pill-group-pessoal">Pessoais (Vitor)</span>
-                    <h3>Bíblia Oculta <small>@bibliaoculta7 • Anime + Bíblia</small></h3>
-                </div>
-                <div class="ch-head-stats">
-                    <span>👥 <b>289</b> insc.</span>
-                    <span>🎬 <b>3</b> públ. (5 agend.)</span>
-                    <span>👁️ <b>416</b> views (7d)</span>
-                </div>
+                <div><span class="pill pill-group-pessoal">Pessoais (Vitor)</span><h3>Bíblia Oculta <small>@bibliaoculta7 • Anime + Bíblia</small></h3></div>
+                <div class="ch-head-stats"><span>👥 <b>289</b> insc.</span><span>🎬 <b>3</b> públ. (5 agend.)</span><span>👁️ <b>416</b> views (7d)</span></div>
             </div>
-
             <div class="top3-grid">
-                <div class="top3-box">
-                    <h4>🎯 Top 3 Maior Retenção (7d)</h4>
-                    
-                <div class="rank-row">
-                    <span class="medal">🥇</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/ijYKSUZ20bw" target="_blank" class="rank-title">O Confronto que Destruiu o Império Romano: O Filme Completo de Jesus</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">55.3%</span> (36m 21s) <span class="ok-sample">(13 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥈</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/m0e71Vu35eI" target="_blank" class="rank-title">O Mistério de Melquisedeque: Quem Era o Homem Sem Passado da Bíblia?</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">23.9%</span> (6m 53s) <span class="ok-sample">(174 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥉</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/ZDMP0PXm00k" target="_blank" class="rank-title">O Dia em que o Céu se Rasgará e Todo Olho Verá o Rei Voltar</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">23.5%</span> (1m 52s) <span class="ok-sample">(10 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div class="top3-box">
-                    <h4>👁️ Top 3 Mais Views (7d)</h4>
-                    
-                <div class="rank-row">
-                    <span class="medal">🥇</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/m0e71Vu35eI" target="_blank" class="rank-title">O Mistério de Melquisedeque: Quem Era o Homem Sem Passado da Bíblia?</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">174 views</span> • 739.0 min • Ret: 23.9%
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥈</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/7MwmjNyB6PA" target="_blank" class="rank-title">E se Jesus tivesse nascido em 2026 no Brasil?</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">52 views</span> • 50.0 min • Ret: 14.6%
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥉</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/aMd7KsNowWU" target="_blank" class="rank-title">O Homem com a Força de um Exército que Perdeu os Olhos e Fez um Império Desabar na Própria Morte</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">47 views</span> • 207.0 min • Ret: 8.6%
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div class="top3-box">
-                    <h4>🖱️ Top 3 Maior CTR (7d)</h4>
-                    <div class="empty-mini">⏳ Job #74d87176 ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
-                <div class="top3-box">
-                    <h4>📢 Top 3 Mais Impressões (7d)</h4>
-                    <div class="empty-mini">⏳ Job #74d87176 ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
+                <div class="top3-box"><h4>🎯 Top 3 Maior Retenção (7d)</h4><div class="rank-row"><span class="medal">🥇</span><div class="rank-info"><a href="https://youtu.be/ijYKSUZ20bw" target="_blank" class="rank-title">O Confronto que Destruiu o Império Romano: O Filme Completo de Jesus</a><div class="rank-metrics"><span class="m-hi">55.3%</span> (36m 21s) <span class="ok-sample">(13 views)</span></div></div></div><div class="rank-row"><span class="medal">🥈</span><div class="rank-info"><a href="https://youtu.be/m0e71Vu35eI" target="_blank" class="rank-title">O Mistério de Melquisedeque: Quem Era o Homem Sem Passado da Bíblia?</a><div class="rank-metrics"><span class="m-hi">23.9%</span> (6m 53s) <span class="ok-sample">(174 views)</span></div></div></div><div class="rank-row"><span class="medal">🥉</span><div class="rank-info"><a href="https://youtu.be/ZDMP0PXm00k" target="_blank" class="rank-title">O Dia em que o Céu se Rasgará e Todo Olho Verá o Rei Voltar</a><div class="rank-metrics"><span class="m-hi">23.5%</span> (1m 52s) <span class="ok-sample">(10 views)</span></div></div></div></div>
+                <div class="top3-box"><h4>👁️ Top 3 Mais Views (7d)</h4><div class="rank-row"><span class="medal">🥇</span><div class="rank-info"><a href="https://youtu.be/m0e71Vu35eI" target="_blank" class="rank-title">O Mistério de Melquisedeque: Quem Era o Homem Sem Passado da Bíblia?</a><div class="rank-metrics"><span class="m-hi">174 views</span> • 739.0 min • Ret: 23.9%</div></div></div><div class="rank-row"><span class="medal">🥈</span><div class="rank-info"><a href="https://youtu.be/7MwmjNyB6PA" target="_blank" class="rank-title">E se Jesus tivesse nascido em 2026 no Brasil?</a><div class="rank-metrics"><span class="m-hi">52 views</span> • 50.0 min • Ret: 14.6%</div></div></div><div class="rank-row"><span class="medal">🥉</span><div class="rank-info"><a href="https://youtu.be/aMd7KsNowWU" target="_blank" class="rank-title">O Homem com a Força de um Exército que Perdeu os Olhos e Fez um Império Desabar na Própria Morte</a><div class="rank-metrics"><span class="m-hi">47 views</span> • 207.0 min • Ret: 8.6%</div></div></div></div>
+                <div class="top3-box"><h4>🖱️ Top 3 Maior CTR (7d)</h4><div class="empty-mini">⏳ Job #74d87176 ativo — Google gerando 1º CSV (24–48h)</div></div>
+                <div class="top3-box"><h4>📢 Top 3 Mais Impressões (7d)</h4><div class="empty-mini">⏳ Job #74d87176 ativo — Google gerando 1º CSV (24–48h)</div></div>
             </div>
         </div>
-        
         <div class="ch-card" data-grupo="pessoal">
             <div class="ch-card-head">
-                <div>
-                    <span class="pill pill-group-pessoal">Pessoais (Vitor)</span>
-                    <h3>Untold Bharat <small>@uuntoldbharat2d • Canal Indiano + Doc da Índia</small></h3>
-                </div>
-                <div class="ch-head-stats">
-                    <span>👥 <b>6</b> insc.</span>
-                    <span>🎬 <b>10</b> públ. (5 agend.)</span>
-                    <span>👁️ <b>930</b> views (7d)</span>
-                </div>
+                <div><span class="pill pill-group-pessoal">Pessoais (Vitor)</span><h3>Untold Bharat <small>@uuntoldbharat2d • Canal Indiano + Doc da Índia</small></h3></div>
+                <div class="ch-head-stats"><span>👥 <b>6</b> insc.</span><span>🎬 <b>10</b> públ. (5 agend.)</span><span>👁️ <b>930</b> views (7d)</span></div>
             </div>
-
             <div class="top3-grid">
-                <div class="top3-box">
-                    <h4>🎯 Top 3 Maior Retenção (7d)</h4>
-                    
-                <div class="rank-row">
-                    <span class="medal">🥇</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/oW6lA0757M8" target="_blank" class="rank-title">1984 में भारत और Israel ने Pakistan का Nuclear प्लांट क्यों नहीं उड़ाया? | The Secret CIA Warning</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">36.6%</span> (9m 30s) <span class="ok-sample">(69 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥈</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/G7j8a3ef3hI" target="_blank" class="rank-title">1994 में ISRO के सबसे बड़े वैज्ञानिक को देशद्रोही क्यों बनाया गया? | The Cryogenic Conspiracy</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">20.9%</span> (11m 32s) <span class="ok-sample">(31 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥉</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/Au4ihfn4Ijs" target="_blank" class="rank-title">1992 में एक अमेरिकी कंपनी ने भारत को कैसे लूटा? | The $3 Billion Dabhol Scam</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">20.4%</span> (10m 51s) <span class="ok-sample">(509 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div class="top3-box">
-                    <h4>👁️ Top 3 Mais Views (7d)</h4>
-                    
-                <div class="rank-row">
-                    <span class="medal">🥇</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/Au4ihfn4Ijs" target="_blank" class="rank-title">1992 में एक अमेरिकी कंपनी ने भारत को कैसे लूटा? | The $3 Billion Dabhol Scam</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">509 views</span> • 4355.0 min • Ret: 20.4%
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥈</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/3RBIrSOEWQs" target="_blank" class="rank-title">2015 में भारत ने 38,000 टन Maggi को भट्ठियों में क्यों जलाया? | The Untold Nestle War</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">200 views</span> • 1119.0 min • Ret: 18.1%
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥉</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/rOfRAdBiKZ0" target="_blank" class="rank-title">10 साल की वेटिंग लिस्ट और ₹40,000 की कार: Maruti 800 Revolution 1983 | The Untold Story</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">69 views</span> • 62.0 min • Ret: 4.8%
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div class="top3-box">
-                    <h4>🖱️ Top 3 Maior CTR (7d)</h4>
-                    <div class="empty-mini">⏳ Job #1271843e ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
-                <div class="top3-box">
-                    <h4>📢 Top 3 Mais Impressões (7d)</h4>
-                    <div class="empty-mini">⏳ Job #1271843e ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
+                <div class="top3-box"><h4>🎯 Top 3 Maior Retenção (7d)</h4><div class="rank-row"><span class="medal">🥇</span><div class="rank-info"><a href="https://youtu.be/oW6lA0757M8" target="_blank" class="rank-title">1984 में भारत और Israel ने Pakistan का Nuclear प्लांट क्यों नहीं उड़ाया? | The Secret CIA Warning</a><div class="rank-metrics"><span class="m-hi">36.6%</span> (9m 30s) <span class="ok-sample">(69 views)</span></div></div></div><div class="rank-row"><span class="medal">🥈</span><div class="rank-info"><a href="https://youtu.be/G7j8a3ef3hI" target="_blank" class="rank-title">1994 में ISRO के सबसे बड़े वैज्ञानिक को देशद्रोही क्यों बनाया गया? | The Cryogenic Conspiracy</a><div class="rank-metrics"><span class="m-hi">20.9%</span> (11m 32s) <span class="ok-sample">(31 views)</span></div></div></div><div class="rank-row"><span class="medal">🥉</span><div class="rank-info"><a href="https://youtu.be/Au4ihfn4Ijs" target="_blank" class="rank-title">1992 में एक अमेरिकी कंपनी ने भारत को कैसे लूटा? | The $3 Billion Dabhol Scam</a><div class="rank-metrics"><span class="m-hi">20.4%</span> (10m 51s) <span class="ok-sample">(509 views)</span></div></div></div></div>
+                <div class="top3-box"><h4>👁️ Top 3 Mais Views (7d)</h4><div class="rank-row"><span class="medal">🥇</span><div class="rank-info"><a href="https://youtu.be/Au4ihfn4Ijs" target="_blank" class="rank-title">1992 में एक अमेरिकी कंपनी ने भारत को कैसे लूटा? | The $3 Billion Dabhol Scam</a><div class="rank-metrics"><span class="m-hi">509 views</span> • 4355.0 min • Ret: 20.4%</div></div></div><div class="rank-row"><span class="medal">🥈</span><div class="rank-info"><a href="https://youtu.be/3RBIrSOEWQs" target="_blank" class="rank-title">2015 में भारत ने 38,000 टन Maggi को भट्ठियों में क्यों जलाया? | The Untold Nestle War</a><div class="rank-metrics"><span class="m-hi">200 views</span> • 1119.0 min • Ret: 18.1%</div></div></div><div class="rank-row"><span class="medal">🥉</span><div class="rank-info"><a href="https://youtu.be/rOfRAdBiKZ0" target="_blank" class="rank-title">10 साल की वेटिंग लिस्ट और ₹40,000 की कार: Maruti 800 Revolution 1983 | The Untold Story</a><div class="rank-metrics"><span class="m-hi">69 views</span> • 62.0 min • Ret: 4.8%</div></div></div></div>
+                <div class="top3-box"><h4>🖱️ Top 3 Maior CTR (7d)</h4><div class="empty-mini">⏳ Job #1271843e ativo — Google gerando 1º CSV (24–48h)</div></div>
+                <div class="top3-box"><h4>📢 Top 3 Mais Impressões (7d)</h4><div class="empty-mini">⏳ Job #1271843e ativo — Google gerando 1º CSV (24–48h)</div></div>
             </div>
         </div>
-        
         <div class="ch-card" data-grupo="pessoal">
             <div class="ch-card-head">
-                <div>
-                    <span class="pill pill-group-pessoal">Pessoais (Vitor)</span>
-                    <h3>Cosmic Abyss <small>@cosmicabyssdoc • Espaço + Segredo Oculto</small></h3>
-                </div>
-                <div class="ch-head-stats">
-                    <span>👥 <b>7</b> insc.</span>
-                    <span>🎬 <b>10</b> públ. (5 agend.)</span>
-                    <span>👁️ <b>497</b> views (7d)</span>
-                </div>
+                <div><span class="pill pill-group-pessoal">Pessoais (Vitor)</span><h3>Cosmic Abyss <small>@cosmicabyssdoc • Espaço + Segredo Oculto</small></h3></div>
+                <div class="ch-head-stats"><span>👥 <b>7</b> insc.</span><span>🎬 <b>10</b> públ. (5 agend.)</span><span>👁️ <b>497</b> views (7d)</span></div>
             </div>
-
             <div class="top3-grid">
-                <div class="top3-box">
-                    <h4>🎯 Top 3 Maior Retenção (7d)</h4>
-                    
-                <div class="rank-row">
-                    <span class="medal">🥇</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/bNNeghIPxk4" target="_blank" class="rank-title">James Webb Just Confirmed The Universe Has Two Different Speeds</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">45.3%</span> (28m 51s) <span class="ok-sample">(21 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥈</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/TiVJlqVKeDI" target="_blank" class="rank-title">The 1-Billion-Light-Year Scar That Proves Other Universes Exist</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">39.1%</span> (15m 37s) <span class="ok-sample">(124 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥉</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/Alg7TZ6MeOo" target="_blank" class="rank-title">Physicists Found Where 50% of the Universe Went (The Mirror Cosmos)</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">35.2%</span> (13m 48s) <span class="ok-sample">(52 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div class="top3-box">
-                    <h4>👁️ Top 3 Mais Views (7d)</h4>
-                    
-                <div class="rank-row">
-                    <span class="medal">🥇</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/AZ1QN3jRi3Y" target="_blank" class="rank-title">CERN Just Confirmed the Universe is Sitting on a Trapdoor (The False Vacuum)</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">213 views</span> • 736.0 min • Ret: 19.7%
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥈</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/TiVJlqVKeDI" target="_blank" class="rank-title">The 1-Billion-Light-Year Scar That Proves Other Universes Exist</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">124 views</span> • 690.0 min • Ret: 39.1%
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥉</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/Alg7TZ6MeOo" target="_blank" class="rank-title">Physicists Found Where 50% of the Universe Went (The Mirror Cosmos)</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">52 views</span> • 180.0 min • Ret: 35.2%
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div class="top3-box">
-                    <h4>🖱️ Top 3 Maior CTR (7d)</h4>
-                    <div class="empty-mini">⏳ Job #aa537ba8 ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
-                <div class="top3-box">
-                    <h4>📢 Top 3 Mais Impressões (7d)</h4>
-                    <div class="empty-mini">⏳ Job #aa537ba8 ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
+                <div class="top3-box"><h4>🎯 Top 3 Maior Retenção (7d)</h4><div class="rank-row"><span class="medal">🥇</span><div class="rank-info"><a href="https://youtu.be/bNNeghIPxk4" target="_blank" class="rank-title">James Webb Just Confirmed The Universe Has Two Different Speeds</a><div class="rank-metrics"><span class="m-hi">45.3%</span> (28m 51s) <span class="ok-sample">(21 views)</span></div></div></div><div class="rank-row"><span class="medal">🥈</span><div class="rank-info"><a href="https://youtu.be/TiVJlqVKeDI" target="_blank" class="rank-title">The 1-Billion-Light-Year Scar That Proves Other Universes Exist</a><div class="rank-metrics"><span class="m-hi">39.1%</span> (15m 37s) <span class="ok-sample">(124 views)</span></div></div></div><div class="rank-row"><span class="medal">🥉</span><div class="rank-info"><a href="https://youtu.be/Alg7TZ6MeOo" target="_blank" class="rank-title">Physicists Found Where 50% of the Universe Went (The Mirror Cosmos)</a><div class="rank-metrics"><span class="m-hi">35.2%</span> (13m 48s) <span class="ok-sample">(52 views)</span></div></div></div></div>
+                <div class="top3-box"><h4>👁️ Top 3 Mais Views (7d)</h4><div class="rank-row"><span class="medal">🥇</span><div class="rank-info"><a href="https://youtu.be/AZ1QN3jRi3Y" target="_blank" class="rank-title">CERN Just Confirmed the Universe is Sitting on a Trapdoor (The False Vacuum)</a><div class="rank-metrics"><span class="m-hi">213 views</span> • 736.0 min • Ret: 19.7%</div></div></div><div class="rank-row"><span class="medal">🥈</span><div class="rank-info"><a href="https://youtu.be/TiVJlqVKeDI" target="_blank" class="rank-title">The 1-Billion-Light-Year Scar That Proves Other Universes Exist</a><div class="rank-metrics"><span class="m-hi">124 views</span> • 690.0 min • Ret: 39.1%</div></div></div><div class="rank-row"><span class="medal">🥉</span><div class="rank-info"><a href="https://youtu.be/Alg7TZ6MeOo" target="_blank" class="rank-title">Physicists Found Where 50% of the Universe Went (The Mirror Cosmos)</a><div class="rank-metrics"><span class="m-hi">52 views</span> • 180.0 min • Ret: 35.2%</div></div></div></div>
+                <div class="top3-box"><h4>🖱️ Top 3 Maior CTR (7d)</h4><div class="empty-mini">⏳ Job #aa537ba8 ativo — Google gerando 1º CSV (24–48h)</div></div>
+                <div class="top3-box"><h4>📢 Top 3 Mais Impressões (7d)</h4><div class="empty-mini">⏳ Job #aa537ba8 ativo — Google gerando 1º CSV (24–48h)</div></div>
             </div>
         </div>
-        
         <div class="ch-card" data-grupo="pessoal">
             <div class="ch-card-head">
-                <div>
-                    <span class="pill pill-group-pessoal">Pessoais (Vitor)</span>
-                    <h3>Lorena Vane <small>@lorenavane1 • Novela + Livro</small></h3>
-                </div>
-                <div class="ch-head-stats">
-                    <span>👥 <b>24</b> insc.</span>
-                    <span>🎬 <b>24</b> públ. (0 agend.)</span>
-                    <span>👁️ <b>0</b> views (7d)</span>
-                </div>
+                <div><span class="pill pill-group-pessoal">Pessoais (Vitor)</span><h3>Lorena Vane <small>@lorenavane1 • Novela + Livro</small></h3></div>
+                <div class="ch-head-stats"><span>👥 <b>24</b> insc.</span><span>🎬 <b>24</b> públ. (0 agend.)</span><span>👁️ <b>0</b> views (7d)</span></div>
             </div>
-
             <div class="top3-grid">
-                <div class="top3-box">
-                    <h4>🎯 Top 3 Maior Retenção (7d)</h4>
-                    <div class="empty-mini">Sem views consolidadas nos últimos 7 dias.</div>
-                </div>
-                <div class="top3-box">
-                    <h4>👁️ Top 3 Mais Views (7d)</h4>
-                    <div class="empty-mini">Sem views nos últimos 7 dias.</div>
-                </div>
-                <div class="top3-box">
-                    <h4>🖱️ Top 3 Maior CTR (7d)</h4>
-                    <div class="empty-mini">⏳ Job #1db8ee64 ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
-                <div class="top3-box">
-                    <h4>📢 Top 3 Mais Impressões (7d)</h4>
-                    <div class="empty-mini">⏳ Job #1db8ee64 ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
+                <div class="top3-box"><h4>🎯 Top 3 Maior Retenção (7d)</h4><div class="empty-mini">Sem views consolidadas nos últimos 7 dias.</div></div>
+                <div class="top3-box"><h4>👁️ Top 3 Mais Views (7d)</h4><div class="empty-mini">Sem views nos últimos 7 dias.</div></div>
+                <div class="top3-box"><h4>🖱️ Top 3 Maior CTR (7d)</h4><div class="empty-mini">⏳ Job #1db8ee64 ativo — Google gerando 1º CSV (24–48h)</div></div>
+                <div class="top3-box"><h4>📢 Top 3 Mais Impressões (7d)</h4><div class="empty-mini">⏳ Job #1db8ee64 ativo — Google gerando 1º CSV (24–48h)</div></div>
             </div>
         </div>
-        
         <div class="ch-card" data-grupo="gvg">
             <div class="ch-card-head">
-                <div>
-                    <span class="pill pill-group-gvg">Startup GVG (Vitor + Amigo)</span>
-                    <h3>HeartTangle <small>@heartangle2d • Indiano + Conflitos de Relacionamento</small></h3>
-                </div>
-                <div class="ch-head-stats">
-                    <span>👥 <b>11</b> insc.</span>
-                    <span>🎬 <b>9</b> públ. (2 agend.)</span>
-                    <span>👁️ <b>2,932</b> views (7d)</span>
-                </div>
+                <div><span class="pill pill-group-gvg">Startup GVG (Vitor + Amigo)</span><h3>HeartTangle <small>@heartangle2d • Indiano + Conflitos de Relacionamento</small></h3></div>
+                <div class="ch-head-stats"><span>👥 <b>11</b> insc.</span><span>🎬 <b>9</b> públ. (2 agend.)</span><span>👁️ <b>2,932</b> views (7d)</span></div>
             </div>
-
             <div class="top3-grid">
-                <div class="top3-box">
-                    <h4>🎯 Top 3 Maior Retenção (7d)</h4>
-                    
-                <div class="rank-row">
-                    <span class="medal">🥇</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/rHESlSIHFT4" target="_blank" class="rank-title">सबने जिसका मज़ाक उड़ाया, उसी ने जीता गाँव की सबसे खूबसूरत लड़की का दिल | सच्चे प्यार की कहानी</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">25.1%</span> (6m 36s) <span class="ok-sample">(2,099 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥈</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/v1_AjS_U1xE" target="_blank" class="rank-title">पूरे गाँव ने जिस लड़के को जालिम और बेदर्द कहा, उसी ने अनाथ लड़की को अपनी दुल्हन बनाया | दिल छू लेने</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">17.0%</span> (5m 41s) <span class="ok-sample">(141 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥉</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/VPdHo_ZJLYc" target="_blank" class="rank-title">गाँव ने जिस जले लड़के को ठुकराया, उसी ने जीता सबसे अमीर लड़की का दिल | Hindi Story</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">10.3%</span> (2m 34s) <span class="ok-sample">(432 views)</span>
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div class="top3-box">
-                    <h4>👁️ Top 3 Mais Views (7d)</h4>
-                    
-                <div class="rank-row">
-                    <span class="medal">🥇</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/rHESlSIHFT4" target="_blank" class="rank-title">सबने जिसका मज़ाक उड़ाया, उसी ने जीता गाँव की सबसे खूबसूरत लड़की का दिल | सच्चे प्यार की कहानी</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">2,099 views</span> • 5181.0 min • Ret: 25.1%
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥈</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/VPdHo_ZJLYc" target="_blank" class="rank-title">गाँव ने जिस जले लड़के को ठुकराया, उसी ने जीता सबसे अमीर लड़की का दिल | Hindi Story</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">432 views</span> • 1107.0 min • Ret: 10.3%
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥉</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/DEcmYdZ-3Pk" target="_blank" class="rank-title">बहनों ने जिस सीधी बहन को बुआ की सेवा में भेजा, उसी के नाम निकली पूरी जायदाद | दिल छू लेने वाली कहानी</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">256 views</span> • 493.0 min • Ret: 6.4%
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div class="top3-box">
-                    <h4>🖱️ Top 3 Maior CTR (7d)</h4>
-                    <div class="empty-mini">⏳ Job #71013a43 ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
-                <div class="top3-box">
-                    <h4>📢 Top 3 Mais Impressões (7d)</h4>
-                    <div class="empty-mini">⏳ Job #71013a43 ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
+                <div class="top3-box"><h4>🎯 Top 3 Maior Retenção (7d)</h4><div class="rank-row"><span class="medal">🥇</span><div class="rank-info"><a href="https://youtu.be/rHESlSIHFT4" target="_blank" class="rank-title">सबने जिसका मज़ाक उड़ाया, उसी ने जीता गाँव की सबसे खूबसूरत लड़की का दिल | सच्चे प्यार की कहानी</a><div class="rank-metrics"><span class="m-hi">25.1%</span> (6m 36s) <span class="ok-sample">(2,099 views)</span></div></div></div><div class="rank-row"><span class="medal">🥈</span><div class="rank-info"><a href="https://youtu.be/v1_AjS_U1xE" target="_blank" class="rank-title">पूरे गाँव ने जिस लड़के को जालिम और बेदर्द कहा, उसी ने अनाथ लड़की को अपनी दुल्हन बनाया | दिल छू लेने</a><div class="rank-metrics"><span class="m-hi">17.0%</span> (5m 41s) <span class="ok-sample">(141 views)</span></div></div></div><div class="rank-row"><span class="medal">🥉</span><div class="rank-info"><a href="https://youtu.be/VPdHo_ZJLYc" target="_blank" class="rank-title">गाँव ने जिस जले लड़के को ठुकराया, उसी ने जीता सबसे अमीर लड़की का दिल | Hindi Story</a><div class="rank-metrics"><span class="m-hi">10.3%</span> (2m 34s) <span class="ok-sample">(432 views)</span></div></div></div></div>
+                <div class="top3-box"><h4>👁️ Top 3 Mais Views (7d)</h4><div class="rank-row"><span class="medal">🥇</span><div class="rank-info"><a href="https://youtu.be/rHESlSIHFT4" target="_blank" class="rank-title">सबने जिसका मज़ाक उड़ाया, उसी ने जीता गाँव की सबसे खूबसूरत लड़की का दिल | सच्चे प्यार की कहानी</a><div class="rank-metrics"><span class="m-hi">2,099 views</span> • 5181.0 min • Ret: 25.1%</div></div></div><div class="rank-row"><span class="medal">🥈</span><div class="rank-info"><a href="https://youtu.be/VPdHo_ZJLYc" target="_blank" class="rank-title">गाँव ने जिस जले लड़के को ठुकराया, उसी ने जीता सबसे अमीर लड़की का दिल | Hindi Story</a><div class="rank-metrics"><span class="m-hi">432 views</span> • 1107.0 min • Ret: 10.3%</div></div></div><div class="rank-row"><span class="medal">🥉</span><div class="rank-info"><a href="https://youtu.be/DEcmYdZ-3Pk" target="_blank" class="rank-title">बहनों ने जिस सीधी बहन को बुआ की सेवा में भेजा, उसी के नाम निकली पूरी जायदाद | दिल छू लेने वाली कहानी</a><div class="rank-metrics"><span class="m-hi">256 views</span> • 493.0 min • Ret: 6.4%</div></div></div></div>
+                <div class="top3-box"><h4>🖱️ Top 3 Maior CTR (7d)</h4><div class="empty-mini">⏳ Job #71013a43 ativo — Google gerando 1º CSV (24–48h)</div></div>
+                <div class="top3-box"><h4>📢 Top 3 Mais Impressões (7d)</h4><div class="empty-mini">⏳ Job #71013a43 ativo — Google gerando 1º CSV (24–48h)</div></div>
             </div>
         </div>
-        
         <div class="ch-card" data-grupo="gvg">
             <div class="ch-card-head">
-                <div>
-                    <span class="pill pill-group-gvg">Startup GVG (Vitor + Amigo)</span>
-                    <h3>Segredos da Olga <small>@segredosdaolga • Brasileiro + Realista + Conflitos</small></h3>
-                </div>
-                <div class="ch-head-stats">
-                    <span>👥 <b>0</b> insc.</span>
-                    <span>🎬 <b>4</b> públ. (5 agend.)</span>
-                    <span>👁️ <b>6</b> views (7d)</span>
-                </div>
+                <div><span class="pill pill-group-gvg">Startup GVG (Vitor + Amigo)</span><h3>Segredos da Olga <small>@segredosdaolga • Brasileiro + Realista + Conflitos</small></h3></div>
+                <div class="ch-head-stats"><span>👥 <b>0</b> insc.</span><span>🎬 <b>4</b> públ. (5 agend.)</span><span>👁️ <b>6</b> views (7d)</span></div>
             </div>
-
             <div class="top3-grid">
-                <div class="top3-box">
-                    <h4>🎯 Top 3 Maior Retenção (7d)</h4>
-                    
-                <div class="rank-row">
-                    <span class="medal">🥇</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/truw_5dIhD8" target="_blank" class="rank-title">A Sogra Lhe Deu uma Casa Bem Simples... Mas O Que Ela Fez Lá Dentro Mudou Tudo</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">0.8%</span> (0m 12s) <span class="warn-sample" title="Apenas 3 view(s) no período">⚠️ 3v</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥈</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/YdvbwHGhwgI" target="_blank" class="rank-title">A Madrasta Arranjou Para Ela o Casamento Mais Humilhante Que Conseguiu… Mas O Plano Deu Errado</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">0.0%</span> (0m 00s) <span class="warn-sample" title="Apenas 3 view(s) no período">⚠️ 3v</span>
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div class="top3-box">
-                    <h4>👁️ Top 3 Mais Views (7d)</h4>
-                    
-                <div class="rank-row">
-                    <span class="medal">🥇</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/YdvbwHGhwgI" target="_blank" class="rank-title">A Madrasta Arranjou Para Ela o Casamento Mais Humilhante Que Conseguiu… Mas O Plano Deu Errado</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">3 views</span> • 0.0 min • Ret: 0.0%
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="rank-row">
-                    <span class="medal">🥈</span>
-                    <div class="rank-info">
-                        <a href="https://youtu.be/truw_5dIhD8" target="_blank" class="rank-title">A Sogra Lhe Deu uma Casa Bem Simples... Mas O Que Ela Fez Lá Dentro Mudou Tudo</a>
-                        <div class="rank-metrics">
-                            <span class="m-hi">3 views</span> • 0.0 min • Ret: 0.8%
-                        </div>
-                    </div>
-                </div>
-                
-                </div>
-                <div class="top3-box">
-                    <h4>🖱️ Top 3 Maior CTR (7d)</h4>
-                    <div class="empty-mini">⏳ Job #3414dbea ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
-                <div class="top3-box">
-                    <h4>📢 Top 3 Mais Impressões (7d)</h4>
-                    <div class="empty-mini">⏳ Job #3414dbea ativo — Google gerando 1º CSV (24–48h)</div>
-                </div>
+                <div class="top3-box"><h4>🎯 Top 3 Maior Retenção (7d)</h4><div class="rank-row"><span class="medal">🥇</span><div class="rank-info"><a href="https://youtu.be/truw_5dIhD8" target="_blank" class="rank-title">A Sogra Lhe Deu uma Casa Bem Simples... Mas O Que Ela Fez Lá Dentro Mudou Tudo</a><div class="rank-metrics"><span class="m-hi">0.8%</span> (0m 12s) <span class="warn-sample">⚠️ 3v</span></div></div></div><div class="rank-row"><span class="medal">🥈</span><div class="rank-info"><a href="https://youtu.be/YdvbwHGhwgI" target="_blank" class="rank-title">A Madrasta Arranjou Para Ela o Casamento Mais Humilhante Que Conseguiu… Mas O Plano Deu Errado</a><div class="rank-metrics"><span class="m-hi">0.0%</span> (0m 00s) <span class="warn-sample">⚠️ 3v</span></div></div></div></div>
+                <div class="top3-box"><h4>👁️ Top 3 Mais Views (7d)</h4><div class="rank-row"><span class="medal">🥇</span><div class="rank-info"><a href="https://youtu.be/YdvbwHGhwgI" target="_blank" class="rank-title">A Madrasta Arranjou Para Ela o Casamento Mais Humilhante Que Conseguiu… Mas O Plano Deu Errado</a><div class="rank-metrics"><span class="m-hi">3 views</span> • 0.0 min • Ret: 0.0%</div></div></div><div class="rank-row"><span class="medal">🥈</span><div class="rank-info"><a href="https://youtu.be/truw_5dIhD8" target="_blank" class="rank-title">A Sogra Lhe Deu uma Casa Bem Simples... Mas O Que Ela Fez Lá Dentro Mudou Tudo</a><div class="rank-metrics"><span class="m-hi">3 views</span> • 0.0 min • Ret: 0.8%</div></div></div></div>
+                <div class="top3-box"><h4>🖱️ Top 3 Maior CTR (7d)</h4><div class="empty-mini">⏳ Job #3414dbea ativo — Google gerando 1º CSV (24–48h)</div></div>
+                <div class="top3-box"><h4>📢 Top 3 Mais Impressões (7d)</h4><div class="empty-mini">⏳ Job #3414dbea ativo — Google gerando 1º CSV (24–48h)</div></div>
             </div>
         </div>
-        
     </div>
-
     <script>
         function filterGroup(group, btn) {
             document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
             if (btn) btn.classList.add('active');
             document.querySelectorAll('[data-grupo]').forEach(el => {
-                if (group === 'all' || el.getAttribute('data-grupo') === group) {
-                    el.style.display = '';
-                } else {
-                    el.style.display = 'none';
-                }
+                el.style.display = (group === 'all' || el.getAttribute('data-grupo') === group) ? '' : 'none';
             });
         }
         window.addEventListener('DOMContentLoaded', () => {
-            const params = new URLSearchParams(window.location.search);
-            const g = params.get('grupo');
-            if (g === 'gvg' || g === 'pessoal') {
-                const targetBtn = document.getElementById('btn-' + g);
-                filterGroup(g, targetBtn);
-            }
+            const g = new URLSearchParams(window.location.search).get('grupo');
+            if (g === 'gvg' || g === 'pessoal') filterGroup(g, document.getElementById('btn-' + g));
         });
     </script>
 </body>
