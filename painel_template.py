@@ -1117,8 +1117,9 @@ def render_html(channels_data, generated_at, all_scheduled=None):
         return "".join(out)
 
     def fmt_ret(it):
+        v_count = it.get("views_total", it.get("views_7d", 0))
         s = f'<span class="hi">{it["retention_pct"]:.1f}%</span> ({it["duration_str"]}) · '
-        s += f'<span class="warn">⚠️ só {it["views_7d"]} views</span>' if it.get("low_sample") else f'{it["views_7d"]:,} views'
+        s += f'<span class="warn">⚠️ só {v_count} views</span>' if it.get("low_sample") else f'{v_count:,} views'
         return s
 
     for c in channels_data:
@@ -1212,7 +1213,7 @@ def render_html(channels_data, generated_at, all_scheduled=None):
         pend = _e(c.get("reach_message") or "Aguardando 1º relatório do Google (24–48h)")
         ch_top3_grids_html.append(f"""
 <div class="top3 ch-top3-grid" data-canal="{c['id']}" style="display:none;padding:0">
-  <div class="box"><h4>🎯 Maior retenção (7d)</h4>{rank_list(c.get('top3_retencao_7d', []), fmt_ret, 'Sem views nos últimos 7 dias.')}</div>
+  <div class="box"><h4>🎯 Maior retenção (Desde a publicação)</h4>{rank_list(c.get('top3_retencao_7d', []), fmt_ret, 'Sem views nos últimos 7 dias.')}</div>
   <div class="box"><h4>👁️ Mais views (7d)</h4>{rank_list(c.get('top3_views_7d', []), lambda it: f'<span class="hi">{it["views_7d"]:,} views</span> · ret. {it["retention_pct"]:.1f}%', 'Sem views nos últimos 7 dias.')}</div>
   <div class="box"><h4>🖱️ Maior CTR (7d)</h4>{rank_list(c.get('top3_ctr_7d', []), lambda it: f'<span class="hi">{it["ctr_7d"]:.2f}%</span> · {it["impressions_7d"]:,} impr.', '⏳ ' + pend)}</div>
   <div class="box"><h4>📢 Mais impressões (7d)</h4>{rank_list(c.get('top3_impressoes_7d', []), lambda it: f'<span class="hi">{it["impressions_7d"]:,}</span> impr. · CTR {it["ctr_7d"]:.2f}%', '⏳ ' + pend)}</div>
@@ -1353,7 +1354,7 @@ def render_html(channels_data, generated_at, all_scheduled=None):
     <div class="ch-stats"><span>👁️ <b>{c.get('views_7d_canal', 0):,}</b> 7d</span><span>⚡ <b>+{c.get('views_48h_canal', 0):,}</b> 48h</span><span>👥 <b>{c.get('inscritos', 0):,}</b></span></div>
   </summary>
   <div class="top3">
-    <div class="box"><h4>🎯 Maior retenção (7d)</h4>{rank_list(c.get('top3_retencao_7d', []), fmt_ret, 'Sem views nos últimos 7 dias.')}</div>
+    <div class="box"><h4>🎯 Maior retenção (Desde a publicação)</h4>{rank_list(c.get('top3_retencao_7d', []), fmt_ret, 'Sem views nos últimos 7 dias.')}</div>
     <div class="box"><h4>👁️ Mais views (7d)</h4>{rank_list(c.get('top3_views_7d', []), lambda it: f'<span class="hi">{it["views_7d"]:,} views</span> · ret. {it["retention_pct"]:.1f}%', 'Sem views nos últimos 7 dias.')}</div>
     <div class="box"><h4>🖱️ Maior CTR (7d)</h4>{rank_list(c.get('top3_ctr_7d', []), lambda it: f'<span class="hi">{it["ctr_7d"]:.2f}%</span> · {it["impressions_7d"]:,} impr.', '⏳ ' + pend)}</div>
     <div class="box"><h4>📢 Mais impressões (7d)</h4>{rank_list(c.get('top3_impressoes_7d', []), lambda it: f'<span class="hi">{it["impressions_7d"]:,}</span> impr. · CTR {it["ctr_7d"]:.2f}%', '⏳ ' + pend)}</div>

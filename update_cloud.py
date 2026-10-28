@@ -567,11 +567,61 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
 
         c_data["top3_views_7d"] = sorted(parsed_7d, key=lambda x: x["views_7d"], reverse=True)[:3]
 
-        qual_ret = [x for x in parsed_7d if not x["low_sample"]]
-        low_ret = [x for x in parsed_7d if x["low_sample"]]
-        qual_ret.sort(key=lambda x: (x["retention_pct"], x["views_7d"]), reverse=True)
-        low_ret.sort(key=lambda x: (x["retention_pct"], x["views_7d"]), reverse=True)
-        c_data["top3_retencao_7d"] = (qual_ret + low_ret)[:3]
+        # Retenção Vitalícia dos Vídeos (Desde a Publicação — Opção 2 YouTube Studio)
+        lifetime_video_metrics = {}
+        if video_ids:
+            try:
+                chunk_vids = video_ids[:50]
+                ana_res_life = yt_ana.reports().query(
+                    ids="channel==MINE",
+                    startDate="2020-01-01",
+                    endDate=end_d_str,
+                    metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage",
+                    dimensions="video",
+                    filters="video==" + ",".join(chunk_vids)
+                ).execute()
+                for r in ana_res_life.get("rows", []):
+                    v_id, v_views, v_min, v_dur, v_pct = r
+                    lifetime_video_metrics[str(v_id)] = {
+                        "views": int(v_views),
+                        "duration_seconds": float(v_dur),
+                        "duration_str": format_duration(v_dur),
+                        "retention_pct": round(float(v_pct), 2),
+                    }
+            except Exception as e:
+                print(f"Aviso ao consultar retenção vitalícia dos vídeos: {e}")
+
+        parsed_retencao = []
+        for vid, l_data in lifetime_video_metrics.items():
+            meta = video_meta_map.get(vid, {})
+            v_views = l_data["views"]
+            if v_views <= 0:
+                continue
+            parsed_retencao.append({
+                "video_id": vid,
+                "title": meta.get("title") or f"Vídeo {vid}",
+                "thumbnail": meta.get("thumbnail") or "",
+                "url": meta.get("url") or f"https://youtu.be/{vid}",
+                "views_total": v_views,
+                "views_7d": v_views,
+                "duration_seconds": l_data["duration_seconds"],
+                "duration_str": l_data["duration_str"],
+                "retention_pct": l_data["retention_pct"],
+                "low_sample": v_views < MIN_VIEWS_FOR_RETENTION_RANK,
+            })
+
+        if parsed_retencao:
+            qual_ret = [x for x in parsed_retencao if not x["low_sample"]]
+            low_ret = [x for x in parsed_retencao if x["low_sample"]]
+            qual_ret.sort(key=lambda x: (x["retention_pct"], x["views_total"]), reverse=True)
+            low_ret.sort(key=lambda x: (x["retention_pct"], x["views_total"]), reverse=True)
+            c_data["top3_retencao_7d"] = (qual_ret + low_ret)[:3]
+        else:
+            qual_ret = [x for x in parsed_7d if not x["low_sample"]]
+            low_ret = [x for x in parsed_7d if x["low_sample"]]
+            qual_ret.sort(key=lambda x: (x["retention_pct"], x["views_7d"]), reverse=True)
+            low_ret.sort(key=lambda x: (x["retention_pct"], x["views_7d"]), reverse=True)
+            c_data["top3_retencao_7d"] = (qual_ret + low_ret)[:3]
 
         if reach_info["status"] == "OK" and reach_info["by_video"]:
             reach_items = []
