@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-28T15:29:59.711637+00:00",
+  "updated_at_utc": "2026-10-28T15:45:19.275440+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -8,7 +8,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/goglhVSAtKGaDmImc5ImFHN2xuRVe6nO1kEAgvRRcCFNDnc2Ll9gExh9kTtvyWzn7cWvBOZF=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 0.0,
+      "vph_48h": 0.4,
       "history_lifetime": [],
       "traffic_sources_lifetime": [],
       "history_30d": [],
@@ -49,7 +49,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 0.5,
+      "vph_48h": 0.4,
       "history_lifetime": [
         {
           "day": "2023-10-12",
@@ -8945,13 +8945,6 @@
         },
         {
           "day": "2026-10-24",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-24",
           "source": "SUBSCRIBER",
           "label": "Feed de Inscrições",
           "type": "video",
@@ -8962,14 +8955,14 @@
           "source": "YT_SEARCH",
           "label": "Pesquisa do YouTube",
           "type": "video",
-          "views": 5
+          "views": 4
         },
         {
           "day": "2026-10-24",
           "source": "RELATED_VIDEO",
           "label": "Vídeos Sugeridos",
           "type": "video",
-          "views": 87
+          "views": 89
         },
         {
           "day": "2026-10-24",
@@ -9388,14 +9381,14 @@
           "device": "TV",
           "label": "TV Conectada",
           "icon": "tv",
-          "views": 3677,
+          "views": 3676,
           "pct": 6.5
         },
         {
           "device": "DESKTOP",
           "label": "Computador / Desktop",
           "icon": "monitor",
-          "views": 2356,
+          "views": 2355,
           "pct": 4.1
         },
         {
@@ -9409,7 +9402,7 @@
       "audience_status": {
         "subscribed_views": 1390,
         "subscribed_pct": 2.4,
-        "unsubscribed_views": 55402,
+        "unsubscribed_views": 55400,
         "unsubscribed_pct": 97.6
       },
       "engagement": {
@@ -9428,7 +9421,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 3.3,
+      "vph_48h": 0.0,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9829,14 +9822,14 @@
           "source": "RELATED_VIDEO",
           "label": "Vídeos Sugeridos",
           "type": "video",
-          "views": 91
+          "views": 90
         },
         {
           "day": "2026-10-24",
           "source": "YT_OTHER_PAGE",
           "label": "Navegação / Início",
           "type": "video",
-          "views": 2
+          "views": 3
         },
         {
           "day": "2026-10-25",
@@ -10782,14 +10775,14 @@
           "source": "NO_LINK_OTHER",
           "label": "Direto / Desconhecido",
           "type": "video",
-          "views": 4
+          "views": 2
         },
         {
           "day": "2026-10-24",
           "source": "SUBSCRIBER",
           "label": "Feed de Inscrições",
           "type": "video",
-          "views": 11
+          "views": 12
         },
         {
           "day": "2026-10-24",
@@ -10803,7 +10796,7 @@
           "source": "YT_SEARCH",
           "label": "Pesquisa do YouTube",
           "type": "video",
-          "views": 14
+          "views": 12
         },
         {
           "day": "2026-10-24",
@@ -11050,7 +11043,7 @@
       "audience_status": {
         "subscribed_views": 18,
         "subscribed_pct": 1.5,
-        "unsubscribed_views": 1171,
+        "unsubscribed_views": 1168,
         "unsubscribed_pct": 98.5
       },
       "engagement": {
@@ -11069,7 +11062,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 0.0,
+      "vph_48h": 5.5,
       "history_lifetime": [
         {
           "day": "2024-06-11",
@@ -12138,11 +12131,11 @@
         "title": "Eu Odiava Meu VIZINHO RANZINZA… Até Ele Me RESGATAR na Tempestade!",
         "url": "https://youtu.be/WEmJ9PGCNZU",
         "thumbnail": "https://i.ytimg.com/vi/WEmJ9PGCNZU/mqdefault.jpg",
-        "views": 115,
+        "views": 114,
         "published_formatted": "27/10 19:30",
         "rank": 1,
         "out_of": 10,
-        "diff_pct": 1852.8,
+        "diff_pct": 1835.8,
         "avg_prev": 6
       },
       "top_countries": [
@@ -12222,8 +12215,8 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 3,
-      "vph_48h": 9.9,
+      "vph_60m": 0,
+      "vph_48h": 9.2,
       "history_lifetime": [
         {
           "day": "2026-10-19",
@@ -12561,7 +12554,7 @@
         "rank": 9,
         "out_of": 10,
         "diff_pct": -100.0,
-        "avg_prev": 468
+        "avg_prev": 467
       },
       "top_countries": [
         {
