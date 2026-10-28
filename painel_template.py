@@ -1429,10 +1429,15 @@ function applyCatalogFilters() {
   const list = document.getElementById('catalog-list');
   if (!list) return;
 
-  const rows = Array.from(list.querySelectorAll('.cat-row')).filter(r => r.dataset.canal === activeChannelId);
+  const allRows = Array.from(list.querySelectorAll('.cat-row'));
+  const activeRows = [];
   let visibleCount = 0;
 
-  rows.forEach(r => {
+  allRows.forEach(r => {
+    if (r.dataset.canal !== activeChannelId) {
+      r.style.display = 'none';
+      return;
+    }
     const fmt = r.dataset.fmt;
     const title = (r.dataset.title || '').toLowerCase();
     const matchFmt = (curCatalogFormat === 'all') || (fmt === curCatalogFormat);
@@ -1441,13 +1446,14 @@ function applyCatalogFilters() {
     if (matchFmt && matchSearch) {
       r.style.display = 'flex';
       visibleCount++;
+      activeRows.push(r);
     } else {
       r.style.display = 'none';
     }
   });
 
   // Sort visible rows
-  rows.sort((a, b) => {
+  activeRows.sort((a, b) => {
     if (curCatalogSort === 'recent') {
       return (b.dataset.date || '').localeCompare(a.dataset.date || '');
     } else if (curCatalogSort === 'views') {
@@ -1460,11 +1466,11 @@ function applyCatalogFilters() {
     return 0;
   });
 
-  rows.forEach(r => list.appendChild(r));
+  activeRows.forEach(r => list.appendChild(r));
 
   const countLbl = document.getElementById('catalog-count-label');
   if (countLbl) {
-    countLbl.textContent = 'Exibindo ' + visibleCount + ' vídeos filtrados';
+    countLbl.textContent = 'Exibindo ' + visibleCount + ' vídeo' + (visibleCount === 1 ? '' : 's') + ' deste canal';
   }
 }
 

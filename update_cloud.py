@@ -380,6 +380,96 @@ def fetch_reach_reporting_data(creds, start_7d_str):
         return reach_info
 
 
+def bridge_channel_history(c_id, c_data, snaps_dict, now_utc, cached_channel, daily_archive=None, video_meta_map=None):
+    today = now_utc.date()
+    hist = list(c_data.get("history_lifetime", []))
+    vmap = video_meta_map if video_meta_map is not None else c_data.get("video_meta_map", {})
+    # Checa os últimos 3 dias (hoje, ontem e anteontem) para preencher buracos do Analytics oficial
+    days_to_check = [
+        today - timedelta(days=2),
+        today - timedelta(days=1),
+        today
+    ]
+    check_day_strs = set(d.isoformat() for d in days_to_check)
+
+    # Dias oficiais consolidados pelo Analytics (não realtime)
+    official_days = set(h.get("day") for h in hist if h.get("day") and not h.get("is_realtime"))
+
+    # Remove entradas realtime provisórias anteriores dos dias a checar para atualizar com os dados mais recentes
+    hist = [h for h in hist if not (h.get("is_realtime") and h.get("day") in check_day_strs)]
+
+    curr_subs = int(c_data.get("inscritos", 0) or 0)
+    prev_subs = int(cached_channel.get("inscritos", curr_subs) or 0)
+
+    # Obter dados de inscritos por dia do daily_archive se disponível
+    subs_by_day = {}
+    if daily_archive and isinstance(daily_archive.get("days"), dict):
+        for d_key, d_val in daily_archive["days"].items():
+            ch_info = d_val.get("channels", {}).get(c_id, {})
+            if "subscribers" in ch_info:
+                subs_by_day[d_key] = int(ch_info["subscribers"])
+
+    for d in days_to_check:
+        d_str = d.isoformat()
+        if d_str in official_days:
+            continue
+
+        d_start = datetime(d.year, d.month, d.day, tzinfo=timezone.utc).timestamp()
+        d_end = d_start + 86400
+
+        views_by_type = {"video": 0, "shorts": 0}
+        minutes_by_type = {"video": 0.0, "shorts": 0.0}
+
+        for vid, v in vmap.items():
+            v_snaps = snaps_dict.get(vid, [])
+            if not v_snaps:
+                continue
+
+            fmt = "shorts" if v.get("is_short") or v.get("format") == "short" else "video"
+            curr_v = v_snaps[-1]["views"]
+
+            older = [s for s in v_snaps if s["timestamp"] <= d_start]
+            newer = [s for s in v_snaps if s["timestamp"] <= d_end]
+
+            ref_start = older[-1]["views"] if older else v_snaps[0]["views"]
+            ref_end = newer[-1]["views"] if newer else curr_v
+
+            pub_str = (v.get("published_at") or "")[:10]
+            if pub_str == d_str:
+                v_gain = ref_end
+            else:
+                v_gain = max(0, ref_end - ref_start)
+
+            views_by_type[fmt] += v_gain
+            m_factor = 0.4 if fmt == "shorts" else 1.5
+            minutes_by_type[fmt] += round(v_gain * m_factor, 1)
+
+        # Saldo de inscritos do dia
+        d_prev_str = (d - timedelta(days=1)).isoformat()
+        if d == today:
+            d_subs_prev = subs_by_day.get(d_prev_str, prev_subs)
+            net_subs = curr_subs - d_subs_prev
+        elif d_str in subs_by_day and d_prev_str in subs_by_day:
+            net_subs = subs_by_day[d_str] - subs_by_day[d_prev_str]
+        else:
+            net_subs = 0
+
+        for fmt_type in ["video", "shorts"]:
+            v_count = views_by_type[fmt_type]
+            if v_count > 0 or d == today:
+                hist.append({
+                    "day": d_str,
+                    "type": fmt_type,
+                    "views": v_count,
+                    "minutes": round(minutes_by_type[fmt_type], 1),
+                    "net_subs": net_subs if fmt_type == "video" else 0,
+                    "is_realtime": True
+                })
+
+    hist.sort(key=lambda x: (x["day"], x.get("type", "")))
+    return hist
+
+
 def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cache, tokens_backup_bundle=None):
     cached = last_good_cache.get(conf["id"], {})
 
@@ -542,6 +632,11 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
                         age_h = (now_utc - pub_dt).total_seconds() / 3600.0
                         if 0 <= age_h <= 48.0:
                             is_pub_last_48h = True
+                            # Para vídeos publicados nas últimas 48h, 100% das views pertencem à janela de 48h
+                            delta_48h = views_now
+                        if 0 <= age_h <= 1.0:
+                            # Para vídeos publicados nos últimos 60 minutos, 100% das views pertencem à janela de 60m
+                            delta_60m = views_now
 
                     thumb_url = (
                         s.get("thumbnails", {}).get("medium", {}).get("url")
@@ -802,6 +897,25 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
                 )
         except Exception:
             pass
+
+        # Ponte de Tempo Real (Realtime Bridge) para os dias recentes (hoje, ontem, anteontem)
+        try:
+            c_data["history_lifetime"] = bridge_channel_history(
+                conf["id"], c_data, snapshots, now_utc, cached, None, video_meta_map=video_meta_map
+            )
+            cutoff_30d = (today - timedelta(days=30)).isoformat()
+            c_data["history_30d"] = [
+                {
+                    "day": h["day"],
+                    "views": h["views"],
+                    "minutes": h["minutes"],
+                    "net_subs": h.get("net_subs", 0),
+                }
+                for h in c_data["history_lifetime"]
+                if h.get("day", "") >= cutoff_30d
+            ]
+        except Exception as e_br:
+            print(f"⚠️ Aviso na ponte de histórico em tempo real: {e_br}")
 
         # 3.6 Geografia e Top Países
         try:
