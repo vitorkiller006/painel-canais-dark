@@ -53,6 +53,61 @@ TRAFFIC_SOURCE_LABELS = {
     "END_SCREEN": "Telas Finais",
     "CARD": "Cards Interativos",
 }
+
+COUNTRY_METADATA = {
+    "BR": ("Brasil", "🇧🇷"),
+    "PT": ("Portugal", "🇵🇹"),
+    "US": ("Estados Unidos", "🇺🇸"),
+    "MZ": ("Moçambique", "🇲🇿"),
+    "AO": ("Angola", "🇦🇴"),
+    "ES": ("Espanha", "🇪🇸"),
+    "IN": ("Índia", "🇮🇳"),
+    "FR": ("França", "🇫🇷"),
+    "DE": ("Alemanha", "🇩🇪"),
+    "IT": ("Itália", "🇮🇹"),
+    "GB": ("Reino Unido", "🇬🇧"),
+    "CA": ("Canadá", "🇨🇦"),
+    "JP": ("Japão", "🇯🇵"),
+    "MX": ("México", "🇲🇽"),
+    "AR": ("Argentina", "🇦🇷"),
+    "CL": ("Chile", "🇨🇱"),
+    "CO": ("Colômbia", "🇨🇴"),
+    "CV": ("Cabo Verde", "🇨🇻"),
+    "CH": ("Suíça", "🇨🇭"),
+    "UY": ("Uruguai", "🇺🇾"),
+    "PY": ("Paraguai", "🇵🇾"),
+    "PE": ("Peru", "🇵🇪"),
+    "BO": ("Bolívia", "🇧🇴"),
+    "EC": ("Equador", "🇪🇨"),
+    "VE": ("Venezuela", "🇻🇪"),
+    "NL": ("Holanda", "🇳🇱"),
+    "BE": ("Bélgica", "🇧🇪"),
+    "SE": ("Suécia", "🇸🇪"),
+    "NO": ("Noruega", "🇳🇴"),
+    "DK": ("Dinamarca", "🇩🇰"),
+    "FI": ("Finlândia", "🇫🇮"),
+    "IE": ("Irlanda", "🇮🇪"),
+    "AU": ("Austrália", "🇦🇺"),
+    "NZ": ("Nova Zelândia", "🇳🇿"),
+    "RU": ("Rússia", "🇷🇺"),
+    "UA": ("Ucrânia", "🇺🇦"),
+    "PH": ("Filipinas", "🇵🇭"),
+    "ID": ("Indonésia", "🇮🇩"),
+    "PK": ("Paquistão", "🇵🇰"),
+    "BD": ("Bangladesh", "🇧🇩"),
+    "NG": ("Nigéria", "🇳🇬"),
+    "ZA": ("África do Sul", "🇿🇦"),
+}
+
+DEVICE_METADATA = {
+    "MOBILE": ("Celular / Mobile", "smartphone"),
+    "TV": ("TV Conectada", "tv"),
+    "DESKTOP": ("Computador / Desktop", "monitor"),
+    "TABLET": ("Tablet", "tablet"),
+    "GAME_CONSOLE": ("Console / Videogame", "gamepad-2"),
+    "UNKNOWN": ("Outros / Desconhecido", "help-circle"),
+}
+
 MIN_IMPRESSIONS_FOR_CTR_RANK = 20
 
 CHANNELS_CONFIG = [
@@ -332,6 +387,10 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
         "traffic_sources_30d": [],
         "rank_1_de_10": None,
         "avatar_url": conf.get("avatar_url", ""),
+        "top_countries": [],
+        "device_breakdown": [],
+        "audience_status": {"subscribed_views": 0, "subscribed_pct": 0.0, "unsubscribed_views": 0, "unsubscribed_pct": 0.0},
+        "engagement": {"likes": 0, "comments": 0, "shares": 0, "subscribers_gained": 0, "subscribers_lost": 0, "net_subscribers": 0},
     }
 
     creds, err = load_credentials_from_env(conf["id"], tokens_bundle)
@@ -706,6 +765,117 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
         except Exception:
             pass
 
+        # 7. Geografia e Top Países (Desde o Início)
+        c_data["top_countries"] = []
+        try:
+            q_geo = yt_ana.reports().query(
+                ids="channel==MINE",
+                startDate="2020-01-01",
+                endDate=end_d_str,
+                metrics="views,estimatedMinutesWatched",
+                dimensions="country",
+                sort="-views",
+                maxResults=8
+            ).execute()
+            geo_rows = q_geo.get("rows", [])
+            total_geo_views = sum(int(r[1]) for r in geo_rows)
+            for r in geo_rows:
+                cc = str(r[0])
+                vws = int(r[1])
+                mins = round(float(r[2]), 1)
+                name, flag = COUNTRY_METADATA.get(cc, (cc, "🌐"))
+                pct = round((vws / total_geo_views * 100), 1) if total_geo_views > 0 else 0.0
+                c_data["top_countries"].append({
+                    "code": cc,
+                    "name": name,
+                    "flag": flag,
+                    "views": vws,
+                    "watch_minutes": mins,
+                    "pct": pct
+                })
+        except Exception:
+            pass
+
+        # 8. Distribuição por Dispositivos
+        c_data["device_breakdown"] = []
+        try:
+            q_dev = yt_ana.reports().query(
+                ids="channel==MINE",
+                startDate="2020-01-01",
+                endDate=end_d_str,
+                metrics="views",
+                dimensions="deviceType",
+                sort="-views"
+            ).execute()
+            dev_rows = q_dev.get("rows", [])
+            total_dev_views = sum(int(r[1]) for r in dev_rows)
+            for r in dev_rows:
+                dt = str(r[0])
+                vws = int(r[1])
+                lbl, ico = DEVICE_METADATA.get(dt, (dt, "help-circle"))
+                pct = round((vws / total_dev_views * 100), 1) if total_dev_views > 0 else 0.0
+                c_data["device_breakdown"].append({
+                    "device": dt,
+                    "label": lbl,
+                    "icon": ico,
+                    "views": vws,
+                    "pct": pct
+                })
+        except Exception:
+            pass
+
+        # 9. Status de Audiência: Descoberta vs Inscritos
+        c_data["audience_status"] = {"subscribed_views": 0, "subscribed_pct": 0.0, "unsubscribed_views": 0, "unsubscribed_pct": 0.0}
+        try:
+            q_sub = yt_ana.reports().query(
+                ids="channel==MINE",
+                startDate="2020-01-01",
+                endDate=end_d_str,
+                metrics="views,estimatedMinutesWatched",
+                dimensions="subscribedStatus"
+            ).execute()
+            sub_rows = q_sub.get("rows", [])
+            tot_sub_vws = sum(int(r[1]) for r in sub_rows)
+            for r in sub_rows:
+                sc = str(r[0])
+                vws = int(r[1])
+                pct = round((vws / tot_sub_vws * 100), 1) if tot_sub_vws > 0 else 0.0
+                if sc == "SUBSCRIBED":
+                    c_data["audience_status"]["subscribed_views"] = vws
+                    c_data["audience_status"]["subscribed_pct"] = pct
+                else:
+                    c_data["audience_status"]["unsubscribed_views"] = vws
+                    c_data["audience_status"]["unsubscribed_pct"] = pct
+        except Exception:
+            pass
+
+        # 10. Engajamento Vitalício e Saldo Real de Inscritos
+        c_data["engagement"] = {
+            "likes": 0, "comments": 0, "shares": 0,
+            "subscribers_gained": 0, "subscribers_lost": 0, "net_subscribers": 0
+        }
+        try:
+            q_eng = yt_ana.reports().query(
+                ids="channel==MINE",
+                startDate="2020-01-01",
+                endDate=end_d_str,
+                metrics="likes,comments,shares,subscribersGained,subscribersLost"
+            ).execute()
+            eng_rows = q_eng.get("rows", [])
+            if eng_rows:
+                lk, cm, sh, sg, sl = eng_rows[0]
+                c_data["engagement"] = {
+                    "likes": int(lk),
+                    "comments": int(cm),
+                    "shares": int(sh),
+                    "subscribers_gained": int(sg),
+                    "subscribers_lost": int(sl),
+                    "net_subscribers": int(sg - sl)
+                }
+        except Exception:
+            pass
+
+
     except Exception as e:
         c_data["erro"] = f"Analytics: {e}"
 
@@ -793,6 +963,10 @@ def main():
                 "history_30d": c.get("history_30d", []),
                 "traffic_sources_30d": c.get("traffic_sources_30d", []),
                 "rank_1_de_10": c.get("rank_1_de_10"),
+                "top_countries": c.get("top_countries", []),
+                "device_breakdown": c.get("device_breakdown", []),
+                "audience_status": c.get("audience_status", {}),
+                "engagement": c.get("engagement", {}),
             }
             for c in results
         }
