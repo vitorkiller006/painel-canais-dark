@@ -382,8 +382,8 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
         "total_videos_publicos": cached.get("total_videos_publicos", 0),
         "total_videos_agendados": cached.get("total_videos_agendados", 0),
         "total_views_canal": cached.get("total_views_canal", 0),
-        "views_60m_canal": 0,
-        "views_48h_canal": 0,
+        "views_60m_canal": cached.get("views_60m_canal", 0),
+        "views_48h_canal": cached.get("views_48h_canal", 0),
         "snapshot_window_hours": 0.0,
         "views_7d_canal": cached.get("views_7d_canal", 0),
         "watch_minutes_7d_canal": cached.get("watch_minutes_7d_canal", 0.0),
@@ -901,6 +901,12 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
             "avg_prev": round(avg_prev),
         }
 
+    # Garante que views_60m_canal e views_48h_canal SEMPRE reflitam a soma de TODOS os vídeos de video_meta_map
+    sum_60m = sum(v.get("delta_60m") or 0 for v in video_meta_map.values() if v.get("is_public"))
+    sum_48h = sum(v.get("delta_48h") or 0 for v in video_meta_map.values() if v.get("is_public"))
+    c_data["views_60m_canal"] = max(c_data["views_60m_canal"], sum_60m)
+    c_data["views_48h_canal"] = max(c_data["views_48h_canal"], sum_48h)
+
     # Harmoniza views 7d caso a Data API em tempo real já registre mais views em 48h do que o relatório do Analytics (devido ao lag de 48-72h do Analytics)
     if c_data["views_7d_canal"] < c_data["views_48h_canal"]:
         c_data["views_7d_canal"] = c_data["views_48h_canal"]
@@ -932,6 +938,8 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
         "total_videos_publicos": c_data["total_videos_publicos"],
         "total_videos_agendados": c_data["total_videos_agendados"],
         "total_views_canal": c_data["total_views_canal"],
+        "views_60m_canal": c_data["views_60m_canal"],
+        "views_48h_canal": c_data["views_48h_canal"],
         "views_7d_canal": c_data["views_7d_canal"],
         "watch_minutes_7d_canal": c_data["watch_minutes_7d_canal"],
         "retention_pct_7d_canal": c_data["retention_pct_7d_canal"],
