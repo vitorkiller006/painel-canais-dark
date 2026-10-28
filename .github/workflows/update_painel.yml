@@ -33,6 +33,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html analytics_realtime_snapshot.json
+          git add index.html analytics_realtime_snapshot.json analytics_history_30d.json
           git diff --staged --quiet || git commit -m "Auto-update Painel Analytics ($(date -u +'%d/%m/%Y %H:%M UTC'))"
           git push origin main

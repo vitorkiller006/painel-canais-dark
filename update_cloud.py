@@ -34,8 +34,25 @@ from googleapiclient.discovery import build
 REPO_DIR = Path(__file__).resolve().parent
 HTML_OUTPUT = REPO_DIR / "index.html"
 SNAPSHOT_FILE = REPO_DIR / "analytics_realtime_snapshot.json"
+HISTORY_FILE = REPO_DIR / "analytics_history_30d.json"
 
 MIN_VIEWS_FOR_RETENTION_RANK = 10
+MIN_IMPRESSIONS_FOR_CTR_RANK = 20
+
+TRAFFIC_SOURCE_LABELS = {
+    "SHORTS": "Feed do Shorts",
+    "RELATED_VIDEO": "Vídeos Sugeridos",
+    "YT_SEARCH": "Pesquisa do YouTube",
+    "SUBSCRIBER": "Feed de Inscrições",
+    "YT_OTHER_PAGE": "Navegação / Início",
+    "NO_LINK_OTHER": "Direto / Desconhecido",
+    "EXT_URL": "Sites Externos",
+    "PLAYLIST": "Playlists",
+    "YT_CHANNEL": "Página do Canal",
+    "NOTIFICATION": "Notificações",
+    "END_SCREEN": "Telas Finais",
+    "CARD": "Cards Interativos",
+}
 MIN_IMPRESSIONS_FOR_CTR_RANK = 20
 
 CHANNELS_CONFIG = [
@@ -300,6 +317,11 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
         "top3_retencao_7d": [],
         "top3_ctr_7d": [],
         "top3_impressoes_7d": [],
+        "vph_60m": 0,
+        "vph_48h": 0.0,
+        "history_30d": [],
+        "traffic_sources_30d": [],
+        "rank_1_de_10": None,
     }
 
     creds, err = load_credentials_from_env(conf["id"], tokens_bundle)
@@ -557,8 +579,82 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
             qual_ctr.sort(key=lambda x: (x["ctr_7d"], x["impressions_7d"]), reverse=True)
             low_ctr.sort(key=lambda x: (x["ctr_7d"], x["impressions_7d"]), reverse=True)
             c_data["top3_ctr_7d"] = (qual_ctr + low_ctr)[:3]
+
+        # 5. Histórico Diário de 30 Dias (Views e Saldo de Inscritos)
+        start_30d_str = (today - timedelta(days=30)).isoformat()
+        try:
+            rep_d = yt_ana.reports().query(
+                ids="channel==MINE",
+                startDate=start_30d_str,
+                endDate=end_d_str,
+                metrics="views,estimatedMinutesWatched,subscribersGained,subscribersLost",
+                dimensions="day",
+                sort="day"
+            ).execute()
+            for row in rep_d.get("rows", []):
+                day_str, vws, mins, sub_g, sub_l = row
+                c_data["history_30d"].append({
+                    "day": day_str,
+                    "views": int(vws),
+                    "minutes": round(float(mins), 1),
+                    "net_subs": int(sub_g - sub_l),
+                })
+        except Exception:
+            pass
+
+        # 6. Origens do Tráfego (Traffic Sources 30d)
+        try:
+            rep_tr = yt_ana.reports().query(
+                ids="channel==MINE",
+                startDate=start_30d_str,
+                endDate=end_d_str,
+                metrics="views,estimatedMinutesWatched",
+                dimensions="insightTrafficSourceType",
+                sort="-views"
+            ).execute()
+            for row in rep_tr.get("rows", []):
+                src, vws, mins = row
+                if int(vws) <= 0:
+                    continue
+                c_data["traffic_sources_30d"].append({
+                    "source": src,
+                    "label": TRAFFIC_SOURCE_LABELS.get(src, src),
+                    "views": int(vws),
+                    "minutes": round(float(mins), 1),
+                })
+        except Exception:
+            pass
+
     except Exception as e:
         c_data["erro"] = f"Analytics: {e}"
+
+    # 7. Cálculo Desempenho '1 de 10' (Último Lançamento vs 10 Anteriores)
+    public_vids = [v for v in video_meta_map.values() if v.get("is_public") and v.get("published_at")]
+    public_vids.sort(key=lambda x: x.get("published_at", ""), reverse=True)
+    if public_vids:
+        latest_vid = public_vids[0]
+        sample_10 = public_vids[:10]
+        by_views = sorted(sample_10, key=lambda x: x["views_total"], reverse=True)
+        rank_pos = by_views.index(latest_vid) + 1
+        other_views = [x["views_total"] for x in sample_10 if x["video_id"] != latest_vid["video_id"]]
+        avg_prev = (sum(other_views) / len(other_views)) if other_views else latest_vid["views_total"]
+        diff_pct = round(((latest_vid["views_total"] - avg_prev) / max(1, avg_prev)) * 100, 1)
+        c_data["rank_1_de_10"] = {
+            "video_id": latest_vid["video_id"],
+            "title": latest_vid["title"],
+            "url": latest_vid["url"],
+            "thumbnail": latest_vid["thumbnail"],
+            "views": latest_vid["views_total"],
+            "published_formatted": latest_vid.get("published_formatted", ""),
+            "rank": rank_pos,
+            "out_of": len(sample_10),
+            "diff_pct": diff_pct,
+            "avg_prev": round(avg_prev),
+        }
+
+    # 8. Velocímetro de Views por Hora (VPH)
+    c_data["vph_60m"] = c_data["views_60m_canal"]
+    c_data["vph_48h"] = round(c_data["views_48h_canal"] / max(1.0, c_data["snapshot_window_hours"]), 1)
 
     for v_entry in video_meta_map.values():
         if not v_entry["is_public"]:
@@ -594,10 +690,35 @@ def main():
         results.append(c_res)
         print(f" • [{c_res['status_conexao']}] {c_res['canal_titulo']}: Views 7d={c_res['views_7d_canal']}")
 
+    all_scheduled = []
+    for c in results:
+        for sv in c.get("videos_agendados_fila", []):
+            all_scheduled.append(sv)
+    all_scheduled.sort(key=lambda x: x.get("published_at", ""))
+
+    hist_payload = {
+        "updated_at_utc": now_utc.isoformat(),
+        "channels": {
+            c["id"]: {
+                "title": c.get("canal_titulo"),
+                "handle": c.get("handle"),
+                "group": c.get("grupo"),
+                "group_slug": c.get("grupo_slug"),
+                "vph_60m": c.get("vph_60m", 0),
+                "vph_48h": c.get("vph_48h", 0.0),
+                "history_30d": c.get("history_30d", []),
+                "traffic_sources_30d": c.get("traffic_sources_30d", []),
+                "rank_1_de_10": c.get("rank_1_de_10"),
+            }
+            for c in results
+        }
+    }
+    HISTORY_FILE.write_text(json.dumps(hist_payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
     save_snapshots(snapshots)
-    html_out = render_html(results, now_utc)
+    html_out = render_html(results, now_utc, all_scheduled)
     HTML_OUTPUT.write_text(html_out, encoding="utf-8")
-    print("✅ index.html e snapshots atualizados com sucesso na nuvem!")
+    print("✅ index.html, snapshots e histórico 30d atualizados com sucesso na nuvem!")
 
 
 if __name__ == "__main__":
