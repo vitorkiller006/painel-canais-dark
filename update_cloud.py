@@ -319,6 +319,8 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
         "top3_impressoes_7d": [],
         "vph_60m": 0,
         "vph_48h": 0.0,
+        "history_lifetime": [],
+        "traffic_sources_lifetime": [],
         "history_30d": [],
         "traffic_sources_30d": [],
         "rank_1_de_10": None,
@@ -580,33 +582,45 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
             low_ctr.sort(key=lambda x: (x["ctr_7d"], x["impressions_7d"]), reverse=True)
             c_data["top3_ctr_7d"] = (qual_ctr + low_ctr)[:3]
 
-        # 5. Histórico Diário de 30 Dias (Views e Saldo de Inscritos)
-        start_30d_str = (today - timedelta(days=30)).isoformat()
+        # 5. Histórico Completo desde o início (com separação de Shorts vs Vídeos)
+        c_data["history_lifetime"] = []
         try:
             rep_d = yt_ana.reports().query(
                 ids="channel==MINE",
-                startDate=start_30d_str,
+                startDate="2020-01-01",
                 endDate=end_d_str,
                 metrics="views,estimatedMinutesWatched,subscribersGained,subscribersLost",
-                dimensions="day",
+                dimensions="day,creatorContentType",
                 sort="day"
             ).execute()
             for row in rep_d.get("rows", []):
-                day_str, vws, mins, sub_g, sub_l = row
-                c_data["history_30d"].append({
+                day_str, c_type, vws, mins, sub_g, sub_l = row
+                fmt_type = "shorts" if str(c_type).lower() == "shorts" else "video"
+                entry = {
                     "day": day_str,
+                    "type": fmt_type,
                     "views": int(vws),
                     "minutes": round(float(mins), 1),
                     "net_subs": int(sub_g - sub_l),
-                })
+                }
+                c_data["history_lifetime"].append(entry)
+                # Mantém history_30d retrocompatível
+                if day_str >= (today - timedelta(days=30)).isoformat():
+                    c_data["history_30d"].append({
+                        "day": day_str,
+                        "views": int(vws),
+                        "minutes": round(float(mins), 1),
+                        "net_subs": int(sub_g - sub_l),
+                    })
         except Exception:
             pass
 
-        # 6. Origens do Tráfego (Traffic Sources 30d)
+        # 6. Origens do Tráfego (Geral / Todo o Período)
+        c_data["traffic_sources_lifetime"] = []
         try:
             rep_tr = yt_ana.reports().query(
                 ids="channel==MINE",
-                startDate=start_30d_str,
+                startDate="2020-01-01",
                 endDate=end_d_str,
                 metrics="views,estimatedMinutesWatched",
                 dimensions="insightTrafficSourceType",
@@ -616,12 +630,14 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
                 src, vws, mins = row
                 if int(vws) <= 0:
                     continue
-                c_data["traffic_sources_30d"].append({
+                item = {
                     "source": src,
                     "label": TRAFFIC_SOURCE_LABELS.get(src, src),
                     "views": int(vws),
                     "minutes": round(float(mins), 1),
-                })
+                }
+                c_data["traffic_sources_lifetime"].append(item)
+                c_data["traffic_sources_30d"].append(item)
         except Exception:
             pass
 
@@ -706,6 +722,8 @@ def main():
                 "group_slug": c.get("grupo_slug"),
                 "vph_60m": c.get("vph_60m", 0),
                 "vph_48h": c.get("vph_48h", 0.0),
+                "history_lifetime": c.get("history_lifetime", []),
+                "traffic_sources_lifetime": c.get("traffic_sources_lifetime", []),
                 "history_30d": c.get("history_30d", []),
                 "traffic_sources_30d": c.get("traffic_sources_30d", []),
                 "rank_1_de_10": c.get("rank_1_de_10"),

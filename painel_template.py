@@ -6,9 +6,13 @@ ARQUIVO: painel_template.py
 ===============================================================================
 Módulos:
 1. ⚡ Radar ao Vivo (60m / 48h / Recentes com filtros e Top 3)
-2. 📈 Gráficos & Histórico (Time-Series 30 dias de Views, Inscritos e Origens de Tráfego via Chart.js)
+2. 📈 Gráficos & Histórico com Filtros Avançados:
+   - Períodos: 7d, 30d, Este mês, 180d, Este ano, Geral (desde o início)
+   - Formatos: Todos (Vídeos + Shorts), Só Vídeos Longos, Só Shorts
+   - Filtro por Canal (Consolidado ou individual)
+   - Gráficos de Views, Saldo de Inscritos e Origens de Tráfego
 3. 🎯 Lançamentos "1 de 10" (Desempenho Relativo do Último Vídeo vs 10 Anteriores)
-4. ⚡ Velocímetro de Ritmo VPH (Views Por Hora em tempo real por canal e consolidado)
+4. ⚡ Velocímetro de Ritmo VPH (Views Por Hora em tempo real)
 5. 📅 Calendário de Estreias (Fila unificada de vídeos agendados)
 ===============================================================================
 """
@@ -62,7 +66,7 @@ a{color:inherit;text-decoration:none}
 .nav-tab:hover{color:var(--text);background:var(--surface-2)}
 .nav-tab.active{background:var(--cyan);color:#090D16;box-shadow:0 2px 8px rgba(56,189,248,.25)}
 
-/* Filtro por Grupo */
+/* Filtro por Grupo Geral */
 .chips{display:flex;gap:8px;margin-top:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:0 0 auto;background:var(--surface-2);color:var(--text);border:1px solid var(--border);padding:8px 14px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;min-height:36px;white-space:nowrap}
@@ -76,11 +80,11 @@ a{color:inherit;text-decoration:none}
 .sec-hint{font-size:12px;color:var(--muted);margin-top:3px}
 .sec-top{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap;margin-bottom:12px}
 
-/* Segmented sort */
-.seg{display:flex;background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:3px;gap:3px;width:100%;max-width:460px}
-.seg button{flex:1;background:transparent;color:var(--muted);border:0;border-radius:9px;padding:9px 6px;font-size:12px;font-weight:700;cursor:pointer;min-height:38px}
+/* Segmented Controls */
+.seg{display:flex;background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:3px;gap:3px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.seg button{flex:1;background:transparent;color:var(--muted);border:0;border-radius:9px;padding:8px 10px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;min-height:36px;transition:all .15s}
+.seg button:hover{color:var(--text)}
 .seg button.active{background:var(--cyan);color:#090D16}
-.lv-count{font-size:12px;color:var(--muted);margin:10px 2px 6px}
 
 /* Live list */
 .lv-row{display:grid;grid-template-columns:28px 96px 1fr auto;gap:12px;align-items:center;padding:10px 4px;border-top:1px solid rgba(255,255,255,.05)}
@@ -144,19 +148,27 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
 .empty-mini{font-size:11px;color:var(--muted);font-style:italic;padding:6px 0}
 .off-msg{padding:0 16px 16px;font-size:13px;color:#FDA4AF}
 
-/* MÓDULO 2: GRÁFICOS & HISTÓRICO */
+/* MÓDULO 2: GRÁFICOS & FILTROS AVANÇADOS */
+.filters-panel{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px}
+.fg-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.fg-lbl{font-size:12px;font-weight:700;color:var(--muted);min-width:70px;text-transform:uppercase;letter-spacing:.5px}
+.fg-ctrl{flex:1;min-width:280px}
+.ch-chips{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+.ch-chips::-webkit-scrollbar{display:none}
+.ch-chip{background:var(--surface-2);color:var(--text);border:1px solid var(--border);padding:7px 12px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;transition:all .15s}
+.ch-chip:hover{color:var(--text);background:var(--surface-3)}
+.ch-chip.active{background:var(--cyan);color:#090D16;border-color:var(--cyan);font-weight:700}
+
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center}
+.kpi-val{font-size:22px;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--cyan)}
+.kpi-lbl{font-size:11px;color:var(--muted);text-transform:uppercase;margin-top:4px;font-weight:600}
+
 .chart-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px}
 .chart-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px}
 .chart-head h3{font-size:15px;font-weight:700}
-.chart-box{position:relative;width:100%;height:260px}
-.chart-grid{display:grid;grid-template-columns:2fr 1fr;gap:14px}
-.kpi-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
-.kpi{background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center}
-.kpi-val{font-size:20px;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--cyan)}
-.kpi-lbl{font-size:11px;color:var(--muted);text-transform:uppercase;margin-top:4px}
-.ch-chips{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;margin-bottom:12px}
-.ch-chip{background:var(--surface-2);color:var(--text);border:1px solid var(--border);padding:6px 12px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap}
-.ch-chip.active{background:var(--cyan);color:#090D16;border-color:var(--cyan)}
+.chart-box{position:relative;width:100%;height:270px}
+.charts-split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 
 /* MÓDULO 3: 1 DE 10 */
 .rank10-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:14px}
@@ -188,14 +200,16 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
 /* Responsive */
 @media (max-width:1100px){
   .top3{grid-template-columns:repeat(2,1fr)}
-  .chart-grid{grid-template-columns:1fr}
+  .charts-split{grid-template-columns:1fr}
 }
 @media (max-width:720px){
   body{padding:10px}
-  .topbar,.sec,.chart-card,.r10-card{padding:12px;border-radius:12px}
+  .topbar,.sec,.chart-card,.r10-card,.filters-panel{padding:12px;border-radius:12px}
   .topbar h1{font-size:16px}
   .top3{grid-template-columns:1fr;padding:0 12px 12px}
-  .kpi-row{grid-template-columns:1fr}
+  .kpi-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .kpi{padding:10px}
+  .kpi-val{font-size:18px}
   .lv-row{grid-template-columns:22px 84px 1fr;grid-template-areas:"rank thumb info" "metrics metrics metrics";gap:8px 10px;padding:12px 0}
   .lv-rank{grid-area:rank;font-size:13px}
   .lv-thumb{grid-area:thumb;width:84px;height:47px}
@@ -223,6 +237,8 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
 
 JS = """
 let curSort='d60', curGroup='all';
+let curPeriod='30d', curFormat='all', curChartChannel='all';
+
 const EMPTY_MSG={
   d60:'Nenhum vídeo ganhou views na última medição (~60 min).',
   d48:'Nenhum vídeo ganhou views na janela de 48h medida até agora.',
@@ -235,7 +251,7 @@ function switchMainTab(tabId, btn){
   if(btn) btn.classList.add('active');
   const target = document.getElementById('view-' + tabId);
   if(target) target.classList.add('active');
-  if(tabId === 'charts' && window.initChartsOnce) window.initChartsOnce();
+  if(tabId === 'charts' && window.updateCharts) window.updateCharts();
   const u = new URL(location.href);
   u.searchParams.set('tab', tabId);
   history.replaceState(null, '', u);
@@ -291,74 +307,173 @@ function filterGroup(g,btn){
   history.replaceState(null,'',u);
 }
 
-// Chart.js Manager
+// Chart.js Manager & Interactive Filters
 let viewsChartInstance = null;
+let subsChartInstance = null;
 let trafficChartInstance = null;
-let currentChartChannel = 'all';
 
-function renderChannelCharts(chId){
-  currentChartChannel = chId;
-  document.querySelectorAll('.ch-chip').forEach(b=>b.classList.toggle('active', b.dataset.ch===chId));
-  const raw = window.CHANNELS_TIMESERIES || {};
-  let days = [], views = [], subs = [], traffic = {};
-  
-  if(chId === 'all'){
-    // Agregação consolidada
-    const dayMap = {}, subMap = {}, trafMap = {};
-    Object.values(raw).forEach(ch=>{
-      (ch.history_30d || []).forEach(h=>{
-        dayMap[h.day] = (dayMap[h.day] || 0) + (h.views || 0);
-        subMap[h.day] = (subMap[h.day] || 0) + (h.net_subs || 0);
-      });
-      (ch.traffic_sources_30d || []).forEach(t=>{
-        trafMap[t.label] = (trafMap[t.label] || 0) + (t.views || 0);
-      });
-    });
-    days = Object.keys(dayMap).sort();
-    views = days.map(d=>dayMap[d]);
-    subs = days.map(d=>subMap[d]);
-    traffic = trafMap;
-  } else if(raw[chId]){
-    const ch = raw[chId];
-    (ch.history_30d || []).forEach(h=>{
-      days.push(h.day);
-      views.push(h.views || 0);
-      subs.push(h.net_subs || 0);
-    });
-    (ch.traffic_sources_30d || []).forEach(t=>{
-      traffic[t.label] = (traffic[t.label] || 0) + (t.views || 0);
-    });
+function setChartPeriod(p, btn){
+  curPeriod = p;
+  document.querySelectorAll('.period-btn').forEach(b=>b.classList.toggle('active', b===btn));
+  updateCharts();
+}
+
+function setChartFormat(f, btn){
+  curFormat = f;
+  document.querySelectorAll('.format-btn').forEach(b=>b.classList.toggle('active', b===btn));
+  updateCharts();
+}
+
+function setChartChannel(ch, btn){
+  curChartChannel = ch;
+  document.querySelectorAll('.ch-chip').forEach(b=>b.classList.toggle('active', b.dataset.ch===ch));
+  updateCharts();
+}
+
+function getCutoffDate(period){
+  const now = new Date();
+  if(period === '7d'){
+    const d = new Date(now.getTime() - 7 * 86400000);
+    return d.toISOString().slice(0, 10);
   }
+  if(period === '30d'){
+    const d = new Date(now.getTime() - 30 * 86400000);
+    return d.toISOString().slice(0, 10);
+  }
+  if(period === 'month'){
+    const y = now.getFullYear();
+    const m = String(now.getMonth() + 1).padStart(2, '0');
+    return y + '-' + m + '-01';
+  }
+  if(period === '180d'){
+    const d = new Date(now.getTime() - 180 * 86400000);
+    return d.toISOString().slice(0, 10);
+  }
+  if(period === 'year'){
+    const y = now.getFullYear();
+    return y + '-01-01';
+  }
+  return '2000-01-01'; // 'all'
+}
 
-  const totV = views.reduce((a,b)=>a+b, 0);
-  const totS = subs.reduce((a,b)=>a+b, 0);
-  const topTr = Object.entries(traffic).sort((a,b)=>b[1]-a[1])[0] || ['—', 0];
+window.updateCharts = function(){
+  const raw = window.CHANNELS_TIMESERIES || {};
+  const cutoff = getCutoffDate(curPeriod);
 
-  const kv = document.getElementById('kpi-views-30d');
-  const ks = document.getElementById('kpi-subs-30d');
-  const kt = document.getElementById('kpi-top-traffic');
+  const dayMap = {};
+  const subMap = {};
+  const minMap = {};
+  const trafMap = {};
+
+  const chList = (curChartChannel === 'all') ? Object.values(raw) : [raw[curChartChannel]].filter(Boolean);
+
+  chList.forEach(ch=>{
+    (ch.history_lifetime || ch.history_30d || []).forEach(h=>{
+      if(h.day < cutoff) return;
+      if(curFormat !== 'all' && h.type && h.type !== curFormat) return;
+      dayMap[h.day] = (dayMap[h.day] || 0) + (h.views || 0);
+      subMap[h.day] = (subMap[h.day] || 0) + (h.net_subs || 0);
+      minMap[h.day] = (minMap[h.day] || 0) + (h.minutes || 0);
+    });
+
+    (ch.traffic_sources_lifetime || ch.traffic_sources_30d || []).forEach(t=>{
+      trafMap[t.label] = (trafMap[t.label] || 0) + (t.views || 0);
+    });
+  });
+
+  const sortedDays = Object.keys(dayMap).sort();
+  const viewsData = sortedDays.map(d=>dayMap[d]);
+  const subsData = sortedDays.map(d=>subMap[d]);
+
+  const totV = viewsData.reduce((a, b) => a + b, 0);
+  const totS = subsData.reduce((a, b) => a + b, 0);
+  const totM = Object.values(minMap).reduce((a, b) => a + b, 0);
+  const avgV = sortedDays.length > 0 ? Math.round(totV / sortedDays.length) : 0;
+  const topTr = Object.entries(trafMap).sort((a, b) => b[1] - a[1])[0] || ['—', 0];
+
+  const kv = document.getElementById('kpi-views');
+  const ks = document.getElementById('kpi-subs');
+  const km = document.getElementById('kpi-hours');
+  const ka = document.getElementById('kpi-avg');
+  const kt = document.getElementById('kpi-traffic');
+
   if(kv) kv.textContent = totV.toLocaleString('pt-BR');
   if(ks) ks.textContent = (totS >= 0 ? '+' : '') + totS.toLocaleString('pt-BR');
+  if(km) km.textContent = (totM / 60).toFixed(1) + ' h';
+  if(ka) ka.textContent = avgV.toLocaleString('pt-BR') + '/dia';
   if(kt) kt.textContent = topTr[0];
 
-  // Render Views Line Chart
+  const pLabels = {
+    '7d': 'Últimos 7 Dias',
+    '30d': 'Últimos 30 Dias',
+    'month': 'Este Mês',
+    '180d': 'Últimos 180 Dias',
+    'year': 'Este Ano',
+    'all': 'Geral (Desde o Início)'
+  };
+  const fLabels = {
+    'all': 'Todos os Formatos',
+    'video': '🎬 Só Vídeos Longos',
+    'shorts': '⚡ Só Shorts'
+  };
+  const titleEl = document.getElementById('chart-title');
+  if(titleEl){
+    const chName = (curChartChannel === 'all') ? 'Todos os Canais' : (raw[curChartChannel]?.title || curChartChannel);
+    titleEl.textContent = `📈 ${chName} — ${pLabels[curPeriod]} (${fLabels[curFormat]})`;
+  }
+
+  // Render Line Chart
   const ctxV = document.getElementById('chartViews');
   if(ctxV && window.Chart){
     if(viewsChartInstance) viewsChartInstance.destroy();
     viewsChartInstance = new Chart(ctxV, {
       type: 'line',
       data: {
-        labels: days.map(d=>d.slice(5)),
+        labels: sortedDays.map(d=>d.slice(5)),
         datasets: [{
-          label: 'Views Diárias',
-          data: views,
+          label: 'Views',
+          data: viewsData,
           borderColor: '#38BDF8',
           backgroundColor: 'rgba(56,189,248,0.12)',
           fill: true,
           tension: 0.35,
           borderWidth: 2.5,
-          pointRadius: 3,
+          pointRadius: sortedDays.length > 60 ? 1 : 3,
           pointBackgroundColor: '#38BDF8'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: ctx => `Views: ${ctx.parsed.y.toLocaleString('pt-BR')}`
+            }
+          }
+        },
+        scales: {
+          x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 10 }, maxTicksLimit: 14 } },
+          y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 10 } } }
+        }
+      }
+    });
+  }
+
+  // Render Subs Bar Chart
+  const ctxS = document.getElementById('chartSubs');
+  if(ctxS && window.Chart){
+    if(subsChartInstance) subsChartInstance.destroy();
+    subsChartInstance = new Chart(ctxS, {
+      type: 'bar',
+      data: {
+        labels: sortedDays.map(d=>d.slice(5)),
+        datasets: [{
+          label: 'Saldo Inscritos',
+          data: subsData,
+          backgroundColor: subsData.map(v => v >= 0 ? '#10B981' : '#F43F5E'),
+          borderRadius: 4
         }]
       },
       options: {
@@ -366,7 +481,7 @@ function renderChannelCharts(chId){
         maintainAspectRatio: false,
         plugins: { legend: { display: false } },
         scales: {
-          x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 10 } } },
+          x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 10 }, maxTicksLimit: 14 } },
           y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 10 } } }
         }
       }
@@ -377,8 +492,8 @@ function renderChannelCharts(chId){
   const ctxT = document.getElementById('chartTraffic');
   if(ctxT && window.Chart){
     if(trafficChartInstance) trafficChartInstance.destroy();
-    const tLabels = Object.keys(traffic);
-    const tData = Object.values(traffic);
+    const tLabels = Object.keys(trafMap);
+    const tData = Object.values(trafMap);
     trafficChartInstance = new Chart(ctxT, {
       type: 'doughnut',
       data: {
@@ -397,12 +512,6 @@ function renderChannelCharts(chId){
         }
       }
     });
-  }
-}
-
-window.initChartsOnce = function(){
-  if(window.Chart && !viewsChartInstance){
-    renderChannelCharts('all');
   }
 };
 
@@ -639,25 +748,25 @@ def render_html(channels_data, generated_at, all_scheduled=None):
     else:
         cal_html.append('<div class="empty">Nenhum vídeo agendado no momento em nenhum dos canais.</div>')
 
-    # Dados para alimentar o Chart.js
+    # Dados para alimentar o Chart.js com lifetime e tipos
     timeseries_data = {
         c["id"]: {
             "title": c.get("canal_titulo"),
             "handle": c.get("handle"),
             "group_slug": c.get("grupo_slug"),
-            "history_30d": c.get("history_30d", []),
-            "traffic_sources_30d": c.get("traffic_sources_30d", []),
+            "history_lifetime": c.get("history_lifetime", []),
+            "traffic_sources_lifetime": c.get("traffic_sources_lifetime", []),
         }
         for c in channels_data
     }
     timeseries_json = json.dumps(timeseries_data, ensure_ascii=False)
 
     chart_channel_chips = [
-        '<button class="ch-chip active" data-ch="all" onclick="renderChannelCharts(\'all\')">Todos os Canais (Consolidado)</button>'
+        '<button class="ch-chip active" data-ch="all" onclick="setChartChannel(\'all\', this)">Todos os Canais (Consolidado)</button>'
     ]
     for c in channels_data:
         chart_channel_chips.append(
-            f'<button class="ch-chip" data-ch="{c["id"]}" onclick="renderChannelCharts(\'{c["id"]}\')">{_e(c["canal_titulo"])}</button>'
+            f'<button class="ch-chip" data-ch="{c["id"]}" onclick="setChartChannel(\'{c["id"]}\', this)">{_e(c["canal_titulo"])}</button>'
         )
 
     return f"""<!DOCTYPE html>
@@ -697,7 +806,7 @@ def render_html(channels_data, generated_at, all_scheduled=None):
   <!-- Navegação Principal por Abas -->
   <div class="main-nav">
     <button class="nav-tab active" id="btn-tab-live" onclick="switchMainTab('live', this)">⚡ Radar ao Vivo</button>
-    <button class="nav-tab" id="btn-tab-charts" onclick="switchMainTab('charts', this)">📈 Gráficos (30d)</button>
+    <button class="nav-tab" id="btn-tab-charts" onclick="switchMainTab('charts', this)">📈 Gráficos & Histórico</button>
     <button class="nav-tab" id="btn-tab-rank10" onclick="switchMainTab('rank10', this)">🎯 Lançamentos (1 de 10)</button>
     <button class="nav-tab" id="btn-tab-calendar" onclick="switchMainTab('calendar', this)">📅 Calendário ({total_sched_count})</button>
   </div>
@@ -710,7 +819,7 @@ def render_html(channels_data, generated_at, all_scheduled=None):
           <div class="sec-title">🔥 Mais vistos agora — todos os canais</div>
           <div class="sec-hint">Views ganhas por vídeo público · janela acumulada: {win_48_txt}</div>
         </div>
-        <div class="seg">
+        <div class="seg" style="max-width:440px">
           <button class="active" id="seg-d60" onclick="setSort('d60',this)">Últimos 60 min</button>
           <button id="seg-d48" onclick="setSort('d48',this)">Últimas 48h</button>
           <button id="seg-total" onclick="setSort('total',this)">Recentes</button>
@@ -741,29 +850,74 @@ def render_html(channels_data, generated_at, all_scheduled=None):
     {''.join(cards)}
   </div>
 
-  <!-- TAB 2: GRÁFICOS & HISTÓRICO -->
+  <!-- TAB 2: GRÁFICOS & HISTÓRICO COM FILTROS AVANÇADOS -->
   <div class="tab-content" id="view-charts">
-    <div class="ch-chips">{''.join(chart_channel_chips)}</div>
-    <div class="kpi-row">
-      <div class="kpi">
-        <div class="kpi-val" id="kpi-views-30d">—</div>
-        <div class="kpi-lbl">Visualizações (30 Dias)</div>
+    <div class="filters-panel">
+      <!-- Linha 1: Filtro de Período -->
+      <div class="fg-row">
+        <div class="fg-lbl">📅 Período</div>
+        <div class="fg-ctrl seg">
+          <button class="period-btn" data-p="7d" onclick="setChartPeriod('7d', this)">7 dias</button>
+          <button class="period-btn active" data-p="30d" onclick="setChartPeriod('30d', this)">30 dias</button>
+          <button class="period-btn" data-p="month" onclick="setChartPeriod('month', this)">Este mês</button>
+          <button class="period-btn" data-p="180d" onclick="setChartPeriod('180d', this)">180 dias</button>
+          <button class="period-btn" data-p="year" onclick="setChartPeriod('year', this)">Este ano</button>
+          <button class="period-btn" data-p="all" onclick="setChartPeriod('all', this)">Geral (Início)</button>
+        </div>
       </div>
-      <div class="kpi">
-        <div class="kpi-val" id="kpi-subs-30d" style="color:var(--green)">—</div>
-        <div class="kpi-lbl">Saldo de Inscritos (30d)</div>
+
+      <!-- Linha 2: Filtro de Formato (Vídeos vs Shorts) -->
+      <div class="fg-row">
+        <div class="fg-lbl">🎬 Formato</div>
+        <div class="fg-ctrl seg" style="max-width:520px">
+          <button class="format-btn active" data-f="all" onclick="setChartFormat('all', this)">Todos (Vídeos + Shorts)</button>
+          <button class="format-btn" data-f="video" onclick="setChartFormat('video', this)">🎬 Só Vídeos (Longos)</button>
+          <button class="format-btn" data-f="shorts" onclick="setChartFormat('shorts', this)">⚡ Só Shorts</button>
+        </div>
       </div>
-      <div class="kpi">
-        <div class="kpi-val" id="kpi-top-traffic" style="font-size:15px;color:var(--purple)">—</div>
-        <div class="kpi-lbl">Principal Origem de Tráfego</div>
+
+      <!-- Linha 3: Filtro de Canal -->
+      <div class="fg-row" style="margin-bottom:0">
+        <div class="fg-lbl">📺 Canal</div>
+        <div class="fg-ctrl ch-chips">{''.join(chart_channel_chips)}</div>
       </div>
     </div>
-    <div class="chart-grid">
+
+    <!-- 4 KPIs Dinâmicos -->
+    <div class="kpi-grid">
+      <div class="kpi">
+        <div class="kpi-val" id="kpi-views">—</div>
+        <div class="kpi-lbl">Visualizações</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val" id="kpi-subs" style="color:var(--green)">—</div>
+        <div class="kpi-lbl">Saldo de Inscritos</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val" id="kpi-hours" style="color:var(--amber)">—</div>
+        <div class="kpi-lbl">Tempo de Exibição</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val" id="kpi-avg" style="color:var(--purple)">—</div>
+        <div class="kpi-lbl">Média Diária</div>
+      </div>
+    </div>
+
+    <!-- Gráfico 1: Linha de Views -->
+    <div class="chart-card">
+      <div class="chart-head">
+        <h3 id="chart-title">📈 Curva de Visualizações Diárias</h3>
+      </div>
+      <div class="chart-box"><canvas id="chartViews"></canvas></div>
+    </div>
+
+    <!-- Gráfico 2 & 3: Saldo de Inscritos e Origens de Tráfego -->
+    <div class="charts-split">
       <div class="chart-card">
         <div class="chart-head">
-          <h3>📈 Curva de Visualizações Diárias (30 Dias)</h3>
+          <h3>👥 Saldo Diário de Inscritos (+ / -)</h3>
         </div>
-        <div class="chart-box"><canvas id="chartViews"></canvas></div>
+        <div class="chart-box"><canvas id="chartSubs"></canvas></div>
       </div>
       <div class="chart-card">
         <div class="chart-head">
