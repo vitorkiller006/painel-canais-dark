@@ -3,7 +3,7 @@
   "days": {
     "2026-10-28": {
       "date": "2026-10-28",
-      "updated_at_utc": "2026-10-28T18:45:16.663448+00:00",
+      "updated_at_utc": "2026-10-28T19:00:27.206505+00:00",
       "channels": {
         "stickman": {
           "title": "How It's Made Oficial",
@@ -25,8 +25,8 @@
           "total_views": 320,
           "views_48h": 10,
           "views_60m": 1,
-          "views_7d": 361,
-          "watch_minutes_7d": 1133.0,
+          "views_7d": 453,
+          "watch_minutes_7d": 1139.0,
           "total_videos_publicos": 3,
           "total_videos_agendados": 5,
           "videos": {}
@@ -37,9 +37,9 @@
           "subscribers": 6,
           "total_views": 2736,
           "views_48h": 73,
-          "views_60m": 6,
-          "views_7d": 853,
-          "watch_minutes_7d": 6317.0,
+          "views_60m": 4,
+          "views_7d": 945,
+          "watch_minutes_7d": 6971.0,
           "total_videos_publicos": 11,
           "total_videos_agendados": 4,
           "videos": {}
@@ -48,11 +48,11 @@
           "title": "Cosmic Abyss",
           "handle": "@cosmicabyssdoc",
           "subscribers": 7,
-          "total_views": 1228,
+          "total_views": 1207,
           "views_48h": 38,
-          "views_60m": 4,
-          "views_7d": 315,
-          "watch_minutes_7d": 1623.0,
+          "views_60m": 2,
+          "views_7d": 363,
+          "watch_minutes_7d": 2567.0,
           "total_videos_publicos": 10,
           "total_videos_agendados": 5,
           "videos": {}
@@ -77,8 +77,8 @@
           "total_views": 4055,
           "views_48h": 199,
           "views_60m": 2,
-          "views_7d": 2604,
-          "watch_minutes_7d": 6330.0,
+          "views_7d": 3172,
+          "watch_minutes_7d": 8382.0,
           "total_videos_publicos": 10,
           "total_videos_agendados": 1,
           "videos": {}
