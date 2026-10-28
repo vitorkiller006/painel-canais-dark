@@ -47,7 +47,7 @@ a{color:inherit;text-decoration:none}
 .nav-tab:hover{color:var(--text);background:var(--surface-2)}
 .nav-tab.active{background:var(--cyan);color:#090D16;box-shadow:0 2px 8px rgba(56,189,248,.25)}
 
-/* Filtro por Grupo */
+/* Filtro por Grupo Geral */
 .chips{display:flex;gap:8px;margin-top:12px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .chips::-webkit-scrollbar{display:none}
 .chip{flex:0 0 auto;background:var(--surface-2);color:var(--text);border:1px solid var(--border);padding:8px 14px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;min-height:36px;white-space:nowrap}
@@ -61,11 +61,11 @@ a{color:inherit;text-decoration:none}
 .sec-hint{font-size:12px;color:var(--muted);margin-top:3px}
 .sec-top{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;flex-wrap:wrap;margin-bottom:12px}
 
-/* Segmented sort */
-.seg{display:flex;background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:3px;gap:3px;width:100%;max-width:460px}
-.seg button{flex:1;background:transparent;color:var(--muted);border:0;border-radius:9px;padding:9px 6px;font-size:12px;font-weight:700;cursor:pointer;min-height:38px}
+/* Segmented Controls */
+.seg{display:flex;background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:3px;gap:3px;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.seg button{flex:1;background:transparent;color:var(--muted);border:0;border-radius:9px;padding:8px 10px;font-size:12px;font-weight:700;cursor:pointer;white-space:nowrap;min-height:36px;transition:all .15s}
+.seg button:hover{color:var(--text)}
 .seg button.active{background:var(--cyan);color:#090D16}
-.lv-count{font-size:12px;color:var(--muted);margin:10px 2px 6px}
 
 /* Live list */
 .lv-row{display:grid;grid-template-columns:28px 96px 1fr auto;gap:12px;align-items:center;padding:10px 4px;border-top:1px solid rgba(255,255,255,.05)}
@@ -129,19 +129,27 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
 .empty-mini{font-size:11px;color:var(--muted);font-style:italic;padding:6px 0}
 .off-msg{padding:0 16px 16px;font-size:13px;color:#FDA4AF}
 
-/* MÓDULO 2: GRÁFICOS & HISTÓRICO */
+/* MÓDULO 2: GRÁFICOS & FILTROS AVANÇADOS */
+.filters-panel{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px}
+.fg-row{display:flex;align-items:center;gap:10px;margin-bottom:10px;flex-wrap:wrap}
+.fg-lbl{font-size:12px;font-weight:700;color:var(--muted);min-width:70px;text-transform:uppercase;letter-spacing:.5px}
+.fg-ctrl{flex:1;min-width:280px}
+.ch-chips{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+.ch-chips::-webkit-scrollbar{display:none}
+.ch-chip{background:var(--surface-2);color:var(--text);border:1px solid var(--border);padding:7px 12px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap;transition:all .15s}
+.ch-chip:hover{color:var(--text);background:var(--surface-3)}
+.ch-chip.active{background:var(--cyan);color:#090D16;border-color:var(--cyan);font-weight:700}
+
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
+.kpi{background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center}
+.kpi-val{font-size:22px;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--cyan)}
+.kpi-lbl{font-size:11px;color:var(--muted);text-transform:uppercase;margin-top:4px;font-weight:600}
+
 .chart-card{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:16px;margin-bottom:14px}
 .chart-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px}
 .chart-head h3{font-size:15px;font-weight:700}
-.chart-box{position:relative;width:100%;height:260px}
-.chart-grid{display:grid;grid-template-columns:2fr 1fr;gap:14px}
-.kpi-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:14px}
-.kpi{background:var(--surface-2);border:1px solid var(--border);border-radius:12px;padding:12px;text-align:center}
-.kpi-val{font-size:20px;font-weight:800;font-family:'JetBrains Mono',monospace;color:var(--cyan)}
-.kpi-lbl{font-size:11px;color:var(--muted);text-transform:uppercase;margin-top:4px}
-.ch-chips{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px;margin-bottom:12px}
-.ch-chip{background:var(--surface-2);color:var(--text);border:1px solid var(--border);padding:6px 12px;border-radius:8px;font-size:12px;font-weight:600;cursor:pointer;white-space:nowrap}
-.ch-chip.active{background:var(--cyan);color:#090D16;border-color:var(--cyan)}
+.chart-box{position:relative;width:100%;height:270px}
+.charts-split{display:grid;grid-template-columns:1fr 1fr;gap:14px}
 
 /* MÓDULO 3: 1 DE 10 */
 .rank10-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:14px}
@@ -173,14 +181,16 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
 /* Responsive */
 @media (max-width:1100px){
   .top3{grid-template-columns:repeat(2,1fr)}
-  .chart-grid{grid-template-columns:1fr}
+  .charts-split{grid-template-columns:1fr}
 }
 @media (max-width:720px){
   body{padding:10px}
-  .topbar,.sec,.chart-card,.r10-card{padding:12px;border-radius:12px}
+  .topbar,.sec,.chart-card,.r10-card,.filters-panel{padding:12px;border-radius:12px}
   .topbar h1{font-size:16px}
   .top3{grid-template-columns:1fr;padding:0 12px 12px}
-  .kpi-row{grid-template-columns:1fr}
+  .kpi-grid{grid-template-columns:repeat(2,1fr);gap:8px}
+  .kpi{padding:10px}
+  .kpi-val{font-size:18px}
   .lv-row{grid-template-columns:22px 84px 1fr;grid-template-areas:"rank thumb info" "metrics metrics metrics";gap:8px 10px;padding:12px 0}
   .lv-rank{grid-area:rank;font-size:13px}
   .lv-thumb{grid-area:thumb;width:84px;height:47px}
@@ -214,10 +224,10 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
     <div class="topbar-main">
       <div>
         <h1>📊 Painel Canais Dark</h1>
-        <div class="meta">Atualizado <b>28/10/2026 07:00</b> (BRT) · <b>7/7</b> online · Nuvem a cada 15–30 min</div>
+        <div class="meta">Atualizado <b>28/10/2026 07:01</b> (BRT) · <b>7/7</b> online · Nuvem a cada 15–30 min</div>
       </div>
       <div class="vph-badge">
-        <span>⚡</span> Ritmo da Fábrica: <b>+4 views/hora</b>
+        <span>⚡</span> Ritmo da Fábrica: <b>+11 views/hora</b>
       </div>
     </div>
     <div class="chips">
@@ -230,7 +240,7 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
   <!-- Navegação Principal por Abas -->
   <div class="main-nav">
     <button class="nav-tab active" id="btn-tab-live" onclick="switchMainTab('live', this)">⚡ Radar ao Vivo</button>
-    <button class="nav-tab" id="btn-tab-charts" onclick="switchMainTab('charts', this)">📈 Gráficos (30d)</button>
+    <button class="nav-tab" id="btn-tab-charts" onclick="switchMainTab('charts', this)">📈 Gráficos & Histórico</button>
     <button class="nav-tab" id="btn-tab-rank10" onclick="switchMainTab('rank10', this)">🎯 Lançamentos (1 de 10)</button>
     <button class="nav-tab" id="btn-tab-calendar" onclick="switchMainTab('calendar', this)">📅 Calendário (33)</button>
   </div>
@@ -243,7 +253,7 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
           <div class="sec-title">🔥 Mais vistos agora — todos os canais</div>
           <div class="sec-hint">Views ganhas por vídeo público · janela acumulada: 14.3h de 48h medidas</div>
         </div>
-        <div class="seg">
+        <div class="seg" style="max-width:440px">
           <button class="active" id="seg-d60" onclick="setSort('d60',this)">Últimos 60 min</button>
           <button id="seg-d48" onclick="setSort('d48',this)">Últimas 48h</button>
           <button id="seg-total" onclick="setSort('total',this)">Recentes</button>
@@ -290,7 +300,33 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
     <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">6</span></div>
   </div>
 </div>
-<div class="lv-row" data-grupo="pessoal" data-d60="0" data-d48="10" data-total="276">
+<div class="lv-row" data-grupo="pessoal" data-d60="5" data-d48="13" data-total="609">
+  <div class="lv-rank">·</div>
+  <img class="lv-thumb" src="https://i.ytimg.com/vi/Au4ihfn4Ijs/mqdefault.jpg" alt="" loading="lazy">
+  <div class="lv-info">
+    <a class="lv-title" href="https://youtu.be/Au4ihfn4Ijs" target="_blank" rel="noopener">1992 में एक अमेरिकी कंपनी ने भारत को कैसे लूटा? | The $3 Billion Dabhol Scam</a>
+    <div class="lv-meta"><span class="pill pill-pessoal">Untold Bharat</span><span>20/10 09:30</span></div>
+  </div>
+  <div class="lv-metrics">
+    <div class="mt pos" data-k="d60"><span class="mt-lbl">60 min</span><span class="mt-val">+5</span></div>
+    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+13</span></div>
+    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">609</span></div>
+  </div>
+</div>
+<div class="lv-row" data-grupo="pessoal" data-d60="1" data-d48="1" data-total="169">
+  <div class="lv-rank">·</div>
+  <img class="lv-thumb" src="https://i.ytimg.com/vi/rOfRAdBiKZ0/mqdefault.jpg" alt="" loading="lazy">
+  <div class="lv-info">
+    <a class="lv-title" href="https://youtu.be/rOfRAdBiKZ0" target="_blank" rel="noopener">10 साल की वेटिंग लिस्ट और ₹40,000 की कार: Maruti 800 Revolution 1983 | The Untold Story</a>
+    <div class="lv-meta"><span class="pill pill-pessoal">Untold Bharat</span><span>17/10 09:30</span></div>
+  </div>
+  <div class="lv-metrics">
+    <div class="mt pos" data-k="d60"><span class="mt-lbl">60 min</span><span class="mt-val">+1</span></div>
+    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+1</span></div>
+    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">169</span></div>
+  </div>
+</div>
+<div class="lv-row" data-grupo="pessoal" data-d60="0" data-d48="11" data-total="277">
   <div class="lv-rank">·</div>
   <img class="lv-thumb" src="https://i.ytimg.com/vi/3RBIrSOEWQs/mqdefault.jpg" alt="" loading="lazy">
   <div class="lv-info">
@@ -299,21 +335,8 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
   </div>
   <div class="lv-metrics">
     <div class="mt zero" data-k="d60"><span class="mt-lbl">60 min</span><span class="mt-val">+0</span></div>
-    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+10</span></div>
-    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">276</span></div>
-  </div>
-</div>
-<div class="lv-row" data-grupo="pessoal" data-d60="0" data-d48="8" data-total="604">
-  <div class="lv-rank">·</div>
-  <img class="lv-thumb" src="https://i.ytimg.com/vi/Au4ihfn4Ijs/mqdefault.jpg" alt="" loading="lazy">
-  <div class="lv-info">
-    <a class="lv-title" href="https://youtu.be/Au4ihfn4Ijs" target="_blank" rel="noopener">1992 में एक अमेरिकी कंपनी ने भारत को कैसे लूटा? | The $3 Billion Dabhol Scam</a>
-    <div class="lv-meta"><span class="pill pill-pessoal">Untold Bharat</span><span>20/10 09:30</span></div>
-  </div>
-  <div class="lv-metrics">
-    <div class="mt zero" data-k="d60"><span class="mt-lbl">60 min</span><span class="mt-val">+0</span></div>
-    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+8</span></div>
-    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">604</span></div>
+    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+11</span></div>
+    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">277</span></div>
   </div>
 </div>
 <div class="lv-row" data-grupo="pessoal" data-d60="0" data-d48="5" data-total="75">
@@ -329,7 +352,7 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
     <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">75</span></div>
   </div>
 </div>
-<div class="lv-row" data-grupo="pessoal" data-d60="0" data-d48="3" data-total="102">
+<div class="lv-row" data-grupo="pessoal" data-d60="0" data-d48="4" data-total="103">
   <div class="lv-rank">·</div>
   <img class="lv-thumb" src="https://i.ytimg.com/vi/oW6lA0757M8/mqdefault.jpg" alt="" loading="lazy">
   <div class="lv-info">
@@ -338,8 +361,8 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
   </div>
   <div class="lv-metrics">
     <div class="mt zero" data-k="d60"><span class="mt-lbl">60 min</span><span class="mt-val">+0</span></div>
-    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+3</span></div>
-    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">102</span></div>
+    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+4</span></div>
+    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">103</span></div>
   </div>
 </div>
 <div class="lv-row" data-grupo="pessoal" data-d60="0" data-d48="1" data-total="18">
@@ -407,7 +430,7 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
     <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">88</span></div>
   </div>
 </div>
-<div class="lv-row" data-grupo="pessoal" data-d60="0" data-d48="0" data-total="1">
+<div class="lv-row" data-grupo="pessoal" data-d60="0" data-d48="1" data-total="2">
   <div class="lv-rank">·</div>
   <img class="lv-thumb" src="https://i.ytimg.com/vi/qHin0kPixuo/mqdefault.jpg" alt="" loading="lazy">
   <div class="lv-info">
@@ -416,8 +439,8 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
   </div>
   <div class="lv-metrics">
     <div class="mt zero" data-k="d60"><span class="mt-lbl">60 min</span><span class="mt-val">+0</span></div>
-    <div class="mt zero" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+0</span></div>
-    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">1</span></div>
+    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+1</span></div>
+    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">2</span></div>
   </div>
 </div>
 <div class="lv-row" data-grupo="pessoal" data-d60="0" data-d48="109" data-total="112">
@@ -433,6 +456,19 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
     <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">112</span></div>
   </div>
 </div>
+<div class="lv-row" data-grupo="gvg" data-d60="1" data-d48="5" data-total="40">
+  <div class="lv-rank">·</div>
+  <img class="lv-thumb" src="https://i.ytimg.com/vi/HbF4gGAOgqQ/mqdefault.jpg" alt="" loading="lazy">
+  <div class="lv-info">
+    <a class="lv-title" href="https://youtu.be/HbF4gGAOgqQ" target="_blank" rel="noopener">चाची ने जिस अनाथ लड़की को नौकरानी बनाकर भेजा, वही बनी हवेली की बहू | दिल छू लेने वाली कहानी</a>
+    <div class="lv-meta"><span class="pill pill-gvg">HeartTangle</span><span>25/10 09:30</span></div>
+  </div>
+  <div class="lv-metrics">
+    <div class="mt pos" data-k="d60"><span class="mt-lbl">60 min</span><span class="mt-val">+1</span></div>
+    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+5</span></div>
+    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">40</span></div>
+  </div>
+</div>
 <div class="lv-row" data-grupo="gvg" data-d60="0" data-d48="93" data-total="665">
   <div class="lv-rank">·</div>
   <img class="lv-thumb" src="https://i.ytimg.com/vi/v1_AjS_U1xE/mqdefault.jpg" alt="" loading="lazy">
@@ -446,7 +482,7 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
     <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">665</span></div>
   </div>
 </div>
-<div class="lv-row" data-grupo="gvg" data-d60="0" data-d48="27" data-total="379">
+<div class="lv-row" data-grupo="gvg" data-d60="0" data-d48="26" data-total="378">
   <div class="lv-rank">·</div>
   <img class="lv-thumb" src="https://i.ytimg.com/vi/sdfmDHYBJqQ/mqdefault.jpg" alt="" loading="lazy">
   <div class="lv-info">
@@ -455,8 +491,8 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
   </div>
   <div class="lv-metrics">
     <div class="mt zero" data-k="d60"><span class="mt-lbl">60 min</span><span class="mt-val">+0</span></div>
-    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+27</span></div>
-    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">379</span></div>
+    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+26</span></div>
+    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">378</span></div>
   </div>
 </div>
 <div class="lv-row" data-grupo="gvg" data-d60="0" data-d48="8" data-total="2187">
@@ -470,19 +506,6 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
     <div class="mt zero" data-k="d60"><span class="mt-lbl">60 min</span><span class="mt-val">+0</span></div>
     <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+8</span></div>
     <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">2,187</span></div>
-  </div>
-</div>
-<div class="lv-row" data-grupo="gvg" data-d60="0" data-d48="4" data-total="39">
-  <div class="lv-rank">·</div>
-  <img class="lv-thumb" src="https://i.ytimg.com/vi/HbF4gGAOgqQ/mqdefault.jpg" alt="" loading="lazy">
-  <div class="lv-info">
-    <a class="lv-title" href="https://youtu.be/HbF4gGAOgqQ" target="_blank" rel="noopener">चाची ने जिस अनाथ लड़की को नौकरानी बनाकर भेजा, वही बनी हवेली की बहू | दिल छू लेने वाली कहानी</a>
-    <div class="lv-meta"><span class="pill pill-gvg">HeartTangle</span><span>25/10 09:30</span></div>
-  </div>
-  <div class="lv-metrics">
-    <div class="mt zero" data-k="d60"><span class="mt-lbl">60 min</span><span class="mt-val">+0</span></div>
-    <div class="mt pos" data-k="d48"><span class="mt-lbl">48h</span><span class="mt-val">+4</span></div>
-    <div class="mt zero" data-k="total"><span class="mt-lbl">Total</span><span class="mt-val">39</span></div>
   </div>
 </div>
 <div class="lv-row" data-grupo="gvg" data-d60="0" data-d48="1" data-total="436">
@@ -529,8 +552,8 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
   <td class="num" data-label="Views 60 min">+3</td>
   <td class="num" data-label="Views 48h">+5</td>
   <td class="num" data-label="Views 7d"><b>0</b></td>
-  <td class="num" data-label="Impressões 7d"><span class="pending">⏳ aguardando Google</span></td>
-  <td class="num" data-label="CTR 7d"><span class="pending">⏳ aguardando Google</span></td>
+  <td class="num" data-label="Impressões 7d">0</td>
+  <td class="num" data-label="CTR 7d"><b>0.00%</b></td>
   <td class="num" data-label="Retenção 7d"><span class="sub">—</span></td>
   <td class="num" data-label="Inscritos">0</td>
   <td class="num" data-label="Vídeos">1 públ. · 11 agend.</td>
@@ -541,17 +564,17 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
   <td class="num" data-label="Views 60 min">+0</td>
   <td class="num" data-label="Views 48h">+9</td>
   <td class="num" data-label="Views 7d"><b>361</b></td>
-  <td class="num" data-label="Impressões 7d">9,938</td>
-  <td class="num" data-label="CTR 7d"><b>1.59%</b></td>
+  <td class="num" data-label="Impressões 7d"><span class="pending">⏳ aguardando Google</span></td>
+  <td class="num" data-label="CTR 7d"><span class="pending">⏳ aguardando Google</span></td>
   <td class="num" data-label="Retenção 7d"><b>16.8%</b> <span class='sub'>(5m 52s)</span></td>
   <td class="num" data-label="Inscritos">289</td>
   <td class="num" data-label="Vídeos">3 públ. · 5 agend.</td>
 </tr>
 <tr data-grupo="pessoal">
   <td class="cell-ch"><div class="ch-name">Untold Bharat <span class="pill pill-green">online</span></div><div class="sub">@uuntoldbharat2d · <span class="pill pill-pessoal">Pessoais (Vitor)</span></div></td>
-  <td class="num" data-label="Ritmo VPH"><b style="color:var(--cyan)">+0/h</b></td>
-  <td class="num" data-label="Views 60 min">+0</td>
-  <td class="num" data-label="Views 48h">+27</td>
+  <td class="num" data-label="Ritmo VPH"><b style="color:var(--cyan)">+6/h</b></td>
+  <td class="num" data-label="Views 60 min">+6</td>
+  <td class="num" data-label="Views 48h">+35</td>
   <td class="num" data-label="Views 7d"><b>853</b></td>
   <td class="num" data-label="Impressões 7d">21,236</td>
   <td class="num" data-label="CTR 7d"><b>2.75%</b></td>
@@ -563,7 +586,7 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
   <td class="cell-ch"><div class="ch-name">Cosmic Abyss <span class="pill pill-green">online</span></div><div class="sub">@cosmicabyssdoc · <span class="pill pill-pessoal">Pessoais (Vitor)</span></div></td>
   <td class="num" data-label="Ritmo VPH"><b style="color:var(--cyan)">+1/h</b></td>
   <td class="num" data-label="Views 60 min">+1</td>
-  <td class="num" data-label="Views 48h">+18</td>
+  <td class="num" data-label="Views 48h">+19</td>
   <td class="num" data-label="Views 7d"><b>315</b></td>
   <td class="num" data-label="Impressões 7d">3,631</td>
   <td class="num" data-label="CTR 7d"><b>2.64%</b></td>
@@ -585,8 +608,8 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
 </tr>
 <tr data-grupo="gvg">
   <td class="cell-ch"><div class="ch-name">HeartTangle <span class="pill pill-green">online</span></div><div class="sub">@heartangle2d · <span class="pill pill-gvg">Startup GVG (Vitor + Amigo)</span></div></td>
-  <td class="num" data-label="Ritmo VPH"><b style="color:var(--cyan)">+0/h</b></td>
-  <td class="num" data-label="Views 60 min">+0</td>
+  <td class="num" data-label="Ritmo VPH"><b style="color:var(--cyan)">+1/h</b></td>
+  <td class="num" data-label="Views 60 min">+1</td>
   <td class="num" data-label="Views 48h">+133</td>
   <td class="num" data-label="Views 7d"><b>2,604</b></td>
   <td class="num" data-label="Impressões 7d">63,334</td>
@@ -624,8 +647,8 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
   <div class="top3">
     <div class="box"><h4>🎯 Maior retenção (7d)</h4><div class="empty-mini">Sem views nos últimos 7 dias.</div></div>
     <div class="box"><h4>👁️ Mais views (7d)</h4><div class="empty-mini">Sem views nos últimos 7 dias.</div></div>
-    <div class="box"><h4>🖱️ Maior CTR (7d)</h4><div class="empty-mini">⏳ HTTP Error 500: Internal Server Error</div></div>
-    <div class="box"><h4>📢 Mais impressões (7d)</h4><div class="empty-mini">⏳ HTTP Error 500: Internal Server Error</div></div>
+    <div class="box"><h4>🖱️ Maior CTR (7d)</h4><div class="empty-mini">⏳ 6 dia(s) processados</div></div>
+    <div class="box"><h4>📢 Mais impressões (7d)</h4><div class="empty-mini">⏳ 6 dia(s) processados</div></div>
   </div>
 </details>
 <details class="ch" data-grupo="pessoal" open>
@@ -636,14 +659,14 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
   <div class="top3">
     <div class="box"><h4>🎯 Maior retenção (7d)</h4><div class="rk"><span class="md">🥇</span><div class="ri"><a href="https://youtu.be/7MwmjNyB6PA" target="_blank" rel="noopener">E se Jesus tivesse nascido em 2026 no Brasil?</a><div class="rm"><span class="hi">27.3%</span> (23m 03s) · 41 views</div></div></div><div class="rk"><span class="md">🥈</span><div class="ri"><a href="https://youtu.be/m0e71Vu35eI" target="_blank" rel="noopener">O Mistério de Melquisedeque: Quem Era o Homem Sem Passado da Bíblia?</a><div class="rm"><span class="hi">23.9%</span> (6m 53s) · 174 views</div></div></div><div class="rk"><span class="md">🥉</span><div class="ri"><a href="https://youtu.be/UW8SYlNDUaM" target="_blank" rel="noopener">Os 400 Anos de Silêncio: O Que Aconteceu Antes de Jesus Nascer?</a><div class="rm"><span class="hi">16.8%</span> (4m 53s) · 40 views</div></div></div></div>
     <div class="box"><h4>👁️ Mais views (7d)</h4><div class="rk"><span class="md">🥇</span><div class="ri"><a href="https://youtu.be/m0e71Vu35eI" target="_blank" rel="noopener">O Mistério de Melquisedeque: Quem Era o Homem Sem Passado da Bíblia?</a><div class="rm"><span class="hi">174 views</span> · ret. 23.9%</div></div></div><div class="rk"><span class="md">🥈</span><div class="ri"><a href="https://youtu.be/7MwmjNyB6PA" target="_blank" rel="noopener">E se Jesus tivesse nascido em 2026 no Brasil?</a><div class="rm"><span class="hi">41 views</span> · ret. 27.3%</div></div></div><div class="rk"><span class="md">🥉</span><div class="ri"><a href="https://youtu.be/aMd7KsNowWU" target="_blank" rel="noopener">O Homem com a Força de um Exército que Perdeu os Olhos e Fez um Império Desabar na Própria Morte</a><div class="rm"><span class="hi">41 views</span> · ret. 5.6%</div></div></div></div>
-    <div class="box"><h4>🖱️ Maior CTR (7d)</h4><div class="rk"><span class="md">🥇</span><div class="ri"><a href="https://youtu.be/Vi1LmflBVs0" target="_blank" rel="noopener">O Homem que Foi para a Guerra com Apenas 300 Soldados e...</a><div class="rm"><span class="hi">10.34%</span> · 29 impr.</div></div></div><div class="rk"><span class="md">🥈</span><div class="ri"><a href="https://youtu.be/GX_YJQAVTgA" target="_blank" rel="noopener">O Segredo Oculto que Derrubou o Homem Mais Forte da Terra</a><div class="rm"><span class="hi">8.70%</span> · 23 impr.</div></div></div><div class="rk"><span class="md">🥉</span><div class="ri"><a href="https://youtu.be/ME-nFLsSdfU" target="_blank" rel="noopener">Por Que o Gigante Zombou do Pastor com 5 Pedras na Mão?</a><div class="rm"><span class="hi">6.90%</span> · 29 impr.</div></div></div></div>
-    <div class="box"><h4>📢 Mais impressões (7d)</h4><div class="rk"><span class="md">🥇</span><div class="ri"><a href="https://youtu.be/m0e71Vu35eI" target="_blank" rel="noopener">O Mistério de Melquisedeque: Quem Era o Homem Sem Passado da Bíblia?</a><div class="rm"><span class="hi">6,073</span> impr. · CTR 1.55%</div></div></div><div class="rk"><span class="md">🥈</span><div class="ri"><a href="https://youtu.be/UW8SYlNDUaM" target="_blank" rel="noopener">Os 400 Anos de Silêncio: O Que Aconteceu Antes de Jesus Nascer?</a><div class="rm"><span class="hi">2,057</span> impr. · CTR 0.92%</div></div></div><div class="rk"><span class="md">🥉</span><div class="ri"><a href="https://youtu.be/aMd7KsNowWU" target="_blank" rel="noopener">O Homem com a Força de um Exército que Perdeu os Olhos e Fez um Império Desabar na Própria Morte</a><div class="rm"><span class="hi">640</span> impr. · CTR 3.59%</div></div></div></div>
+    <div class="box"><h4>🖱️ Maior CTR (7d)</h4><div class="empty-mini">⏳ &lt;HttpError 500 when requesting https://youtubereporting.googleapis.com/v1/jobs/74d87176-ed22-45b9-9cfb-9803d1c77c63/repo</div></div>
+    <div class="box"><h4>📢 Mais impressões (7d)</h4><div class="empty-mini">⏳ &lt;HttpError 500 when requesting https://youtubereporting.googleapis.com/v1/jobs/74d87176-ed22-45b9-9cfb-9803d1c77c63/repo</div></div>
   </div>
 </details>
 <details class="ch" data-grupo="pessoal" open>
   <summary>
-    <div class="ch-head"><span class="pill pill-pessoal">Pessoais (Vitor)</span><h3>Untold Bharat <span class="pill pill-green">⚡ +0/h</span><small>@uuntoldbharat2d · Canal Indiano + Doc da Índia</small></h3></div>
-    <div class="ch-stats"><span>👁️ <b>853</b> 7d</span><span>⚡ <b>+27</b> 48h</span><span>👥 <b>6</b></span></div>
+    <div class="ch-head"><span class="pill pill-pessoal">Pessoais (Vitor)</span><h3>Untold Bharat <span class="pill pill-green">⚡ +6/h</span><small>@uuntoldbharat2d · Canal Indiano + Doc da Índia</small></h3></div>
+    <div class="ch-stats"><span>👁️ <b>853</b> 7d</span><span>⚡ <b>+35</b> 48h</span><span>👥 <b>6</b></span></div>
   </summary>
   <div class="top3">
     <div class="box"><h4>🎯 Maior retenção (7d)</h4><div class="rk"><span class="md">🥇</span><div class="ri"><a href="https://youtu.be/oW6lA0757M8" target="_blank" rel="noopener">1984 में भारत और Israel ने Pakistan का Nuclear प्लांट क्यों नहीं उड़ाया? | The Secret CIA Warning</a><div class="rm"><span class="hi">36.6%</span> (9m 30s) · 69 views</div></div></div><div class="rk"><span class="md">🥈</span><div class="ri"><a href="https://youtu.be/G7j8a3ef3hI" target="_blank" rel="noopener">1994 में ISRO के सबसे बड़े वैज्ञानिक को देशद्रोही क्यों बनाया गया? | The Cryogenic Conspiracy</a><div class="rm"><span class="hi">20.9%</span> (11m 32s) · 29 views</div></div></div><div class="rk"><span class="md">🥉</span><div class="ri"><a href="https://youtu.be/Au4ihfn4Ijs" target="_blank" rel="noopener">1992 में एक अमेरिकी कंपनी ने भारत को कैसे लूटा? | The $3 Billion Dabhol Scam</a><div class="rm"><span class="hi">20.4%</span> (10m 51s) · 508 views</div></div></div></div>
@@ -655,7 +678,7 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
 <details class="ch" data-grupo="pessoal" open>
   <summary>
     <div class="ch-head"><span class="pill pill-pessoal">Pessoais (Vitor)</span><h3>Cosmic Abyss <span class="pill pill-green">⚡ +1/h</span><small>@cosmicabyssdoc · Espaço + Segredo Oculto</small></h3></div>
-    <div class="ch-stats"><span>👁️ <b>315</b> 7d</span><span>⚡ <b>+18</b> 48h</span><span>👥 <b>7</b></span></div>
+    <div class="ch-stats"><span>👁️ <b>315</b> 7d</span><span>⚡ <b>+19</b> 48h</span><span>👥 <b>7</b></span></div>
   </summary>
   <div class="top3">
     <div class="box"><h4>🎯 Maior retenção (7d)</h4><div class="rk"><span class="md">🥇</span><div class="ri"><a href="https://youtu.be/bNNeghIPxk4" target="_blank" rel="noopener">James Webb Just Confirmed The Universe Has Two Different Speeds</a><div class="rm"><span class="hi">53.0%</span> (33m 44s) · 11 views</div></div></div><div class="rk"><span class="md">🥈</span><div class="ri"><a href="https://youtu.be/TiVJlqVKeDI" target="_blank" rel="noopener">The 1-Billion-Light-Year Scar That Proves Other Universes Exist</a><div class="rm"><span class="hi">47.5%</span> (18m 58s) · 40 views</div></div></div><div class="rk"><span class="md">🥉</span><div class="ri"><a href="https://youtu.be/Alg7TZ6MeOo" target="_blank" rel="noopener">Physicists Found Where 50% of the Universe Went (The Mirror Cosmos)</a><div class="rm"><span class="hi">43.8%</span> (17m 10s) · 33 views</div></div></div></div>
@@ -678,7 +701,7 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
 </details>
 <details class="ch" data-grupo="gvg" open>
   <summary>
-    <div class="ch-head"><span class="pill pill-gvg">Startup GVG (Vitor + Amigo)</span><h3>HeartTangle <span class="pill pill-green">⚡ +0/h</span><small>@heartangle2d · Indiano + Conflitos de Relacionamento</small></h3></div>
+    <div class="ch-head"><span class="pill pill-gvg">Startup GVG (Vitor + Amigo)</span><h3>HeartTangle <span class="pill pill-green">⚡ +1/h</span><small>@heartangle2d · Indiano + Conflitos de Relacionamento</small></h3></div>
     <div class="ch-stats"><span>👁️ <b>2,604</b> 7d</span><span>⚡ <b>+133</b> 48h</span><span>👥 <b>11</b></span></div>
   </summary>
   <div class="top3">
@@ -702,29 +725,74 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
 </details>
   </div>
 
-  <!-- TAB 2: GRÁFICOS & HISTÓRICO -->
+  <!-- TAB 2: GRÁFICOS & HISTÓRICO COM FILTROS AVANÇADOS -->
   <div class="tab-content" id="view-charts">
-    <div class="ch-chips"><button class="ch-chip active" data-ch="all" onclick="renderChannelCharts('all')">Todos os Canais (Consolidado)</button><button class="ch-chip" data-ch="stickman" onclick="renderChannelCharts('stickman')">How It&#x27;s Made Oficial</button><button class="ch-chip" data-ch="biblia" onclick="renderChannelCharts('biblia')">Bíblia Oculta</button><button class="ch-chip" data-ch="indiano_doc" onclick="renderChannelCharts('indiano_doc')">Untold Bharat</button><button class="ch-chip" data-ch="espaco" onclick="renderChannelCharts('espaco')">Cosmic Abyss</button><button class="ch-chip" data-ch="novela" onclick="renderChannelCharts('novela')">Lorena Vane</button><button class="ch-chip" data-ch="hearttangle" onclick="renderChannelCharts('hearttangle')">HeartTangle</button><button class="ch-chip" data-ch="segredos_olga" onclick="renderChannelCharts('segredos_olga')">Segredos da Olga</button></div>
-    <div class="kpi-row">
-      <div class="kpi">
-        <div class="kpi-val" id="kpi-views-30d">—</div>
-        <div class="kpi-lbl">Visualizações (30 Dias)</div>
+    <div class="filters-panel">
+      <!-- Linha 1: Filtro de Período -->
+      <div class="fg-row">
+        <div class="fg-lbl">📅 Período</div>
+        <div class="fg-ctrl seg">
+          <button class="period-btn" data-p="7d" onclick="setChartPeriod('7d', this)">7 dias</button>
+          <button class="period-btn active" data-p="30d" onclick="setChartPeriod('30d', this)">30 dias</button>
+          <button class="period-btn" data-p="month" onclick="setChartPeriod('month', this)">Este mês</button>
+          <button class="period-btn" data-p="180d" onclick="setChartPeriod('180d', this)">180 dias</button>
+          <button class="period-btn" data-p="year" onclick="setChartPeriod('year', this)">Este ano</button>
+          <button class="period-btn" data-p="all" onclick="setChartPeriod('all', this)">Geral (Início)</button>
+        </div>
       </div>
-      <div class="kpi">
-        <div class="kpi-val" id="kpi-subs-30d" style="color:var(--green)">—</div>
-        <div class="kpi-lbl">Saldo de Inscritos (30d)</div>
+
+      <!-- Linha 2: Filtro de Formato (Vídeos vs Shorts) -->
+      <div class="fg-row">
+        <div class="fg-lbl">🎬 Formato</div>
+        <div class="fg-ctrl seg" style="max-width:520px">
+          <button class="format-btn active" data-f="all" onclick="setChartFormat('all', this)">Todos (Vídeos + Shorts)</button>
+          <button class="format-btn" data-f="video" onclick="setChartFormat('video', this)">🎬 Só Vídeos (Longos)</button>
+          <button class="format-btn" data-f="shorts" onclick="setChartFormat('shorts', this)">⚡ Só Shorts</button>
+        </div>
       </div>
-      <div class="kpi">
-        <div class="kpi-val" id="kpi-top-traffic" style="font-size:15px;color:var(--purple)">—</div>
-        <div class="kpi-lbl">Principal Origem de Tráfego</div>
+
+      <!-- Linha 3: Filtro de Canal -->
+      <div class="fg-row" style="margin-bottom:0">
+        <div class="fg-lbl">📺 Canal</div>
+        <div class="fg-ctrl ch-chips"><button class="ch-chip active" data-ch="all" onclick="setChartChannel('all', this)">Todos os Canais (Consolidado)</button><button class="ch-chip" data-ch="stickman" onclick="setChartChannel('stickman', this)">How It&#x27;s Made Oficial</button><button class="ch-chip" data-ch="biblia" onclick="setChartChannel('biblia', this)">Bíblia Oculta</button><button class="ch-chip" data-ch="indiano_doc" onclick="setChartChannel('indiano_doc', this)">Untold Bharat</button><button class="ch-chip" data-ch="espaco" onclick="setChartChannel('espaco', this)">Cosmic Abyss</button><button class="ch-chip" data-ch="novela" onclick="setChartChannel('novela', this)">Lorena Vane</button><button class="ch-chip" data-ch="hearttangle" onclick="setChartChannel('hearttangle', this)">HeartTangle</button><button class="ch-chip" data-ch="segredos_olga" onclick="setChartChannel('segredos_olga', this)">Segredos da Olga</button></div>
       </div>
     </div>
-    <div class="chart-grid">
+
+    <!-- 4 KPIs Dinâmicos -->
+    <div class="kpi-grid">
+      <div class="kpi">
+        <div class="kpi-val" id="kpi-views">—</div>
+        <div class="kpi-lbl">Visualizações</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val" id="kpi-subs" style="color:var(--green)">—</div>
+        <div class="kpi-lbl">Saldo de Inscritos</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val" id="kpi-hours" style="color:var(--amber)">—</div>
+        <div class="kpi-lbl">Tempo de Exibição</div>
+      </div>
+      <div class="kpi">
+        <div class="kpi-val" id="kpi-avg" style="color:var(--purple)">—</div>
+        <div class="kpi-lbl">Média Diária</div>
+      </div>
+    </div>
+
+    <!-- Gráfico 1: Linha de Views -->
+    <div class="chart-card">
+      <div class="chart-head">
+        <h3 id="chart-title">📈 Curva de Visualizações Diárias</h3>
+      </div>
+      <div class="chart-box"><canvas id="chartViews"></canvas></div>
+    </div>
+
+    <!-- Gráfico 2 & 3: Saldo de Inscritos e Origens de Tráfego -->
+    <div class="charts-split">
       <div class="chart-card">
         <div class="chart-head">
-          <h3>📈 Curva de Visualizações Diárias (30 Dias)</h3>
+          <h3>👥 Saldo Diário de Inscritos (+ / -)</h3>
         </div>
-        <div class="chart-box"><canvas id="chartViews"></canvas></div>
+        <div class="chart-box"><canvas id="chartSubs"></canvas></div>
       </div>
       <div class="chart-card">
         <div class="chart-head">
@@ -831,9 +899,9 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
     </div>
   </div>
   <div class="r10-metrics">
-    <div>Views: <b>1</b></div>
+    <div>Views: <b>2</b></div>
     <div>Média dos 9 anteriores: <b>135</b></div>
-    <div>Vs Média: <b style="color:var(--red)">-99.3%</b></div>
+    <div>Vs Média: <b style="color:var(--red)">-98.5%</b></div>
   </div>
 </div>
 <div class="r10-card" data-grupo="pessoal">
@@ -877,9 +945,9 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
     </div>
   </div>
   <div class="r10-metrics">
-    <div>Views: <b>379</b></div>
+    <div>Views: <b>378</b></div>
     <div>Média dos 8 anteriores: <b>472</b></div>
-    <div>Vs Média: <b style="color:var(--red)">-19.6%</b></div>
+    <div>Vs Média: <b style="color:var(--red)">-19.9%</b></div>
   </div>
 </div>
 <div class="r10-card" data-grupo="gvg">
@@ -1228,9 +1296,11 @@ details.ch:not([open])>summary::after{transform:rotate(-90deg)}
 
 </div>
 <script>
-window.CHANNELS_TIMESERIES = {"stickman": {"title": "How It's Made Oficial", "handle": "@howitsmadeoficial", "group_slug": "pessoal", "history_30d": [{"day": "2026-09-28", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-29", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-30", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-01", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-02", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-03", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-04", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-05", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-06", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-07", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-08", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-09", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-10", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-11", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-12", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-13", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-14", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-15", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-16", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-17", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-18", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-19", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-20", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-21", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-22", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-23", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-24", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-25", "views": 0, "minutes": 0.0, "net_subs": 0}], "traffic_sources_30d": []}, "biblia": {"title": "Bíblia Oculta", "handle": "@bibliaoculta7", "group_slug": "pessoal", "history_30d": [{"day": "2026-09-28", "views": 1439, "minutes": 1105.0, "net_subs": 5}, {"day": "2026-09-29", "views": 2167, "minutes": 1509.0, "net_subs": 16}, {"day": "2026-09-30", "views": 3010, "minutes": 1773.0, "net_subs": 15}, {"day": "2026-10-01", "views": 858, "minutes": 541.0, "net_subs": 7}, {"day": "2026-10-02", "views": 1388, "minutes": 911.0, "net_subs": 8}, {"day": "2026-10-03", "views": 1505, "minutes": 402.0, "net_subs": 5}, {"day": "2026-10-04", "views": 890, "minutes": 364.0, "net_subs": 1}, {"day": "2026-10-05", "views": 358, "minutes": 354.0, "net_subs": 4}, {"day": "2026-10-06", "views": 323, "minutes": 1460.0, "net_subs": 1}, {"day": "2026-10-07", "views": 317, "minutes": 596.0, "net_subs": 2}, {"day": "2026-10-08", "views": 338, "minutes": 1067.0, "net_subs": 3}, {"day": "2026-10-09", "views": 131, "minutes": 146.0, "net_subs": 2}, {"day": "2026-10-10", "views": 131, "minutes": 121.0, "net_subs": 1}, {"day": "2026-10-11", "views": 96, "minutes": 192.0, "net_subs": 1}, {"day": "2026-10-12", "views": 84, "minutes": 146.0, "net_subs": 0}, {"day": "2026-10-13", "views": 51, "minutes": 79.0, "net_subs": 0}, {"day": "2026-10-14", "views": 69, "minutes": 446.0, "net_subs": 0}, {"day": "2026-10-15", "views": 117, "minutes": 356.0, "net_subs": 3}, {"day": "2026-10-16", "views": 247, "minutes": 772.0, "net_subs": 3}, {"day": "2026-10-17", "views": 186, "minutes": 723.0, "net_subs": 1}, {"day": "2026-10-18", "views": 71, "minutes": 163.0, "net_subs": 0}, {"day": "2026-10-19", "views": 50, "minutes": 230.0, "net_subs": 0}, {"day": "2026-10-20", "views": 55, "minutes": 652.0, "net_subs": 2}, {"day": "2026-10-21", "views": 65, "minutes": 98.0, "net_subs": 1}, {"day": "2026-10-22", "views": 82, "minutes": 211.0, "net_subs": 0}, {"day": "2026-10-23", "views": 16, "minutes": 43.0, "net_subs": 0}, {"day": "2026-10-24", "views": 126, "minutes": 716.0, "net_subs": 3}, {"day": "2026-10-25", "views": 72, "minutes": 63.0, "net_subs": 0}], "traffic_sources_30d": [{"source": "SHORTS", "label": "Feed do Shorts", "views": 9380, "minutes": 5416.0}, {"source": "SUBSCRIBER", "label": "Feed de Inscrições", "views": 1762, "minutes": 880.0}, {"source": "RELATED_VIDEO", "label": "Vídeos Sugeridos", "views": 1468, "minutes": 7456.0}, {"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 1167, "minutes": 411.0}, {"source": "YT_CHANNEL", "label": "Página do Canal", "views": 256, "minutes": 218.0}, {"source": "NO_LINK_OTHER", "label": "Direto / Desconhecido", "views": 62, "minutes": 157.0}, {"source": "YT_OTHER_PAGE", "label": "Navegação / Início", "views": 58, "minutes": 245.0}, {"source": "EXT_URL", "label": "Sites Externos", "views": 22, "minutes": 92.0}, {"source": "NOTIFICATION", "label": "Notificações", "views": 22, "minutes": 159.0}, {"source": "PLAYLIST", "label": "Playlists", "views": 17, "minutes": 168.0}, {"source": "SHORTS_CONTENT_LINKS", "label": "SHORTS_CONTENT_LINKS", "views": 4, "minutes": 18.0}, {"source": "SOUND_PAGE", "label": "SOUND_PAGE", "views": 2, "minutes": 0.0}, {"source": "END_SCREEN", "label": "Telas Finais", "views": 1, "minutes": 28.0}]}, "indiano_doc": {"title": "Untold Bharat", "handle": "@uuntoldbharat2d", "group_slug": "pessoal", "history_30d": [{"day": "2026-09-28", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-29", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-30", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-01", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-02", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-03", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-04", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-05", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-06", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-07", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-08", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-09", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-10", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-11", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-12", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-13", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-14", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-15", "views": 24, "minutes": 76.0, "net_subs": 0}, {"day": "2026-10-16", "views": 37, "minutes": 134.0, "net_subs": 0}, {"day": "2026-10-17", "views": 385, "minutes": 605.0, "net_subs": 0}, {"day": "2026-10-18", "views": 750, "minutes": 960.0, "net_subs": 0}, {"day": "2026-10-19", "views": 385, "minutes": 990.0, "net_subs": 1}, {"day": "2026-10-20", "views": 77, "minutes": 266.0, "net_subs": 0}, {"day": "2026-10-21", "views": 170, "minutes": 840.0, "net_subs": 0}, {"day": "2026-10-22", "views": 270, "minutes": 1461.0, "net_subs": 0}, {"day": "2026-10-23", "views": 208, "minutes": 1899.0, "net_subs": 0}, {"day": "2026-10-24", "views": 123, "minutes": 1338.0, "net_subs": 1}, {"day": "2026-10-25", "views": 82, "minutes": 776.0, "net_subs": 0}], "traffic_sources_30d": [{"source": "SUBSCRIBER", "label": "Feed de Inscrições", "views": 1605, "minutes": 1994.0}, {"source": "RELATED_VIDEO", "label": "Vídeos Sugeridos", "views": 710, "minutes": 6565.0}, {"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 132, "minutes": 88.0}, {"source": "YT_OTHER_PAGE", "label": "Navegação / Início", "views": 31, "minutes": 449.0}, {"source": "NO_LINK_OTHER", "label": "Direto / Desconhecido", "views": 23, "minutes": 144.0}, {"source": "YT_CHANNEL", "label": "Página do Canal", "views": 3, "minutes": 1.0}, {"source": "EXT_URL", "label": "Sites Externos", "views": 3, "minutes": 0.0}, {"source": "PLAYLIST", "label": "Playlists", "views": 3, "minutes": 107.0}]}, "espaco": {"title": "Cosmic Abyss", "handle": "@cosmicabyssdoc", "group_slug": "pessoal", "history_30d": [{"day": "2026-09-28", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-29", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-30", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-01", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-02", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-03", "views": 23, "minutes": 167.0, "net_subs": 0}, {"day": "2026-10-04", "views": 25, "minutes": 155.0, "net_subs": 0}, {"day": "2026-10-05", "views": 13, "minutes": 4.0, "net_subs": 0}, {"day": "2026-10-06", "views": 22, "minutes": 211.0, "net_subs": 0}, {"day": "2026-10-07", "views": 35, "minutes": 66.0, "net_subs": 0}, {"day": "2026-10-08", "views": 36, "minutes": 2.0, "net_subs": 0}, {"day": "2026-10-09", "views": 4, "minutes": 1.0, "net_subs": 0}, {"day": "2026-10-10", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-11", "views": 18, "minutes": 83.0, "net_subs": 2}, {"day": "2026-10-12", "views": 58, "minutes": 227.0, "net_subs": 1}, {"day": "2026-10-13", "views": 16, "minutes": 48.0, "net_subs": 0}, {"day": "2026-10-14", "views": 55, "minutes": 688.0, "net_subs": 0}, {"day": "2026-10-15", "views": 33, "minutes": 124.0, "net_subs": 0}, {"day": "2026-10-16", "views": 49, "minutes": 270.0, "net_subs": 0}, {"day": "2026-10-17", "views": 84, "minutes": 244.0, "net_subs": 1}, {"day": "2026-10-18", "views": 83, "minutes": 202.0, "net_subs": 0}, {"day": "2026-10-19", "views": 143, "minutes": 337.0, "net_subs": 0}, {"day": "2026-10-20", "views": 181, "minutes": 489.0, "net_subs": 1}, {"day": "2026-10-21", "views": 157, "minutes": 377.0, "net_subs": 0}, {"day": "2026-10-22", "views": 41, "minutes": 268.0, "net_subs": 0}, {"day": "2026-10-23", "views": 32, "minutes": 337.0, "net_subs": 1}, {"day": "2026-10-24", "views": 55, "minutes": 338.0, "net_subs": 1}, {"day": "2026-10-25", "views": 31, "minutes": 303.0, "net_subs": 0}], "traffic_sources_30d": [{"source": "SUBSCRIBER", "label": "Feed de Inscrições", "views": 690, "minutes": 1037.0}, {"source": "RELATED_VIDEO", "label": "Vídeos Sugeridos", "views": 279, "minutes": 3063.0}, {"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 159, "minutes": 271.0}, {"source": "NO_LINK_OTHER", "label": "Direto / Desconhecido", "views": 35, "minutes": 269.0}, {"source": "YT_OTHER_PAGE", "label": "Navegação / Início", "views": 12, "minutes": 99.0}, {"source": "PLAYLIST", "label": "Playlists", "views": 7, "minutes": 172.0}, {"source": "YT_CHANNEL", "label": "Página do Canal", "views": 5, "minutes": 33.0}, {"source": "EXT_URL", "label": "Sites Externos", "views": 2, "minutes": 0.0}]}, "novela": {"title": "Lorena Vane", "handle": "@lorenavane1", "group_slug": "pessoal", "history_30d": [{"day": "2026-09-28", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-29", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-30", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-01", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-02", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-03", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-04", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-05", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-06", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-07", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-10-08", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2026-10-09", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-10", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-11", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-12", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-13", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-14", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-15", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-16", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-17", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-18", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-19", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-20", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-21", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-22", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-23", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-24", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-25", "views": 0, "minutes": 0.0, "net_subs": 0}], "traffic_sources_30d": [{"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 9, "minutes": 1.0}]}, "hearttangle": {"title": "HeartTangle", "handle": "@heartangle2d", "group_slug": "gvg", "history_30d": [{"day": "2026-09-28", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-29", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-30", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-01", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-02", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-03", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-04", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-05", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-06", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-07", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-08", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-09", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-10", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-11", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-12", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-13", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-14", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-15", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-16", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-17", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-18", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-19", "views": 72, "minutes": 260.0, "net_subs": 0}, {"day": "2026-10-20", "views": 328, "minutes": 1209.0, "net_subs": 1}, {"day": "2026-10-21", "views": 465, "minutes": 1230.0, "net_subs": 3}, {"day": "2026-10-22", "views": 1010, "minutes": 2268.0, "net_subs": 3}, {"day": "2026-10-23", "views": 386, "minutes": 868.0, "net_subs": 0}, {"day": "2026-10-24", "views": 347, "minutes": 678.0, "net_subs": 0}, {"day": "2026-10-25", "views": 396, "minutes": 1284.0, "net_subs": 0}], "traffic_sources_30d": [{"source": "SUBSCRIBER", "label": "Feed de Inscrições", "views": 1836, "minutes": 3931.0}, {"source": "RELATED_VIDEO", "label": "Vídeos Sugeridos", "views": 1083, "minutes": 3414.0}, {"source": "YT_OTHER_PAGE", "label": "Navegação / Início", "views": 74, "minutes": 418.0}, {"source": "NO_LINK_OTHER", "label": "Direto / Desconhecido", "views": 7, "minutes": 35.0}, {"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 3, "minutes": 0.0}, {"source": "PLAYLIST", "label": "Playlists", "views": 1, "minutes": 0.0}]}, "segredos_olga": {"title": "Segredos da Olga", "handle": "@segredosdaolga", "group_slug": "gvg", "history_30d": [{"day": "2026-09-28", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-29", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-30", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-01", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-02", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-03", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-04", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-05", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-06", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-07", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-08", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-09", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-10", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-11", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-12", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-13", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-14", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-15", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-16", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-17", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-18", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-19", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-20", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-21", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-22", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-23", "views": 4, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-24", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-25", "views": 0, "minutes": 0.0, "net_subs": 0}], "traffic_sources_30d": [{"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 5, "minutes": 0.0}, {"source": "EXT_URL", "label": "Sites Externos", "views": 1, "minutes": 0.0}]}};
+window.CHANNELS_TIMESERIES = {"stickman": {"title": "How It's Made Oficial", "handle": "@howitsmadeoficial", "group_slug": "pessoal", "history_lifetime": [], "traffic_sources_lifetime": []}, "biblia": {"title": "Bíblia Oculta", "handle": "@bibliaoculta7", "group_slug": "pessoal", "history_lifetime": [{"day": "2023-10-12", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2023-10-12", "type": "shorts", "views": 60, "minutes": 27.0, "net_subs": 3}, {"day": "2023-10-12", "type": "video", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2023-10-13", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2023-10-13", "type": "shorts", "views": 342, "minutes": 184.0, "net_subs": 5}, {"day": "2023-10-14", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2023-10-14", "type": "shorts", "views": 238, "minutes": 136.0, "net_subs": 10}, {"day": "2023-10-15", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2023-10-15", "type": "shorts", "views": 209, "minutes": 82.0, "net_subs": 1}, {"day": "2023-10-16", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -2}, {"day": "2023-10-16", "type": "shorts", "views": 1440, "minutes": 659.0, "net_subs": 14}, {"day": "2023-10-17", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2023-10-17", "type": "shorts", "views": 551, "minutes": 224.0, "net_subs": 2}, {"day": "2023-10-18", "type": "shorts", "views": 80, "minutes": 36.0, "net_subs": 1}, {"day": "2023-10-19", "type": "shorts", "views": 463, "minutes": 322.0, "net_subs": 3}, {"day": "2023-10-20", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2023-10-20", "type": "shorts", "views": 3678, "minutes": 2352.0, "net_subs": 22}, {"day": "2023-10-21", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2023-10-21", "type": "shorts", "views": 763, "minutes": 451.0, "net_subs": 4}, {"day": "2023-10-22", "type": "shorts", "views": 40, "minutes": 34.0, "net_subs": 2}, {"day": "2023-10-23", "type": "shorts", "views": 150, "minutes": 105.0, "net_subs": 1}, {"day": "2023-10-24", "type": "shorts", "views": 60, "minutes": 56.0, "net_subs": 2}, {"day": "2023-10-25", "type": "shorts", "views": 60, "minutes": 71.0, "net_subs": 3}, {"day": "2023-10-26", "type": "shorts", "views": 43, "minutes": 36.0, "net_subs": 1}, {"day": "2023-10-27", "type": "shorts", "views": 9, "minutes": 5.0, "net_subs": 1}, {"day": "2023-10-28", "type": "shorts", "views": 23, "minutes": 17.0, "net_subs": 0}, {"day": "2023-10-29", "type": "shorts", "views": 5, "minutes": 16.0, "net_subs": 0}, {"day": "2023-10-30", "type": "shorts", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2023-10-31", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2023-10-31", "type": "shorts", "views": 8, "minutes": 3.0, "net_subs": 0}, {"day": "2023-11-01", "type": "shorts", "views": 1, "minutes": 1.0, "net_subs": 0}, {"day": "2023-11-02", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 1}, {"day": "2023-11-03", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2023-11-05", "type": "shorts", "views": 2, "minutes": 2.0, "net_subs": 0}, {"day": "2023-11-06", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2023-11-08", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2023-11-13", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2023-11-15", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2023-11-16", "type": "shorts", "views": 7, "minutes": 3.0, "net_subs": 0}, {"day": "2023-11-17", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2023-11-17", "type": "shorts", "views": 9, "minutes": 3.0, "net_subs": 0}, {"day": "2023-11-18", "type": "shorts", "views": 3, "minutes": 1.0, "net_subs": 0}, {"day": "2023-11-27", "type": "shorts", "views": 3, "minutes": 5.0, "net_subs": 0}, {"day": "2023-11-28", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2023-11-30", "type": "shorts", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2023-12-01", "type": "shorts", "views": 3, "minutes": 2.0, "net_subs": 0}, {"day": "2023-12-03", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2023-12-09", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2023-12-10", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2023-12-21", "type": "shorts", "views": 3, "minutes": 2.0, "net_subs": 0}, {"day": "2023-12-24", "type": "shorts", "views": 4, "minutes": 1.0, "net_subs": 0}, {"day": "2023-12-28", "type": "shorts", "views": 7, "minutes": 3.0, "net_subs": 0}, {"day": "2023-12-29", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-01-02", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-01-04", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-01-06", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-01-10", "type": "shorts", "views": 9, "minutes": 3.0, "net_subs": 1}, {"day": "2024-01-13", "type": "shorts", "views": 2, "minutes": 38.0, "net_subs": 0}, {"day": "2024-01-14", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-01-16", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-01-20", "type": "shorts", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2024-01-24", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-01-28", "type": "shorts", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2024-02-02", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-02-04", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-02-05", "type": "shorts", "views": 1, "minutes": 1.0, "net_subs": 0}, {"day": "2024-02-15", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-02-18", "type": "shorts", "views": 3, "minutes": 1.0, "net_subs": 0}, {"day": "2024-02-19", "type": "shorts", "views": 1, "minutes": 1.0, "net_subs": 0}, {"day": "2024-02-20", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-02-21", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-02-22", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-02-24", "type": "shorts", "views": 1, "minutes": 1.0, "net_subs": 0}, {"day": "2024-02-25", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-02-26", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-02-28", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-02-29", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-03-01", "type": "shorts", "views": 5, "minutes": 4.0, "net_subs": 0}, {"day": "2024-03-03", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-03-06", "type": "shorts", "views": 6, "minutes": 3.0, "net_subs": 0}, {"day": "2024-03-07", "type": "shorts", "views": 18, "minutes": 12.0, "net_subs": 0}, {"day": "2024-03-09", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-03-10", "type": "shorts", "views": 4, "minutes": 1.0, "net_subs": 0}, {"day": "2024-03-11", "type": "shorts", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2024-03-12", "type": "shorts", "views": 4, "minutes": 1.0, "net_subs": 0}, {"day": "2024-03-13", "type": "shorts", "views": 6, "minutes": 4.0, "net_subs": 0}, {"day": "2024-03-14", "type": "shorts", "views": 3, "minutes": 3.0, "net_subs": 0}, {"day": "2024-03-15", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-03-16", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-03-17", "type": "shorts", "views": 4, "minutes": 1.0, "net_subs": 0}, {"day": "2024-03-19", "type": "shorts", "views": 6, "minutes": 4.0, "net_subs": 0}, {"day": "2024-03-21", "type": "shorts", "views": 4, "minutes": 1.0, "net_subs": 0}, {"day": "2024-03-23", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-03-24", "type": "shorts", "views": 5, "minutes": 3.0, "net_subs": 0}, {"day": "2024-03-25", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-03-26", "type": "shorts", "views": 2, "minutes": 2.0, "net_subs": 0}, {"day": "2024-03-27", "type": "shorts", "views": 5, "minutes": 3.0, "net_subs": 1}, {"day": "2024-03-28", "type": "shorts", "views": 3, "minutes": 1.0, "net_subs": 0}, {"day": "2024-03-29", "type": "shorts", "views": 3, "minutes": 0.0, "net_subs": 0}, {"day": "2024-03-31", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-04-01", "type": "shorts", "views": 15, "minutes": 11.0, "net_subs": 1}, {"day": "2024-04-03", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-04-04", "type": "shorts", "views": 9, "minutes": 5.0, "net_subs": 0}, {"day": "2024-04-06", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-04-07", "type": "shorts", "views": 5, "minutes": 3.0, "net_subs": 0}, {"day": "2024-04-08", "type": "shorts", "views": 5, "minutes": 2.0, "net_subs": 0}, {"day": "2024-04-09", "type": "shorts", "views": 5, "minutes": 2.0, "net_subs": 0}, {"day": "2024-04-10", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-04-11", "type": "shorts", "views": 3, "minutes": 0.0, "net_subs": 0}, {"day": "2024-04-12", "type": "shorts", "views": 5, "minutes": 2.0, "net_subs": 0}, {"day": "2024-04-13", "type": "shorts", "views": 4, "minutes": 2.0, "net_subs": 0}, {"day": "2024-04-14", "type": "shorts", "views": 8, "minutes": 7.0, "net_subs": 0}, {"day": "2024-04-15", "type": "shorts", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2024-04-16", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-04-17", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-04-18", "type": "shorts", "views": 4, "minutes": 2.0, "net_subs": 0}, {"day": "2024-04-19", "type": "shorts", "views": 3, "minutes": 2.0, "net_subs": 1}, {"day": "2024-04-20", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-04-21", "type": "shorts", "views": 6, "minutes": 5.0, "net_subs": 0}, {"day": "2024-04-22", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-04-23", "type": "shorts", "views": 4, "minutes": 2.0, "net_subs": 0}, {"day": "2024-04-24", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-04-25", "type": "shorts", "views": 5, "minutes": 2.0, "net_subs": 0}, {"day": "2024-04-26", "type": "shorts", "views": 3, "minutes": 1.0, "net_subs": 0}, {"day": "2024-04-27", "type": "shorts", "views": 5, "minutes": 2.0, "net_subs": 0}, {"day": "2024-04-28", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-04-29", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-04-30", "type": "shorts", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2024-05-01", "type": "shorts", "views": 4, "minutes": 2.0, "net_subs": 0}, {"day": "2024-05-02", "type": "shorts", "views": 5, "minutes": 7.0, "net_subs": 0}, {"day": "2024-05-03", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-05-04", "type": "shorts", "views": 4, "minutes": 2.0, "net_subs": 0}, {"day": "2024-05-05", "type": "shorts", "views": 7, "minutes": 4.0, "net_subs": 0}, {"day": "2024-05-06", "type": "shorts", "views": 4, "minutes": 4.0, "net_subs": 0}, {"day": "2024-05-07", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-05-08", "type": "shorts", "views": 3, "minutes": 0.0, "net_subs": 0}, {"day": "2024-05-09", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-05-10", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-05-11", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-05-12", "type": "shorts", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2024-05-13", "type": "shorts", "views": 5, "minutes": 3.0, "net_subs": 0}, {"day": "2024-05-14", "type": "shorts", "views": 4, "minutes": 1.0, "net_subs": 0}, {"day": "2024-05-15", "type": "shorts", "views": 7, "minutes": 3.0, "net_subs": 1}, {"day": "2024-05-16", "type": "shorts", "views": 3, "minutes": 2.0, "net_subs": 0}, {"day": "2024-05-17", "type": "shorts", "views": 5, "minutes": 3.0, "net_subs": 0}, {"day": "2024-05-18", "type": "shorts", "views": 6, "minutes": 4.0, "net_subs": 0}, {"day": "2024-05-19", "type": "shorts", "views": 4, "minutes": 1.0, "net_subs": 0}, {"day": "2024-05-20", "type": "shorts", "views": 1243, "minutes": 785.0, "net_subs": 7}, {"day": "2024-05-21", "type": "shorts", "views": 1287, "minutes": 977.0, "net_subs": 3}, {"day": "2024-05-22", "type": "shorts", "views": 813, "minutes": 546.0, "net_subs": 0}, {"day": "2024-05-23", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2024-05-23", "type": "shorts", "views": 419, "minutes": 225.0, "net_subs": 3}, {"day": "2024-05-24", "type": "shorts", "views": 231, "minutes": 100.0, "net_subs": 0}, {"day": "2024-05-25", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2024-05-25", "type": "shorts", "views": 361, "minutes": 220.0, "net_subs": 0}, {"day": "2024-05-26", "type": "shorts", "views": 134, "minutes": 94.0, "net_subs": 0}, {"day": "2024-05-27", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2024-05-27", "type": "shorts", "views": 498, "minutes": 297.0, "net_subs": 3}, {"day": "2024-05-28", "type": "shorts", "views": 501, "minutes": 404.0, "net_subs": 2}, {"day": "2024-05-29", "type": "shorts", "views": 457, "minutes": 170.0, "net_subs": 1}, {"day": "2024-05-30", "type": "shorts", "views": 40, "minutes": 38.0, "net_subs": 1}, {"day": "2024-05-31", "type": "shorts", "views": 859, "minutes": 658.0, "net_subs": 4}, {"day": "2024-06-01", "type": "shorts", "views": 503, "minutes": 237.0, "net_subs": 2}, {"day": "2024-06-02", "type": "shorts", "views": 473, "minutes": 392.0, "net_subs": 0}, {"day": "2024-06-03", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2024-06-03", "type": "shorts", "views": 519, "minutes": 343.0, "net_subs": 1}, {"day": "2024-06-03", "type": "video", "views": 3, "minutes": 3.0, "net_subs": 0}, {"day": "2024-06-04", "type": "shorts", "views": 577, "minutes": 469.0, "net_subs": 5}, {"day": "2024-06-04", "type": "video", "views": 4, "minutes": 3.0, "net_subs": 0}, {"day": "2024-06-05", "type": "shorts", "views": 39, "minutes": 15.0, "net_subs": 0}, {"day": "2024-06-05", "type": "video", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-06-06", "type": "shorts", "views": 3, "minutes": 0.0, "net_subs": 0}, {"day": "2024-06-06", "type": "video", "views": 3, "minutes": 9.0, "net_subs": 0}, {"day": "2024-06-07", "type": "shorts", "views": 3, "minutes": 2.0, "net_subs": 0}, {"day": "2024-06-08", "type": "shorts", "views": 4, "minutes": 3.0, "net_subs": 0}, {"day": "2024-06-08", "type": "video", "views": 8, "minutes": 7.0, "net_subs": 0}, {"day": "2024-06-09", "type": "shorts", "views": 4, "minutes": 2.0, "net_subs": 0}, {"day": "2024-06-10", "type": "shorts", "views": 416, "minutes": 203.0, "net_subs": 2}, {"day": "2024-06-10", "type": "video", "views": 10, "minutes": 8.0, "net_subs": 0}, {"day": "2024-06-11", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2024-06-11", "type": "shorts", "views": 1246, "minutes": 703.0, "net_subs": 3}, {"day": "2024-06-11", "type": "video", "views": 7, "minutes": 3.0, "net_subs": 0}, {"day": "2024-06-12", "type": "shorts", "views": 4, "minutes": 11.0, "net_subs": 0}, {"day": "2024-06-12", "type": "video", "views": 1, "minutes": 2.0, "net_subs": 0}, {"day": "2024-06-13", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-06-14", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2024-06-14", "type": "shorts", "views": 1396, "minutes": 937.0, "net_subs": 5}, {"day": "2024-06-14", "type": "video", "views": 6, "minutes": 5.0, "net_subs": 0}, {"day": "2024-06-15", "type": "shorts", "views": 811, "minutes": 410.0, "net_subs": 1}, {"day": "2024-06-15", "type": "video", "views": 4, "minutes": 1.0, "net_subs": 0}, {"day": "2024-06-16", "type": "shorts", "views": 551, "minutes": 236.0, "net_subs": 2}, {"day": "2024-06-16", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-06-17", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2024-06-17", "type": "shorts", "views": 1141, "minutes": 677.0, "net_subs": 8}, {"day": "2024-06-17", "type": "video", "views": 3, "minutes": 2.0, "net_subs": 0}, {"day": "2024-06-18", "type": "shorts", "views": 472, "minutes": 392.0, "net_subs": 1}, {"day": "2024-06-18", "type": "video", "views": 1, "minutes": 1.0, "net_subs": 0}, {"day": "2024-06-19", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2024-06-19", "type": "shorts", "views": 350, "minutes": 283.0, "net_subs": 1}, {"day": "2024-06-19", "type": "video", "views": 2, "minutes": 2.0, "net_subs": 0}, {"day": "2024-06-20", "type": "shorts", "views": 458, "minutes": 251.0, "net_subs": 0}, {"day": "2024-06-21", "type": "shorts", "views": 484, "minutes": 216.0, "net_subs": 0}, {"day": "2024-06-21", "type": "video", "views": 3, "minutes": 5.0, "net_subs": 0}, {"day": "2024-06-22", "type": "shorts", "views": 487, "minutes": 283.0, "net_subs": 0}, {"day": "2024-06-22", "type": "video", "views": 2, "minutes": 2.0, "net_subs": 0}, {"day": "2024-06-23", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2024-06-23", "type": "shorts", "views": 453, "minutes": 252.0, "net_subs": 2}, {"day": "2024-06-23", "type": "video", "views": 1, "minutes": 1.0, "net_subs": 0}, {"day": "2024-06-24", "type": "shorts", "views": 13, "minutes": 7.0, "net_subs": 1}, {"day": "2024-06-24", "type": "video", "views": 1, "minutes": 1.0, "net_subs": 0}, {"day": "2024-06-25", "type": "shorts", "views": 478, "minutes": 159.0, "net_subs": 1}, {"day": "2024-06-26", "type": "shorts", "views": 229, "minutes": 152.0, "net_subs": 0}, {"day": "2024-06-27", "type": "shorts", "views": 738, "minutes": 360.0, "net_subs": 5}, {"day": "2024-06-28", "type": "shorts", "views": 481, "minutes": 206.0, "net_subs": 1}, {"day": "2024-06-29", "type": "shorts", "views": 536, "minutes": 191.0, "net_subs": 0}, {"day": "2024-06-30", "type": "shorts", "views": 468, "minutes": 237.0, "net_subs": 2}, {"day": "2024-07-01", "type": "shorts", "views": 66, "minutes": 21.0, "net_subs": 0}, {"day": "2024-07-01", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-07-02", "type": "shorts", "views": 84, "minutes": 37.0, "net_subs": 0}, {"day": "2024-07-02", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-07-03", "type": "shorts", "views": 24, "minutes": 11.0, "net_subs": 0}, {"day": "2024-07-04", "type": "shorts", "views": 5, "minutes": 1.0, "net_subs": 0}, {"day": "2024-07-05", "type": "shorts", "views": 3, "minutes": 1.0, "net_subs": 0}, {"day": "2024-07-05", "type": "video", "views": 2, "minutes": 2.0, "net_subs": 0}, {"day": "2024-07-06", "type": "shorts", "views": 14, "minutes": 8.0, "net_subs": 0}, {"day": "2024-07-06", "type": "video", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2024-07-07", "type": "shorts", "views": 3, "minutes": 1.0, "net_subs": 0}, {"day": "2024-07-08", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2024-07-08", "type": "video", "views": 2, "minutes": 2.0, "net_subs": 0}, {"day": "2024-07-18", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2024-08-14", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2024-09-13", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2024-10-14", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2024-10-15", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2025-04-06", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2025-04-11", "type": "video", "views": 3, "minutes": 0.0, "net_subs": 0}, {"day": "2025-05-02", "type": "video", "views": 1, "minutes": 1.0, "net_subs": 0}, {"day": "2025-06-06", "type": "video", "views": 1, "minutes": 1.0, "net_subs": 0}, {"day": "2025-09-15", "type": "video", "views": 1, "minutes": 1.0, "net_subs": 0}, {"day": "2025-10-17", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-01-03", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-01-30", "type": "video", "views": 4, "minutes": 2.0, "net_subs": 0}, {"day": "2026-04-23", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-08-15", "type": "video", "views": 3, "minutes": 6.0, "net_subs": 0}, {"day": "2026-08-17", "type": "video", "views": 3, "minutes": 0.0, "net_subs": 0}, {"day": "2026-08-18", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-08-20", "type": "shorts", "views": 70, "minutes": 14.0, "net_subs": 2}, {"day": "2026-08-21", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-08-21", "type": "shorts", "views": 187, "minutes": 31.0, "net_subs": 1}, {"day": "2026-08-22", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2026-08-22", "type": "shorts", "views": 653, "minutes": 156.0, "net_subs": 4}, {"day": "2026-08-23", "type": "shorts", "views": 116, "minutes": 32.0, "net_subs": 0}, {"day": "2026-08-24", "type": "shorts", "views": 209, "minutes": 60.0, "net_subs": 0}, {"day": "2026-08-24", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-08-25", "type": "shorts", "views": 252, "minutes": 49.0, "net_subs": 1}, {"day": "2026-08-26", "type": "shorts", "views": 241, "minutes": 87.0, "net_subs": 0}, {"day": "2026-08-27", "type": "shorts", "views": 227, "minutes": 49.0, "net_subs": 0}, {"day": "2026-08-28", "type": "shorts", "views": 130, "minutes": 30.0, "net_subs": 0}, {"day": "2026-08-29", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2026-08-29", "type": "shorts", "views": 344, "minutes": 82.0, "net_subs": 1}, {"day": "2026-08-30", "type": "shorts", "views": 225, "minutes": 62.0, "net_subs": 0}, {"day": "2026-08-31", "type": "shorts", "views": 508, "minutes": 107.0, "net_subs": 2}, {"day": "2026-09-01", "type": "shorts", "views": 190, "minutes": 169.0, "net_subs": 4}, {"day": "2026-09-02", "type": "shorts", "views": 183, "minutes": 76.0, "net_subs": 2}, {"day": "2026-09-03", "type": "shorts", "views": 90, "minutes": 22.0, "net_subs": 2}, {"day": "2026-09-04", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-09-04", "type": "shorts", "views": 385, "minutes": 177.0, "net_subs": 5}, {"day": "2026-09-05", "type": "shorts", "views": 804, "minutes": 426.0, "net_subs": 3}, {"day": "2026-09-06", "type": "shorts", "views": 261, "minutes": 56.0, "net_subs": 0}, {"day": "2026-09-07", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -2}, {"day": "2026-09-07", "type": "shorts", "views": 443, "minutes": 117.0, "net_subs": 4}, {"day": "2026-09-08", "type": "shorts", "views": 221, "minutes": 66.0, "net_subs": 0}, {"day": "2026-09-09", "type": "shorts", "views": 881, "minutes": 285.0, "net_subs": 4}, {"day": "2026-09-10", "type": "shorts", "views": 261, "minutes": 130.0, "net_subs": 2}, {"day": "2026-09-11", "type": "shorts", "views": 144, "minutes": 37.0, "net_subs": 1}, {"day": "2026-09-12", "type": "shorts", "views": 99, "minutes": 18.0, "net_subs": 1}, {"day": "2026-09-13", "type": "shorts", "views": 51, "minutes": 12.0, "net_subs": 0}, {"day": "2026-09-14", "type": "shorts", "views": 61, "minutes": 16.0, "net_subs": 1}, {"day": "2026-09-15", "type": "shorts", "views": 96, "minutes": 25.0, "net_subs": 0}, {"day": "2026-09-16", "type": "shorts", "views": 138, "minutes": 41.0, "net_subs": 3}, {"day": "2026-09-17", "type": "shorts", "views": 120, "minutes": 80.0, "net_subs": 0}, {"day": "2026-09-18", "type": "shorts", "views": 64, "minutes": 10.0, "net_subs": 0}, {"day": "2026-09-19", "type": "shorts", "views": 85, "minutes": 21.0, "net_subs": 0}, {"day": "2026-09-20", "type": "shorts", "views": 201, "minutes": 53.0, "net_subs": 1}, {"day": "2026-09-21", "type": "shorts", "views": 199, "minutes": 67.0, "net_subs": 1}, {"day": "2026-09-21", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-22", "type": "shorts", "views": 285, "minutes": 137.0, "net_subs": 1}, {"day": "2026-09-22", "type": "video", "views": 54, "minutes": 43.0, "net_subs": 0}, {"day": "2026-09-23", "type": "shorts", "views": 908, "minutes": 361.0, "net_subs": 4}, {"day": "2026-09-23", "type": "video", "views": 93, "minutes": 99.0, "net_subs": 0}, {"day": "2026-09-24", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-09-24", "type": "shorts", "views": 309, "minutes": 101.0, "net_subs": 3}, {"day": "2026-09-24", "type": "video", "views": 66, "minutes": 61.0, "net_subs": 1}, {"day": "2026-09-25", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-09-25", "type": "shorts", "views": 480, "minutes": 210.0, "net_subs": 4}, {"day": "2026-09-25", "type": "video", "views": 27, "minutes": 50.0, "net_subs": 1}, {"day": "2026-09-26", "type": "shorts", "views": 1632, "minutes": 1023.0, "net_subs": 7}, {"day": "2026-09-26", "type": "video", "views": 77, "minutes": 110.0, "net_subs": 1}, {"day": "2026-09-27", "type": "shorts", "views": 1364, "minutes": 1131.0, "net_subs": 5}, {"day": "2026-09-27", "type": "video", "views": 73, "minutes": 122.0, "net_subs": 0}, {"day": "2026-09-28", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-09-28", "type": "shorts", "views": 1343, "minutes": 1023.0, "net_subs": 6}, {"day": "2026-09-28", "type": "video", "views": 83, "minutes": 81.0, "net_subs": 0}, {"day": "2026-09-29", "type": "shorts", "views": 2064, "minutes": 1431.0, "net_subs": 16}, {"day": "2026-09-29", "type": "video", "views": 104, "minutes": 78.0, "net_subs": 0}, {"day": "2026-09-30", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-09-30", "type": "shorts", "views": 2912, "minutes": 1725.0, "net_subs": 16}, {"day": "2026-09-30", "type": "video", "views": 98, "minutes": 48.0, "net_subs": 0}, {"day": "2026-10-01", "type": "shorts", "views": 669, "minutes": 276.0, "net_subs": 6}, {"day": "2026-10-01", "type": "video", "views": 189, "minutes": 265.0, "net_subs": 1}, {"day": "2026-10-02", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2026-10-02", "type": "shorts", "views": 1314, "minutes": 858.0, "net_subs": 7}, {"day": "2026-10-02", "type": "video", "views": 74, "minutes": 52.0, "net_subs": 0}, {"day": "2026-10-03", "type": "shorts", "views": 1369, "minutes": 194.0, "net_subs": 4}, {"day": "2026-10-03", "type": "video", "views": 135, "minutes": 208.0, "net_subs": 1}, {"day": "2026-10-04", "type": "shorts", "views": 794, "minutes": 284.0, "net_subs": 1}, {"day": "2026-10-04", "type": "video", "views": 89, "minutes": 77.0, "net_subs": 0}, {"day": "2026-10-05", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-05", "type": "shorts", "views": 221, "minutes": 158.0, "net_subs": 1}, {"day": "2026-10-05", "type": "video", "views": 137, "minutes": 195.0, "net_subs": 3}, {"day": "2026-10-06", "type": "shorts", "views": 16, "minutes": 6.0, "net_subs": 0}, {"day": "2026-10-06", "type": "video", "views": 307, "minutes": 1453.0, "net_subs": 1}, {"day": "2026-10-07", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2026-10-07", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-07", "type": "video", "views": 316, "minutes": 596.0, "net_subs": 1}, {"day": "2026-10-08", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-10-08", "type": "video", "views": 338, "minutes": 1067.0, "net_subs": 4}, {"day": "2026-10-09", "type": "video", "views": 131, "minutes": 150.0, "net_subs": 2}, {"day": "2026-10-10", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2026-10-10", "type": "video", "views": 131, "minutes": 121.0, "net_subs": 0}, {"day": "2026-10-11", "type": "video", "views": 96, "minutes": 192.0, "net_subs": 1}, {"day": "2026-10-12", "type": "video", "views": 84, "minutes": 146.0, "net_subs": 0}, {"day": "2026-10-13", "type": "video", "views": 51, "minutes": 79.0, "net_subs": 0}, {"day": "2026-10-14", "type": "video", "views": 69, "minutes": 446.0, "net_subs": 0}, {"day": "2026-10-15", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2026-10-15", "type": "video", "views": 117, "minutes": 356.0, "net_subs": 2}, {"day": "2026-10-16", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2026-10-16", "type": "video", "views": 248, "minutes": 772.0, "net_subs": 2}, {"day": "2026-10-17", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2026-10-17", "type": "video", "views": 186, "minutes": 723.0, "net_subs": 0}, {"day": "2026-10-18", "type": "video", "views": 71, "minutes": 163.0, "net_subs": 0}, {"day": "2026-10-19", "type": "video", "views": 48, "minutes": 230.0, "net_subs": 0}, {"day": "2026-10-20", "type": "video", "views": 55, "minutes": 652.0, "net_subs": 2}, {"day": "2026-10-21", "type": "video", "views": 65, "minutes": 98.0, "net_subs": 1}, {"day": "2026-10-22", "type": "video", "views": 82, "minutes": 211.0, "net_subs": 0}, {"day": "2026-10-23", "type": "video", "views": 16, "minutes": 43.0, "net_subs": 0}, {"day": "2026-10-24", "type": "video", "views": 126, "minutes": 716.0, "net_subs": 3}, {"day": "2026-10-25", "type": "video", "views": 72, "minutes": 63.0, "net_subs": 0}], "traffic_sources_lifetime": [{"source": "SHORTS", "label": "Feed do Shorts", "views": 48033, "minutes": 25797.0}, {"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 3044, "minutes": 1469.0}, {"source": "SUBSCRIBER", "label": "Feed de Inscrições", "views": 2536, "minutes": 1663.0}, {"source": "RELATED_VIDEO", "label": "Vídeos Sugeridos", "views": 1656, "minutes": 7831.0}, {"source": "YT_CHANNEL", "label": "Página do Canal", "views": 956, "minutes": 882.0}, {"source": "YT_OTHER_PAGE", "label": "Navegação / Início", "views": 206, "minutes": 331.0}, {"source": "EXT_URL", "label": "Sites Externos", "views": 130, "minutes": 183.0}, {"source": "NO_LINK_OTHER", "label": "Direto / Desconhecido", "views": 88, "minutes": 193.0}, {"source": "NOTIFICATION", "label": "Notificações", "views": 44, "minutes": 199.0}, {"source": "PLAYLIST", "label": "Playlists", "views": 37, "minutes": 178.0}, {"source": "SHORTS_CONTENT_LINKS", "label": "SHORTS_CONTENT_LINKS", "views": 35, "minutes": 32.0}, {"source": "SOUND_PAGE", "label": "SOUND_PAGE", "views": 16, "minutes": 7.0}, {"source": "HASHTAGS", "label": "HASHTAGS", "views": 10, "minutes": 20.0}, {"source": "END_SCREEN", "label": "Telas Finais", "views": 1, "minutes": 28.0}]}, "indiano_doc": {"title": "Untold Bharat", "handle": "@uuntoldbharat2d", "group_slug": "pessoal", "history_lifetime": [{"day": "2026-10-15", "type": "video", "views": 24, "minutes": 76.0, "net_subs": 0}, {"day": "2026-10-16", "type": "video", "views": 37, "minutes": 134.0, "net_subs": 0}, {"day": "2026-10-17", "type": "video", "views": 385, "minutes": 605.0, "net_subs": 0}, {"day": "2026-10-18", "type": "video", "views": 750, "minutes": 960.0, "net_subs": 0}, {"day": "2026-10-19", "type": "video", "views": 384, "minutes": 990.0, "net_subs": 1}, {"day": "2026-10-20", "type": "video", "views": 77, "minutes": 266.0, "net_subs": 0}, {"day": "2026-10-21", "type": "video", "views": 170, "minutes": 840.0, "net_subs": 0}, {"day": "2026-10-22", "type": "video", "views": 270, "minutes": 1461.0, "net_subs": 0}, {"day": "2026-10-23", "type": "video", "views": 208, "minutes": 1899.0, "net_subs": 0}, {"day": "2026-10-24", "type": "video", "views": 123, "minutes": 1338.0, "net_subs": 1}, {"day": "2026-10-25", "type": "video", "views": 82, "minutes": 776.0, "net_subs": 0}], "traffic_sources_lifetime": [{"source": "SUBSCRIBER", "label": "Feed de Inscrições", "views": 1605, "minutes": 1994.0}, {"source": "RELATED_VIDEO", "label": "Vídeos Sugeridos", "views": 710, "minutes": 6565.0}, {"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 132, "minutes": 88.0}, {"source": "YT_OTHER_PAGE", "label": "Navegação / Início", "views": 31, "minutes": 449.0}, {"source": "NO_LINK_OTHER", "label": "Direto / Desconhecido", "views": 23, "minutes": 144.0}, {"source": "YT_CHANNEL", "label": "Página do Canal", "views": 3, "minutes": 1.0}, {"source": "EXT_URL", "label": "Sites Externos", "views": 3, "minutes": 0.0}, {"source": "PLAYLIST", "label": "Playlists", "views": 3, "minutes": 107.0}]}, "espaco": {"title": "Cosmic Abyss", "handle": "@cosmicabyssdoc", "group_slug": "pessoal", "history_lifetime": [{"day": "2026-10-03", "type": "video", "views": 23, "minutes": 167.0, "net_subs": 0}, {"day": "2026-10-04", "type": "video", "views": 24, "minutes": 153.0, "net_subs": 0}, {"day": "2026-10-05", "type": "video", "views": 13, "minutes": 4.0, "net_subs": 0}, {"day": "2026-10-06", "type": "video", "views": 22, "minutes": 211.0, "net_subs": 0}, {"day": "2026-10-07", "type": "video", "views": 35, "minutes": 66.0, "net_subs": 0}, {"day": "2026-10-08", "type": "video", "views": 36, "minutes": 2.0, "net_subs": 0}, {"day": "2026-10-09", "type": "video", "views": 4, "minutes": 1.0, "net_subs": 0}, {"day": "2026-10-10", "type": "video", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-11", "type": "video", "views": 18, "minutes": 83.0, "net_subs": 2}, {"day": "2026-10-12", "type": "video", "views": 58, "minutes": 227.0, "net_subs": 1}, {"day": "2026-10-13", "type": "video", "views": 16, "minutes": 48.0, "net_subs": 0}, {"day": "2026-10-14", "type": "video", "views": 55, "minutes": 688.0, "net_subs": 0}, {"day": "2026-10-15", "type": "video", "views": 33, "minutes": 124.0, "net_subs": 0}, {"day": "2026-10-16", "type": "video", "views": 47, "minutes": 269.0, "net_subs": 0}, {"day": "2026-10-17", "type": "video", "views": 84, "minutes": 244.0, "net_subs": 1}, {"day": "2026-10-18", "type": "video", "views": 83, "minutes": 202.0, "net_subs": 0}, {"day": "2026-10-19", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-19", "type": "video", "views": 140, "minutes": 337.0, "net_subs": 0}, {"day": "2026-10-20", "type": "video", "views": 181, "minutes": 489.0, "net_subs": 1}, {"day": "2026-10-21", "type": "video", "views": 157, "minutes": 377.0, "net_subs": 0}, {"day": "2026-10-22", "type": "video", "views": 41, "minutes": 268.0, "net_subs": 0}, {"day": "2026-10-23", "type": "video", "views": 31, "minutes": 336.0, "net_subs": 1}, {"day": "2026-10-24", "type": "video", "views": 55, "minutes": 338.0, "net_subs": 1}, {"day": "2026-10-25", "type": "video", "views": 31, "minutes": 303.0, "net_subs": 0}], "traffic_sources_lifetime": [{"source": "SUBSCRIBER", "label": "Feed de Inscrições", "views": 690, "minutes": 1037.0}, {"source": "RELATED_VIDEO", "label": "Vídeos Sugeridos", "views": 279, "minutes": 3063.0}, {"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 159, "minutes": 271.0}, {"source": "NO_LINK_OTHER", "label": "Direto / Desconhecido", "views": 35, "minutes": 269.0}, {"source": "YT_OTHER_PAGE", "label": "Navegação / Início", "views": 12, "minutes": 99.0}, {"source": "PLAYLIST", "label": "Playlists", "views": 7, "minutes": 172.0}, {"source": "YT_CHANNEL", "label": "Página do Canal", "views": 5, "minutes": 33.0}, {"source": "EXT_URL", "label": "Sites Externos", "views": 2, "minutes": 0.0}]}, "novela": {"title": "Lorena Vane", "handle": "@lorenavane1", "group_slug": "pessoal", "history_lifetime": [{"day": "2024-06-11", "type": "video", "views": 17, "minutes": 45.0, "net_subs": 4}, {"day": "2024-06-12", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 2}, {"day": "2024-06-12", "type": "video", "views": 13, "minutes": 30.0, "net_subs": 0}, {"day": "2024-06-13", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2024-06-13", "type": "video", "views": 37, "minutes": 45.0, "net_subs": 3}, {"day": "2024-06-14", "type": "video", "views": 17, "minutes": 47.0, "net_subs": 1}, {"day": "2024-06-15", "type": "video", "views": 12, "minutes": 18.0, "net_subs": 0}, {"day": "2024-06-19", "type": "video", "views": 5, "minutes": 12.0, "net_subs": 0}, {"day": "2024-06-20", "type": "video", "views": 4, "minutes": 14.0, "net_subs": 0}, {"day": "2024-06-23", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-08-24", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-08-25", "type": "shorts", "views": 4, "minutes": 0.0, "net_subs": 0}, {"day": "2026-08-26", "type": "shorts", "views": 20, "minutes": 4.0, "net_subs": 0}, {"day": "2026-08-27", "type": "shorts", "views": 36, "minutes": 5.0, "net_subs": 1}, {"day": "2026-08-28", "type": "shorts", "views": 26, "minutes": 3.0, "net_subs": 0}, {"day": "2026-08-29", "type": "shorts", "views": 69, "minutes": 11.0, "net_subs": 0}, {"day": "2026-08-30", "type": "shorts", "views": 75, "minutes": 11.0, "net_subs": 0}, {"day": "2026-08-31", "type": "shorts", "views": 125, "minutes": 38.0, "net_subs": 1}, {"day": "2026-09-01", "type": "shorts", "views": 14, "minutes": 2.0, "net_subs": 1}, {"day": "2026-09-02", "type": "shorts", "views": 50, "minutes": 9.0, "net_subs": 1}, {"day": "2026-09-03", "type": "shorts", "views": 116, "minutes": 34.0, "net_subs": 1}, {"day": "2026-09-04", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-09-04", "type": "shorts", "views": 281, "minutes": 55.0, "net_subs": 3}, {"day": "2026-09-05", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -2}, {"day": "2026-09-05", "type": "shorts", "views": 961, "minutes": 281.0, "net_subs": 9}, {"day": "2026-09-06", "type": "shorts", "views": 101, "minutes": 31.0, "net_subs": 0}, {"day": "2026-09-07", "type": "shorts", "views": 32, "minutes": 10.0, "net_subs": 0}, {"day": "2026-09-08", "type": "shorts", "views": 8, "minutes": 3.0, "net_subs": 0}, {"day": "2026-09-09", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-09-09", "type": "shorts", "views": 16, "minutes": 2.0, "net_subs": 1}, {"day": "2026-09-10", "type": "shorts", "views": 11, "minutes": 1.0, "net_subs": 0}, {"day": "2026-09-11", "type": "shorts", "views": 7, "minutes": 1.0, "net_subs": 0}, {"day": "2026-09-12", "type": "shorts", "views": 6, "minutes": 1.0, "net_subs": 0}, {"day": "2026-09-13", "type": "shorts", "views": 3, "minutes": 1.0, "net_subs": 0}, {"day": "2026-09-14", "type": "shorts", "views": 1, "minutes": 1.0, "net_subs": 0}, {"day": "2026-09-15", "type": "shorts", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-16", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-17", "type": "shorts", "views": 3, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-18", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-19", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-21", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-23", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-25", "type": "shorts", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2026-09-27", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-03", "type": "shorts", "views": 2, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-04", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-06", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-07", "type": "video", "views": 0, "minutes": 0.0, "net_subs": -1}, {"day": "2026-10-08", "type": "shorts", "views": 2, "minutes": 1.0, "net_subs": 0}, {"day": "2026-10-13", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-17", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-18", "type": "shorts", "views": 1, "minutes": 0.0, "net_subs": 0}], "traffic_sources_lifetime": [{"source": "SHORTS", "label": "Feed do Shorts", "views": 1815, "minutes": 459.0}, {"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 93, "minutes": 44.0}, {"source": "YT_CHANNEL", "label": "Página do Canal", "views": 84, "minutes": 51.0}, {"source": "SUBSCRIBER", "label": "Feed de Inscrições", "views": 40, "minutes": 45.0}, {"source": "EXT_URL", "label": "Sites Externos", "views": 36, "minutes": 79.0}, {"source": "NO_LINK_OTHER", "label": "Direto / Desconhecido", "views": 17, "minutes": 48.0}, {"source": "YT_OTHER_PAGE", "label": "Navegação / Início", "views": 4, "minutes": 1.0}, {"source": "RELATED_VIDEO", "label": "Vídeos Sugeridos", "views": 2, "minutes": 1.0}]}, "hearttangle": {"title": "HeartTangle", "handle": "@heartangle2d", "group_slug": "gvg", "history_lifetime": [{"day": "2026-10-19", "type": "video", "views": 72, "minutes": 260.0, "net_subs": 0}, {"day": "2026-10-20", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 1}, {"day": "2026-10-20", "type": "video", "views": 328, "minutes": 1209.0, "net_subs": 0}, {"day": "2026-10-21", "type": "video", "views": 465, "minutes": 1230.0, "net_subs": 3}, {"day": "2026-10-22", "type": "video", "views": 0, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-22", "type": "video", "views": 1010, "minutes": 2268.0, "net_subs": 3}, {"day": "2026-10-23", "type": "video", "views": 386, "minutes": 868.0, "net_subs": 0}, {"day": "2026-10-24", "type": "video", "views": 347, "minutes": 678.0, "net_subs": 0}, {"day": "2026-10-25", "type": "video", "views": 396, "minutes": 1284.0, "net_subs": 0}], "traffic_sources_lifetime": [{"source": "SUBSCRIBER", "label": "Feed de Inscrições", "views": 1836, "minutes": 3931.0}, {"source": "RELATED_VIDEO", "label": "Vídeos Sugeridos", "views": 1083, "minutes": 3414.0}, {"source": "YT_OTHER_PAGE", "label": "Navegação / Início", "views": 74, "minutes": 418.0}, {"source": "NO_LINK_OTHER", "label": "Direto / Desconhecido", "views": 7, "minutes": 35.0}, {"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 3, "minutes": 0.0}, {"source": "PLAYLIST", "label": "Playlists", "views": 1, "minutes": 0.0}]}, "segredos_olga": {"title": "Segredos da Olga", "handle": "@segredosdaolga", "group_slug": "gvg", "history_lifetime": [{"day": "2026-10-22", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-23", "type": "video", "views": 4, "minutes": 0.0, "net_subs": 0}, {"day": "2026-10-24", "type": "video", "views": 1, "minutes": 0.0, "net_subs": 0}], "traffic_sources_lifetime": [{"source": "YT_SEARCH", "label": "Pesquisa do YouTube", "views": 5, "minutes": 0.0}, {"source": "EXT_URL", "label": "Sites Externos", "views": 1, "minutes": 0.0}]}};
 
 let curSort='d60', curGroup='all';
+let curPeriod='30d', curFormat='all', curChartChannel='all';
+
 const EMPTY_MSG={
   d60:'Nenhum vídeo ganhou views na última medição (~60 min).',
   d48:'Nenhum vídeo ganhou views na janela de 48h medida até agora.',
@@ -1243,7 +1313,7 @@ function switchMainTab(tabId, btn){
   if(btn) btn.classList.add('active');
   const target = document.getElementById('view-' + tabId);
   if(target) target.classList.add('active');
-  if(tabId === 'charts' && window.initChartsOnce) window.initChartsOnce();
+  if(tabId === 'charts' && window.updateCharts) window.updateCharts();
   const u = new URL(location.href);
   u.searchParams.set('tab', tabId);
   history.replaceState(null, '', u);
@@ -1299,74 +1369,173 @@ function filterGroup(g,btn){
   history.replaceState(null,'',u);
 }
 
-// Chart.js Manager
+// Chart.js Manager & Interactive Filters
 let viewsChartInstance = null;
+let subsChartInstance = null;
 let trafficChartInstance = null;
-let currentChartChannel = 'all';
 
-function renderChannelCharts(chId){
-  currentChartChannel = chId;
-  document.querySelectorAll('.ch-chip').forEach(b=>b.classList.toggle('active', b.dataset.ch===chId));
-  const raw = window.CHANNELS_TIMESERIES || {};
-  let days = [], views = [], subs = [], traffic = {};
-  
-  if(chId === 'all'){
-    // Agregação consolidada
-    const dayMap = {}, subMap = {}, trafMap = {};
-    Object.values(raw).forEach(ch=>{
-      (ch.history_30d || []).forEach(h=>{
-        dayMap[h.day] = (dayMap[h.day] || 0) + (h.views || 0);
-        subMap[h.day] = (subMap[h.day] || 0) + (h.net_subs || 0);
-      });
-      (ch.traffic_sources_30d || []).forEach(t=>{
-        trafMap[t.label] = (trafMap[t.label] || 0) + (t.views || 0);
-      });
-    });
-    days = Object.keys(dayMap).sort();
-    views = days.map(d=>dayMap[d]);
-    subs = days.map(d=>subMap[d]);
-    traffic = trafMap;
-  } else if(raw[chId]){
-    const ch = raw[chId];
-    (ch.history_30d || []).forEach(h=>{
-      days.push(h.day);
-      views.push(h.views || 0);
-      subs.push(h.net_subs || 0);
-    });
-    (ch.traffic_sources_30d || []).forEach(t=>{
-      traffic[t.label] = (traffic[t.label] || 0) + (t.views || 0);
-    });
+function setChartPeriod(p, btn){
+  curPeriod = p;
+  document.querySelectorAll('.period-btn').forEach(b=>b.classList.toggle('active', b===btn));
+  updateCharts();
+}
+
+function setChartFormat(f, btn){
+  curFormat = f;
+  document.querySelectorAll('.format-btn').forEach(b=>b.classList.toggle('active', b===btn));
+  updateCharts();
+}
+
+function setChartChannel(ch, btn){
+  curChartChannel = ch;
+  document.querySelectorAll('.ch-chip').forEach(b=>b.classList.toggle('active', b.dataset.ch===ch));
+  updateCharts();
+}
+
+function getCutoffDate(period){
+  const now = new Date();
+  if(period === '7d'){
+    const d = new Date(now.getTime() - 7 * 86400000);
+    return d.toISOString().slice(0, 10);
   }
+  if(period === '30d'){
+    const d = new Date(now.getTime() - 30 * 86400000);
+    return d.toISOString().slice(0, 10);
+  }
+  if(period === 'month'){
+    const y = now.getFullYear();
+    const m = String(now.getMonth() + 1).padStart(2, '0');
+    return y + '-' + m + '-01';
+  }
+  if(period === '180d'){
+    const d = new Date(now.getTime() - 180 * 86400000);
+    return d.toISOString().slice(0, 10);
+  }
+  if(period === 'year'){
+    const y = now.getFullYear();
+    return y + '-01-01';
+  }
+  return '2000-01-01'; // 'all'
+}
 
-  const totV = views.reduce((a,b)=>a+b, 0);
-  const totS = subs.reduce((a,b)=>a+b, 0);
-  const topTr = Object.entries(traffic).sort((a,b)=>b[1]-a[1])[0] || ['—', 0];
+window.updateCharts = function(){
+  const raw = window.CHANNELS_TIMESERIES || {};
+  const cutoff = getCutoffDate(curPeriod);
 
-  const kv = document.getElementById('kpi-views-30d');
-  const ks = document.getElementById('kpi-subs-30d');
-  const kt = document.getElementById('kpi-top-traffic');
+  const dayMap = {};
+  const subMap = {};
+  const minMap = {};
+  const trafMap = {};
+
+  const chList = (curChartChannel === 'all') ? Object.values(raw) : [raw[curChartChannel]].filter(Boolean);
+
+  chList.forEach(ch=>{
+    (ch.history_lifetime || ch.history_30d || []).forEach(h=>{
+      if(h.day < cutoff) return;
+      if(curFormat !== 'all' && h.type && h.type !== curFormat) return;
+      dayMap[h.day] = (dayMap[h.day] || 0) + (h.views || 0);
+      subMap[h.day] = (subMap[h.day] || 0) + (h.net_subs || 0);
+      minMap[h.day] = (minMap[h.day] || 0) + (h.minutes || 0);
+    });
+
+    (ch.traffic_sources_lifetime || ch.traffic_sources_30d || []).forEach(t=>{
+      trafMap[t.label] = (trafMap[t.label] || 0) + (t.views || 0);
+    });
+  });
+
+  const sortedDays = Object.keys(dayMap).sort();
+  const viewsData = sortedDays.map(d=>dayMap[d]);
+  const subsData = sortedDays.map(d=>subMap[d]);
+
+  const totV = viewsData.reduce((a, b) => a + b, 0);
+  const totS = subsData.reduce((a, b) => a + b, 0);
+  const totM = Object.values(minMap).reduce((a, b) => a + b, 0);
+  const avgV = sortedDays.length > 0 ? Math.round(totV / sortedDays.length) : 0;
+  const topTr = Object.entries(trafMap).sort((a, b) => b[1] - a[1])[0] || ['—', 0];
+
+  const kv = document.getElementById('kpi-views');
+  const ks = document.getElementById('kpi-subs');
+  const km = document.getElementById('kpi-hours');
+  const ka = document.getElementById('kpi-avg');
+  const kt = document.getElementById('kpi-traffic');
+
   if(kv) kv.textContent = totV.toLocaleString('pt-BR');
   if(ks) ks.textContent = (totS >= 0 ? '+' : '') + totS.toLocaleString('pt-BR');
+  if(km) km.textContent = (totM / 60).toFixed(1) + ' h';
+  if(ka) ka.textContent = avgV.toLocaleString('pt-BR') + '/dia';
   if(kt) kt.textContent = topTr[0];
 
-  // Render Views Line Chart
+  const pLabels = {
+    '7d': 'Últimos 7 Dias',
+    '30d': 'Últimos 30 Dias',
+    'month': 'Este Mês',
+    '180d': 'Últimos 180 Dias',
+    'year': 'Este Ano',
+    'all': 'Geral (Desde o Início)'
+  };
+  const fLabels = {
+    'all': 'Todos os Formatos',
+    'video': '🎬 Só Vídeos Longos',
+    'shorts': '⚡ Só Shorts'
+  };
+  const titleEl = document.getElementById('chart-title');
+  if(titleEl){
+    const chName = (curChartChannel === 'all') ? 'Todos os Canais' : (raw[curChartChannel]?.title || curChartChannel);
+    titleEl.textContent = `📈 ${chName} — ${pLabels[curPeriod]} (${fLabels[curFormat]})`;
+  }
+
+  // Render Line Chart
   const ctxV = document.getElementById('chartViews');
   if(ctxV && window.Chart){
     if(viewsChartInstance) viewsChartInstance.destroy();
     viewsChartInstance = new Chart(ctxV, {
       type: 'line',
       data: {
-        labels: days.map(d=>d.slice(5)),
+        labels: sortedDays.map(d=>d.slice(5)),
         datasets: [{
-          label: 'Views Diárias',
-          data: views,
+          label: 'Views',
+          data: viewsData,
           borderColor: '#38BDF8',
           backgroundColor: 'rgba(56,189,248,0.12)',
           fill: true,
           tension: 0.35,
           borderWidth: 2.5,
-          pointRadius: 3,
+          pointRadius: sortedDays.length > 60 ? 1 : 3,
           pointBackgroundColor: '#38BDF8'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: { display: false },
+          tooltip: {
+            callbacks: {
+              label: ctx => `Views: ${ctx.parsed.y.toLocaleString('pt-BR')}`
+            }
+          }
+        },
+        scales: {
+          x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 10 }, maxTicksLimit: 14 } },
+          y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 10 } } }
+        }
+      }
+    });
+  }
+
+  // Render Subs Bar Chart
+  const ctxS = document.getElementById('chartSubs');
+  if(ctxS && window.Chart){
+    if(subsChartInstance) subsChartInstance.destroy();
+    subsChartInstance = new Chart(ctxS, {
+      type: 'bar',
+      data: {
+        labels: sortedDays.map(d=>d.slice(5)),
+        datasets: [{
+          label: 'Saldo Inscritos',
+          data: subsData,
+          backgroundColor: subsData.map(v => v >= 0 ? '#10B981' : '#F43F5E'),
+          borderRadius: 4
         }]
       },
       options: {
@@ -1374,7 +1543,7 @@ function renderChannelCharts(chId){
         maintainAspectRatio: false,
         plugins: { legend: { display: false } },
         scales: {
-          x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 10 } } },
+          x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 10 }, maxTicksLimit: 14 } },
           y: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#94A3B8', font: { size: 10 } } }
         }
       }
@@ -1385,8 +1554,8 @@ function renderChannelCharts(chId){
   const ctxT = document.getElementById('chartTraffic');
   if(ctxT && window.Chart){
     if(trafficChartInstance) trafficChartInstance.destroy();
-    const tLabels = Object.keys(traffic);
-    const tData = Object.values(traffic);
+    const tLabels = Object.keys(trafMap);
+    const tData = Object.values(trafMap);
     trafficChartInstance = new Chart(ctxT, {
       type: 'doughnut',
       data: {
@@ -1405,12 +1574,6 @@ function renderChannelCharts(chId){
         }
       }
     });
-  }
-}
-
-window.initChartsOnce = function(){
-  if(window.Chart && !viewsChartInstance){
-    renderChannelCharts('all');
   }
 };
 
