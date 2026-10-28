@@ -377,6 +377,8 @@ window.updateCharts = function(){
     });
 
     (ch.traffic_sources_lifetime || ch.traffic_sources_30d || []).forEach(t=>{
+      if(t.day && t.day < cutoff) return;
+      if(curFormat !== 'all' && t.type && t.type !== curFormat) return;
       trafMap[t.label] = (trafMap[t.label] || 0) + (t.views || 0);
     });
   });
@@ -420,6 +422,14 @@ window.updateCharts = function(){
   if(titleEl){
     const chName = (curChartChannel === 'all') ? 'Todos os Canais' : (raw[curChartChannel]?.title || curChartChannel);
     titleEl.textContent = `📈 ${chName} — ${pLabels[curPeriod]} (${fLabels[curFormat]})`;
+  }
+  const trafTitleEl = document.getElementById('chart-traffic-title');
+  if(trafTitleEl){
+    trafTitleEl.textContent = `🚦 Origem do Tráfego (${fLabels[curFormat]})`;
+  }
+  const topSrcEl = document.getElementById('traffic-top-source');
+  if(topSrcEl){
+    topSrcEl.innerHTML = topTr[1] > 0 ? `Principal: <b>${topTr[0]}</b> (${topTr[1].toLocaleString('pt-BR')} views)` : 'Principal: <b>—</b>';
   }
 
   // Render Line Chart
@@ -488,19 +498,27 @@ window.updateCharts = function(){
     });
   }
 
-  // Render Traffic Doughnut
+  // Render Traffic Doughnut (filtrado por período e por formato)
   const ctxT = document.getElementById('chartTraffic');
   if(ctxT && window.Chart){
     if(trafficChartInstance) trafficChartInstance.destroy();
-    const tLabels = Object.keys(trafMap);
-    const tData = Object.values(trafMap);
+    let tLabels = Object.keys(trafMap);
+    let tData = Object.values(trafMap);
+    let tColors = ['#38BDF8','#10B981','#A855F7','#F59E0B','#F43F5E','#E2E8F0','#64748B','#3B82F6','#F97316','#06B6D4'];
+    
+    if(tData.length === 0){
+      tLabels = ['Nenhum tráfego para este formato/período'];
+      tData = [1];
+      tColors = ['#334155'];
+    }
+
     trafficChartInstance = new Chart(ctxT, {
       type: 'doughnut',
       data: {
         labels: tLabels,
         datasets: [{
           data: tData,
-          backgroundColor: ['#38BDF8','#10B981','#A855F7','#F59E0B','#F43F5E','#E2E8F0','#64748B','#3B82F6'],
+          backgroundColor: tColors,
           borderWidth: 0
         }]
       },
@@ -508,7 +526,18 @@ window.updateCharts = function(){
         responsive: true,
         maintainAspectRatio: false,
         plugins: {
-          legend: { position: 'bottom', labels: { color: '#94A3B8', boxWidth: 10, font: { size: 10 } } }
+          legend: { position: 'bottom', labels: { color: '#94A3B8', boxWidth: 10, font: { size: 10 } } },
+          tooltip: {
+            callbacks: {
+              label: ctx => {
+                if(tLabels[0].startsWith('Nenhum')) return ' 0 views';
+                const v = ctx.parsed;
+                const tot = tData.reduce((a,b)=>a+b, 0);
+                const pct = tot > 0 ? ((v / tot) * 100).toFixed(1) : '0';
+                return ` ${ctx.label}: ${v.toLocaleString('pt-BR')} views (${pct}%)`;
+              }
+            }
+          }
         }
       }
     });
@@ -921,7 +950,8 @@ def render_html(channels_data, generated_at, all_scheduled=None):
       </div>
       <div class="chart-card">
         <div class="chart-head">
-          <h3>🚦 Origem do Tráfego</h3>
+          <h3 id="chart-traffic-title">🚦 Origem do Tráfego</h3>
+          <span class="sub" id="traffic-top-source">Principal: <b>—</b></span>
         </div>
         <div class="chart-box"><canvas id="chartTraffic"></canvas></div>
       </div>

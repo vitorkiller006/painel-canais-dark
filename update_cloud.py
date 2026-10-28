@@ -615,29 +615,30 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
         except Exception:
             pass
 
-        # 6. Origens do Tráfego (Geral / Todo o Período)
+        # 6. Origens do Tráfego Detalhadas (por dia e por formato: Shorts vs Vídeos)
         c_data["traffic_sources_lifetime"] = []
         try:
             rep_tr = yt_ana.reports().query(
                 ids="channel==MINE",
                 startDate="2020-01-01",
                 endDate=end_d_str,
-                metrics="views,estimatedMinutesWatched",
-                dimensions="insightTrafficSourceType",
-                sort="-views"
+                metrics="views",
+                dimensions="day,insightTrafficSourceType,creatorContentType",
+                sort="day"
             ).execute()
             for row in rep_tr.get("rows", []):
-                src, vws, mins = row
+                day_str, src, c_type, vws = row
                 if int(vws) <= 0:
                     continue
+                fmt_type = "shorts" if str(c_type).lower() == "shorts" else "video"
                 item = {
+                    "day": day_str,
                     "source": src,
                     "label": TRAFFIC_SOURCE_LABELS.get(src, src),
+                    "type": fmt_type,
                     "views": int(vws),
-                    "minutes": round(float(mins), 1),
                 }
                 c_data["traffic_sources_lifetime"].append(item)
-                c_data["traffic_sources_30d"].append(item)
         except Exception:
             pass
 
