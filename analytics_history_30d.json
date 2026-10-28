@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-28T14:28:06.946520+00:00",
+  "updated_at_utc": "2026-10-28T14:30:24.537259+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -7,8 +7,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/goglhVSAtKGaDmImc5ImFHN2xuRVe6nO1kEAgvRRcCFNDnc2Ll9gExh9kTtvyWzn7cWvBOZF=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
-      "vph_48h": 0.4,
+      "vph_60m": 1,
+      "vph_48h": 0.5,
       "history_lifetime": [],
       "traffic_sources_lifetime": [],
       "history_30d": [],
@@ -18,12 +18,12 @@
         "title": "How Instant Ramen Noodles Are Actually Made! 🍜 (Stickman Host) #Shorts",
         "url": "https://youtu.be/GzhxN8KXdG8",
         "thumbnail": "https://i.ytimg.com/vi/GzhxN8KXdG8/mqdefault.jpg",
-        "views": 8,
+        "views": 9,
         "published_formatted": "27/10 20:30",
         "rank": 1,
         "out_of": 1,
         "diff_pct": 0.0,
-        "avg_prev": 8
+        "avg_prev": 9
       },
       "top_countries": [],
       "device_breakdown": [],
@@ -49,7 +49,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 0.5,
+      "vph_48h": 0.0,
       "history_lifetime": [
         {
           "day": "2023-10-12",
@@ -9298,18 +9298,7 @@
         }
       ],
       "traffic_sources_30d": [],
-      "rank_1_de_10": {
-        "video_id": "rYEJpsGBYuY",
-        "title": "MOISÉS e ZÍPORA — A História NÃO CONTADA da ESPOSA DE MOISÉS",
-        "url": "https://youtu.be/rYEJpsGBYuY",
-        "thumbnail": "https://i.ytimg.com/vi/rYEJpsGBYuY/mqdefault.jpg",
-        "views": 6,
-        "published_formatted": "26/10 12:00",
-        "rank": 3,
-        "out_of": 3,
-        "diff_pct": -96.3,
-        "avg_prev": 162
-      },
+      "rank_1_de_10": null,
       "top_countries": [
         {
           "code": "BR",
@@ -9427,7 +9416,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 3,
       "vph_48h": 3.5,
       "history_lifetime": [
         {
@@ -12138,11 +12127,11 @@
         "title": "Eu Odiava Meu VIZINHO RANZINZA… Até Ele Me RESGATAR na Tempestade!",
         "url": "https://youtu.be/WEmJ9PGCNZU",
         "thumbnail": "https://i.ytimg.com/vi/WEmJ9PGCNZU/mqdefault.jpg",
-        "views": 113,
+        "views": 114,
         "published_formatted": "27/10 19:30",
         "rank": 1,
         "out_of": 10,
-        "diff_pct": 1818.9,
+        "diff_pct": 1835.8,
         "avg_prev": 6
       },
       "top_countries": [
@@ -12222,8 +12211,8 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
-      "vph_48h": 8.6,
+      "vph_60m": 9,
+      "vph_48h": 9.1,
       "history_lifetime": [
         {
           "day": "2026-10-19",
@@ -12561,7 +12550,7 @@
         "rank": 9,
         "out_of": 10,
         "diff_pct": -100.0,
-        "avg_prev": 464
+        "avg_prev": 465
       },
       "top_countries": [
         {
