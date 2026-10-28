@@ -3,7 +3,7 @@
   "days": {
     "2026-10-28": {
       "date": "2026-10-28",
-      "updated_at_utc": "2026-10-28T23:30:18.269250+00:00",
+      "updated_at_utc": "2026-10-28T23:45:18.497020+00:00",
       "channels": {
         "stickman": {
           "title": "How It's Made Oficial",
@@ -14,7 +14,7 @@
           "views_60m": 1,
           "views_7d": 13,
           "watch_minutes_7d": 0.0,
-          "total_videos_publicos": 1,
+          "total_videos_publicos": 2,
           "total_videos_agendados": 10,
           "videos": {}
         },
@@ -37,7 +37,7 @@
           "subscribers": 6,
           "total_views": 2736,
           "views_48h": 104,
-          "views_60m": 15,
+          "views_60m": 2,
           "views_7d": 945,
           "watch_minutes_7d": 6971.0,
           "total_videos_publicos": 11,
@@ -49,8 +49,8 @@
           "handle": "@cosmicabyssdoc",
           "subscribers": 7,
           "total_views": 1228,
-          "views_48h": 44,
-          "views_60m": 4,
+          "views_48h": 42,
+          "views_60m": 0,
           "views_7d": 363,
           "watch_minutes_7d": 2567.0,
           "total_videos_publicos": 11,
@@ -63,7 +63,7 @@
           "subscribers": 26,
           "total_views": 1986,
           "views_48h": 168,
-          "views_60m": 30,
+          "views_60m": 34,
           "views_7d": 168,
           "watch_minutes_7d": 0.0,
           "total_videos_publicos": 21,
@@ -75,8 +75,8 @@
           "handle": "@heartangle2d",
           "subscribers": 11,
           "total_views": 4055,
-          "views_48h": 557,
-          "views_60m": 4,
+          "views_48h": 553,
+          "views_60m": 2,
           "views_7d": 3172,
           "watch_minutes_7d": 8382.0,
           "total_videos_publicos": 10,
