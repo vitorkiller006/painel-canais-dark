@@ -322,7 +322,7 @@ def fetch_reach_reporting_data(creds, start_7d_str):
                 continue
 
             req = urllib.request.Request(dl_url, headers={"Authorization": f"Bearer {creds.token}"})
-            with urllib.request.urlopen(req, timeout=30) as response:
+            with urllib.request.urlopen(req, timeout=5) as response:
                 csv_bytes = response.read()
             if csv_bytes[:2] == b'\x1f\x8b':
                 try:
@@ -382,8 +382,11 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
         "total_videos_publicos": cached.get("total_videos_publicos", 0),
         "total_videos_agendados": cached.get("total_videos_agendados", 0),
         "total_views_canal": cached.get("total_views_canal", 0),
-        "views_60m_canal": cached.get("views_60m_canal", 0),
-        "views_48h_canal": cached.get("views_48h_canal", 0),
+        "views_60m_canal": 0,
+        "views_48h_canal": 0,
+        "weekly_comparison": cached.get("weekly_comparison", {}),
+        "demographics": cached.get("demographics", {"age_groups": [], "gender": {}, "has_data": False}),
+        "top_retention_curve": cached.get("top_retention_curve", {"has_data": False}),
         "snapshot_window_hours": 0.0,
         "views_7d_canal": cached.get("views_7d_canal", 0),
         "watch_minutes_7d_canal": cached.get("watch_minutes_7d_canal", 0.0),
@@ -564,6 +567,8 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
     except Exception as e:
         c_data["aviso_cota"] = f"Data API temporariamente com cota excedida (dados cacheados preservados): {str(e)[:100]}"
         # Preserva do cache
+        c_data["views_60m_canal"] = cached.get("views_60m_canal", 0)
+        c_data["views_48h_canal"] = cached.get("views_48h_canal", 0)
         c_data["snapshot_window_hours"] = cached.get("snapshot_window_hours", 48.0)
         c_data["total_videos_agendados"] = len(c_data["videos_agendados_fila"])
 
@@ -573,7 +578,7 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
 
     # 2. BLOCO REPORTING API (Opcional, com fallback suave)
     try:
-        reach_info = fetch_reach_reporting_data(creds, start_7d_str)
+        reach_info = fetch_reach_reporting_data(active_creds, start_7d_str)
         c_data["reach_status"] = reach_info["status"]
         c_data["reach_message"] = reach_info["message"]
         if reach_info["impressions_7d_total"] is not None:
@@ -584,7 +589,7 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
 
     # 3. BLOCO YOUTUBE ANALYTICS API (SEMPRE EXECUTA — COTA INDEPENDENTE)
     try:
-        yt_ana = build("youtubeAnalytics", "v2", credentials=creds)
+        yt_ana = build("youtubeAnalytics", "v2", credentials=active_creds)
 
         # 3.1 Visão Geral 7d
         ch_ovr = yt_ana.reports().query(
@@ -869,8 +874,121 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
                     "shares": int(sh),
                     "subscribers_gained": int(sg),
                     "subscribers_lost": int(sl),
-                    "net_subscribers": int(sg - sl)
+                    "net_subscribers": int(sg) - int(sl),
                 }
+        except Exception:
+            pass
+
+        # 3.10 Comparativo Semanal (Últimos 7 dias vs 7 dias anteriores)
+        try:
+            start_prev_7d_str = (today - timedelta(days=14)).isoformat()
+            end_prev_7d_str = (today - timedelta(days=7)).isoformat()
+            q_prev = yt_ana.reports().query(
+                ids="channel==MINE",
+                startDate=start_prev_7d_str,
+                endDate=end_prev_7d_str,
+                metrics="views,estimatedMinutesWatched,subscribersGained,subscribersLost"
+            ).execute()
+            p_rows = q_prev.get("rows", [])
+            p_row = p_rows[0] if p_rows else [0, 0, 0, 0]
+            
+            c_v = c_data["views_7d_canal"]
+            c_w = c_data["watch_minutes_7d_canal"]
+            c_net_sub = c_data.get("engagement", {}).get("net_subscribers", 0)
+            
+            p_v = int(p_row[0])
+            p_w = round(float(p_row[1]), 1)
+            p_net_sub = int(p_row[2]) - int(p_row[3])
+            
+            v_diff_pct = round(((c_v - p_v) / p_v) * 100, 1) if p_v > 0 else (100.0 if c_v > 0 else 0.0)
+            w_diff_pct = round(((c_w - p_w) / p_w) * 100, 1) if p_w > 0 else (100.0 if c_w > 0 else 0.0)
+            s_diff = c_net_sub - p_net_sub
+            
+            c_data["weekly_comparison"] = {
+                "cur_views_7d": c_v,
+                "prev_views_7d": p_v,
+                "views_diff_pct": v_diff_pct,
+                "cur_watch_min_7d": c_w,
+                "prev_watch_min_7d": p_w,
+                "watch_diff_pct": w_diff_pct,
+                "cur_net_subs_7d": c_net_sub,
+                "prev_net_subs_7d": p_net_sub,
+                "subs_diff": s_diff
+            }
+        except Exception:
+            pass
+
+        # 3.11 Demografia (Faixa Etária e Gênero)
+        try:
+            q_age = yt_ana.reports().query(
+                ids="channel==MINE",
+                startDate="2020-01-01",
+                endDate=end_d_str,
+                metrics="viewerPercentage",
+                dimensions="ageGroup",
+                sort="ageGroup"
+            ).execute()
+            age_rows = q_age.get("rows", [])
+            age_groups = []
+            for r in age_rows:
+                age_groups.append({
+                    "label": str(r[0]).replace("age", "").replace("-", "–"),
+                    "pct": round(float(r[1]), 1)
+                })
+
+            q_gen = yt_ana.reports().query(
+                ids="channel==MINE",
+                startDate="2020-01-01",
+                endDate=end_d_str,
+                metrics="viewerPercentage",
+                dimensions="gender",
+                sort="gender"
+            ).execute()
+            gen_rows = q_gen.get("rows", [])
+            gender_map = {}
+            for r in gen_rows:
+                gender_map[str(r[0])] = round(float(r[1]), 1)
+
+            if age_groups or gender_map:
+                c_data["demographics"] = {
+                    "age_groups": age_groups,
+                    "gender": gender_map,
+                    "has_data": True
+                }
+        except Exception:
+            pass
+
+        # 3.12 Curva de Retenção de Audiência Segundo a Segundo (Top Vídeo)
+        try:
+            top_vid_id = None
+            top_vid_title = None
+            if c_data.get("top3_views_7d"):
+                top_vid_id = c_data["top3_views_7d"][0].get("video_id") or c_data["top3_views_7d"][0].get("id")
+                top_vid_title = c_data["top3_views_7d"][0].get("title")
+            elif video_meta_map:
+                pub_vids = [v for v in video_meta_map.values() if v.get("is_public")]
+                if pub_vids:
+                    top_v = max(pub_vids, key=lambda x: x.get("views_total", 0))
+                    top_vid_id = top_v.get("video_id") or top_v.get("id")
+                    top_vid_title = top_v.get("title")
+
+            if top_vid_id:
+                q_ret = yt_ana.reports().query(
+                    ids="channel==MINE",
+                    startDate="2020-01-01",
+                    endDate=end_d_str,
+                    metrics="audienceWatchRatio",
+                    dimensions="elapsedVideoTimeRatio",
+                    filters=f"video=={top_vid_id}"
+                ).execute()
+                ret_rows = q_ret.get("rows", [])
+                if ret_rows:
+                    c_data["top_retention_curve"] = {
+                        "has_data": True,
+                        "video_id": top_vid_id,
+                        "video_title": top_vid_title or top_vid_id,
+                        "points": [round(float(r[1]) * 100, 1) for r in ret_rows]
+                    }
         except Exception:
             pass
 
@@ -901,11 +1019,15 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
             "avg_prev": round(avg_prev),
         }
 
-    # Garante que views_60m_canal e views_48h_canal SEMPRE reflitam a soma de TODOS os vídeos de video_meta_map
+    # Garante que views_60m_canal e views_48h_canal reflitam a soma exata de TODOS os vídeos de video_meta_map
     sum_60m = sum(v.get("delta_60m") or 0 for v in video_meta_map.values() if v.get("is_public"))
     sum_48h = sum(v.get("delta_48h") or 0 for v in video_meta_map.values() if v.get("is_public"))
-    c_data["views_60m_canal"] = max(c_data["views_60m_canal"], sum_60m)
-    c_data["views_48h_canal"] = max(c_data["views_48h_canal"], sum_48h)
+    if video_meta_map:
+        c_data["views_60m_canal"] = sum_60m
+        c_data["views_48h_canal"] = sum_48h
+    else:
+        c_data["views_60m_canal"] = cached.get("views_60m_canal", 0)
+        c_data["views_48h_canal"] = cached.get("views_48h_canal", 0)
 
     # Harmoniza views 7d caso a Data API em tempo real já registre mais views em 48h do que o relatório do Analytics (devido ao lag de 48-72h do Analytics)
     if c_data["views_7d_canal"] < c_data["views_48h_canal"]:
@@ -963,10 +1085,14 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
         "device_breakdown": c_data["device_breakdown"],
         "audience_status": c_data["audience_status"],
         "engagement": c_data["engagement"],
+        "weekly_comparison": c_data.get("weekly_comparison", {}),
+        "demographics": c_data.get("demographics", {"age_groups": [], "gender": {}, "has_data": False}),
+        "top_retention_curve": c_data.get("top_retention_curve", {"has_data": False}),
         "snapshot_window_hours": c_data["snapshot_window_hours"],
         "updated_at_utc": now_utc.isoformat(),
     }
 
+    c_data["video_meta_map"] = video_meta_map
     return c_data
 
 

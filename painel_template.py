@@ -693,6 +693,81 @@ table.cmp .cell-ch { min-width: 180px; }
 
 .empty { text-align: center; padding: 32px 16px; color: var(--text-muted); font-size: 13px; }
 .empty-mini { text-align: center; padding: 16px 8px; color: var(--text-dim); font-size: 12px; }
+
+/* ========================================================================= */
+/* NOVOS RECURSOS: BADGES SEMANAIS, CATÁLOGO, DEMOGRAFIA E RETENÇÃO          */
+/* ========================================================================= */
+.kpi-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 5px;
+  border-radius: 4px;
+  margin-left: 6px;
+  line-height: 1;
+}
+.kpi-badge.pos { background: rgba(16, 185, 129, 0.15); color: #34D399; border: 1px solid rgba(16, 185, 129, 0.3); }
+.kpi-badge.neg { background: rgba(244, 63, 94, 0.15); color: #FB7185; border: 1px solid rgba(244, 63, 94, 0.3); }
+
+/* Catálogo Completo de Vídeos */
+.catalog-controls { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.catalog-search-wrap { display: flex; align-items: center; gap: 8px; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; padding: 6px 12px; flex: 1; min-width: 200px; }
+.catalog-search-wrap i { width: 16px; height: 16px; color: var(--text-dim); }
+.catalog-search-input { background: transparent; border: none; color: var(--text); font-size: 13px; width: 100%; outline: none; }
+.catalog-sort-select { background: var(--surface-2); border: 1px solid var(--border); color: var(--text); border-radius: 8px; padding: 6px 12px; font-size: 12px; outline: none; cursor: pointer; }
+.cat-filter-btn { padding: 4px 10px; border-radius: 6px; font-size: 12px; font-weight: 600; cursor: pointer; border: 1px solid var(--border); background: var(--surface-2); color: var(--text-muted); }
+.cat-filter-btn.active { background: var(--cyan); color: #000; border-color: var(--cyan); }
+
+.cat-row { display: flex; align-items: center; gap: 12px; padding: 10px 12px; background: var(--surface); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 8px; transition: all .2s; }
+.cat-row:hover { border-color: var(--border-hover); background: var(--surface-2); }
+.cat-thumb-wrap { position: relative; width: 88px; height: 50px; flex-shrink: 0; border-radius: 6px; overflow: hidden; background: #000; }
+.cat-thumb { width: 100%; height: 100%; object-fit: cover; }
+.cat-dur-badge { position: absolute; bottom: 3px; right: 3px; background: rgba(0,0,0,0.85); color: #fff; font-size: 10px; font-weight: 700; padding: 1px 4px; border-radius: 3px; font-family: 'JetBrains Mono', monospace; }
+.cat-dur-badge.short { background: var(--red); }
+.cat-info { flex: 1; min-width: 0; }
+.cat-title { font-size: 13px; font-weight: 600; color: var(--text); text-decoration: none; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; line-height: 1.3; }
+.cat-title:hover { color: var(--cyan); }
+.cat-meta { display: flex; align-items: center; gap: 8px; font-size: 11px; color: var(--text-dim); margin-top: 4px; }
+.cat-metrics { display: flex; gap: 14px; align-items: center; flex-shrink: 0; }
+.cat-metrics .cm-item { text-align: right; }
+.cat-metrics .cm-lbl { font-size: 10px; font-weight: 600; text-transform: uppercase; color: var(--text-dim); display: block; }
+.cat-metrics .cm-val { font-size: 13px; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+.cat-watch-btn { display: inline-flex; align-items: center; gap: 4px; padding: 6px 12px; background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.25); color: var(--cyan); border-radius: 6px; font-size: 12px; font-weight: 600; text-decoration: none; transition: all .2s; }
+.cat-watch-btn:hover { background: var(--cyan); color: #000; }
+
+@media (max-width: 768px) {
+  .cat-row { flex-wrap: wrap; }
+  .cat-metrics { width: 100%; justify-content: space-between; border-top: 1px solid rgba(255,255,255,0.04); padding-top: 8px; margin-top: 4px; }
+}
+
+/* Demografia (Gênero & Faixa Etária) */
+.demo-container { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 14px; }
+@media (max-width: 768px) { .demo-container { grid-template-columns: 1fr; } }
+.demo-box { background: var(--surface-2); border: 1px solid var(--border); border-radius: 10px; padding: 14px; }
+.demo-title { font-size: 13px; font-weight: 700; display: flex; align-items: center; gap: 6px; margin-bottom: 12px; }
+.demo-gender-bar { height: 14px; border-radius: 7px; overflow: hidden; display: flex; background: rgba(255,255,255,0.06); margin-bottom: 10px; }
+.demo-g-male { background: var(--cyan); height: 100%; transition: width .4s ease; }
+.demo-g-female { background: #EC4899; height: 100%; transition: width .4s ease; }
+.demo-gender-labels { display: flex; justify-content: space-between; font-size: 12px; }
+.demo-age-row { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid rgba(255,255,255,0.04); font-size: 12px; }
+.demo-age-lbl { width: 55px; font-weight: 600; color: var(--text-muted); }
+.demo-age-bar-wrap { flex: 1; height: 8px; background: rgba(255,255,255,0.06); border-radius: 4px; overflow: hidden; margin: 0 10px; }
+.demo-age-bar-fill { height: 100%; background: linear-gradient(90deg, var(--cyan), var(--purple)); border-radius: 4px; }
+.demo-age-pct { width: 45px; text-align: right; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+
+/* Curva de Retenção */
+.ret-card { background: var(--surface-2); border: 1px solid var(--border); border-radius: 12px; padding: 16px; margin-bottom: 14px; }
+.ret-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px; }
+.ret-svg-wrap { width: 100%; height: 240px; position: relative; background: rgba(0,0,0,0.3); border-radius: 8px; padding: 12px; box-sizing: border-box; }
+.ret-svg { width: 100%; height: 100%; overflow: visible; }
+.ret-stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 14px; }
+@media (max-width: 600px) { .ret-stats-grid { grid-template-columns: repeat(2, 1fr); } }
+.ret-stat-box { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 10px; text-align: center; }
+.ret-stat-lbl { font-size: 11px; color: var(--text-muted); font-weight: 600; margin-bottom: 4px; }
+.ret-stat-val { font-size: 16px; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
+
 """
 
 JS = """
@@ -759,6 +834,8 @@ function openChannel(chId, updateHash = true) {
   document.querySelectorAll('.ch-r10-card').forEach(el => el.style.display = (el.dataset.canal === chId) ? 'block' : 'none');
   document.querySelectorAll('.ch-top3-grid').forEach(el => el.style.display = (el.dataset.canal === chId) ? 'grid' : 'none');
   document.querySelectorAll('.ch-aud-panel').forEach(el => el.style.display = (el.dataset.canal === chId) ? 'block' : 'none');
+  document.querySelectorAll('.ch-ret-panel').forEach(el => el.style.display = (el.dataset.canal === chId) ? 'block' : 'none');
+  applyCatalogFilters();
 
   let schedFound = 0;
   document.querySelectorAll('.ch-sched-item').forEach(el => {
@@ -1323,6 +1400,74 @@ function initFromUrl() {
   refreshIcons();
 }
 
+
+// ============================================================================
+// CATÁLOGO DE VÍDEOS: FILTROS E ORDENAÇÃO
+// ============================================================================
+let curCatalogFormat = 'all';
+let curCatalogSort = 'recent';
+let curCatalogSearch = '';
+
+function filterCatalogSearch(query) {
+  curCatalogSearch = (query || '').toLowerCase().trim();
+  applyCatalogFilters();
+}
+
+function filterCatalogFormat(fmt, btn) {
+  curCatalogFormat = fmt;
+  document.querySelectorAll('.cat-filter-btn').forEach(b => b.classList.toggle('active', b === btn));
+  applyCatalogFilters();
+}
+
+function sortCatalog(sortBy) {
+  curCatalogSort = sortBy;
+  applyCatalogFilters();
+}
+
+function applyCatalogFilters() {
+  if (!activeChannelId) return;
+  const list = document.getElementById('catalog-list');
+  if (!list) return;
+
+  const rows = Array.from(list.querySelectorAll('.cat-row')).filter(r => r.dataset.canal === activeChannelId);
+  let visibleCount = 0;
+
+  rows.forEach(r => {
+    const fmt = r.dataset.fmt;
+    const title = (r.dataset.title || '').toLowerCase();
+    const matchFmt = (curCatalogFormat === 'all') || (fmt === curCatalogFormat);
+    const matchSearch = (!curCatalogSearch) || title.includes(curCatalogSearch);
+
+    if (matchFmt && matchSearch) {
+      r.style.display = 'flex';
+      visibleCount++;
+    } else {
+      r.style.display = 'none';
+    }
+  });
+
+  // Sort visible rows
+  rows.sort((a, b) => {
+    if (curCatalogSort === 'recent') {
+      return (b.dataset.date || '').localeCompare(a.dataset.date || '');
+    } else if (curCatalogSort === 'views') {
+      return (parseInt(b.dataset.views) || 0) - (parseInt(a.dataset.views) || 0);
+    } else if (curCatalogSort === 'd48') {
+      return (parseInt(b.dataset.d48) || 0) - (parseInt(a.dataset.d48) || 0);
+    } else if (curCatalogSort === 'likes') {
+      return (parseInt(b.dataset.likes) || 0) - (parseInt(a.dataset.likes) || 0);
+    }
+    return 0;
+  });
+
+  rows.forEach(r => list.appendChild(r));
+
+  const countLbl = document.getElementById('catalog-count-label');
+  if (countLbl) {
+    countLbl.textContent = 'Exibindo ' + visibleCount + ' vídeos filtrados';
+  }
+}
+
 window.addEventListener('popstate', initFromUrl);
 document.addEventListener('DOMContentLoaded', () => {
   initFromUrl();
@@ -1498,6 +1643,8 @@ def render_html(channels_data, now_utc, all_scheduled=None):
     ch_r10_cards_html = []
     ch_top3_grids_html = []
     ch_sched_items_html = []
+    single_catalog_html = []
+    ch_retention_html = []
 
     medals = ["1º", "2º", "3º"]
 
@@ -1527,6 +1674,26 @@ def render_html(channels_data, now_utc, all_scheduled=None):
         ret = (f"<b>{ret_pct:.1f}%</b> <span class='sub'>({c.get('retention_dur_7d_canal', '0m 00s')})</span>"
                if (ret_pct is not None and c.get("views_7d_canal", 0) > 0) else '<span class="sub">—</span>')
 
+        # Badges de Comparativo Semanal
+        wcomp = c.get("weekly_comparison", {})
+        v_pct = wcomp.get("views_diff_pct")
+        if v_pct is not None and v_pct != 0:
+            b_cls = "pos" if v_pct > 0 else "neg"
+            arr = "▲" if v_pct > 0 else "▼"
+            sign = "+" if v_pct > 0 else ""
+            views_badge = f'<span class="kpi-badge {b_cls}">{arr} {sign}{v_pct}%</span>'
+        else:
+            views_badge = ""
+
+        w_pct = wcomp.get("watch_diff_pct")
+        if w_pct is not None and w_pct != 0:
+            b_cls = "pos" if w_pct > 0 else "neg"
+            arr = "▲" if w_pct > 0 else "▼"
+            sign = "+" if w_pct > 0 else ""
+            watch_badge = f'<span class="kpi-badge {b_cls}">{arr} {sign}{w_pct}%</span>'
+        else:
+            watch_badge = ""
+
         # Banner & Strip
         ch_banners_html.append(f"""
 <div class="ch-banner" data-canal="{c['id']}" style="display:none">
@@ -1549,7 +1716,7 @@ def render_html(channels_data, now_utc, all_scheduled=None):
   <div class="ch-kpi-box"><div class="ch-kpi-lbl">Ritmo VPH</div><div class="ch-kpi-val" style="color:var(--cyan)">+{c.get('vph_60m', 0)}/h</div></div>
   <div class="ch-kpi-box"><div class="ch-kpi-lbl">60 min</div><div class="ch-kpi-val">+{c.get('views_60m_canal', 0):,}</div></div>
   <div class="ch-kpi-box"><div class="ch-kpi-lbl">48 horas</div><div class="ch-kpi-val">+{c.get('views_48h_canal', 0):,}</div></div>
-  <div class="ch-kpi-box"><div class="ch-kpi-lbl">Views 7d</div><div class="ch-kpi-val">{c.get('views_7d_canal', 0):,}</div></div>
+  <div class="ch-kpi-box"><div class="ch-kpi-lbl">Views 7d</div><div class="ch-kpi-val">{c.get('views_7d_canal', 0):,} {views_badge}</div></div>
   <div class="ch-kpi-box"><div class="ch-kpi-lbl">Inscritos</div><div class="ch-kpi-val">{c.get('inscritos', 0):,}</div></div>
   <div class="ch-kpi-box"><div class="ch-kpi-lbl">Vídeos</div><div class="ch-kpi-val">{c.get('total_videos_publicos', 0)} públ.</div></div>
   <div class="ch-kpi-box"><div class="ch-kpi-lbl">CTR 7d</div><div class="ch-kpi-val">{ctr}</div></div>
@@ -1623,6 +1790,39 @@ def render_html(channels_data, now_utc, all_scheduled=None):
         net_sub_str = f"+{net_sub_val:,}" if net_sub_val > 0 else f"{net_sub_val:,}"
         net_sub_col = "var(--green)" if net_sub_val > 0 else ("var(--red)" if net_sub_val < 0 else "var(--text-muted)")
 
+        # Demografia (Gênero e Faixa Etária)
+        demo = c.get("demographics", {})
+        gen = demo.get("gender", {})
+        m_pct = gen.get("male", 0.0)
+        f_pct = gen.get("female", 0.0)
+        ages = demo.get("age_groups", [])
+
+        age_rows_html = "".join([f'''
+        <div class="demo-age-row">
+          <span class="demo-age-lbl">{_e(a['label'])}</span>
+          <div class="demo-age-bar-wrap"><div class="demo-age-bar-fill" style="width:{min(100.0, a['pct'] * 1.5)}%"></div></div>
+          <span class="demo-age-pct">{a['pct']}%</span>
+        </div>''' for a in ages]) if ages else '<div class="empty-mini">Faixas etárias em processamento pelo YouTube Analytics</div>'
+
+        demo_section_html = f'''
+        <div class="demo-container">
+          <div class="demo-box">
+            <div class="demo-title"><i data-lucide="user-check"></i> Distribuição por Gênero</div>
+            <div class="demo-gender-bar">
+              <div class="demo-g-male" style="width:{m_pct}%" title="Masculino: {m_pct}%"></div>
+              <div class="demo-g-female" style="width:{f_pct}%" title="Feminino: {f_pct}%"></div>
+            </div>
+            <div class="demo-gender-labels">
+              <span style="color:var(--cyan);font-weight:600"><i data-lucide="user"></i> Homens: <b>{m_pct}%</b></span>
+              <span style="color:#EC4899;font-weight:600"><i data-lucide="user"></i> Mulheres: <b>{f_pct}%</b></span>
+            </div>
+          </div>
+          <div class="demo-box">
+            <div class="demo-title"><i data-lucide="bar-chart-2"></i> Faixas Etárias da Audiência</div>
+            {age_rows_html}
+          </div>
+        </div>'''
+
         ch_audience_html.append(f"""
 <div class="ch-aud-panel" data-canal="{c['id']}" style="display:none">
   <!-- KPIs de Engajamento Vitalício -->
@@ -1680,6 +1880,9 @@ def render_html(channels_data, now_utc, all_scheduled=None):
       <div class="device-grid">{''.join(d_cards)}</div>
     </div>
   </div>
+
+  <!-- Demografia (Gênero & Faixa Etária) -->
+  {demo_section_html}
 </div>""")
 
         # 1 de 10
@@ -1810,6 +2013,134 @@ def render_html(channels_data, now_utc, all_scheduled=None):
     {_metric('60 min', 'd60', d60_txt, d60_num > 0)}
     {_metric('48h', 'd48', f'+{d48:,}', d48 > 0)}
     {_metric('Total', 'total', f'{tot:,}', False)}
+  </div>
+</div>""")
+
+        # =====================================================================
+        # CATÁLOGO DE VÍDEOS PÚBLICOS DO CANAL
+        # =====================================================================
+        pub_vids = [v for v in c.get("video_meta_map", {}).values() if v.get("is_public")]
+        pub_vids.sort(key=lambda x: x.get("published_at", ""), reverse=True)
+        for v in pub_vids:
+            vid = v.get("id")
+            v_title = _e(v.get("title", ""))
+            tot = v.get("views_total", 0)
+            d48 = v.get("delta_48h") or 0
+            likes = v.get("likes") or 0
+            comments = v.get("comments") or 0
+            is_short = v.get("is_short", False)
+            fmt_slug = "short" if is_short else "long"
+            fmt_name = "Shorts" if is_short else "Vídeo"
+            thumb = _e(v.get("thumb") or v.get("thumbnail") or f"https://i.ytimg.com/vi/{vid}/hqdefault.jpg")
+            v_url = _e(v.get("url") or f"https://youtu.be/{vid}")
+            pub_date = _e(v.get("published_formatted") or v.get("published_at", "")[:10])
+            dur_sec = v.get("duration_sec", 0)
+            dur_lbl = "Shorts" if is_short else f"{dur_sec // 60}:{dur_sec % 60:02d}"
+
+            single_catalog_html.append(f"""
+<div class="cat-row" data-canal="{c['id']}" data-fmt="{fmt_slug}" data-views="{tot}" data-d48="{d48}" data-likes="{likes}" data-date="{_e(v.get('published_at', ''))}" data-title="{_e(v.get('title', '').lower())}">
+  <div class="cat-thumb-wrap">
+    <img src="{thumb}" class="cat-thumb" alt="" loading="lazy">
+    <span class="cat-dur-badge {fmt_slug}">{dur_lbl}</span>
+  </div>
+  <div class="cat-info">
+    <a href="{v_url}" target="_blank" rel="noopener" class="cat-title">{v_title}</a>
+    <div class="cat-meta">
+      <span><i data-lucide="calendar"></i> {pub_date}</span>
+      <span class="pill pill-cyan">{fmt_name}</span>
+    </div>
+  </div>
+  <div class="cat-metrics">
+    <div class="cm-item"><span class="cm-lbl">Total Views</span><b class="cm-val">{tot:,}</b></div>
+    <div class="cm-item"><span class="cm-lbl">48 horas</span><b class="cm-val {'cyan' if d48 > 0 else ''}">+{d48:,}</b></div>
+    <div class="cm-item"><span class="cm-lbl">Curtidas</span><b class="cm-val"><i data-lucide="thumbs-up"></i> {likes:,}</b></div>
+    <div class="cm-item"><span class="cm-lbl">Comentários</span><b class="cm-val"><i data-lucide="message-square"></i> {comments:,}</b></div>
+    <a href="{v_url}" target="_blank" rel="noopener" class="cat-watch-btn">Assistir <i data-lucide="external-link"></i></a>
+  </div>
+</div>""")
+
+        # =====================================================================
+        # CURVA DE RETENÇÃO SEGUNDO A SEGUNDO
+        # =====================================================================
+        ret_curve = c.get("top_retention_curve", {})
+        if ret_curve.get("has_data") and ret_curve.get("points"):
+            pts = ret_curve["points"]
+            max_p = max(pts) if pts else 100.0
+            svg_pts = []
+            for idx_p, p in enumerate(pts):
+                x = 20 + (idx_p / max(1, len(pts) - 1)) * 960
+                y = 180 - (min(max_p, p) / max(1.0, max_p)) * 160
+                svg_pts.append(f"{x:.1f},{y:.1f}")
+            poly_str = " ".join(svg_pts)
+
+            hook_drop = round(pts[0] - pts[min(len(pts)-1, 5)], 1) if len(pts) > 5 else 0.0
+            mid_ret = round(pts[len(pts)//2], 1) if pts else 0.0
+            end_ret = round(pts[-1], 1) if pts else 0.0
+
+            ch_retention_html.append(f"""
+<div class="ch-ret-panel" data-canal="{c['id']}" style="display:none">
+  <div class="ret-card">
+    <div class="ret-head">
+      <div>
+        <div style="font-size:15px;font-weight:700;display:flex;align-items:center;gap:6px">
+          <i data-lucide="activity" style="color:var(--cyan)"></i> Curva Segundo a Segundo: {_e(ret_curve.get('video_title'))}
+        </div>
+        <div style="font-size:12px;color:var(--text-muted);margin-top:2px">
+          Retenção contínua em 100 pontos percentuais de duração (YouTube Analytics)
+        </div>
+      </div>
+      <a href="https://youtu.be/{ret_curve.get('video_id')}" target="_blank" rel="noopener" class="cat-watch-btn">
+        Ver no YouTube <i data-lucide="external-link"></i>
+      </a>
+    </div>
+
+    <div class="ret-svg-wrap">
+      <svg class="ret-svg" viewBox="0 0 1000 200" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="retGrad_{c['id']}" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#38BDF8" stop-opacity="0.0"/>
+          </linearGradient>
+        </defs>
+        <line x1="20" y1="20" x2="980" y2="20" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4"/>
+        <line x1="20" y1="100" x2="980" y2="100" stroke="rgba(255,255,255,0.08)" stroke-dasharray="4"/>
+        <line x1="20" y1="180" x2="980" y2="180" stroke="rgba(255,255,255,0.12)"/>
+        <polygon points="20,180 {poly_str} 980,180" fill="url(#retGrad_{c['id']})"/>
+        <polyline points="{poly_str}" fill="none" stroke="#38BDF8" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </div>
+
+    <div class="ret-stats-grid">
+      <div class="ret-stat-box">
+        <div class="ret-stat-lbl">Retenção Inicial (0%)</div>
+        <div class="ret-stat-val" style="color:var(--cyan)">{pts[0]:.1f}%</div>
+      </div>
+      <div class="ret-stat-box">
+        <div class="ret-stat-lbl">Drop Hook (Primeiros 30s)</div>
+        <div class="ret-stat-val" style="color:var(--amber)">-{hook_drop}%</div>
+      </div>
+      <div class="ret-stat-box">
+        <div class="ret-stat-lbl">Ponto Médio (50%)</div>
+        <div class="ret-stat-val" style="color:var(--purple)">{mid_ret}%</div>
+      </div>
+      <div class="ret-stat-box">
+        <div class="ret-stat-lbl">Retenção Final (100%)</div>
+        <div class="ret-stat-val" style="color:var(--green)">{end_ret}%</div>
+      </div>
+    </div>
+  </div>
+</div>""")
+        else:
+            ch_retention_html.append(f"""
+<div class="ch-ret-panel" data-canal="{c['id']}" style="display:none">
+  <div class="ret-card">
+    <div style="font-size:15px;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:6px">
+      <i data-lucide="activity"></i> Retenção Agregada do Canal
+    </div>
+    <div style="font-size:13px;color:var(--text-muted);margin-bottom:14px">
+      Retenção média dos últimos 7 dias: <b>{c.get('retention_pct_7d_canal', 0.0):.1f}%</b> · Duração média: <b>{c.get('retention_dur_7d_canal', '0m 00s')}</b>
+    </div>
+    <div class="empty-mini">A curva gráfica de 100 pontos é gerada automaticamente pelo YouTube Analytics assim que um vídeo acumula tração estatística.</div>
   </div>
 </div>""")
 
@@ -2094,20 +2425,22 @@ def render_html(channels_data, now_utc, all_scheduled=None):
 
     <!-- Abas de Navegação do Canal -->
     <div class="sub-nav">
-      <button class="sub-tab-btn active" id="btn-ch-tab-live" onclick="switchChannelSubTab('live', this)"><i data-lucide="radio"></i> Ao Vivo & Vídeos</button>
+      <button class="sub-tab-btn active" id="btn-ch-tab-live" onclick="switchChannelSubTab('live', this)"><i data-lucide="radio"></i> Ao Vivo & Radar</button>
+      <button class="sub-tab-btn" id="btn-ch-tab-catalog" onclick="switchChannelSubTab('catalog', this)"><i data-lucide="film"></i> Catálogo de Vídeos</button>
       <button class="sub-tab-btn" id="btn-ch-tab-charts" onclick="switchChannelSubTab('charts', this)"><i data-lucide="line-chart"></i> Gráficos & Desempenho</button>
       <button class="sub-tab-btn" id="btn-ch-tab-audience" onclick="switchChannelSubTab('audience', this)"><i data-lucide="users"></i> Audiência & Geografia</button>
+      <button class="sub-tab-btn" id="btn-ch-tab-retention" onclick="switchChannelSubTab('retention', this)"><i data-lucide="activity"></i> Curva de Retenção</button>
       <button class="sub-tab-btn" id="btn-ch-tab-rank10" onclick="switchChannelSubTab('rank10', this)"><i data-lucide="target"></i> Lançamento (1 de 10)</button>
       <button class="sub-tab-btn" id="btn-ch-tab-top3" onclick="switchChannelSubTab('top3', this)"><i data-lucide="trophy"></i> Top 3 (7 dias)</button>
       <button class="sub-tab-btn" id="btn-ch-tab-calendar" onclick="switchChannelSubTab('calendar', this)"><i data-lucide="calendar"></i> Próximas Estreias</button>
     </div>
 
-    <!-- SUB-ABA 1: AO VIVO & VÍDEOS -->
+    <!-- SUB-ABA 1: AO VIVO & RADAR -->
     <div class="sub-content active" id="ch-tab-live">
       <div class="sec">
         <div class="sec-top">
           <div>
-            <div class="sec-title"><i data-lucide="flame"></i> Vídeos com movimentação recente no canal</div>
+            <div class="sec-title"><i data-lucide="flame"></i> Radar de Vídeos em Movimento</div>
             <div class="sec-hint">Views ganhas em 60 min e 48 horas acumuladas ({win_48_txt})</div>
           </div>
           <div class="seg" style="max-width:440px">
@@ -2119,6 +2452,39 @@ def render_html(channels_data, now_utc, all_scheduled=None):
         <div class="lv-count" id="ch-live-count" style="font-size:12px;color:var(--text-muted);margin-bottom:8px"></div>
         <div id="ch-live-list">{''.join(single_live_html)}</div>
         <div class="empty" id="ch-live-empty" style="display:none"></div>
+      </div>
+    </div>
+
+    <!-- SUB-ABA: CATÁLOGO DE VÍDEOS -->
+    <div class="sub-content" id="ch-tab-catalog">
+      <div class="sec">
+        <div class="sec-top">
+          <div>
+            <div class="sec-title"><i data-lucide="film"></i> Catálogo Completo de Vídeos</div>
+            <div class="sec-hint">Biblioteca pública completa com busca dinâmica, filtro Shorts/Longos e ordenação</div>
+          </div>
+          <div class="catalog-controls">
+            <div class="catalog-search-wrap">
+              <i data-lucide="search"></i>
+              <input type="text" class="catalog-search-input" placeholder="Buscar vídeo pelo título..." oninput="filterCatalogSearch(this.value)">
+            </div>
+            <div class="seg" style="max-width:280px">
+              <button class="cat-filter-btn active" data-fmt="all" onclick="filterCatalogFormat('all', this)">Todos</button>
+              <button class="cat-filter-btn" data-fmt="long" onclick="filterCatalogFormat('long', this)">Vídeos</button>
+              <button class="cat-filter-btn" data-fmt="short" onclick="filterCatalogFormat('short', this)">Shorts</button>
+            </div>
+            <select class="catalog-sort-select" onchange="sortCatalog(this.value)">
+              <option value="recent">Mais Recentes</option>
+              <option value="views">Mais Visualizados</option>
+              <option value="d48">Mais Views em 48h</option>
+              <option value="likes">Mais Curtidas</option>
+            </select>
+          </div>
+        </div>
+        <div id="catalog-count-label" style="font-size:12px;color:var(--text-muted);margin-bottom:10px"></div>
+        <div id="catalog-list">
+          {''.join(single_catalog_html)}
+        </div>
       </div>
     </div>
 
@@ -2176,6 +2542,11 @@ def render_html(channels_data, now_utc, all_scheduled=None):
     <!-- SUB-ABA 3: AUDIÊNCIA & DEMOGRAFIA -->
     <div class="sub-content" id="ch-tab-audience">
       {''.join(ch_audience_html)}
+    </div>
+
+    <!-- SUB-ABA: CURVA DE RETENÇÃO -->
+    <div class="sub-content" id="ch-tab-retention">
+      {''.join(ch_retention_html)}
     </div>
 
     <!-- SUB-ABA 4: LANÇAMENTO 1 DE 10 -->
