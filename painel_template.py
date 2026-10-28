@@ -703,7 +703,7 @@ let activeGeralTab = 'live';
 
 let curSinglePeriod = '30d';
 let curSingleFormat = 'all';
-let curSingleSort = 'd60';
+let curSingleSort = 'd48';
 
 let curGeralPeriod = '30d';
 let curGeralFormat = 'all';
@@ -2111,8 +2111,8 @@ def render_html(channels_data, now_utc, all_scheduled=None):
             <div class="sec-hint">Views ganhas em 60 min e 48 horas acumuladas ({win_48_txt})</div>
           </div>
           <div class="seg" style="max-width:440px">
-            <button class="active" id="ch-seg-d60" onclick="setSingleChannelSort('d60', this)">Últimos 60 min</button>
-            <button id="ch-seg-d48" onclick="setSingleChannelSort('d48', this)">Últimas 48h</button>
+            <button id="ch-seg-d60" onclick="setSingleChannelSort('d60', this)">Últimos 60 min</button>
+            <button class="active" id="ch-seg-d48" onclick="setSingleChannelSort('d48', this)">Últimas 48h</button>
             <button id="ch-seg-total" onclick="setSingleChannelSort('total', this)">Total Views</button>
           </div>
         </div>

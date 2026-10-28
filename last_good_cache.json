@@ -8,7 +8,7 @@
     "total_videos_publicos": 1,
     "total_videos_agendados": 11,
     "total_views_canal": 0,
-    "views_7d_canal": 0,
+    "views_7d_canal": 10,
     "watch_minutes_7d_canal": 0.0,
     "retention_pct_7d_canal": 0.0,
     "retention_dur_7d_canal": "0m 00s",
@@ -19,6 +19,7 @@
     "video_meta_map": {
       "GzhxN8KXdG8": {
         "video_id": "GzhxN8KXdG8",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -30,17 +31,18 @@
         "published_at": "2026-10-27T23:30:20Z",
         "published_formatted": "27/10 20:30",
         "thumbnail": "https://i.ytimg.com/vi/GzhxN8KXdG8/mqdefault.jpg",
-        "views_total": 9,
+        "views_total": 10,
         "likes": 0,
         "comments": 0,
         "url": "https://youtu.be/GzhxN8KXdG8",
         "is_pub_last_48h": true,
-        "delta_60m": 0,
-        "delta_48h": 9,
-        "window_h": 20.07
+        "delta_60m": 1,
+        "delta_48h": 10,
+        "window_h": 20.3
       },
       "gMs2JzgucJE": {
         "video_id": "gMs2JzgucJE",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -51,7 +53,7 @@
         "is_public": false,
         "published_at": "2026-11-07T23:30:00Z",
         "published_formatted": "07/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/gMs2JzgucJE/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLBdC8SY6SbYqEavwgNkqB8g0oYLhw",
+        "thumbnail": "https://i9.ytimg.com/vi/gMs2JzgucJE/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAY8kD3gwhkfUNUs37mmFJ2e8OmTA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -59,10 +61,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.7
+        "window_h": 16.93
       },
       "yqEevskJ2pI": {
         "video_id": "yqEevskJ2pI",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -73,7 +76,7 @@
         "is_public": false,
         "published_at": "2026-11-06T23:30:00Z",
         "published_formatted": "06/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/yqEevskJ2pI/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLCQPp2bCPYEzjH7mu-JXHEaoro-0w",
+        "thumbnail": "https://i9.ytimg.com/vi/yqEevskJ2pI/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLA3oFISLK7KNwQKGKYU8_2YQnJsgA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -81,10 +84,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "FmWEqGBzLvI": {
         "video_id": "FmWEqGBzLvI",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -95,7 +99,7 @@
         "is_public": false,
         "published_at": "2026-11-05T23:30:00Z",
         "published_formatted": "05/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/FmWEqGBzLvI/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLBRIJNg5W8nZSMDTIBFPCsExr-uHA",
+        "thumbnail": "https://i9.ytimg.com/vi/FmWEqGBzLvI/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAA37mBm4MycsylPqU57g9eevam0A",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -103,10 +107,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "xSzj-IEiOv0": {
         "video_id": "xSzj-IEiOv0",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -117,7 +122,7 @@
         "is_public": false,
         "published_at": "2026-11-04T23:30:00Z",
         "published_formatted": "04/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/xSzj-IEiOv0/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLATdx53zzOU9cwiBQK2MnejcMHJNQ",
+        "thumbnail": "https://i9.ytimg.com/vi/xSzj-IEiOv0/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLD7rWOBKeBTGlNrR_Sqfl1DYQXL5Q",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -125,10 +130,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "yTo5pYpO59o": {
         "video_id": "yTo5pYpO59o",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -139,7 +145,7 @@
         "is_public": false,
         "published_at": "2026-11-03T23:30:00Z",
         "published_formatted": "03/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/yTo5pYpO59o/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLCGg7W8ucLzHELGe_3aFW3zbRBnsQ",
+        "thumbnail": "https://i9.ytimg.com/vi/yTo5pYpO59o/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLBaXT5l8gzVw7NLg3UMk05VOvNxug",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -147,10 +153,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "cioYRiOrcos": {
         "video_id": "cioYRiOrcos",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -161,7 +168,7 @@
         "is_public": false,
         "published_at": "2026-11-02T23:30:00Z",
         "published_formatted": "02/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/cioYRiOrcos/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLBeI87jHjV2CsT9VUhQJ5q1SuXspw",
+        "thumbnail": "https://i9.ytimg.com/vi/cioYRiOrcos/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLANw8p3PswAXVxamxcCX1wo07DXXA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -169,10 +176,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "i6fx5c4t34o": {
         "video_id": "i6fx5c4t34o",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -183,7 +191,7 @@
         "is_public": false,
         "published_at": "2026-11-01T23:30:00Z",
         "published_formatted": "01/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/i6fx5c4t34o/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLBljxa9eAcWvPhaMBBY4gHidv5TBA",
+        "thumbnail": "https://i9.ytimg.com/vi/i6fx5c4t34o/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAxlWUexpv_8F3QiqPbWd0CvPMq7g",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -191,10 +199,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "ZgBHwkLYDjE": {
         "video_id": "ZgBHwkLYDjE",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -205,7 +214,7 @@
         "is_public": false,
         "published_at": "2026-10-31T23:30:00Z",
         "published_formatted": "31/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/ZgBHwkLYDjE/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLDKmIa65K0KwK-lPkagSYTUVEV2Cg",
+        "thumbnail": "https://i9.ytimg.com/vi/ZgBHwkLYDjE/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAgSY17xFU3zzGyDjV4R7dLhTZ2EA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -213,10 +222,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "89Lsk6ECN2g": {
         "video_id": "89Lsk6ECN2g",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -227,7 +237,7 @@
         "is_public": false,
         "published_at": "2026-10-30T23:30:00Z",
         "published_formatted": "30/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/89Lsk6ECN2g/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLALkf1bmccob7OkjVcqThhkxr_zSA",
+        "thumbnail": "https://i9.ytimg.com/vi/89Lsk6ECN2g/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLBBptDrJYpajG4WNeF8lIvurtg26w",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -235,10 +245,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "VVzF4bGicCA": {
         "video_id": "VVzF4bGicCA",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -249,7 +260,7 @@
         "is_public": false,
         "published_at": "2026-10-29T23:30:00Z",
         "published_formatted": "29/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/VVzF4bGicCA/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLCZCDCLnv1bxY_lm8qGIqizDFDv0w",
+        "thumbnail": "https://i9.ytimg.com/vi/VVzF4bGicCA/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDvxW8A3qjzlwl_WtdD1Xd1q7sbtQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -257,10 +268,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "kk9JUFeJofo": {
         "video_id": "kk9JUFeJofo",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -271,7 +283,7 @@
         "is_public": false,
         "published_at": "2026-10-28T23:30:00Z",
         "published_formatted": "28/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/kk9JUFeJofo/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLCHcAEVwOG_ZmxRqMKoUekLsljbQg",
+        "thumbnail": "https://i9.ytimg.com/vi/kk9JUFeJofo/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDa2YiYaMejbYO6RWLyuhkeh2UGJw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -279,12 +291,13 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       }
     },
     "videos_agendados_fila": [
       {
         "video_id": "gMs2JzgucJE",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -295,7 +308,7 @@
         "is_public": false,
         "published_at": "2026-11-07T23:30:00Z",
         "published_formatted": "07/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/gMs2JzgucJE/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLBdC8SY6SbYqEavwgNkqB8g0oYLhw",
+        "thumbnail": "https://i9.ytimg.com/vi/gMs2JzgucJE/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAY8kD3gwhkfUNUs37mmFJ2e8OmTA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -303,10 +316,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.7
+        "window_h": 16.93
       },
       {
         "video_id": "yqEevskJ2pI",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -317,7 +331,7 @@
         "is_public": false,
         "published_at": "2026-11-06T23:30:00Z",
         "published_formatted": "06/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/yqEevskJ2pI/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLCQPp2bCPYEzjH7mu-JXHEaoro-0w",
+        "thumbnail": "https://i9.ytimg.com/vi/yqEevskJ2pI/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLA3oFISLK7KNwQKGKYU8_2YQnJsgA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -325,10 +339,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "FmWEqGBzLvI",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -339,7 +354,7 @@
         "is_public": false,
         "published_at": "2026-11-05T23:30:00Z",
         "published_formatted": "05/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/FmWEqGBzLvI/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLBRIJNg5W8nZSMDTIBFPCsExr-uHA",
+        "thumbnail": "https://i9.ytimg.com/vi/FmWEqGBzLvI/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAA37mBm4MycsylPqU57g9eevam0A",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -347,10 +362,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "xSzj-IEiOv0",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -361,7 +377,7 @@
         "is_public": false,
         "published_at": "2026-11-04T23:30:00Z",
         "published_formatted": "04/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/xSzj-IEiOv0/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLATdx53zzOU9cwiBQK2MnejcMHJNQ",
+        "thumbnail": "https://i9.ytimg.com/vi/xSzj-IEiOv0/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLD7rWOBKeBTGlNrR_Sqfl1DYQXL5Q",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -369,10 +385,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "yTo5pYpO59o",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -383,7 +400,7 @@
         "is_public": false,
         "published_at": "2026-11-03T23:30:00Z",
         "published_formatted": "03/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/yTo5pYpO59o/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLCGg7W8ucLzHELGe_3aFW3zbRBnsQ",
+        "thumbnail": "https://i9.ytimg.com/vi/yTo5pYpO59o/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLBaXT5l8gzVw7NLg3UMk05VOvNxug",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -391,10 +408,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "cioYRiOrcos",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -405,7 +423,7 @@
         "is_public": false,
         "published_at": "2026-11-02T23:30:00Z",
         "published_formatted": "02/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/cioYRiOrcos/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLBeI87jHjV2CsT9VUhQJ5q1SuXspw",
+        "thumbnail": "https://i9.ytimg.com/vi/cioYRiOrcos/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLANw8p3PswAXVxamxcCX1wo07DXXA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -413,10 +431,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "i6fx5c4t34o",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -427,7 +446,7 @@
         "is_public": false,
         "published_at": "2026-11-01T23:30:00Z",
         "published_formatted": "01/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/i6fx5c4t34o/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLBljxa9eAcWvPhaMBBY4gHidv5TBA",
+        "thumbnail": "https://i9.ytimg.com/vi/i6fx5c4t34o/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAxlWUexpv_8F3QiqPbWd0CvPMq7g",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -435,10 +454,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "ZgBHwkLYDjE",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -449,7 +469,7 @@
         "is_public": false,
         "published_at": "2026-10-31T23:30:00Z",
         "published_formatted": "31/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/ZgBHwkLYDjE/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLDKmIa65K0KwK-lPkagSYTUVEV2Cg",
+        "thumbnail": "https://i9.ytimg.com/vi/ZgBHwkLYDjE/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAgSY17xFU3zzGyDjV4R7dLhTZ2EA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -457,10 +477,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "89Lsk6ECN2g",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -471,7 +492,7 @@
         "is_public": false,
         "published_at": "2026-10-30T23:30:00Z",
         "published_formatted": "30/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/89Lsk6ECN2g/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLALkf1bmccob7OkjVcqThhkxr_zSA",
+        "thumbnail": "https://i9.ytimg.com/vi/89Lsk6ECN2g/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLBBptDrJYpajG4WNeF8lIvurtg26w",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -479,10 +500,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "VVzF4bGicCA",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -493,7 +515,7 @@
         "is_public": false,
         "published_at": "2026-10-29T23:30:00Z",
         "published_formatted": "29/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/VVzF4bGicCA/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLCZCDCLnv1bxY_lm8qGIqizDFDv0w",
+        "thumbnail": "https://i9.ytimg.com/vi/VVzF4bGicCA/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDvxW8A3qjzlwl_WtdD1Xd1q7sbtQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -501,10 +523,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "kk9JUFeJofo",
+        "canal_id": "stickman",
         "canal_titulo": "How It's Made Oficial",
         "canal_handle": "@howitsmadeoficial",
         "grupo": "Pessoais (Vitor)",
@@ -515,7 +538,7 @@
         "is_public": false,
         "published_at": "2026-10-28T23:30:00Z",
         "published_formatted": "28/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/kk9JUFeJofo/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLCHcAEVwOG_ZmxRqMKoUekLsljbQg",
+        "thumbnail": "https://i9.ytimg.com/vi/kk9JUFeJofo/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDa2YiYaMejbYO6RWLyuhkeh2UGJw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -523,10 +546,26 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       }
     ],
-    "top3_views_7d": [],
+    "top3_views_7d": [
+      {
+        "video_id": "GzhxN8KXdG8",
+        "title": "How Instant Ramen Noodles Are Actually Made! 🍜 (Stickman Host) #Shorts",
+        "thumbnail": "https://i.ytimg.com/vi/GzhxN8KXdG8/mqdefault.jpg",
+        "url": "https://youtu.be/GzhxN8KXdG8",
+        "views_7d": 10,
+        "watch_minutes_7d": 0.0,
+        "duration_seconds": 0.0,
+        "duration_str": "0m 00s",
+        "retention_pct": 0.0,
+        "likes_7d": 0,
+        "impressions_7d": null,
+        "ctr_7d": null,
+        "low_sample": true
+      }
+    ],
     "top3_retencao_7d": [],
     "top3_ctr_7d": [],
     "top3_impressoes_7d": [],
@@ -539,12 +578,12 @@
       "title": "How Instant Ramen Noodles Are Actually Made! 🍜 (Stickman Host) #Shorts",
       "url": "https://youtu.be/GzhxN8KXdG8",
       "thumbnail": "https://i.ytimg.com/vi/GzhxN8KXdG8/mqdefault.jpg",
-      "views": 9,
+      "views": 10,
       "published_formatted": "27/10 20:30",
       "rank": 1,
       "out_of": 1,
       "diff_pct": 0.0,
-      "avg_prev": 9
+      "avg_prev": 10
     },
     "top_countries": [],
     "device_breakdown": [],
@@ -562,8 +601,8 @@
       "subscribers_lost": 0,
       "net_subscribers": 0
     },
-    "snapshot_window_hours": 20.07,
-    "updated_at_utc": "2026-10-28T16:00:28.314184+00:00"
+    "snapshot_window_hours": 20.3,
+    "updated_at_utc": "2026-10-28T15:58:59.344101+00:00"
   },
   "biblia": {
     "canal_titulo": "Bíblia Oculta",
@@ -585,6 +624,7 @@
     "video_meta_map": {
       "rYEJpsGBYuY": {
         "video_id": "rYEJpsGBYuY",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -603,10 +643,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "qVuCsOXPGT4": {
         "video_id": "qVuCsOXPGT4",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -617,7 +658,7 @@
         "is_public": false,
         "published_at": "2026-11-02T22:30:00Z",
         "published_formatted": "02/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/qVuCsOXPGT4/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBwvflyKNfh6MHSxrIHkJ2O8AM1Nw",
+        "thumbnail": "https://i9.ytimg.com/vi/qVuCsOXPGT4/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLCN-1MxRg6lwwtEJDKHRrQ9GsBQdg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -625,10 +666,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "6QNJ91QSyP0": {
         "video_id": "6QNJ91QSyP0",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -639,7 +681,7 @@
         "is_public": false,
         "published_at": "2026-11-04T22:30:00Z",
         "published_formatted": "04/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/6QNJ91QSyP0/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLB3KtJmuApUuxQPdIMX7BKWVqtGMA",
+        "thumbnail": "https://i9.ytimg.com/vi/6QNJ91QSyP0/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAa3UnEnTHDtHrhDoHI4x8qyMCGKQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -647,10 +689,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "oZy8b7oIqfk": {
         "video_id": "oZy8b7oIqfk",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -661,7 +704,7 @@
         "is_public": false,
         "published_at": "2026-10-30T22:30:00Z",
         "published_formatted": "30/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/oZy8b7oIqfk/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBYSZdko1zkfhdjvSyj0uLfQA8xlA",
+        "thumbnail": "https://i9.ytimg.com/vi/oZy8b7oIqfk/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLASzbaCOVny4BxT-pgQvn5zi2iDhw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -669,10 +712,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "DsOAE8nxwO8": {
         "video_id": "DsOAE8nxwO8",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -683,7 +727,7 @@
         "is_public": false,
         "published_at": "2026-11-06T22:30:00Z",
         "published_formatted": "06/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/DsOAE8nxwO8/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLB1k0TA-jsJYp5XCGIdjwyVcVZFaw",
+        "thumbnail": "https://i9.ytimg.com/vi/DsOAE8nxwO8/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDb_7f2rxlr1OrigsNOM8Au66e1wQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -691,10 +735,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "nkLU3lp7VRU": {
         "video_id": "nkLU3lp7VRU",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -705,7 +750,7 @@
         "is_public": false,
         "published_at": "2026-10-28T22:30:00Z",
         "published_formatted": "28/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/nkLU3lp7VRU/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLD7uJ-_Lb6APkU_6kA_ndvi2iIOXQ",
+        "thumbnail": "https://i9.ytimg.com/vi/nkLU3lp7VRU/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLCmg1k3PQ4FqCeq6rfrYaqeP7DItA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -713,10 +758,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "UW8SYlNDUaM": {
         "video_id": "UW8SYlNDUaM",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -735,10 +781,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 8,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "m0e71Vu35eI": {
         "video_id": "m0e71Vu35eI",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -757,10 +804,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "n6IGLCEk9BY": {
         "video_id": "n6IGLCEk9BY",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -771,7 +819,7 @@
         "is_public": false,
         "published_at": "2026-10-22T21:00:07Z",
         "published_formatted": "22/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/n6IGLCEk9BY/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLAFNxFr_LyezsekkgwO8S2rAx21qg",
+        "thumbnail": "https://i9.ytimg.com/vi/n6IGLCEk9BY/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDkcWuNRzJ9zLUy5Ac9dqX0eFhqxA",
         "views_total": 1,
         "likes": 0,
         "comments": 0,
@@ -779,10 +827,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "aDkruwBmRd0": {
         "video_id": "aDkruwBmRd0",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -793,7 +842,7 @@
         "is_public": false,
         "published_at": "2026-10-21T21:00:14Z",
         "published_formatted": "21/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/aDkruwBmRd0/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLCintBFEpEkconAdR4HyCu-DTt1-Q",
+        "thumbnail": "https://i9.ytimg.com/vi/aDkruwBmRd0/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLCk77z6KViTeQoX6NCBVZc7cUUBZQ",
         "views_total": 11,
         "likes": 0,
         "comments": 0,
@@ -801,10 +850,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "aMd7KsNowWU": {
         "video_id": "aMd7KsNowWU",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -815,7 +865,7 @@
         "is_public": false,
         "published_at": "2026-10-20T21:00:21Z",
         "published_formatted": "20/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/aMd7KsNowWU/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLCeNwy3p_Ysx3yEVHyiiRPNGdSZlw",
+        "thumbnail": "https://i9.ytimg.com/vi/aMd7KsNowWU/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDyaDQL_BqahdbsNd9_dSMcmLkA6Q",
         "views_total": 48,
         "likes": 1,
         "comments": 0,
@@ -823,10 +873,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "X60KlfDrh48": {
         "video_id": "X60KlfDrh48",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -837,7 +888,7 @@
         "is_public": false,
         "published_at": "2026-10-19T21:00:00Z",
         "published_formatted": "19/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/X60KlfDrh48/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLDnI0ywmhJRJCOxUht-1k5oaKkRng",
+        "thumbnail": "https://i9.ytimg.com/vi/X60KlfDrh48/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLBYdfS7Tg-Qf1j9SbmKVbQDEaX-lw",
         "views_total": 29,
         "likes": 1,
         "comments": 0,
@@ -845,10 +896,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "7MwmjNyB6PA": {
         "video_id": "7MwmjNyB6PA",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -859,7 +911,7 @@
         "is_public": false,
         "published_at": "2026-10-18T21:00:14Z",
         "published_formatted": "18/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/7MwmjNyB6PA/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLCcves8v5RwLXp6AsLgMR1bvfXNfQ",
+        "thumbnail": "https://i9.ytimg.com/vi/7MwmjNyB6PA/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLA2mnvW3QNO76R0WnpoDaH3bBIxzw",
         "views_total": 77,
         "likes": 1,
         "comments": 0,
@@ -867,10 +919,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "XRwXml15Dp4": {
         "video_id": "XRwXml15Dp4",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -881,7 +934,7 @@
         "is_public": false,
         "published_at": "2026-10-17T21:00:11Z",
         "published_formatted": "17/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/XRwXml15Dp4/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBENmnni60M0kfJRLmLVjL3-Flixg",
+        "thumbnail": "https://i9.ytimg.com/vi/XRwXml15Dp4/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLCLNX5uMD6HA26stvrJAD1o_JVEgw",
         "views_total": 26,
         "likes": 1,
         "comments": 0,
@@ -889,10 +942,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "VhDg5tZ1esw": {
         "video_id": "VhDg5tZ1esw",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -903,7 +957,7 @@
         "is_public": false,
         "published_at": "2026-10-16T21:00:21Z",
         "published_formatted": "16/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/VhDg5tZ1esw/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLCVPJX7bwZoNuJHJ-3DxGKu_hze0Q",
+        "thumbnail": "https://i9.ytimg.com/vi/VhDg5tZ1esw/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLBajp1nn4g1PjHUAX6G76dOTwj4eA",
         "views_total": 27,
         "likes": 0,
         "comments": 0,
@@ -911,10 +965,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "6BgAQSj0hAQ": {
         "video_id": "6BgAQSj0hAQ",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -925,7 +980,7 @@
         "is_public": false,
         "published_at": "2026-10-15T21:00:01Z",
         "published_formatted": "15/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/6BgAQSj0hAQ/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBn-tqxL-lFW65-W4epqviJ3vLLaQ",
+        "thumbnail": "https://i9.ytimg.com/vi/6BgAQSj0hAQ/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLBzRq3JNS0hYzocOVtqWLVj9yjpKA",
         "views_total": 44,
         "likes": 1,
         "comments": 0,
@@ -933,10 +988,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "ijYKSUZ20bw": {
         "video_id": "ijYKSUZ20bw",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -947,7 +1003,7 @@
         "is_public": false,
         "published_at": "2026-10-14T11:19:56Z",
         "published_formatted": "14/10 08:19",
-        "thumbnail": "https://i9.ytimg.com/vi/ijYKSUZ20bw/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLDEZvPw-6Mm71nuDP4UjYcnNDSM6w",
+        "thumbnail": "https://i9.ytimg.com/vi/ijYKSUZ20bw/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDU-luwk0wLN4CmF_cJ1n2N93y8jA",
         "views_total": 392,
         "likes": 11,
         "comments": 0,
@@ -955,10 +1011,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "2d1C5RMTexU": {
         "video_id": "2d1C5RMTexU",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -969,7 +1026,7 @@
         "is_public": false,
         "published_at": "2026-10-09T21:30:47Z",
         "published_formatted": "09/10 18:30",
-        "thumbnail": "https://i9.ytimg.com/vi/2d1C5RMTexU/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBUO7SeEiUG9HN4bHinw2uiqMzvbA",
+        "thumbnail": "https://i9.ytimg.com/vi/2d1C5RMTexU/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLC6zvpWOka_4eJC6MYYNPORGe7NVw",
         "views_total": 61,
         "likes": 3,
         "comments": 0,
@@ -977,10 +1034,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "Vi1LmflBVs0": {
         "video_id": "Vi1LmflBVs0",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -991,7 +1049,7 @@
         "is_public": false,
         "published_at": "2026-10-07T21:00:27Z",
         "published_formatted": "07/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/Vi1LmflBVs0/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBgWJKLFBn9lwnVBuE_9pJcH1U5tw",
+        "thumbnail": "https://i9.ytimg.com/vi/Vi1LmflBVs0/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDTnFjzplXguEIpv53XP5V3iCjvpg",
         "views_total": 96,
         "likes": 1,
         "comments": 0,
@@ -999,10 +1057,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "4MJbJZP8I44": {
         "video_id": "4MJbJZP8I44",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1013,7 +1072,7 @@
         "is_public": false,
         "published_at": "2026-10-06T21:00:03Z",
         "published_formatted": "06/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/4MJbJZP8I44/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBKnS_4tREbiaLJws29kvI2uOv7SA",
+        "thumbnail": "https://i9.ytimg.com/vi/4MJbJZP8I44/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDkkD7FaNNziJkO55_Mc6lj_BC5sg",
         "views_total": 164,
         "likes": 3,
         "comments": 0,
@@ -1021,10 +1080,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "k1pgpxfNMwk": {
         "video_id": "k1pgpxfNMwk",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1035,7 +1095,7 @@
         "is_public": false,
         "published_at": "2026-10-05T22:30:21Z",
         "published_formatted": "05/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/k1pgpxfNMwk/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLCuWC4d5jWXvrxdk0geVCfZftyC8Q",
+        "thumbnail": "https://i9.ytimg.com/vi/k1pgpxfNMwk/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDjSITj6SaDxsdcpHfgkfssEK63nw",
         "views_total": 607,
         "likes": 11,
         "comments": 0,
@@ -1043,10 +1103,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "GX_YJQAVTgA": {
         "video_id": "GX_YJQAVTgA",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1057,7 +1118,7 @@
         "is_public": false,
         "published_at": "2026-10-05T21:00:06Z",
         "published_formatted": "05/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/GX_YJQAVTgA/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLC_Os5emsd9zFU8SbxGHvlDB1Xl9w",
+        "thumbnail": "https://i9.ytimg.com/vi/GX_YJQAVTgA/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLC9YbyVEyXUCaou88QZeYDnJkEdXw",
         "views_total": 207,
         "likes": 2,
         "comments": 0,
@@ -1065,10 +1126,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "FIK2jsAqoZg": {
         "video_id": "FIK2jsAqoZg",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1079,7 +1141,7 @@
         "is_public": false,
         "published_at": "2026-10-04T21:00:02Z",
         "published_formatted": "04/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/FIK2jsAqoZg/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBGsIWDV2UyGwj5lcp6E3XXsp5ulQ",
+        "thumbnail": "https://i9.ytimg.com/vi/FIK2jsAqoZg/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAKFVUQ2qobSs1MVaKyAeWfyBquiA",
         "views_total": 63,
         "likes": 5,
         "comments": 0,
@@ -1087,10 +1149,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "W8eJceLJHuY": {
         "video_id": "W8eJceLJHuY",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1101,7 +1164,7 @@
         "is_public": false,
         "published_at": "2026-10-03T21:00:11Z",
         "published_formatted": "03/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/W8eJceLJHuY/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLAtTz-Wf0cxJliYr_2BEXpKflxVEw",
+        "thumbnail": "https://i9.ytimg.com/vi/W8eJceLJHuY/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDqZuT6eDsEAAoq2RJcxkms1PxRxQ",
         "views_total": 196,
         "likes": 3,
         "comments": 0,
@@ -1109,10 +1172,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "ZDMP0PXm00k": {
         "video_id": "ZDMP0PXm00k",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1123,7 +1187,7 @@
         "is_public": false,
         "published_at": "2026-10-02T21:00:22Z",
         "published_formatted": "02/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/ZDMP0PXm00k/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLAly_1i6g4dc1Kn7cw8eg3DFFHu-g",
+        "thumbnail": "https://i9.ytimg.com/vi/ZDMP0PXm00k/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLCPRa3JOOXmU4Ja1MC470e65wV9Cw",
         "views_total": 293,
         "likes": 5,
         "comments": 0,
@@ -1131,10 +1195,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "4Xf0VkMLwZg": {
         "video_id": "4Xf0VkMLwZg",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1145,7 +1210,7 @@
         "is_public": false,
         "published_at": "2026-10-01T21:00:26Z",
         "published_formatted": "01/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/4Xf0VkMLwZg/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBP8ys6rHntK4hRuDW56V6bU_DBTA",
+        "thumbnail": "https://i9.ytimg.com/vi/4Xf0VkMLwZg/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAAZ6-ri7sCDnhbv6telb7sLeMckA",
         "views_total": 112,
         "likes": 3,
         "comments": 0,
@@ -1153,10 +1218,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "fUEojb-pCoo": {
         "video_id": "fUEojb-pCoo",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1167,7 +1233,7 @@
         "is_public": false,
         "published_at": "2026-09-30T21:00:18Z",
         "published_formatted": "30/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/fUEojb-pCoo/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLALUVr-EuNV65dVb0IUN9PZQRKIZg",
+        "thumbnail": "https://i9.ytimg.com/vi/fUEojb-pCoo/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDCnNHgBskkKu36DMITH6pYVMlQww",
         "views_total": 21,
         "likes": 0,
         "comments": 0,
@@ -1175,10 +1241,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "VbJwl6N_U3Y": {
         "video_id": "VbJwl6N_U3Y",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1189,7 +1256,7 @@
         "is_public": false,
         "published_at": "2026-09-29T21:00:31Z",
         "published_formatted": "29/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/VbJwl6N_U3Y/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBgj10UN8mbsHdE0wXLpNe3RGjFcg",
+        "thumbnail": "https://i9.ytimg.com/vi/VbJwl6N_U3Y/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLB-iL3Q_QrlWQBOblVH8-H9pBEKyw",
         "views_total": 100,
         "likes": 2,
         "comments": 0,
@@ -1197,10 +1264,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "ME-nFLsSdfU": {
         "video_id": "ME-nFLsSdfU",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1211,7 +1279,7 @@
         "is_public": false,
         "published_at": "2026-09-28T23:33:17Z",
         "published_formatted": "28/09 20:33",
-        "thumbnail": "https://i9.ytimg.com/vi/ME-nFLsSdfU/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLAia_WNG0c63tyZEeVs9Q28LWznVA",
+        "thumbnail": "https://i9.ytimg.com/vi/ME-nFLsSdfU/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAevKWIbXcCCXaJrBx2gaWNDxa8MQ",
         "views_total": 188,
         "likes": 3,
         "comments": 0,
@@ -1219,10 +1287,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "HcrQhMCTOZw": {
         "video_id": "HcrQhMCTOZw",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1233,7 +1302,7 @@
         "is_public": false,
         "published_at": "2026-09-27T21:21:32Z",
         "published_formatted": "27/09 18:21",
-        "thumbnail": "https://i9.ytimg.com/vi/HcrQhMCTOZw/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBRaRXhoEeWQIFjPS-3vc2wpx9aQA",
+        "thumbnail": "https://i9.ytimg.com/vi/HcrQhMCTOZw/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLB6S0b6VhRNTJ8TobzhGBh1KZygiQ",
         "views_total": 139,
         "likes": 2,
         "comments": 0,
@@ -1241,10 +1310,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "ae1D5Q4f3DI": {
         "video_id": "ae1D5Q4f3DI",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1255,7 +1325,7 @@
         "is_public": false,
         "published_at": "2026-09-26T21:00:06Z",
         "published_formatted": "26/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/ae1D5Q4f3DI/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLAA6Q8YEjGnNzcolQXBzjL8N1lBkw",
+        "thumbnail": "https://i9.ytimg.com/vi/ae1D5Q4f3DI/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLCrvyH39tYfh3ARy9JWRGdZE8Vjug",
         "views_total": 102,
         "likes": 1,
         "comments": 0,
@@ -1263,10 +1333,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "lKVS5wC-KZE": {
         "video_id": "lKVS5wC-KZE",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1277,7 +1348,7 @@
         "is_public": false,
         "published_at": "2026-09-25T21:00:02Z",
         "published_formatted": "25/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/lKVS5wC-KZE/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLA8NU8GB5onYXS9Zv_L94GXQ7CcaA",
+        "thumbnail": "https://i9.ytimg.com/vi/lKVS5wC-KZE/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLCi3Fa-f83g666lzi59E2FrJ632HQ",
         "views_total": 47,
         "likes": 0,
         "comments": 0,
@@ -1285,10 +1356,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "2UhIkm3r3dk": {
         "video_id": "2UhIkm3r3dk",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1299,7 +1371,7 @@
         "is_public": false,
         "published_at": "2026-09-24T21:00:36Z",
         "published_formatted": "24/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/2UhIkm3r3dk/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLDVhTG6CJ93b1PSQRBKXUFsDQ2CDQ",
+        "thumbnail": "https://i9.ytimg.com/vi/2UhIkm3r3dk/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLB_JcnPNNUKO5o3vQeNIgw-E-cFfg",
         "views_total": 218,
         "likes": 5,
         "comments": 0,
@@ -1307,10 +1379,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "3j-g-JA9jRg": {
         "video_id": "3j-g-JA9jRg",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1321,7 +1394,7 @@
         "is_public": false,
         "published_at": "2026-09-23T21:00:29Z",
         "published_formatted": "23/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/3j-g-JA9jRg/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBAJvG4aED6dCVxbAV6IP_JjfbhKw",
+        "thumbnail": "https://i9.ytimg.com/vi/3j-g-JA9jRg/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLBhVLcZLnRmOJIhOtlnoDfm6-fnmA",
         "views_total": 113,
         "likes": 0,
         "comments": 0,
@@ -1329,10 +1402,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "AYCZY4T-jjg": {
         "video_id": "AYCZY4T-jjg",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1343,7 +1417,7 @@
         "is_public": false,
         "published_at": "2026-09-22T21:00:34Z",
         "published_formatted": "22/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/AYCZY4T-jjg/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLCga4zCEf24eJWloNG7d2LfrYoweA",
+        "thumbnail": "https://i9.ytimg.com/vi/AYCZY4T-jjg/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAgq8SK_6Wlg-k8gwU_QbeEGLuuRA",
         "views_total": 113,
         "likes": 2,
         "comments": 0,
@@ -1351,10 +1425,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "_u7bldUvK0U": {
         "video_id": "_u7bldUvK0U",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1365,7 +1440,7 @@
         "is_public": false,
         "published_at": "2026-09-21T22:00:32Z",
         "published_formatted": "21/09 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/_u7bldUvK0U/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLAnPPDSWm2NqXooShjiOJxFLc8K9Q",
+        "thumbnail": "https://i9.ytimg.com/vi/_u7bldUvK0U/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLClvxZcbjAHQwGl_v8Gmj35cErKEA",
         "views_total": 198,
         "likes": 1,
         "comments": 0,
@@ -1373,12 +1448,13 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       }
     },
     "videos_agendados_fila": [
       {
         "video_id": "qVuCsOXPGT4",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1389,7 +1465,7 @@
         "is_public": false,
         "published_at": "2026-11-02T22:30:00Z",
         "published_formatted": "02/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/qVuCsOXPGT4/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBwvflyKNfh6MHSxrIHkJ2O8AM1Nw",
+        "thumbnail": "https://i9.ytimg.com/vi/qVuCsOXPGT4/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLCN-1MxRg6lwwtEJDKHRrQ9GsBQdg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -1397,10 +1473,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       {
         "video_id": "6QNJ91QSyP0",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1411,7 +1488,7 @@
         "is_public": false,
         "published_at": "2026-11-04T22:30:00Z",
         "published_formatted": "04/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/6QNJ91QSyP0/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLB3KtJmuApUuxQPdIMX7BKWVqtGMA",
+        "thumbnail": "https://i9.ytimg.com/vi/6QNJ91QSyP0/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLAa3UnEnTHDtHrhDoHI4x8qyMCGKQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -1419,10 +1496,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       {
         "video_id": "oZy8b7oIqfk",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1433,7 +1511,7 @@
         "is_public": false,
         "published_at": "2026-10-30T22:30:00Z",
         "published_formatted": "30/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/oZy8b7oIqfk/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBYSZdko1zkfhdjvSyj0uLfQA8xlA",
+        "thumbnail": "https://i9.ytimg.com/vi/oZy8b7oIqfk/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLASzbaCOVny4BxT-pgQvn5zi2iDhw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -1441,10 +1519,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       {
         "video_id": "DsOAE8nxwO8",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1455,7 +1534,7 @@
         "is_public": false,
         "published_at": "2026-11-06T22:30:00Z",
         "published_formatted": "06/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/DsOAE8nxwO8/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLB1k0TA-jsJYp5XCGIdjwyVcVZFaw",
+        "thumbnail": "https://i9.ytimg.com/vi/DsOAE8nxwO8/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDb_7f2rxlr1OrigsNOM8Au66e1wQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -1463,10 +1542,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       {
         "video_id": "nkLU3lp7VRU",
+        "canal_id": "biblia",
         "canal_titulo": "Bíblia Oculta",
         "canal_handle": "@bibliaoculta7",
         "grupo": "Pessoais (Vitor)",
@@ -1477,7 +1557,7 @@
         "is_public": false,
         "published_at": "2026-10-28T22:30:00Z",
         "published_formatted": "28/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/nkLU3lp7VRU/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLD7uJ-_Lb6APkU_6kA_ndvi2iIOXQ",
+        "thumbnail": "https://i9.ytimg.com/vi/nkLU3lp7VRU/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLCmg1k3PQ4FqCeq6rfrYaqeP7DItA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -1485,7 +1565,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       }
     ],
     "top3_views_7d": [
@@ -1507,7 +1587,7 @@
       {
         "video_id": "7MwmjNyB6PA",
         "title": "E se Jesus tivesse nascido em 2026 no Brasil?",
-        "thumbnail": "https://i9.ytimg.com/vi/7MwmjNyB6PA/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLCcves8v5RwLXp6AsLgMR1bvfXNfQ",
+        "thumbnail": "https://i9.ytimg.com/vi/7MwmjNyB6PA/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLA2mnvW3QNO76R0WnpoDaH3bBIxzw",
         "url": "https://youtu.be/7MwmjNyB6PA",
         "views_7d": 41,
         "watch_minutes_7d": 47.0,
@@ -1522,7 +1602,7 @@
       {
         "video_id": "aMd7KsNowWU",
         "title": "O Homem com a Força de um Exército que Perdeu os Olhos e Fez um Império Desabar na Própria Morte",
-        "thumbnail": "https://i9.ytimg.com/vi/aMd7KsNowWU/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLCeNwy3p_Ysx3yEVHyiiRPNGdSZlw",
+        "thumbnail": "https://i9.ytimg.com/vi/aMd7KsNowWU/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDyaDQL_BqahdbsNd9_dSMcmLkA6Q",
         "url": "https://youtu.be/aMd7KsNowWU",
         "views_7d": 41,
         "watch_minutes_7d": 114.0,
@@ -1539,7 +1619,7 @@
       {
         "video_id": "ijYKSUZ20bw",
         "title": "O Confronto que Destruiu o Império Romano: O Filme Completo de Jesus",
-        "thumbnail": "https://i9.ytimg.com/vi/ijYKSUZ20bw/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLDEZvPw-6Mm71nuDP4UjYcnNDSM6w",
+        "thumbnail": "https://i9.ytimg.com/vi/ijYKSUZ20bw/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDU-luwk0wLN4CmF_cJ1n2N93y8jA",
         "url": "https://youtu.be/ijYKSUZ20bw",
         "views_total": 392,
         "views_7d": 392,
@@ -1551,7 +1631,7 @@
       {
         "video_id": "k1pgpxfNMwk",
         "title": "Do Dilúvio ao Juízo Final: O Filme Bíblico de 1 Hora que Chocou o Mundo",
-        "thumbnail": "https://i9.ytimg.com/vi/k1pgpxfNMwk/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLCuWC4d5jWXvrxdk0geVCfZftyC8Q",
+        "thumbnail": "https://i9.ytimg.com/vi/k1pgpxfNMwk/mqdefault.jpg?sqp=CNS1iNcG&rs=AOn4CLDjSITj6SaDxsdcpHfgkfssEK63nw",
         "url": "https://youtu.be/k1pgpxfNMwk",
         "views_total": 607,
         "views_7d": 607,
@@ -10926,8 +11006,8 @@
       "subscribers_lost": 40,
       "net_subscribers": 289
     },
-    "snapshot_window_hours": 20.32,
-    "updated_at_utc": "2026-10-28T16:00:28.314184+00:00"
+    "snapshot_window_hours": 20.3,
+    "updated_at_utc": "2026-10-28T15:58:59.344101+00:00"
   },
   "indiano_doc": {
     "canal_titulo": "Untold Bharat",
@@ -10949,6 +11029,7 @@
     "video_meta_map": {
       "MvjI_yFijNo": {
         "video_id": "MvjI_yFijNo",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -10967,10 +11048,11 @@
         "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       "Sr_Flo9RjBs": {
         "video_id": "Sr_Flo9RjBs",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -10989,10 +11071,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       "iEzajDZRNSE": {
         "video_id": "iEzajDZRNSE",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11011,10 +11094,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       "5f9nJLZkpaU": {
         "video_id": "5f9nJLZkpaU",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11033,10 +11117,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       "uh1Wk880WTY": {
         "video_id": "uh1Wk880WTY",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11055,10 +11140,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       "XB9dzGv1Ejg": {
         "video_id": "XB9dzGv1Ejg",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11077,10 +11163,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       "rPeXQyOtm78": {
         "video_id": "rPeXQyOtm78",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11099,10 +11186,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       "oW6lA0757M8": {
         "video_id": "oW6lA0757M8",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11114,17 +11202,18 @@
         "published_at": "2026-10-22T12:30:15Z",
         "published_formatted": "22/10 09:30",
         "thumbnail": "https://i.ytimg.com/vi/oW6lA0757M8/mqdefault.jpg",
-        "views_total": 104,
+        "views_total": 105,
         "likes": 0,
         "comments": 1,
         "url": "https://youtu.be/oW6lA0757M8",
         "is_pub_last_48h": false,
         "delta_60m": 0,
-        "delta_48h": 5,
-        "window_h": 16.55
+        "delta_48h": 6,
+        "window_h": 16.53
       },
       "9UTbJ0fZlB0": {
         "video_id": "9UTbJ0fZlB0",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11143,10 +11232,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       "Au4ihfn4Ijs": {
         "video_id": "Au4ihfn4Ijs",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11158,17 +11248,18 @@
         "published_at": "2026-10-20T12:30:00Z",
         "published_formatted": "20/10 09:30",
         "thumbnail": "https://i.ytimg.com/vi/Au4ihfn4Ijs/mqdefault.jpg",
-        "views_total": 618,
+        "views_total": 623,
         "likes": 7,
         "comments": 1,
         "url": "https://youtu.be/Au4ihfn4Ijs",
         "is_pub_last_48h": false,
         "delta_60m": 0,
-        "delta_48h": 22,
-        "window_h": 16.55
+        "delta_48h": 27,
+        "window_h": 16.53
       },
       "3RBIrSOEWQs": {
         "video_id": "3RBIrSOEWQs",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11187,10 +11278,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 14,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       "G7j8a3ef3hI": {
         "video_id": "G7j8a3ef3hI",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11202,17 +11294,18 @@
         "published_at": "2026-10-18T12:30:29Z",
         "published_formatted": "18/10 09:30",
         "thumbnail": "https://i.ytimg.com/vi/G7j8a3ef3hI/mqdefault.jpg",
-        "views_total": 76,
+        "views_total": 78,
         "likes": 1,
         "comments": 1,
         "url": "https://youtu.be/G7j8a3ef3hI",
         "is_pub_last_48h": false,
         "delta_60m": 0,
-        "delta_48h": 6,
-        "window_h": 16.55
+        "delta_48h": 8,
+        "window_h": 16.53
       },
       "rOfRAdBiKZ0": {
         "video_id": "rOfRAdBiKZ0",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11224,17 +11317,18 @@
         "published_at": "2026-10-17T12:30:27Z",
         "published_formatted": "17/10 09:30",
         "thumbnail": "https://i.ytimg.com/vi/rOfRAdBiKZ0/mqdefault.jpg",
-        "views_total": 170,
+        "views_total": 172,
         "likes": 1,
         "comments": 3,
         "url": "https://youtu.be/rOfRAdBiKZ0",
         "is_pub_last_48h": false,
         "delta_60m": 0,
-        "delta_48h": 2,
-        "window_h": 16.55
+        "delta_48h": 4,
+        "window_h": 16.53
       },
       "5eaaMrhXigk": {
         "video_id": "5eaaMrhXigk",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11253,10 +11347,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       "l-i-bDZweSw": {
         "video_id": "l-i-bDZweSw",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11275,12 +11370,13 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 16.55
+        "window_h": 16.53
       }
     },
     "videos_agendados_fila": [
       {
         "video_id": "Sr_Flo9RjBs",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11299,10 +11395,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       {
         "video_id": "iEzajDZRNSE",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11321,10 +11418,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       {
         "video_id": "5f9nJLZkpaU",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11343,10 +11441,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.55
+        "window_h": 16.53
       },
       {
         "video_id": "XB9dzGv1Ejg",
+        "canal_id": "indiano_doc",
         "canal_titulo": "Untold Bharat",
         "canal_handle": "@uuntoldbharat2d",
         "grupo": "Pessoais (Vitor)",
@@ -11365,7 +11464,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 16.55
+        "window_h": 16.53
       }
     ],
     "top3_views_7d": [
@@ -11993,7 +12092,7 @@
       "rank": 10,
       "out_of": 10,
       "diff_pct": -100.0,
-      "avg_prev": 295
+      "avg_prev": 296
     },
     "top_countries": [
       {
@@ -12049,8 +12148,8 @@
       "subscribers_lost": 0,
       "net_subscribers": 2
     },
-    "snapshot_window_hours": 16.55,
-    "updated_at_utc": "2026-10-28T16:00:28.314184+00:00"
+    "snapshot_window_hours": 16.53,
+    "updated_at_utc": "2026-10-28T15:58:59.344101+00:00"
   },
   "espaco": {
     "canal_titulo": "Cosmic Abyss",
@@ -12072,6 +12171,7 @@
     "video_meta_map": {
       "qHin0kPixuo": {
         "video_id": "qHin0kPixuo",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12090,10 +12190,11 @@
         "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "aUKLXu_9VuY": {
         "video_id": "aUKLXu_9VuY",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12104,7 +12205,7 @@
         "is_public": false,
         "published_at": "2026-11-06T23:30:00Z",
         "published_formatted": "06/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/aUKLXu_9VuY/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLC2rooqKWIDeeSPiygHFNOCD1ejNQ",
+        "thumbnail": "https://i9.ytimg.com/vi/aUKLXu_9VuY/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLB6XRJAZtlESZay8npY5dFGW1ljmA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12112,10 +12213,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "b6-PGCIXbKA": {
         "video_id": "b6-PGCIXbKA",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12126,7 +12228,7 @@
         "is_public": false,
         "published_at": "2026-10-30T23:30:00Z",
         "published_formatted": "30/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/b6-PGCIXbKA/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLC4rMYOlfni7YoMCzVZriljMAJOyg",
+        "thumbnail": "https://i9.ytimg.com/vi/b6-PGCIXbKA/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBJ3_Nr3H1pYqQ5GIO5CgqOH0YAFw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12134,10 +12236,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "Lgb0KsbFVBI": {
         "video_id": "Lgb0KsbFVBI",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12148,7 +12251,7 @@
         "is_public": false,
         "published_at": "2026-11-02T23:30:00Z",
         "published_formatted": "02/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/Lgb0KsbFVBI/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLC6pYuDpDhHJcuZ8u3_bH40BxIl5A",
+        "thumbnail": "https://i9.ytimg.com/vi/Lgb0KsbFVBI/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLDud9MuEzoC50mijrGNnkKKaSK8_w",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12156,10 +12259,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "KSCMCdhmlAI": {
         "video_id": "KSCMCdhmlAI",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12170,7 +12274,7 @@
         "is_public": false,
         "published_at": "2026-10-28T23:30:00Z",
         "published_formatted": "28/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/KSCMCdhmlAI/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLAd4dt3kVHiEMtKrbVn0WsIr728Ww",
+        "thumbnail": "https://i9.ytimg.com/vi/KSCMCdhmlAI/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLB5wOWG9MXTzHSrhTvrcp9bCHeQdQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12178,10 +12282,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "bfoA-FTYAFE": {
         "video_id": "bfoA-FTYAFE",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12192,7 +12297,7 @@
         "is_public": false,
         "published_at": "2026-11-04T23:30:00Z",
         "published_formatted": "04/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/bfoA-FTYAFE/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLC49kqJMTJdHoWUcOj7DfuYTAipbw",
+        "thumbnail": "https://i9.ytimg.com/vi/bfoA-FTYAFE/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLCzgewHIUDYFWBmXOIOU1yQXi8pBQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12200,10 +12305,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "awAPbuzZjLM": {
         "video_id": "awAPbuzZjLM",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12214,7 +12320,7 @@
         "is_public": false,
         "published_at": "2026-10-25T22:00:29Z",
         "published_formatted": "25/10 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/awAPbuzZjLM/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLBIg6_SqDNbFKkHwAuFBP3mkXPHzQ",
+        "thumbnail": "https://i9.ytimg.com/vi/awAPbuzZjLM/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLASLfI4jOKszVktEkoI-FGj3Y_DEA",
         "views_total": 3,
         "likes": 0,
         "comments": 0,
@@ -12222,10 +12328,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "jPKLgNacDms": {
         "video_id": "jPKLgNacDms",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12236,7 +12343,7 @@
         "is_public": false,
         "published_at": "2026-10-23T22:00:03Z",
         "published_formatted": "23/10 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/jPKLgNacDms/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLCI1yqdhtGlRIshGxbsyvJQwD_O5g",
+        "thumbnail": "https://i9.ytimg.com/vi/jPKLgNacDms/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBQKxpmO3QGIqWDDjtCWeEC3wiPMA",
         "views_total": 8,
         "likes": 0,
         "comments": 0,
@@ -12244,10 +12351,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "A6rRIes2gVE": {
         "video_id": "A6rRIes2gVE",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12258,7 +12366,7 @@
         "is_public": false,
         "published_at": "2026-10-22T22:00:15Z",
         "published_formatted": "22/10 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/A6rRIes2gVE/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLDc79OJyglrh09wz6cygg85bZ5b9A",
+        "thumbnail": "https://i9.ytimg.com/vi/A6rRIes2gVE/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBL2y2qjFHaWAI77UMJ3fUJxIAfiA",
         "views_total": 4,
         "likes": 1,
         "comments": 0,
@@ -12266,10 +12374,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "LJulXAEfHH0": {
         "video_id": "LJulXAEfHH0",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12280,7 +12389,7 @@
         "is_public": false,
         "published_at": "2026-10-21T22:00:18Z",
         "published_formatted": "21/10 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/LJulXAEfHH0/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLAwxhOFo-kEOsVXcT8yQRklTY4YQw",
+        "thumbnail": "https://i9.ytimg.com/vi/LJulXAEfHH0/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBqt-34moGACRch9LIWapalQEaEjg",
         "views_total": 16,
         "likes": 1,
         "comments": 0,
@@ -12288,10 +12397,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "UP7j-8rVr5g": {
         "video_id": "UP7j-8rVr5g",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12302,7 +12412,7 @@
         "is_public": false,
         "published_at": "2026-10-20T22:00:04Z",
         "published_formatted": "20/10 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/UP7j-8rVr5g/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLDzZZd0cQ-JNBG168bunXavUQ6X0A",
+        "thumbnail": "https://i9.ytimg.com/vi/UP7j-8rVr5g/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLA_rgjOCuD0VuuXCWDkHhZCcedpQQ",
         "views_total": 10,
         "likes": 0,
         "comments": 0,
@@ -12310,10 +12420,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "ksoGH80QGqU": {
         "video_id": "ksoGH80QGqU",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12332,10 +12443,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 2,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "AZ1QN3jRi3Y": {
         "video_id": "AZ1QN3jRi3Y",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12347,17 +12459,18 @@
         "published_at": "2026-10-18T22:00:22Z",
         "published_formatted": "18/10 19:00",
         "thumbnail": "https://i.ytimg.com/vi/AZ1QN3jRi3Y/mqdefault.jpg",
-        "views_total": 244,
+        "views_total": 245,
         "likes": 3,
         "comments": 1,
         "url": "https://youtu.be/AZ1QN3jRi3Y",
         "is_pub_last_48h": false,
         "delta_60m": 0,
-        "delta_48h": 7,
-        "window_h": 20.07
+        "delta_48h": 8,
+        "window_h": 20.3
       },
       "Alg7TZ6MeOo": {
         "video_id": "Alg7TZ6MeOo",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12376,10 +12489,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 5,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "TiVJlqVKeDI": {
         "video_id": "TiVJlqVKeDI",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12391,17 +12505,18 @@
         "published_at": "2026-10-16T22:00:33Z",
         "published_formatted": "16/10 19:00",
         "thumbnail": "https://i.ytimg.com/vi/TiVJlqVKeDI/mqdefault.jpg",
-        "views_total": 263,
+        "views_total": 264,
         "likes": 3,
         "comments": 1,
         "url": "https://youtu.be/TiVJlqVKeDI",
         "is_pub_last_48h": false,
-        "delta_60m": 4,
-        "delta_48h": 17,
-        "window_h": 20.07
+        "delta_60m": 5,
+        "delta_48h": 18,
+        "window_h": 20.3
       },
       "EafJ0DjPgrY": {
         "video_id": "EafJ0DjPgrY",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12420,10 +12535,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "bNNeghIPxk4": {
         "video_id": "bNNeghIPxk4",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12442,10 +12558,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "kHRGomYv9h8": {
         "video_id": "kHRGomYv9h8",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12464,10 +12581,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "7t-gDnqo8VE": {
         "video_id": "7t-gDnqo8VE",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12486,10 +12604,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       "rMm6QJcGN7I": {
         "video_id": "rMm6QJcGN7I",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12508,12 +12627,13 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       }
     },
     "videos_agendados_fila": [
       {
         "video_id": "aUKLXu_9VuY",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12524,7 +12644,7 @@
         "is_public": false,
         "published_at": "2026-11-06T23:30:00Z",
         "published_formatted": "06/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/aUKLXu_9VuY/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLC2rooqKWIDeeSPiygHFNOCD1ejNQ",
+        "thumbnail": "https://i9.ytimg.com/vi/aUKLXu_9VuY/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLB6XRJAZtlESZay8npY5dFGW1ljmA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12532,10 +12652,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "b6-PGCIXbKA",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12546,7 +12667,7 @@
         "is_public": false,
         "published_at": "2026-10-30T23:30:00Z",
         "published_formatted": "30/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/b6-PGCIXbKA/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLC4rMYOlfni7YoMCzVZriljMAJOyg",
+        "thumbnail": "https://i9.ytimg.com/vi/b6-PGCIXbKA/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLBJ3_Nr3H1pYqQ5GIO5CgqOH0YAFw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12554,10 +12675,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "Lgb0KsbFVBI",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12568,7 +12690,7 @@
         "is_public": false,
         "published_at": "2026-11-02T23:30:00Z",
         "published_formatted": "02/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/Lgb0KsbFVBI/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLC6pYuDpDhHJcuZ8u3_bH40BxIl5A",
+        "thumbnail": "https://i9.ytimg.com/vi/Lgb0KsbFVBI/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLDud9MuEzoC50mijrGNnkKKaSK8_w",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12576,10 +12698,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "KSCMCdhmlAI",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12590,7 +12713,7 @@
         "is_public": false,
         "published_at": "2026-10-28T23:30:00Z",
         "published_formatted": "28/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/KSCMCdhmlAI/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLAd4dt3kVHiEMtKrbVn0WsIr728Ww",
+        "thumbnail": "https://i9.ytimg.com/vi/KSCMCdhmlAI/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLB5wOWG9MXTzHSrhTvrcp9bCHeQdQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12598,10 +12721,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       },
       {
         "video_id": "bfoA-FTYAFE",
+        "canal_id": "espaco",
         "canal_titulo": "Cosmic Abyss",
         "canal_handle": "@cosmicabyssdoc",
         "grupo": "Pessoais (Vitor)",
@@ -12612,7 +12736,7 @@
         "is_public": false,
         "published_at": "2026-11-04T23:30:00Z",
         "published_formatted": "04/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/bfoA-FTYAFE/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLC49kqJMTJdHoWUcOj7DfuYTAipbw",
+        "thumbnail": "https://i9.ytimg.com/vi/bfoA-FTYAFE/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLCzgewHIUDYFWBmXOIOU1yQXi8pBQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12620,7 +12744,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.07
+        "window_h": 20.3
       }
     ],
     "top3_views_7d": [
@@ -12698,7 +12822,7 @@
       {
         "video_id": "UP7j-8rVr5g",
         "title": "What If The Largest Star in The Universe Replaced Our Sun?",
-        "thumbnail": "https://i9.ytimg.com/vi/UP7j-8rVr5g/mqdefault.jpg?sqp=CPywiNcG&rs=AOn4CLDzZZd0cQ-JNBG168bunXavUQ6X0A",
+        "thumbnail": "https://i9.ytimg.com/vi/UP7j-8rVr5g/mqdefault.jpg?sqp=CIC4iNcG&rs=AOn4CLA_rgjOCuD0VuuXCWDkHhZCcedpQQ",
         "url": "https://youtu.be/UP7j-8rVr5g",
         "views_total": 10,
         "views_7d": 10,
@@ -13739,8 +13863,8 @@
       "subscribers_lost": 1,
       "net_subscribers": 7
     },
-    "snapshot_window_hours": 20.07,
-    "updated_at_utc": "2026-10-28T16:00:28.314184+00:00"
+    "snapshot_window_hours": 20.3,
+    "updated_at_utc": "2026-10-28T15:58:59.344101+00:00"
   },
   "novela": {
     "canal_titulo": "Lorena Vane",
@@ -13751,7 +13875,7 @@
     "total_videos_publicos": 24,
     "total_videos_agendados": 5,
     "total_views_canal": 1986,
-    "views_7d_canal": 0,
+    "views_7d_canal": 112,
     "watch_minutes_7d_canal": 0.0,
     "retention_pct_7d_canal": 0.0,
     "retention_dur_7d_canal": "0m 00s",
@@ -13762,6 +13886,7 @@
     "video_meta_map": {
       "uKSEnO70BRI": {
         "video_id": "uKSEnO70BRI",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -13780,10 +13905,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 3.75
+        "window_h": 3.73
       },
       "qIr4Tf2NaVg": {
         "video_id": "qIr4Tf2NaVg",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -13802,10 +13928,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 4.25
+        "window_h": 4.23
       },
       "54YKEDgtwZM": {
         "video_id": "54YKEDgtwZM",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -13824,10 +13951,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 4.5
+        "window_h": 4.48
       },
       "QFjn3iV4aRE": {
         "video_id": "QFjn3iV4aRE",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -13846,10 +13974,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 4.5
+        "window_h": 4.48
       },
       "QI_SFj7jvv4": {
         "video_id": "QI_SFj7jvv4",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -13868,10 +13997,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 4.5
+        "window_h": 4.48
       },
       "WEmJ9PGCNZU": {
         "video_id": "WEmJ9PGCNZU",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -13883,17 +14013,18 @@
         "published_at": "2026-10-27T22:30:03Z",
         "published_formatted": "27/10 19:30",
         "thumbnail": "https://i.ytimg.com/vi/WEmJ9PGCNZU/mqdefault.jpg",
-        "views_total": 119,
+        "views_total": 115,
         "likes": 8,
         "comments": 0,
         "url": "https://youtu.be/WEmJ9PGCNZU",
         "is_pub_last_48h": true,
-        "delta_60m": 4,
-        "delta_48h": 116,
-        "window_h": 16.96
+        "delta_60m": 0,
+        "delta_48h": 112,
+        "window_h": 16.93
       },
       "mnV6GYY1JNQ": {
         "video_id": "mnV6GYY1JNQ",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -13912,10 +14043,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "lHwKPpJIc68": {
         "video_id": "lHwKPpJIc68",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -13934,10 +14066,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "ouslZ6GZpzI": {
         "video_id": "ouslZ6GZpzI",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -13956,10 +14089,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "9dcz_S9rZqU": {
         "video_id": "9dcz_S9rZqU",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -13978,10 +14112,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "--qd76mMLqo": {
         "video_id": "--qd76mMLqo",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14000,10 +14135,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "Q-lavp-X1LI": {
         "video_id": "Q-lavp-X1LI",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14022,10 +14158,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "ti9aFPVIMCQ": {
         "video_id": "ti9aFPVIMCQ",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14044,10 +14181,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "SfTDhGKWoCI": {
         "video_id": "SfTDhGKWoCI",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14066,10 +14204,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "hFcnEnN3eO4": {
         "video_id": "hFcnEnN3eO4",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14088,10 +14227,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "v11oL6AlNaM": {
         "video_id": "v11oL6AlNaM",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14110,10 +14250,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "tQAr-ntUFAw": {
         "video_id": "tQAr-ntUFAw",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14132,10 +14273,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "zqbBdBPkGQg": {
         "video_id": "zqbBdBPkGQg",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14154,10 +14296,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "58Mbr0suq4w": {
         "video_id": "58Mbr0suq4w",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14176,10 +14319,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "oJCDDqCUckE": {
         "video_id": "oJCDDqCUckE",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14198,10 +14342,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "n0UMOCe4FAY": {
         "video_id": "n0UMOCe4FAY",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14220,10 +14365,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "JXPuboCt4WA": {
         "video_id": "JXPuboCt4WA",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14242,10 +14388,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "RbBL4Bi2Ml4": {
         "video_id": "RbBL4Bi2Ml4",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14264,10 +14411,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "8mF5tLo6-e8": {
         "video_id": "8mF5tLo6-e8",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14286,10 +14434,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "Tbbc7Gsar0c": {
         "video_id": "Tbbc7Gsar0c",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14308,10 +14457,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "mmWy2IDfR3s": {
         "video_id": "mmWy2IDfR3s",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14330,10 +14480,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "etdNh-rfRMA": {
         "video_id": "etdNh-rfRMA",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14352,10 +14503,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "_NjGWBfmvMk": {
         "video_id": "_NjGWBfmvMk",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14374,10 +14526,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "7I_1X6zMN4Y": {
         "video_id": "7I_1X6zMN4Y",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14396,12 +14549,13 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       }
     },
     "videos_agendados_fila": [
       {
         "video_id": "uKSEnO70BRI",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14420,10 +14574,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 3.75
+        "window_h": 3.73
       },
       {
         "video_id": "qIr4Tf2NaVg",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14442,10 +14597,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 4.25
+        "window_h": 4.23
       },
       {
         "video_id": "54YKEDgtwZM",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14464,10 +14620,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 4.5
+        "window_h": 4.48
       },
       {
         "video_id": "QFjn3iV4aRE",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14486,10 +14643,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 4.5
+        "window_h": 4.48
       },
       {
         "video_id": "QI_SFj7jvv4",
+        "canal_id": "novela",
         "canal_titulo": "Lorena Vane",
         "canal_handle": "@lorenavane1",
         "grupo": "Pessoais (Vitor)",
@@ -14508,10 +14666,26 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 4.5
+        "window_h": 4.48
       }
     ],
-    "top3_views_7d": [],
+    "top3_views_7d": [
+      {
+        "video_id": "WEmJ9PGCNZU",
+        "title": "Eu Odiava Meu VIZINHO RANZINZA… Até Ele Me RESGATAR na Tempestade!",
+        "thumbnail": "https://i.ytimg.com/vi/WEmJ9PGCNZU/mqdefault.jpg",
+        "url": "https://youtu.be/WEmJ9PGCNZU",
+        "views_7d": 112,
+        "watch_minutes_7d": 0.0,
+        "duration_seconds": 0.0,
+        "duration_str": "0m 00s",
+        "retention_pct": 0.0,
+        "likes_7d": 8,
+        "impressions_7d": null,
+        "ctr_7d": null,
+        "low_sample": true
+      }
+    ],
     "top3_retencao_7d": [
       {
         "video_id": "mmWy2IDfR3s",
@@ -15620,11 +15794,11 @@
       "title": "Eu Odiava Meu VIZINHO RANZINZA… Até Ele Me RESGATAR na Tempestade!",
       "url": "https://youtu.be/WEmJ9PGCNZU",
       "thumbnail": "https://i.ytimg.com/vi/WEmJ9PGCNZU/mqdefault.jpg",
-      "views": 119,
+      "views": 115,
       "published_formatted": "27/10 19:30",
       "rank": 1,
       "out_of": 10,
-      "diff_pct": 1920.8,
+      "diff_pct": 1852.8,
       "avg_prev": 6
     },
     "top_countries": [
@@ -15697,8 +15871,8 @@
       "subscribers_lost": 6,
       "net_subscribers": 24
     },
-    "snapshot_window_hours": 20.32,
-    "updated_at_utc": "2026-10-28T16:00:28.314184+00:00"
+    "snapshot_window_hours": 20.3,
+    "updated_at_utc": "2026-10-28T15:58:59.344101+00:00"
   },
   "hearttangle": {
     "canal_titulo": "HeartTangle",
@@ -15720,6 +15894,7 @@
     "video_meta_map": {
       "VcwTHmj9EuI": {
         "video_id": "VcwTHmj9EuI",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15738,10 +15913,11 @@
         "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "sdfmDHYBJqQ": {
         "video_id": "sdfmDHYBJqQ",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15753,17 +15929,18 @@
         "published_at": "2026-10-27T12:30:38Z",
         "published_formatted": "27/10 09:30",
         "thumbnail": "https://i.ytimg.com/vi/sdfmDHYBJqQ/mqdefault.jpg",
-        "views_total": 424,
+        "views_total": 425,
         "likes": 3,
         "comments": 0,
         "url": "https://youtu.be/sdfmDHYBJqQ",
         "is_pub_last_48h": true,
-        "delta_60m": 3,
-        "delta_48h": 72,
-        "window_h": 20.32
+        "delta_60m": 4,
+        "delta_48h": 73,
+        "window_h": 20.3
       },
       "bA_mvDdEi_4": {
         "video_id": "bA_mvDdEi_4",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15782,10 +15959,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "E4NHCpevLf8": {
         "video_id": "E4NHCpevLf8",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15804,10 +15982,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "HbF4gGAOgqQ": {
         "video_id": "HbF4gGAOgqQ",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15826,10 +16005,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 9,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "v1_AjS_U1xE": {
         "video_id": "v1_AjS_U1xE",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15848,10 +16028,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 101,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "DEcmYdZ-3Pk": {
         "video_id": "DEcmYdZ-3Pk",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15870,10 +16051,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 3,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "PnKlCdNnXu4": {
         "video_id": "PnKlCdNnXu4",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15892,10 +16074,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "SXPCrRUeS-4": {
         "video_id": "SXPCrRUeS-4",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15914,10 +16097,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "VPdHo_ZJLYc": {
         "video_id": "VPdHo_ZJLYc",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15936,10 +16120,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 2,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "rHESlSIHFT4": {
         "video_id": "rHESlSIHFT4",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15958,12 +16143,13 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 9,
-        "window_h": 20.32
+        "window_h": 20.3
       }
     },
     "videos_agendados_fila": [
       {
         "video_id": "bA_mvDdEi_4",
+        "canal_id": "hearttangle",
         "canal_titulo": "HeartTangle",
         "canal_handle": "@heartangle2d",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -15982,7 +16168,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       }
     ],
     "top3_views_7d": [
@@ -16465,8 +16651,8 @@
       "subscribers_lost": 1,
       "net_subscribers": 7
     },
-    "snapshot_window_hours": 20.32,
-    "updated_at_utc": "2026-10-28T16:00:28.314184+00:00"
+    "snapshot_window_hours": 20.3,
+    "updated_at_utc": "2026-10-28T15:58:59.344101+00:00"
   },
   "segredos_olga": {
     "canal_titulo": "Segredos da Olga",
@@ -16488,6 +16674,7 @@
     "video_meta_map": {
       "bHPF0Dd-kzc": {
         "video_id": "bHPF0Dd-kzc",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16506,10 +16693,11 @@
         "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "LqI-ZFBsorE": {
         "video_id": "LqI-ZFBsorE",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16528,10 +16716,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "qfCSYj6tLV8": {
         "video_id": "qfCSYj6tLV8",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16550,10 +16739,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "vZaUGKZchH8": {
         "video_id": "vZaUGKZchH8",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16572,10 +16762,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "gDU0wKUZgrY": {
         "video_id": "gDU0wKUZgrY",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16594,10 +16785,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "Rx0561olFZ8": {
         "video_id": "Rx0561olFZ8",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16616,10 +16808,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "UnU7ujzYuvY": {
         "video_id": "UnU7ujzYuvY",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16638,10 +16831,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "8Y1-gp5OhC0": {
         "video_id": "8Y1-gp5OhC0",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16660,10 +16854,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "YdvbwHGhwgI": {
         "video_id": "YdvbwHGhwgI",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16682,10 +16877,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       "truw_5dIhD8": {
         "video_id": "truw_5dIhD8",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16704,12 +16900,13 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       }
     },
     "videos_agendados_fila": [
       {
         "video_id": "LqI-ZFBsorE",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16728,10 +16925,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       {
         "video_id": "qfCSYj6tLV8",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16750,10 +16948,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       {
         "video_id": "vZaUGKZchH8",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16772,10 +16971,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       {
         "video_id": "gDU0wKUZgrY",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16794,10 +16994,11 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       },
       {
         "video_id": "Rx0561olFZ8",
+        "canal_id": "segredos_olga",
         "canal_titulo": "Segredos da Olga",
         "canal_handle": "@segredosdaolga",
         "grupo": "Startup GVG (Vitor + Amigo)",
@@ -16816,7 +17017,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 20.32
+        "window_h": 20.3
       }
     ],
     "top3_views_7d": [
@@ -16982,7 +17183,7 @@
       "subscribers_lost": 0,
       "net_subscribers": 0
     },
-    "snapshot_window_hours": 20.32,
-    "updated_at_utc": "2026-10-28T16:00:28.314184+00:00"
+    "snapshot_window_hours": 20.3,
+    "updated_at_utc": "2026-10-28T15:58:59.344101+00:00"
   }
 }

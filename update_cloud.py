@@ -529,6 +529,7 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
 
                     v_entry = {
                         "video_id": vid,
+                        "canal_id": conf["id"],
                         "canal_titulo": c_data["canal_titulo"],
                         "canal_handle": c_data["handle"],
                         "grupo": c_data["grupo"],
@@ -640,6 +641,29 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
 
         if parsed_7d:
             c_data["top3_views_7d"] = sorted(parsed_7d, key=lambda x: x["views_7d"], reverse=True)[:3]
+        elif not c_data.get("top3_views_7d"):
+            # Se o Analytics ainda não processou os últimos dias, preenche com vídeos que tiveram movimentação recente em 48h
+            vids_rec = sorted(
+                [v for v in video_meta_map.values() if v.get("is_public") and (v.get("delta_48h") or 0) > 0],
+                key=lambda x: x.get("delta_48h", 0),
+                reverse=True
+            )
+            for rv in vids_rec[:3]:
+                c_data["top3_views_7d"].append({
+                    "video_id": rv["video_id"],
+                    "title": rv.get("title") or f"Vídeo {rv['video_id']}",
+                    "thumbnail": rv.get("thumbnail") or "",
+                    "url": rv.get("url") or f"https://youtu.be/{rv['video_id']}",
+                    "views_7d": rv.get("delta_48h", 0),
+                    "watch_minutes_7d": 0.0,
+                    "duration_seconds": 0.0,
+                    "duration_str": "0m 00s",
+                    "retention_pct": 0.0,
+                    "likes_7d": rv.get("likes", 0),
+                    "impressions_7d": None,
+                    "ctr_7d": None,
+                    "low_sample": True,
+                })
 
         # 3.3 Retenção Vitalícia
         try:
@@ -876,6 +900,10 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
             "diff_pct": diff_pct,
             "avg_prev": round(avg_prev),
         }
+
+    # Harmoniza views 7d caso a Data API em tempo real já registre mais views em 48h do que o relatório do Analytics (devido ao lag de 48-72h do Analytics)
+    if c_data["views_7d_canal"] < c_data["views_48h_canal"]:
+        c_data["views_7d_canal"] = c_data["views_48h_canal"]
 
     # 5. Velocímetro VPH
     c_data["vph_60m"] = c_data["views_60m_canal"]
