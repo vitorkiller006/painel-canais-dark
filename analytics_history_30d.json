@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-28T10:15:18.096157+00:00",
+  "updated_at_utc": "2026-10-28T10:30:22.956288+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -9846,8 +9846,8 @@
       "handle": "@cosmicabyssdoc",
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
-      "vph_60m": 2,
-      "vph_48h": 1.4,
+      "vph_60m": 8,
+      "vph_48h": 1.8,
       "history_lifetime": [
         {
           "day": "2026-10-03",
@@ -10830,7 +10830,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "vph_60m": 0,
-      "vph_48h": 7.5,
+      "vph_48h": 7.4,
       "history_lifetime": [
         {
           "day": "2024-06-11",
@@ -11913,7 +11913,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "vph_60m": 2,
-      "vph_48h": 9.3,
+      "vph_48h": 9.1,
       "history_lifetime": [
         {
           "day": "2026-10-19",
