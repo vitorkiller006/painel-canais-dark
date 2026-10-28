@@ -1,8 +1,9 @@
-name: Atualizar Painel Analytics (30 em 30 min)
+name: Atualizar Painel Analytics (Nuvem)
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    # Roda a cada 15 min em minutos fora de pico (:07, :22, :37, :52) para evitar filas do GitHub
+    - cron: '7,22,37,52 * * * *'
   workflow_dispatch:
 
 permissions:
