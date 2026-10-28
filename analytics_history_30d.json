@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-28T18:30:22.345317+00:00",
+  "updated_at_utc": "2026-10-28T18:35:16.632874+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -18,12 +18,12 @@
         "title": "How Instant Ramen Noodles Are Actually Made! 🍜 (Stickman Host) #Shorts",
         "url": "https://youtu.be/GzhxN8KXdG8",
         "thumbnail": "https://i.ytimg.com/vi/GzhxN8KXdG8/mqdefault.jpg",
-        "views": 9,
+        "views": 10,
         "published_formatted": "27/10 20:30",
         "rank": 1,
         "out_of": 1,
         "diff_pct": 0.0,
-        "avg_prev": 9
+        "avg_prev": 10
       },
       "top_countries": [],
       "device_breakdown": [],
@@ -54,9 +54,9 @@
         {
           "day": "2023-10-12",
           "type": "video",
-          "views": 0,
+          "views": 2,
           "minutes": 0.0,
-          "net_subs": 1
+          "net_subs": 0
         },
         {
           "day": "2023-10-12",
@@ -64,13 +64,6 @@
           "views": 60,
           "minutes": 27.0,
           "net_subs": 3
-        },
-        {
-          "day": "2023-10-12",
-          "type": "video",
-          "views": 2,
-          "minutes": 0.0,
-          "net_subs": 0
         },
         {
           "day": "2023-10-13",
@@ -1202,9 +1195,9 @@
         {
           "day": "2024-06-03",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
+          "views": 3,
+          "minutes": 3.0,
+          "net_subs": 0
         },
         {
           "day": "2024-06-03",
@@ -1212,13 +1205,6 @@
           "views": 519,
           "minutes": 343.0,
           "net_subs": 1
-        },
-        {
-          "day": "2024-06-03",
-          "type": "video",
-          "views": 3,
-          "minutes": 3.0,
-          "net_subs": 0
         },
         {
           "day": "2024-06-04",
@@ -1307,9 +1293,9 @@
         {
           "day": "2024-06-11",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
+          "views": 7,
+          "minutes": 3.0,
+          "net_subs": 0
         },
         {
           "day": "2024-06-11",
@@ -1317,13 +1303,6 @@
           "views": 1246,
           "minutes": 703.0,
           "net_subs": 3
-        },
-        {
-          "day": "2024-06-11",
-          "type": "video",
-          "views": 7,
-          "minutes": 3.0,
-          "net_subs": 0
         },
         {
           "day": "2024-06-12",
@@ -1349,9 +1328,9 @@
         {
           "day": "2024-06-14",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
+          "views": 6,
+          "minutes": 5.0,
+          "net_subs": 0
         },
         {
           "day": "2024-06-14",
@@ -1359,13 +1338,6 @@
           "views": 1396,
           "minutes": 937.0,
           "net_subs": 5
-        },
-        {
-          "day": "2024-06-14",
-          "type": "video",
-          "views": 6,
-          "minutes": 5.0,
-          "net_subs": 0
         },
         {
           "day": "2024-06-15",
@@ -1398,9 +1370,9 @@
         {
           "day": "2024-06-17",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
+          "views": 3,
+          "minutes": 2.0,
+          "net_subs": 0
         },
         {
           "day": "2024-06-17",
@@ -1408,13 +1380,6 @@
           "views": 1141,
           "minutes": 677.0,
           "net_subs": 8
-        },
-        {
-          "day": "2024-06-17",
-          "type": "video",
-          "views": 3,
-          "minutes": 2.0,
-          "net_subs": 0
         },
         {
           "day": "2024-06-18",
@@ -1433,9 +1398,9 @@
         {
           "day": "2024-06-19",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
+          "views": 2,
+          "minutes": 2.0,
+          "net_subs": 0
         },
         {
           "day": "2024-06-19",
@@ -1443,13 +1408,6 @@
           "views": 350,
           "minutes": 283.0,
           "net_subs": 1
-        },
-        {
-          "day": "2024-06-19",
-          "type": "video",
-          "views": 2,
-          "minutes": 2.0,
-          "net_subs": 0
         },
         {
           "day": "2024-06-20",
@@ -1489,9 +1447,9 @@
         {
           "day": "2024-06-23",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
+          "views": 1,
+          "minutes": 1.0,
+          "net_subs": 0
         },
         {
           "day": "2024-06-23",
@@ -1499,13 +1457,6 @@
           "views": 453,
           "minutes": 252.0,
           "net_subs": 2
-        },
-        {
-          "day": "2024-06-23",
-          "type": "video",
-          "views": 1,
-          "minutes": 1.0,
-          "net_subs": 0
         },
         {
           "day": "2024-06-24",
@@ -2084,9 +2035,9 @@
         {
           "day": "2026-09-24",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
+          "views": 66,
+          "minutes": 61.0,
+          "net_subs": 1
         },
         {
           "day": "2026-09-24",
@@ -2096,18 +2047,11 @@
           "net_subs": 3
         },
         {
-          "day": "2026-09-24",
-          "type": "video",
-          "views": 66,
-          "minutes": 61.0,
-          "net_subs": 1
-        },
-        {
           "day": "2026-09-25",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
+          "views": 27,
+          "minutes": 50.0,
+          "net_subs": 1
         },
         {
           "day": "2026-09-25",
@@ -2115,13 +2059,6 @@
           "views": 480,
           "minutes": 210.0,
           "net_subs": 4
-        },
-        {
-          "day": "2026-09-25",
-          "type": "video",
-          "views": 27,
-          "minutes": 50.0,
-          "net_subs": 1
         },
         {
           "day": "2026-09-26",
@@ -2154,9 +2091,9 @@
         {
           "day": "2026-09-28",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
+          "views": 83,
+          "minutes": 81.0,
+          "net_subs": 0
         },
         {
           "day": "2026-09-28",
@@ -2164,13 +2101,6 @@
           "views": 1343,
           "minutes": 1023.0,
           "net_subs": 6
-        },
-        {
-          "day": "2026-09-28",
-          "type": "video",
-          "views": 83,
-          "minutes": 81.0,
-          "net_subs": 0
         },
         {
           "day": "2026-09-29",
@@ -2189,9 +2119,9 @@
         {
           "day": "2026-09-30",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
+          "views": 98,
+          "minutes": 48.0,
+          "net_subs": 0
         },
         {
           "day": "2026-09-30",
@@ -2199,13 +2129,6 @@
           "views": 2912,
           "minutes": 1725.0,
           "net_subs": 16
-        },
-        {
-          "day": "2026-09-30",
-          "type": "video",
-          "views": 98,
-          "minutes": 48.0,
-          "net_subs": 0
         },
         {
           "day": "2026-10-01",
@@ -2224,9 +2147,9 @@
         {
           "day": "2026-10-02",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
+          "views": 74,
+          "minutes": 52.0,
+          "net_subs": 0
         },
         {
           "day": "2026-10-02",
@@ -2234,13 +2157,6 @@
           "views": 1314,
           "minutes": 858.0,
           "net_subs": 7
-        },
-        {
-          "day": "2026-10-02",
-          "type": "video",
-          "views": 74,
-          "minutes": 52.0,
-          "net_subs": 0
         },
         {
           "day": "2026-10-03",
@@ -2273,9 +2189,9 @@
         {
           "day": "2026-10-05",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 0
+          "views": 137,
+          "minutes": 195.0,
+          "net_subs": 3
         },
         {
           "day": "2026-10-05",
@@ -2283,13 +2199,6 @@
           "views": 221,
           "minutes": 158.0,
           "net_subs": 1
-        },
-        {
-          "day": "2026-10-05",
-          "type": "video",
-          "views": 137,
-          "minutes": 195.0,
-          "net_subs": 3
         },
         {
           "day": "2026-10-06",
@@ -2308,8 +2217,8 @@
         {
           "day": "2026-10-07",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 316,
+          "minutes": 596.0,
           "net_subs": 1
         },
         {
@@ -2318,20 +2227,6 @@
           "views": 1,
           "minutes": 0.0,
           "net_subs": 0
-        },
-        {
-          "day": "2026-10-07",
-          "type": "video",
-          "views": 316,
-          "minutes": 596.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-08",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
         },
         {
           "day": "2026-10-08",
@@ -2346,13 +2241,6 @@
           "views": 131,
           "minutes": 150.0,
           "net_subs": 2
-        },
-        {
-          "day": "2026-10-10",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
         },
         {
           "day": "2026-10-10",
@@ -2392,13 +2280,6 @@
         {
           "day": "2026-10-15",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-15",
-          "type": "video",
           "views": 117,
           "minutes": 356.0,
           "net_subs": 2
@@ -2406,23 +2287,9 @@
         {
           "day": "2026-10-16",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-16",
-          "type": "video",
           "views": 248,
           "minutes": 772.0,
           "net_subs": 2
-        },
-        {
-          "day": "2026-10-17",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
         },
         {
           "day": "2026-10-17",
@@ -9003,21 +8870,15 @@
       "history_30d": [
         {
           "day": "2026-09-28",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
+          "views": 83,
+          "minutes": 81.0,
+          "net_subs": 0
         },
         {
           "day": "2026-09-28",
           "views": 1343,
           "minutes": 1023.0,
           "net_subs": 6
-        },
-        {
-          "day": "2026-09-28",
-          "views": 83,
-          "minutes": 81.0,
-          "net_subs": 0
         },
         {
           "day": "2026-09-29",
@@ -9033,21 +8894,15 @@
         },
         {
           "day": "2026-09-30",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
+          "views": 98,
+          "minutes": 48.0,
+          "net_subs": 0
         },
         {
           "day": "2026-09-30",
           "views": 2912,
           "minutes": 1725.0,
           "net_subs": 16
-        },
-        {
-          "day": "2026-09-30",
-          "views": 98,
-          "minutes": 48.0,
-          "net_subs": 0
         },
         {
           "day": "2026-10-01",
@@ -9063,21 +8918,15 @@
         },
         {
           "day": "2026-10-02",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
+          "views": 74,
+          "minutes": 52.0,
+          "net_subs": 0
         },
         {
           "day": "2026-10-02",
           "views": 1314,
           "minutes": 858.0,
           "net_subs": 7
-        },
-        {
-          "day": "2026-10-02",
-          "views": 74,
-          "minutes": 52.0,
-          "net_subs": 0
         },
         {
           "day": "2026-10-03",
@@ -9105,21 +8954,15 @@
         },
         {
           "day": "2026-10-05",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 0
+          "views": 137,
+          "minutes": 195.0,
+          "net_subs": 3
         },
         {
           "day": "2026-10-05",
           "views": 221,
           "minutes": 158.0,
           "net_subs": 1
-        },
-        {
-          "day": "2026-10-05",
-          "views": 137,
-          "minutes": 195.0,
-          "net_subs": 3
         },
         {
           "day": "2026-10-06",
@@ -9135,8 +8978,8 @@
         },
         {
           "day": "2026-10-07",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 316,
+          "minutes": 596.0,
           "net_subs": 1
         },
         {
@@ -9144,18 +8987,6 @@
           "views": 1,
           "minutes": 0.0,
           "net_subs": 0
-        },
-        {
-          "day": "2026-10-07",
-          "views": 316,
-          "minutes": 596.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-08",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
         },
         {
           "day": "2026-10-08",
@@ -9168,12 +8999,6 @@
           "views": 131,
           "minutes": 150.0,
           "net_subs": 2
-        },
-        {
-          "day": "2026-10-10",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
         },
         {
           "day": "2026-10-10",
@@ -9207,33 +9032,15 @@
         },
         {
           "day": "2026-10-15",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-15",
           "views": 117,
           "minutes": 356.0,
           "net_subs": 2
         },
         {
           "day": "2026-10-16",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-16",
           "views": 248,
           "minutes": 772.0,
           "net_subs": 2
-        },
-        {
-          "day": "2026-10-17",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
         },
         {
           "day": "2026-10-17",
@@ -9420,7 +9227,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 7,
+      "vph_60m": 5,
       "vph_48h": 3.7,
       "history_lifetime": [
         {
@@ -10023,8 +9830,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
-      "vph_48h": 1.5,
+      "vph_60m": 3,
+      "vph_48h": 1.6,
       "history_lifetime": [
         {
           "day": "2026-10-03",
@@ -10136,13 +9943,6 @@
           "type": "video",
           "views": 83,
           "minutes": 202.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-19",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
           "net_subs": 0
         },
         {
@@ -10940,12 +10740,6 @@
         },
         {
           "day": "2026-10-19",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-19",
           "views": 140,
           "minutes": 337.0,
           "net_subs": 0
@@ -11062,7 +10856,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 5.0,
+      "vph_48h": 4.9,
       "history_lifetime": [
         {
           "day": "2024-06-11",
@@ -11074,23 +10868,9 @@
         {
           "day": "2024-06-12",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 2
-        },
-        {
-          "day": "2024-06-12",
-          "type": "video",
           "views": 13,
           "minutes": 30.0,
           "net_subs": 0
-        },
-        {
-          "day": "2024-06-13",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
         },
         {
           "day": "2024-06-13",
@@ -12228,13 +12008,6 @@
         {
           "day": "2026-10-20",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-20",
-          "type": "video",
           "views": 328,
           "minutes": 1209.0,
           "net_subs": 0
@@ -12245,13 +12018,6 @@
           "views": 465,
           "minutes": 1230.0,
           "net_subs": 3
-        },
-        {
-          "day": "2026-10-22",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 0
         },
         {
           "day": "2026-10-22",
@@ -12496,12 +12262,6 @@
         },
         {
           "day": "2026-10-20",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-20",
           "views": 328,
           "minutes": 1209.0,
           "net_subs": 0
@@ -12511,12 +12271,6 @@
           "views": 465,
           "minutes": 1230.0,
           "net_subs": 3
-        },
-        {
-          "day": "2026-10-22",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 0
         },
         {
           "day": "2026-10-22",
