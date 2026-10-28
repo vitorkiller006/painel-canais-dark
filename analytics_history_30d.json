@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-28T13:30:20.163431+00:00",
+  "updated_at_utc": "2026-10-28T13:35:57.083818+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -7,13 +7,40 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/goglhVSAtKGaDmImc5ImFHN2xuRVe6nO1kEAgvRRcCFNDnc2Ll9gExh9kTtvyWzn7cWvBOZF=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
-      "vph_48h": 0.0,
+      "vph_60m": 4,
+      "vph_48h": 0.5,
       "history_lifetime": [],
       "traffic_sources_lifetime": [],
       "history_30d": [],
       "traffic_sources_30d": [],
-      "rank_1_de_10": null
+      "rank_1_de_10": {
+        "video_id": "GzhxN8KXdG8",
+        "title": "How Instant Ramen Noodles Are Actually Made! 🍜 (Stickman Host) #Shorts",
+        "url": "https://youtu.be/GzhxN8KXdG8",
+        "thumbnail": "https://i.ytimg.com/vi/GzhxN8KXdG8/mqdefault.jpg",
+        "views": 9,
+        "published_formatted": "27/10 20:30",
+        "rank": 1,
+        "out_of": 1,
+        "diff_pct": 0.0,
+        "avg_prev": 9
+      },
+      "top_countries": [],
+      "device_breakdown": [],
+      "audience_status": {
+        "subscribed_views": 0,
+        "subscribed_pct": 0.0,
+        "unsubscribed_views": 0,
+        "unsubscribed_pct": 0.0
+      },
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribers_gained": 0,
+        "subscribers_lost": 0,
+        "net_subscribers": 0
+      }
     },
     "biblia": {
       "title": "Bíblia Oculta",
@@ -9282,6 +9309,116 @@
         "out_of": 3,
         "diff_pct": -96.3,
         "avg_prev": 162
+      },
+      "top_countries": [
+        {
+          "code": "BR",
+          "name": "Brasil",
+          "flag": "🇧🇷",
+          "views": 51544,
+          "watch_minutes": 34704.0,
+          "pct": 97.0
+        },
+        {
+          "code": "PT",
+          "name": "Portugal",
+          "flag": "🇵🇹",
+          "views": 968,
+          "watch_minutes": 603.0,
+          "pct": 1.8
+        },
+        {
+          "code": "MZ",
+          "name": "Moçambique",
+          "flag": "🇲🇿",
+          "views": 281,
+          "watch_minutes": 205.0,
+          "pct": 0.5
+        },
+        {
+          "code": "AO",
+          "name": "Angola",
+          "flag": "🇦🇴",
+          "views": 211,
+          "watch_minutes": 119.0,
+          "pct": 0.4
+        },
+        {
+          "code": "US",
+          "name": "Estados Unidos",
+          "flag": "🇺🇸",
+          "views": 112,
+          "watch_minutes": 68.0,
+          "pct": 0.2
+        },
+        {
+          "code": "JP",
+          "name": "Japão",
+          "flag": "🇯🇵",
+          "views": 16,
+          "watch_minutes": 10.0,
+          "pct": 0.0
+        },
+        {
+          "code": "GB",
+          "name": "Reino Unido",
+          "flag": "🇬🇧",
+          "views": 12,
+          "watch_minutes": 11.0,
+          "pct": 0.0
+        },
+        {
+          "code": "FR",
+          "name": "França",
+          "flag": "🇫🇷",
+          "views": 11,
+          "watch_minutes": 10.0,
+          "pct": 0.0
+        }
+      ],
+      "device_breakdown": [
+        {
+          "device": "MOBILE",
+          "label": "Celular / Mobile",
+          "icon": "smartphone",
+          "views": 50051,
+          "pct": 88.1
+        },
+        {
+          "device": "TV",
+          "label": "TV Conectada",
+          "icon": "tv",
+          "views": 3677,
+          "pct": 6.5
+        },
+        {
+          "device": "DESKTOP",
+          "label": "Computador / Desktop",
+          "icon": "monitor",
+          "views": 2356,
+          "pct": 4.1
+        },
+        {
+          "device": "TABLET",
+          "label": "Tablet",
+          "icon": "tablet",
+          "views": 705,
+          "pct": 1.2
+        }
+      ],
+      "audience_status": {
+        "subscribed_views": 1390,
+        "subscribed_pct": 2.4,
+        "unsubscribed_views": 55402,
+        "unsubscribed_pct": 97.6
+      },
+      "engagement": {
+        "likes": 3389,
+        "comments": 70,
+        "shares": 208,
+        "subscribers_gained": 329,
+        "subscribers_lost": 40,
+        "net_subscribers": 289
       }
     },
     "indiano_doc": {
@@ -9290,547 +9427,28 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 17,
-      "vph_48h": 3.7,
-      "history_lifetime": [
-        {
-          "day": "2026-10-15",
-          "type": "video",
-          "views": 24,
-          "minutes": 76.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-16",
-          "type": "video",
-          "views": 37,
-          "minutes": 134.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-17",
-          "type": "video",
-          "views": 385,
-          "minutes": 605.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-18",
-          "type": "video",
-          "views": 750,
-          "minutes": 960.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-19",
-          "type": "video",
-          "views": 384,
-          "minutes": 990.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-20",
-          "type": "video",
-          "views": 77,
-          "minutes": 266.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-21",
-          "type": "video",
-          "views": 170,
-          "minutes": 840.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-22",
-          "type": "video",
-          "views": 270,
-          "minutes": 1461.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-23",
-          "type": "video",
-          "views": 208,
-          "minutes": 1899.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-24",
-          "type": "video",
-          "views": 123,
-          "minutes": 1338.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-25",
-          "type": "video",
-          "views": 82,
-          "minutes": 776.0,
-          "net_subs": 0
-        }
-      ],
-      "traffic_sources_lifetime": [
-        {
-          "day": "2026-10-15",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-15",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 21
-        },
-        {
-          "day": "2026-10-15",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-16",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 5
-        },
-        {
-          "day": "2026-10-16",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 32
-        },
-        {
-          "day": "2026-10-17",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 347
-        },
-        {
-          "day": "2026-10-17",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-17",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 11
-        },
-        {
-          "day": "2026-10-17",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 26
-        },
-        {
-          "day": "2026-10-18",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 7
-        },
-        {
-          "day": "2026-10-18",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 699
-        },
-        {
-          "day": "2026-10-18",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 13
-        },
-        {
-          "day": "2026-10-18",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 25
-        },
-        {
-          "day": "2026-10-18",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 6
-        },
-        {
-          "day": "2026-10-19",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-19",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 316
-        },
-        {
-          "day": "2026-10-19",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-19",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 19
-        },
-        {
-          "day": "2026-10-19",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 37
-        },
-        {
-          "day": "2026-10-19",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 8
-        },
-        {
-          "day": "2026-10-20",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-20",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 32
-        },
-        {
-          "day": "2026-10-20",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 22
-        },
-        {
-          "day": "2026-10-20",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 20
-        },
-        {
-          "day": "2026-10-20",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-20",
-          "source": "EXT_URL",
-          "label": "Sites Externos",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-21",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 42
-        },
-        {
-          "day": "2026-10-21",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-21",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 12
-        },
-        {
-          "day": "2026-10-21",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 115
-        },
-        {
-          "day": "2026-10-22",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-22",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 125
-        },
-        {
-          "day": "2026-10-22",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 14
-        },
-        {
-          "day": "2026-10-22",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 126
-        },
-        {
-          "day": "2026-10-22",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-22",
-          "source": "PLAYLIST",
-          "label": "Playlists",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-23",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-23",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 26
-        },
-        {
-          "day": "2026-10-23",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 9
-        },
-        {
-          "day": "2026-10-23",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 161
-        },
-        {
-          "day": "2026-10-23",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 9
-        },
-        {
-          "day": "2026-10-23",
-          "source": "EXT_URL",
-          "label": "Sites Externos",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-24",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 4
-        },
-        {
-          "day": "2026-10-24",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 12
-        },
-        {
-          "day": "2026-10-24",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 14
-        },
-        {
-          "day": "2026-10-24",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 91
-        },
-        {
-          "day": "2026-10-24",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-25",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-25",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 6
-        },
-        {
-          "day": "2026-10-25",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 13
-        },
-        {
-          "day": "2026-10-25",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 56
-        },
-        {
-          "day": "2026-10-25",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-25",
-          "source": "EXT_URL",
-          "label": "Sites Externos",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-25",
-          "source": "PLAYLIST",
-          "label": "Playlists",
-          "type": "video",
-          "views": 2
-        }
-      ],
-      "history_30d": [
-        {
-          "day": "2026-10-15",
-          "views": 24,
-          "minutes": 76.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-16",
-          "views": 37,
-          "minutes": 134.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-17",
-          "views": 385,
-          "minutes": 605.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-18",
-          "views": 750,
-          "minutes": 960.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-19",
-          "views": 384,
-          "minutes": 990.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-20",
-          "views": 77,
-          "minutes": 266.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-21",
-          "views": 170,
-          "minutes": 840.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-22",
-          "views": 270,
-          "minutes": 1461.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-23",
-          "views": 208,
-          "minutes": 1899.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-24",
-          "views": 123,
-          "minutes": 1338.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-25",
-          "views": 82,
-          "minutes": 776.0,
-          "net_subs": 0
-        }
-      ],
+      "vph_60m": 0,
+      "vph_48h": 0.0,
+      "history_lifetime": [],
+      "traffic_sources_lifetime": [],
+      "history_30d": [],
       "traffic_sources_30d": [],
-      "rank_1_de_10": {
-        "video_id": "MvjI_yFijNo",
-        "title": "1991 में भारत को अपना 47 टन सोना चुपचाप विदेश क्यों भेजना पड़ा? | The Secret Gold Airlift",
-        "url": "https://youtu.be/MvjI_yFijNo",
-        "thumbnail": "https://i.ytimg.com/vi/MvjI_yFijNo/mqdefault.jpg",
-        "views": 0,
-        "published_formatted": "28/10 10:00",
-        "rank": 10,
-        "out_of": 10,
-        "diff_pct": -100.0,
-        "avg_prev": 295
+      "rank_1_de_10": null,
+      "top_countries": [],
+      "device_breakdown": [],
+      "audience_status": {
+        "subscribed_views": 0,
+        "subscribed_pct": 0.0,
+        "unsubscribed_views": 0,
+        "unsubscribed_pct": 0.0
+      },
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribers_gained": 0,
+        "subscribers_lost": 0,
+        "net_subscribers": 0
       }
     },
     "espaco": {
@@ -9840,981 +9458,27 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 1.5,
-      "history_lifetime": [
-        {
-          "day": "2026-10-03",
-          "type": "video",
-          "views": 23,
-          "minutes": 167.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-04",
-          "type": "video",
-          "views": 24,
-          "minutes": 153.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-05",
-          "type": "video",
-          "views": 13,
-          "minutes": 4.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-06",
-          "type": "video",
-          "views": 22,
-          "minutes": 211.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-07",
-          "type": "video",
-          "views": 35,
-          "minutes": 66.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-08",
-          "type": "video",
-          "views": 36,
-          "minutes": 2.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-09",
-          "type": "video",
-          "views": 4,
-          "minutes": 1.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-10",
-          "type": "video",
-          "views": 2,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-11",
-          "type": "video",
-          "views": 18,
-          "minutes": 83.0,
-          "net_subs": 2
-        },
-        {
-          "day": "2026-10-12",
-          "type": "video",
-          "views": 58,
-          "minutes": 227.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-13",
-          "type": "video",
-          "views": 16,
-          "minutes": 48.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-14",
-          "type": "video",
-          "views": 55,
-          "minutes": 688.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-15",
-          "type": "video",
-          "views": 33,
-          "minutes": 124.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-16",
-          "type": "video",
-          "views": 47,
-          "minutes": 269.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-17",
-          "type": "video",
-          "views": 84,
-          "minutes": 244.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-18",
-          "type": "video",
-          "views": 83,
-          "minutes": 202.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-19",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-19",
-          "type": "video",
-          "views": 140,
-          "minutes": 337.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-20",
-          "type": "video",
-          "views": 181,
-          "minutes": 489.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-21",
-          "type": "video",
-          "views": 157,
-          "minutes": 377.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-22",
-          "type": "video",
-          "views": 41,
-          "minutes": 268.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-23",
-          "type": "video",
-          "views": 31,
-          "minutes": 336.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-24",
-          "type": "video",
-          "views": 55,
-          "minutes": 338.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-25",
-          "type": "video",
-          "views": 31,
-          "minutes": 303.0,
-          "net_subs": 0
-        }
-      ],
-      "traffic_sources_lifetime": [
-        {
-          "day": "2026-10-03",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-03",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-03",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 21
-        },
-        {
-          "day": "2026-10-04",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 4
-        },
-        {
-          "day": "2026-10-04",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-04",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 17
-        },
-        {
-          "day": "2026-10-05",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-05",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 9
-        },
-        {
-          "day": "2026-10-05",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-06",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-06",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 5
-        },
-        {
-          "day": "2026-10-06",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 16
-        },
-        {
-          "day": "2026-10-07",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-07",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 19
-        },
-        {
-          "day": "2026-10-07",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-07",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-07",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 10
-        },
-        {
-          "day": "2026-10-08",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-08",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 31
-        },
-        {
-          "day": "2026-10-08",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 4
-        },
-        {
-          "day": "2026-10-09",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-09",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-09",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-10",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-11",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 15
-        },
-        {
-          "day": "2026-10-11",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-12",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 41
-        },
-        {
-          "day": "2026-10-12",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-12",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 10
-        },
-        {
-          "day": "2026-10-12",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 6
-        },
-        {
-          "day": "2026-10-13",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-13",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 9
-        },
-        {
-          "day": "2026-10-13",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 6
-        },
-        {
-          "day": "2026-10-14",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 4
-        },
-        {
-          "day": "2026-10-14",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 16
-        },
-        {
-          "day": "2026-10-14",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-14",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 14
-        },
-        {
-          "day": "2026-10-14",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 20
-        },
-        {
-          "day": "2026-10-15",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-15",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 20
-        },
-        {
-          "day": "2026-10-15",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-15",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 9
-        },
-        {
-          "day": "2026-10-16",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 17
-        },
-        {
-          "day": "2026-10-16",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 4
-        },
-        {
-          "day": "2026-10-16",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 24
-        },
-        {
-          "day": "2026-10-16",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-16",
-          "source": "EXT_URL",
-          "label": "Sites Externos",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-17",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 4
-        },
-        {
-          "day": "2026-10-17",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 52
-        },
-        {
-          "day": "2026-10-17",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 10
-        },
-        {
-          "day": "2026-10-17",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 16
-        },
-        {
-          "day": "2026-10-17",
-          "source": "PLAYLIST",
-          "label": "Playlists",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-18",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-18",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 66
-        },
-        {
-          "day": "2026-10-18",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 6
-        },
-        {
-          "day": "2026-10-18",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 6
-        },
-        {
-          "day": "2026-10-18",
-          "source": "PLAYLIST",
-          "label": "Playlists",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-19",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-19",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 92
-        },
-        {
-          "day": "2026-10-19",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 29
-        },
-        {
-          "day": "2026-10-19",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 14
-        },
-        {
-          "day": "2026-10-19",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-20",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-20",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 120
-        },
-        {
-          "day": "2026-10-20",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 28
-        },
-        {
-          "day": "2026-10-20",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 30
-        },
-        {
-          "day": "2026-10-20",
-          "source": "EXT_URL",
-          "label": "Sites Externos",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-20",
-          "source": "PLAYLIST",
-          "label": "Playlists",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-21",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-21",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 123
-        },
-        {
-          "day": "2026-10-21",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 22
-        },
-        {
-          "day": "2026-10-21",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 9
-        },
-        {
-          "day": "2026-10-21",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-22",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 23
-        },
-        {
-          "day": "2026-10-22",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 12
-        },
-        {
-          "day": "2026-10-22",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 6
-        },
-        {
-          "day": "2026-10-23",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-23",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-23",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 4
-        },
-        {
-          "day": "2026-10-23",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 19
-        },
-        {
-          "day": "2026-10-23",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2026-10-23",
-          "source": "PLAYLIST",
-          "label": "Playlists",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-24",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 4
-        },
-        {
-          "day": "2026-10-24",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 11
-        },
-        {
-          "day": "2026-10-24",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-24",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 14
-        },
-        {
-          "day": "2026-10-24",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 24
-        },
-        {
-          "day": "2026-10-24",
-          "source": "PLAYLIST",
-          "label": "Playlists",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-25",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2026-10-25",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 10
-        },
-        {
-          "day": "2026-10-25",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-10-25",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "video",
-          "views": 17
-        }
-      ],
-      "history_30d": [
-        {
-          "day": "2026-10-03",
-          "views": 23,
-          "minutes": 167.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-04",
-          "views": 24,
-          "minutes": 153.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-05",
-          "views": 13,
-          "minutes": 4.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-06",
-          "views": 22,
-          "minutes": 211.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-07",
-          "views": 35,
-          "minutes": 66.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-08",
-          "views": 36,
-          "minutes": 2.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-09",
-          "views": 4,
-          "minutes": 1.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-10",
-          "views": 2,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-11",
-          "views": 18,
-          "minutes": 83.0,
-          "net_subs": 2
-        },
-        {
-          "day": "2026-10-12",
-          "views": 58,
-          "minutes": 227.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-13",
-          "views": 16,
-          "minutes": 48.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-14",
-          "views": 55,
-          "minutes": 688.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-15",
-          "views": 33,
-          "minutes": 124.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-16",
-          "views": 47,
-          "minutes": 269.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-17",
-          "views": 84,
-          "minutes": 244.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-18",
-          "views": 83,
-          "minutes": 202.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-19",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-19",
-          "views": 140,
-          "minutes": 337.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-20",
-          "views": 181,
-          "minutes": 489.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-21",
-          "views": 157,
-          "minutes": 377.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-22",
-          "views": 41,
-          "minutes": 268.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-23",
-          "views": 31,
-          "minutes": 336.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-24",
-          "views": 55,
-          "minutes": 338.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-10-25",
-          "views": 31,
-          "minutes": 303.0,
-          "net_subs": 0
-        }
-      ],
+      "vph_48h": 0.0,
+      "history_lifetime": [],
+      "traffic_sources_lifetime": [],
+      "history_30d": [],
       "traffic_sources_30d": [],
-      "rank_1_de_10": {
-        "video_id": "qHin0kPixuo",
-        "title": "What Would STEPHENSON 2-18 Look Like From Different Distances? (The Largest Star in the Universe)",
-        "url": "https://youtu.be/qHin0kPixuo",
-        "thumbnail": "https://i.ytimg.com/vi/qHin0kPixuo/mqdefault.jpg",
-        "views": 2,
-        "published_formatted": "26/10 19:00",
-        "rank": 10,
-        "out_of": 10,
-        "diff_pct": -98.5,
-        "avg_prev": 136
+      "rank_1_de_10": null,
+      "top_countries": [],
+      "device_breakdown": [],
+      "audience_status": {
+        "subscribed_views": 0,
+        "subscribed_pct": 0.0,
+        "unsubscribed_views": 0,
+        "unsubscribed_pct": 0.0
+      },
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribers_gained": 0,
+        "subscribers_lost": 0,
+        "net_subscribers": 0
       }
     },
     "novela": {
@@ -10823,1082 +9487,28 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
-      "vph_48h": 6.2,
-      "history_lifetime": [
-        {
-          "day": "2024-06-11",
-          "type": "video",
-          "views": 17,
-          "minutes": 45.0,
-          "net_subs": 4
-        },
-        {
-          "day": "2024-06-12",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 2
-        },
-        {
-          "day": "2024-06-12",
-          "type": "video",
-          "views": 13,
-          "minutes": 30.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2024-06-13",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2024-06-13",
-          "type": "video",
-          "views": 37,
-          "minutes": 45.0,
-          "net_subs": 3
-        },
-        {
-          "day": "2024-06-14",
-          "type": "video",
-          "views": 17,
-          "minutes": 47.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2024-06-15",
-          "type": "video",
-          "views": 12,
-          "minutes": 18.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2024-06-19",
-          "type": "video",
-          "views": 5,
-          "minutes": 12.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2024-06-20",
-          "type": "video",
-          "views": 4,
-          "minutes": 14.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2024-06-23",
-          "type": "video",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-08-24",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-08-25",
-          "type": "shorts",
-          "views": 4,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-08-26",
-          "type": "shorts",
-          "views": 20,
-          "minutes": 4.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-08-27",
-          "type": "shorts",
-          "views": 36,
-          "minutes": 5.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-08-28",
-          "type": "shorts",
-          "views": 26,
-          "minutes": 3.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-08-29",
-          "type": "shorts",
-          "views": 69,
-          "minutes": 11.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-08-30",
-          "type": "shorts",
-          "views": 75,
-          "minutes": 11.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-08-31",
-          "type": "shorts",
-          "views": 125,
-          "minutes": 38.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-09-01",
-          "type": "shorts",
-          "views": 14,
-          "minutes": 2.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-09-02",
-          "type": "shorts",
-          "views": 50,
-          "minutes": 9.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-09-03",
-          "type": "shorts",
-          "views": 116,
-          "minutes": 34.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-09-04",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
-        },
-        {
-          "day": "2026-09-04",
-          "type": "shorts",
-          "views": 281,
-          "minutes": 55.0,
-          "net_subs": 3
-        },
-        {
-          "day": "2026-09-05",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -2
-        },
-        {
-          "day": "2026-09-05",
-          "type": "shorts",
-          "views": 961,
-          "minutes": 281.0,
-          "net_subs": 9
-        },
-        {
-          "day": "2026-09-06",
-          "type": "shorts",
-          "views": 101,
-          "minutes": 31.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-07",
-          "type": "shorts",
-          "views": 32,
-          "minutes": 10.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-08",
-          "type": "shorts",
-          "views": 8,
-          "minutes": 3.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-09",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
-        },
-        {
-          "day": "2026-09-09",
-          "type": "shorts",
-          "views": 16,
-          "minutes": 2.0,
-          "net_subs": 1
-        },
-        {
-          "day": "2026-09-10",
-          "type": "shorts",
-          "views": 11,
-          "minutes": 1.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-11",
-          "type": "shorts",
-          "views": 7,
-          "minutes": 1.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-12",
-          "type": "shorts",
-          "views": 6,
-          "minutes": 1.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-13",
-          "type": "shorts",
-          "views": 3,
-          "minutes": 1.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-14",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 1.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-15",
-          "type": "shorts",
-          "views": 2,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-16",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-17",
-          "type": "shorts",
-          "views": 3,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-18",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-19",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-21",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-23",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-25",
-          "type": "shorts",
-          "views": 2,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-09-27",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-03",
-          "type": "shorts",
-          "views": 2,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-04",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-06",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-07",
-          "type": "video",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
-        },
-        {
-          "day": "2026-10-08",
-          "type": "shorts",
-          "views": 2,
-          "minutes": 1.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-13",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-17",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-18",
-          "type": "shorts",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        }
-      ],
-      "traffic_sources_lifetime": [
-        {
-          "day": "2024-06-11",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2024-06-11",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 5
-        },
-        {
-          "day": "2024-06-11",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "video",
-          "views": 5
-        },
-        {
-          "day": "2024-06-11",
-          "source": "EXT_URL",
-          "label": "Sites Externos",
-          "type": "video",
-          "views": 5
-        },
-        {
-          "day": "2024-06-12",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 5
-        },
-        {
-          "day": "2024-06-12",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 7
-        },
-        {
-          "day": "2024-06-12",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2024-06-13",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 4
-        },
-        {
-          "day": "2024-06-13",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 6
-        },
-        {
-          "day": "2024-06-13",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "video",
-          "views": 7
-        },
-        {
-          "day": "2024-06-13",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2024-06-13",
-          "source": "EXT_URL",
-          "label": "Sites Externos",
-          "type": "video",
-          "views": 19
-        },
-        {
-          "day": "2024-06-14",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2024-06-14",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2024-06-14",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2024-06-14",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 9
-        },
-        {
-          "day": "2024-06-14",
-          "source": "EXT_URL",
-          "label": "Sites Externos",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2024-06-15",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2024-06-15",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2024-06-15",
-          "source": "EXT_URL",
-          "label": "Sites Externos",
-          "type": "video",
-          "views": 9
-        },
-        {
-          "day": "2024-06-19",
-          "source": "NO_LINK_OTHER",
-          "label": "Direto / Desconhecido",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2024-06-19",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 3
-        },
-        {
-          "day": "2024-06-20",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "video",
-          "views": 2
-        },
-        {
-          "day": "2024-06-20",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2024-06-20",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2024-06-23",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "video",
-          "views": 1
-        },
-        {
-          "day": "2026-08-24",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-08-25",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 4
-        },
-        {
-          "day": "2026-08-26",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 20
-        },
-        {
-          "day": "2026-08-27",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-08-27",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 34
-        },
-        {
-          "day": "2026-08-28",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-08-28",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-08-28",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 24
-        },
-        {
-          "day": "2026-08-29",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 10
-        },
-        {
-          "day": "2026-08-29",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 59
-        },
-        {
-          "day": "2026-08-30",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 15
-        },
-        {
-          "day": "2026-08-30",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 60
-        },
-        {
-          "day": "2026-08-31",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-08-31",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 124
-        },
-        {
-          "day": "2026-09-01",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-09-01",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 12
-        },
-        {
-          "day": "2026-09-02",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 50
-        },
-        {
-          "day": "2026-09-03",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "shorts",
-          "views": 18
-        },
-        {
-          "day": "2026-09-03",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-09-03",
-          "source": "EXT_URL",
-          "label": "Sites Externos",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-09-03",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 94
-        },
-        {
-          "day": "2026-09-04",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 281
-        },
-        {
-          "day": "2026-09-05",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-05",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "shorts",
-          "views": 46
-        },
-        {
-          "day": "2026-09-05",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 9
-        },
-        {
-          "day": "2026-09-05",
-          "source": "YT_OTHER_PAGE",
-          "label": "Navegação / Início",
-          "type": "shorts",
-          "views": 4
-        },
-        {
-          "day": "2026-09-05",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 901
-        },
-        {
-          "day": "2026-09-06",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-06",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-09-06",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 98
-        },
-        {
-          "day": "2026-09-07",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "shorts",
-          "views": 4
-        },
-        {
-          "day": "2026-09-07",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-09-07",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 26
-        },
-        {
-          "day": "2026-09-08",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-09-08",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 6
-        },
-        {
-          "day": "2026-09-09",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-09",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 7
-        },
-        {
-          "day": "2026-09-09",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 8
-        },
-        {
-          "day": "2026-09-10",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 7
-        },
-        {
-          "day": "2026-09-10",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 4
-        },
-        {
-          "day": "2026-09-11",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-11",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 4
-        },
-        {
-          "day": "2026-09-11",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-09-12",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-12",
-          "source": "YT_CHANNEL",
-          "label": "Página do Canal",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-09-12",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 3
-        },
-        {
-          "day": "2026-09-13",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-09-13",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-14",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-15",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-15",
-          "source": "RELATED_VIDEO",
-          "label": "Vídeos Sugeridos",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-16",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-17",
-          "source": "SHORTS",
-          "label": "Feed do Shorts",
-          "type": "shorts",
-          "views": 3
-        },
-        {
-          "day": "2026-09-18",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-19",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-21",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-23",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-09-25",
-          "source": "SUBSCRIBER",
-          "label": "Feed de Inscrições",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-09-27",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-10-03",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-10-04",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-10-06",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-10-08",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 2
-        },
-        {
-          "day": "2026-10-13",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-10-17",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 1
-        },
-        {
-          "day": "2026-10-18",
-          "source": "YT_SEARCH",
-          "label": "Pesquisa do YouTube",
-          "type": "shorts",
-          "views": 1
-        }
-      ],
-      "history_30d": [
-        {
-          "day": "2026-10-03",
-          "views": 2,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-04",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-06",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-07",
-          "views": 0,
-          "minutes": 0.0,
-          "net_subs": -1
-        },
-        {
-          "day": "2026-10-08",
-          "views": 2,
-          "minutes": 1.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-13",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-17",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-18",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        }
-      ],
+      "vph_60m": 0,
+      "vph_48h": 0.0,
+      "history_lifetime": [],
+      "traffic_sources_lifetime": [],
+      "history_30d": [],
       "traffic_sources_30d": [],
-      "rank_1_de_10": {
-        "video_id": "WEmJ9PGCNZU",
-        "title": "Eu Odiava Meu VIZINHO RANZINZA… Até Ele Me RESGATAR na Tempestade!",
-        "url": "https://youtu.be/WEmJ9PGCNZU",
-        "thumbnail": "https://i.ytimg.com/vi/WEmJ9PGCNZU/mqdefault.jpg",
-        "views": 114,
-        "published_formatted": "27/10 19:30",
-        "rank": 1,
-        "out_of": 10,
-        "diff_pct": 1835.8,
-        "avg_prev": 6
+      "rank_1_de_10": null,
+      "top_countries": [],
+      "device_breakdown": [],
+      "audience_status": {
+        "subscribed_views": 0,
+        "subscribed_pct": 0.0,
+        "unsubscribed_views": 0,
+        "unsubscribed_pct": 0.0
+      },
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribers_gained": 0,
+        "subscribers_lost": 0,
+        "net_subscribers": 0
       }
     },
     "hearttangle": {
@@ -11908,7 +9518,7 @@
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 27,
-      "vph_48h": 9.1,
+      "vph_48h": 9.0,
       "history_lifetime": [
         {
           "day": "2026-10-19",
@@ -12247,6 +9857,60 @@
         "out_of": 10,
         "diff_pct": -100.0,
         "avg_prev": 464
+      },
+      "top_countries": [
+        {
+          "code": "IN",
+          "name": "Índia",
+          "flag": "🇮🇳",
+          "views": 2874,
+          "watch_minutes": 7447.0,
+          "pct": 100.0
+        }
+      ],
+      "device_breakdown": [
+        {
+          "device": "MOBILE",
+          "label": "Celular / Mobile",
+          "icon": "smartphone",
+          "views": 2967,
+          "pct": 98.8
+        },
+        {
+          "device": "TV",
+          "label": "TV Conectada",
+          "icon": "tv",
+          "views": 17,
+          "pct": 0.6
+        },
+        {
+          "device": "DESKTOP",
+          "label": "Computador / Desktop",
+          "icon": "monitor",
+          "views": 12,
+          "pct": 0.4
+        },
+        {
+          "device": "TABLET",
+          "label": "Tablet",
+          "icon": "tablet",
+          "views": 8,
+          "pct": 0.3
+        }
+      ],
+      "audience_status": {
+        "subscribed_views": 0,
+        "subscribed_pct": 0.0,
+        "unsubscribed_views": 3004,
+        "unsubscribed_pct": 100.0
+      },
+      "engagement": {
+        "likes": 6,
+        "comments": 0,
+        "shares": 2,
+        "subscribers_gained": 8,
+        "subscribers_lost": 1,
+        "net_subscribers": 7
       }
     },
     "segredos_olga": {
@@ -12335,6 +9999,30 @@
         "out_of": 5,
         "diff_pct": -100.0,
         "avg_prev": 2
+      },
+      "top_countries": [],
+      "device_breakdown": [
+        {
+          "device": "MOBILE",
+          "label": "Celular / Mobile",
+          "icon": "smartphone",
+          "views": 6,
+          "pct": 100.0
+        }
+      ],
+      "audience_status": {
+        "subscribed_views": 0,
+        "subscribed_pct": 0.0,
+        "unsubscribed_views": 0,
+        "unsubscribed_pct": 0.0
+      },
+      "engagement": {
+        "likes": 0,
+        "comments": 0,
+        "shares": 0,
+        "subscribers_gained": 0,
+        "subscribers_lost": 0,
+        "net_subscribers": 0
       }
     }
   }
