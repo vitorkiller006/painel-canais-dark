@@ -6,8 +6,9 @@ ARQUIVO: painel_template.py
 ===============================================================================
 Design System:
 - Zinc / Deep Slate Pro (Linear / Vercel / YouTube Studio Dark Mode)
-- ApexCharts Modern SVG Area Splines, Donut & Bar Charts
-- Lucide Vector Icons (CDN)
+- ApexCharts Modern SVG Area Splines, Donut & Bar Charts (v4.0.0 fixada)
+- Lucide Vector Icons (v0.460.0 fixada)
+- Audiência Dinâmica Consolidada e por Canal
 - 100% Responsivo (Desktop, Tablet, Mobile)
 ===============================================================================
 """
@@ -456,7 +457,7 @@ a { color: inherit; text-decoration: none; }
   border-radius: 12px;
   padding: 14px 16px;
 }
-.kpi-lbl { font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.04em; margin-top: 4px; }
+.kpi-lbl { font-size: 11px; font-weight: 600; text-transform: uppercase; color: var(--text-dim); letter-spacing: 0.04em; margin-top: 4px; display: flex; align-items: center; gap: 5px; }
 .kpi-val { font-size: 20px; font-weight: 700; font-family: 'JetBrains Mono', monospace; }
 
 /* Chart Cards */
@@ -473,7 +474,7 @@ a { color: inherit; text-decoration: none; }
 .charts-split { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; }
 @media (max-width: 900px) { .charts-split { grid-template-columns: 1fr; } }
 
-/* AUDIENCE & DEMOGRAPHY SECTION (NEW RICH DESIGN) */
+/* AUDIENCE & DEMOGRAPHY SECTION */
 .audience-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -516,7 +517,7 @@ a { color: inherit; text-decoration: none; }
 }
 .discovery-seg-unsub { background: var(--cyan); height: 100%; transition: width .4s ease; }
 .discovery-seg-sub { background: var(--purple); height: 100%; transition: width .4s ease; }
-.discovery-legend { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted); }
+.discovery-legend { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted); flex-wrap: wrap; gap: 6px; }
 
 /* Country & Device Tables */
 .aud-list-row {
@@ -538,6 +539,7 @@ a { color: inherit; text-decoration: none; }
 
 /* Device Item Box */
 .device-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+@media (max-width: 480px) { .device-grid { grid-template-columns: 1fr; } }
 .device-box {
   background: var(--surface-2);
   border: 1px solid var(--border);
@@ -741,7 +743,7 @@ function openChannel(chId, updateHash = true) {
     document.querySelectorAll('.ch-switch-btn').forEach(b => b.classList.toggle('active', b.dataset.ch === 'geral'));
     if (updateHash) history.pushState(null, '', '#view=geral');
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    if (activeGeralTab === 'charts') updateGeralCharts();
+    if (activeGeralTab === 'charts') setTimeout(updateGeralCharts, 60);
     refreshIcons();
     return;
   }
@@ -786,7 +788,7 @@ function switchChannelSubTab(tabId, btn) {
   if (target) target.classList.add('active');
 
   if (tabId === 'charts') {
-    setTimeout(updateSingleChannelCharts, 50);
+    setTimeout(updateSingleChannelCharts, 60);
   }
   refreshIcons();
 }
@@ -800,7 +802,7 @@ function switchGeralMainTab(tabId, btn) {
   if (target) target.classList.add('active');
 
   if (tabId === 'charts') {
-    setTimeout(updateGeralCharts, 50);
+    setTimeout(updateGeralCharts, 60);
   }
   refreshIcons();
 }
@@ -973,7 +975,10 @@ function updateSingleChannelCharts() {
   const km = document.getElementById('ch-kpi-hours');
   const ka = document.getElementById('ch-kpi-avg');
   if (kv) kv.textContent = totV.toLocaleString('pt-BR');
-  if (ks) ks.textContent = (totS >= 0 ? '+' : '') + totS.toLocaleString('pt-BR');
+  if (ks) {
+    ks.textContent = (totS > 0 ? '+' : '') + totS.toLocaleString('pt-BR');
+    ks.style.color = totS > 0 ? 'var(--green)' : (totS < 0 ? 'var(--red)' : 'var(--text-muted)');
+  }
   if (km) km.textContent = (totM / 60).toFixed(1) + ' h';
   if (ka) ka.textContent = avgV.toLocaleString('pt-BR') + '/dia';
 
@@ -1041,10 +1046,10 @@ function updateSingleChannelCharts() {
       yaxis: {
         labels: {
           style: { colors: '#94A3B8', fontSize: '10px', fontFamily: 'JetBrains Mono' },
-          formatter: v => (v >= 0 ? '+' : '') + v.toLocaleString('pt-BR')
+          formatter: v => (v > 0 ? '+' : '') + v.toLocaleString('pt-BR')
         }
       },
-      tooltip: { theme: 'dark', y: { formatter: v => (v >= 0 ? '+' : '') + v.toLocaleString('pt-BR') + ' inscritos' } }
+      tooltip: { theme: 'dark', y: { formatter: v => (v > 0 ? '+' : '') + v.toLocaleString('pt-BR') + ' inscritos' } }
     };
     chSubsApex = new ApexCharts(elS, optS);
     chSubsApex.render();
@@ -1164,7 +1169,10 @@ function updateGeralCharts() {
   const km = document.getElementById('geral-kpi-hours');
   const ka = document.getElementById('geral-kpi-avg');
   if (kv) kv.textContent = totV.toLocaleString('pt-BR');
-  if (ks) ks.textContent = (totS >= 0 ? '+' : '') + totS.toLocaleString('pt-BR');
+  if (ks) {
+    ks.textContent = (totS > 0 ? '+' : '') + totS.toLocaleString('pt-BR');
+    ks.style.color = totS > 0 ? 'var(--green)' : (totS < 0 ? 'var(--red)' : 'var(--text-muted)');
+  }
   if (km) km.textContent = (totM / 60).toFixed(1) + ' h';
   if (ka) ka.textContent = avgV.toLocaleString('pt-BR') + '/dia';
 
@@ -1235,10 +1243,10 @@ function updateGeralCharts() {
       yaxis: {
         labels: {
           style: { colors: '#94A3B8', fontSize: '10px', fontFamily: 'JetBrains Mono' },
-          formatter: v => (v >= 0 ? '+' : '') + v.toLocaleString('pt-BR')
+          formatter: v => (v > 0 ? '+' : '') + v.toLocaleString('pt-BR')
         }
       },
-      tooltip: { theme: 'dark', y: { formatter: v => (v >= 0 ? '+' : '') + v.toLocaleString('pt-BR') + ' inscritos' } }
+      tooltip: { theme: 'dark', y: { formatter: v => (v > 0 ? '+' : '') + v.toLocaleString('pt-BR') + ' inscritos' } }
     };
     geralSubsApex = new ApexCharts(elS, optS);
     geralSubsApex.render();
@@ -1339,11 +1347,64 @@ def render_html(channels_data, now_utc, all_scheduled=None):
     total_hours_all = sum(c.get("watch_minutes_7d_canal", 0.0) for c in channels_data) / 60.0
     total_sched_count = len(all_scheduled) if all_scheduled else sum(c.get("total_videos_agendados", 0) for c in channels_data)
 
-    # Consolidado de Engajamento Global
+    # 1. Consolidado de Engajamento Global
     tot_likes = sum(c.get("engagement", {}).get("likes", 0) for c in channels_data)
     tot_comments = sum(c.get("engagement", {}).get("comments", 0) for c in channels_data)
     tot_shares = sum(c.get("engagement", {}).get("shares", 0) for c in channels_data)
     tot_net_subs = sum(c.get("engagement", {}).get("net_subscribers", 0) for c in channels_data)
+
+    # 2. Consolidado de Geografia Global
+    all_countries_agg = {}
+    total_network_geo_views = 0
+    for c in channels_data:
+        for c_item in c.get("top_countries", []):
+            code = c_item.get("code")
+            if not code:
+                continue
+            if code not in all_countries_agg:
+                all_countries_agg[code] = {
+                    "code": code,
+                    "name": c_item.get("name", code),
+                    "flag": c_item.get("flag", "🌐"),
+                    "views": 0,
+                    "watch_minutes": 0.0,
+                }
+            all_countries_agg[code]["views"] += c_item.get("views", 0)
+            all_countries_agg[code]["watch_minutes"] += c_item.get("watch_minutes", 0.0)
+            total_network_geo_views += c_item.get("views", 0)
+
+    sorted_network_countries = sorted(all_countries_agg.values(), key=lambda x: x["views"], reverse=True)
+    for c_item in sorted_network_countries:
+        c_item["pct"] = round((c_item["views"] / total_network_geo_views * 100), 1) if total_network_geo_views > 0 else 0.0
+
+    # 3. Consolidado de Dispositivos Global
+    all_devices_agg = {}
+    total_network_dev_views = 0
+    for c in channels_data:
+        for d_item in c.get("device_breakdown", []):
+            dev = d_item.get("device")
+            if not dev:
+                continue
+            if dev not in all_devices_agg:
+                all_devices_agg[dev] = {
+                    "device": dev,
+                    "label": d_item.get("label", dev),
+                    "icon": d_item.get("icon", "help-circle"),
+                    "views": 0,
+                }
+            all_devices_agg[dev]["views"] += d_item.get("views", 0)
+            total_network_dev_views += d_item.get("views", 0)
+
+    sorted_network_devices = sorted(all_devices_agg.values(), key=lambda x: x["views"], reverse=True)
+    for d_item in sorted_network_devices:
+        d_item["pct"] = round((d_item["views"] / total_network_dev_views * 100), 1) if total_network_dev_views > 0 else 0.0
+
+    # 4. Consolidado de Descoberta vs Inscritos
+    total_network_unsub_views = sum(c.get("audience_status", {}).get("unsubscribed_views", 0) for c in channels_data)
+    total_network_sub_views = sum(c.get("audience_status", {}).get("subscribed_views", 0) for c in channels_data)
+    total_network_aud_views = total_network_unsub_views + total_network_sub_views
+    network_unsub_pct = round((total_network_unsub_views / total_network_aud_views * 100), 1) if total_network_aud_views > 0 else 0.0
+    network_sub_pct = round((total_network_sub_views / total_network_aud_views * 100), 1) if total_network_aud_views > 0 else 0.0
 
     for c in channels_data:
         if not c.get("avatar_url"):
@@ -1495,7 +1556,7 @@ def render_html(channels_data, now_utc, all_scheduled=None):
   <div class="ch-kpi-box"><div class="ch-kpi-lbl">Retenção 7d</div><div class="ch-kpi-val">{ret}</div></div>
 </div>""")
 
-        # ABA 3: AUDIÊNCIA & DEMOGRAFIA (NOVA!)
+        # ABA 3: AUDIÊNCIA & DEMOGRAFIA
         eng = c.get("engagement", {})
         sub_stat = c.get("audience_status", {})
         countries = c.get("top_countries", [])
@@ -1550,6 +1611,18 @@ def render_html(channels_data, now_utc, all_scheduled=None):
         unsub_views = sub_stat.get("unsubscribed_views", 0)
         sub_views = sub_stat.get("subscribed_views", 0)
 
+        # Badge condicional de descoberta
+        if unsub_pct >= 80:
+            badge_descoberta = '<span class="pill pill-cyan">Alta Tração Orgânica</span>'
+        elif unsub_pct >= 50:
+            badge_descoberta = '<span class="pill pill-green">Audiência Balanceada</span>'
+        else:
+            badge_descoberta = '<span class="pill pill-purple">Comunidade Fidelizada</span>'
+
+        net_sub_val = eng.get('net_subscribers', 0)
+        net_sub_str = f"+{net_sub_val:,}" if net_sub_val > 0 else f"{net_sub_val:,}"
+        net_sub_col = "var(--green)" if net_sub_val > 0 else ("var(--red)" if net_sub_val < 0 else "var(--text-muted)")
+
         ch_audience_html.append(f"""
 <div class="ch-aud-panel" data-canal="{c['id']}" style="display:none">
   <!-- KPIs de Engajamento Vitalício -->
@@ -1567,7 +1640,7 @@ def render_html(channels_data, now_utc, all_scheduled=None):
       <div class="kpi-lbl"><i data-lucide="share-2"></i> Compartilhamentos</div>
     </div>
     <div class="kpi">
-      <div class="kpi-val" style="color:var(--purple)">+{eng.get('net_subscribers', 0):,}</div>
+      <div class="kpi-val" style="color:{net_sub_col}">{net_sub_str}</div>
       <div class="kpi-lbl"><i data-lucide="user-plus"></i> Saldo Real Inscritos</div>
     </div>
   </div>
@@ -1578,7 +1651,7 @@ def render_html(channels_data, now_utc, all_scheduled=None):
       <div style="font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px">
         <i data-lucide="compass"></i> Descoberta Algorítmica vs Inscritos
       </div>
-      <span class="pill pill-cyan">Alta Tração Orgânica</span>
+      {badge_descoberta}
     </div>
     <div class="discovery-bar">
       <div class="discovery-seg-unsub" style="width:{unsub_pct}%" title="Não Inscritos: {unsub_pct}%"></div>
@@ -1601,7 +1674,7 @@ def render_html(channels_data, now_utc, all_scheduled=None):
     </div>
     <div class="aud-card">
       <div class="aud-card-head">
-        <h3><i data-lucide="devices"></i> Distribuição por Dispositivo</h3>
+        <h3><i data-lucide="monitor-smartphone"></i> Distribuição por Dispositivo</h3>
         <span class="pill pill-cyan">Formatos</span>
       </div>
       <div class="device-grid">{''.join(d_cards)}</div>
@@ -1776,19 +1849,6 @@ def render_html(channels_data, now_utc, all_scheduled=None):
     # Top 3 Geral
     cards_geral_top3 = []
     for c in channels_data:
-        if c.get("status_conexao") != "ONLINE":
-            cards_geral_top3.append(f"""
-<details class="ch off" data-grupo="{c['grupo_slug']}" open style="margin-bottom:10px">
-  <summary style="display:flex;justify-content:space-between;align-items:center;padding:12px;background:var(--surface-2);border-radius:10px;cursor:pointer">
-    <div class="ch-head">
-      <span class="pill pill-{c['grupo_slug']}">{_e(c['grupo'])}</span>
-      <h3 style="display:inline;margin-left:8px">{_e(c['canal_titulo'])}</h3>
-    </div>
-    <span class="pill pill-red">desconectado</span>
-  </summary>
-  <div class="off-msg" style="padding:12px;font-size:12px;color:var(--red)"><b>Motivo:</b> {_e(c.get('erro'))}<br>Rode no PC: <code>{_e(c.get('auth_bat'))}</code></div>
-</details>""")
-            continue
         pend = _e(c.get("reach_message") or "Aguardando 1º relatório do Google (24–48h)")
         vph_badge = f'<span class="pill pill-green"><i data-lucide="zap"></i> +{c.get("vph_60m", 0)}/h</span>'
         cards_geral_top3.append(f"""
@@ -1935,6 +1995,53 @@ def render_html(channels_data, now_utc, all_scheduled=None):
             f'<button class="ch-chip" data-ch="{c["id"]}" onclick="setGeralChartChannel(\'{c["id"]}\', this)">{_e(c["canal_titulo"])}</button>'
         )
 
+    # Linhas de países consolidada na aba Geral
+    network_c_rows = []
+    if sorted_network_countries:
+        for item in sorted_network_countries[:8]:
+            pct = item.get("pct", 0.0)
+            v_txt = f"{item.get('views', 0):,}"
+            h_txt = f"{round(item.get('watch_minutes', 0) / 60, 1):,} h"
+            network_c_rows.append(f"""
+<div class="aud-list-row">
+  <div class="aud-col-main">
+    <span class="aud-flag">{item.get('flag', '🌐')}</span>
+    <span class="aud-name">{_e(item.get('name', item.get('code')))}</span>
+  </div>
+  <div class="aud-bar-wrap">
+    <div class="aud-bar-fill" style="width:{min(100, max(2, pct))}%"></div>
+  </div>
+  <div class="aud-val-group">
+    <div class="aud-val">{pct:.1f}%</div>
+    <div class="aud-sub">{v_txt} views · {h_txt}</div>
+  </div>
+</div>""")
+    else:
+        network_c_rows.append('<div class="empty-mini">Nenhum dado geográfico consolidado.</div>')
+
+    # Cards de dispositivos consolidada na aba Geral
+    network_d_cards = []
+    if sorted_network_devices:
+        for d in sorted_network_devices:
+            pct = d.get("pct", 0.0)
+            ico = d.get("icon", "help-circle")
+            network_d_cards.append(f"""
+<div class="device-box">
+  <div class="dev-top">
+    <span class="dev-label"><i data-lucide="{ico}"></i> {_e(d.get('label'))}</span>
+    <span class="dev-pct">{pct:.1f}%</span>
+  </div>
+  <div class="aud-bar-wrap" style="width:100%;margin:4px 0 6px">
+    <div class="aud-bar-fill" style="width:{min(100, max(2, pct))}%"></div>
+  </div>
+  <div class="aud-sub" style="font-family:'JetBrains Mono'">{d.get('views', 0):,} visualizações</div>
+</div>""")
+    else:
+        network_d_cards.append('<div class="empty-mini" style="grid-column:span 2">Nenhum dado de dispositivo consolidado.</div>')
+
+    tot_net_subs_str = f"+{tot_net_subs:,}" if tot_net_subs > 0 else f"{tot_net_subs:,}"
+    tot_net_subs_col = "var(--green)" if tot_net_subs > 0 else ("var(--red)" if tot_net_subs < 0 else "var(--text-muted)")
+
     return f"""<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -1944,8 +2051,8 @@ def render_html(channels_data, now_utc, all_scheduled=None):
 <meta name="theme-color" content="#090D14">
 <title>Dark Studio — Painel Multi-Canal</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-<script src="https://unpkg.com/lucide@latest"></script>
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<script src="https://unpkg.com/lucide@0.460.0/dist/umd/lucide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts@4.0.0/dist/apexcharts.min.js"></script>
 <style>{CSS}</style>
 </head>
 <body>
@@ -2040,10 +2147,10 @@ def render_html(channels_data, now_utc, all_scheduled=None):
       </div>
 
       <div class="kpi-grid">
-        <div class="kpi"><div class="kpi-val" id="ch-kpi-views">—</div><div class="kpi-lbl">Visualizações</div></div>
-        <div class="kpi"><div class="kpi-val" id="ch-kpi-subs" style="color:var(--green)">—</div><div class="kpi-lbl">Saldo de Inscritos</div></div>
-        <div class="kpi"><div class="kpi-val" id="ch-kpi-hours" style="color:var(--amber)">—</div><div class="kpi-lbl">Tempo de Exibição</div></div>
-        <div class="kpi"><div class="kpi-val" id="ch-kpi-avg" style="color:var(--purple)">—</div><div class="kpi-lbl">Média Diária</div></div>
+        <div class="kpi"><div class="kpi-val" id="ch-kpi-views">—</div><div class="kpi-lbl"><i data-lucide="eye"></i> Visualizações</div></div>
+        <div class="kpi"><div class="kpi-val" id="ch-kpi-subs" style="color:var(--green)">—</div><div class="kpi-lbl"><i data-lucide="user-plus"></i> Saldo de Inscritos</div></div>
+        <div class="kpi"><div class="kpi-val" id="ch-kpi-hours" style="color:var(--amber)">—</div><div class="kpi-lbl"><i data-lucide="clock"></i> Tempo de Exibição</div></div>
+        <div class="kpi"><div class="kpi-val" id="ch-kpi-avg" style="color:var(--purple)">—</div><div class="kpi-lbl"><i data-lucide="activity"></i> Média Diária</div></div>
       </div>
 
       <div class="chart-card">
@@ -2066,7 +2173,7 @@ def render_html(channels_data, now_utc, all_scheduled=None):
       </div>
     </div>
 
-    <!-- SUB-ABA 3: AUDIÊNCIA & DEMOGRAFIA (NOVA!) -->
+    <!-- SUB-ABA 3: AUDIÊNCIA & DEMOGRAFIA -->
     <div class="sub-content" id="ch-tab-audience">
       {''.join(ch_audience_html)}
     </div>
@@ -2207,10 +2314,10 @@ def render_html(channels_data, now_utc, all_scheduled=None):
       </div>
 
       <div class="kpi-grid">
-        <div class="kpi"><div class="kpi-val" id="geral-kpi-views">—</div><div class="kpi-lbl">Visualizações</div></div>
-        <div class="kpi"><div class="kpi-val" id="geral-kpi-subs" style="color:var(--green)">—</div><div class="kpi-lbl">Saldo de Inscritos</div></div>
-        <div class="kpi"><div class="kpi-val" id="geral-kpi-hours" style="color:var(--amber)">—</div><div class="kpi-lbl">Tempo de Exibição</div></div>
-        <div class="kpi"><div class="kpi-val" id="geral-kpi-avg" style="color:var(--purple)">—</div><div class="kpi-lbl">Média Diária</div></div>
+        <div class="kpi"><div class="kpi-val" id="geral-kpi-views">—</div><div class="kpi-lbl"><i data-lucide="eye"></i> Visualizações</div></div>
+        <div class="kpi"><div class="kpi-val" id="geral-kpi-subs" style="color:var(--green)">—</div><div class="kpi-lbl"><i data-lucide="user-plus"></i> Saldo de Inscritos</div></div>
+        <div class="kpi"><div class="kpi-val" id="geral-kpi-hours" style="color:var(--amber)">—</div><div class="kpi-lbl"><i data-lucide="clock"></i> Tempo de Exibição</div></div>
+        <div class="kpi"><div class="kpi-val" id="geral-kpi-avg" style="color:var(--purple)">—</div><div class="kpi-lbl"><i data-lucide="activity"></i> Média Diária</div></div>
       </div>
 
       <div class="chart-card">
@@ -2239,19 +2346,42 @@ def render_html(channels_data, now_utc, all_scheduled=None):
         <div class="kpi"><div class="kpi-val" style="color:var(--cyan)">{tot_likes:,}</div><div class="kpi-lbl"><i data-lucide="thumbs-up"></i> Total de Curtidas</div></div>
         <div class="kpi"><div class="kpi-val" style="color:var(--green)">{tot_comments:,}</div><div class="kpi-lbl"><i data-lucide="message-square"></i> Total de Comentários</div></div>
         <div class="kpi"><div class="kpi-val" style="color:var(--amber)">{tot_shares:,}</div><div class="kpi-lbl"><i data-lucide="share-2"></i> Total Compartilhamentos</div></div>
-        <div class="kpi"><div class="kpi-val" style="color:var(--purple)">+{tot_net_subs:,}</div><div class="kpi-lbl"><i data-lucide="user-plus"></i> Saldo Real Inscritos</div></div>
+        <div class="kpi"><div class="kpi-val" style="color:{tot_net_subs_col}">{tot_net_subs_str}</div><div class="kpi-lbl"><i data-lucide="user-plus"></i> Saldo Real Inscritos</div></div>
       </div>
 
-      <div class="sec">
-        <div class="sec-top">
-          <div>
-            <div class="sec-title"><i data-lucide="globe"></i> Resumo Geográfico e de Plataformas da Fábrica</div>
-            <div class="sec-hint">Abra a aba "Audiência" de cada canal para ver o ranking individual completo de países e dispositivos.</div>
+      <!-- Descoberta Global da Rede -->
+      <div class="discovery-box">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <div style="font-size:13px;font-weight:700;display:flex;align-items:center;gap:6px">
+            <i data-lucide="compass"></i> Descoberta Algorítmica da Rede
           </div>
+          <span class="pill pill-cyan">Consolidado 7 Canais</span>
         </div>
-        <div style="font-size:13px;color:var(--text-muted);line-height:1.6">
-          <p>O ecossistema multi-canal atinge audiências no Brasil 🇧🇷, Portugal 🇵🇹, Estados Unidos 🇺🇸, Moçambique 🇲🇿, Angola 🇦🇴 e Índia 🇮🇳.</p>
-          <p style="margin-top:6px">Com mais de <b>85% do tráfego vindo de dispositivos móveis</b> e taxas de descoberta algorítmica acima de <b>90%</b>, os canais operam com alcance viral ativo no YouTube.</p>
+        <div class="discovery-bar">
+          <div class="discovery-seg-unsub" style="width:{network_unsub_pct}%" title="Não Inscritos: {network_unsub_pct}%"></div>
+          <div class="discovery-seg-sub" style="width:{network_sub_pct}%" title="Inscritos: {network_sub_pct}%"></div>
+        </div>
+        <div class="discovery-legend">
+          <span><b style="color:var(--cyan)">● Não Inscritos (Descoberta):</b> {network_unsub_pct:.1f}% ({total_network_unsub_views:,} views)</span>
+          <span><b style="color:var(--purple)">● Inscritos (Base Fiel):</b> {network_sub_pct:.1f}% ({total_network_sub_views:,} views)</span>
+        </div>
+      </div>
+
+      <!-- Grid Split Países e Dispositivos Dinâmicos da Rede -->
+      <div class="audience-grid">
+        <div class="aud-card">
+          <div class="aud-card-head">
+            <h3><i data-lucide="globe"></i> Top Países da Fábrica ({len(sorted_network_countries)} Regiões)</h3>
+            <span class="pill pill-cyan">Consolidado</span>
+          </div>
+          <div>{''.join(network_c_rows)}</div>
+        </div>
+        <div class="aud-card">
+          <div class="aud-card-head">
+            <h3><i data-lucide="monitor-smartphone"></i> Dispositivos da Rede ({total_network_dev_views:,} Views)</h3>
+            <span class="pill pill-cyan">Global</span>
+          </div>
+          <div class="device-grid">{''.join(network_d_cards)}</div>
         </div>
       </div>
     </div>

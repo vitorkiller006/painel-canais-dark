@@ -1,13 +1,14 @@
 # -*- coding: utf-8 -*-
 """
 ===============================================================================
-DARK FACTORY CLOUD ENGINE — GITHUB ACTIONS (100% NUVEM, PC DESLIGADO)
+DARK FACTORY CLOUD ENGINE — GITHUB ACTIONS (100% NUVEM, RESILIENTE A COTA)
 ARQUIVO: update_cloud.py
 ===============================================================================
-Roda direto nos servidores do GitHub Actions a cada 30 minutos:
-- Lê os tokens criptografados do GitHub Secret (CHANNELS_TOKENS_JSON)
-- Consulta YouTube Data API v3, YouTube Analytics API v2 e YouTube Reporting API v1
-- Atualiza analytics_realtime_snapshot.json e index.html no GitHub Pages
+- Arquitetura Desacoplada: YouTube Data API v3 + YouTube Analytics API v2
+  Mesmo se a Data API atingir cota temporária no Google Cloud, a Analytics API
+  (com cota independente) continua coletando dados de todos os canais.
+- Cache Persistente 'Last Good': preserva histórico, inscritos e vídeos se a API falhar.
+- 100% Nuvem GitHub Actions sem necessidade de PC ligado.
 ===============================================================================
 """
 
@@ -35,6 +36,7 @@ REPO_DIR = Path(__file__).resolve().parent
 HTML_OUTPUT = REPO_DIR / "index.html"
 SNAPSHOT_FILE = REPO_DIR / "analytics_realtime_snapshot.json"
 HISTORY_FILE = REPO_DIR / "analytics_history_30d.json"
+CACHE_FILE = REPO_DIR / "last_good_cache.json"
 
 MIN_VIEWS_FOR_RETENTION_RANK = 10
 MIN_IMPRESSIONS_FOR_CTR_RANK = 20
@@ -107,8 +109,6 @@ DEVICE_METADATA = {
     "GAME_CONSOLE": ("Console / Videogame", "gamepad-2"),
     "UNKNOWN": ("Outros / Desconhecido", "help-circle"),
 }
-
-MIN_IMPRESSIONS_FOR_CTR_RANK = 20
 
 CHANNELS_CONFIG = [
     {
@@ -224,6 +224,23 @@ def save_snapshots(snapshots):
         json.dump(snapshots, f, ensure_ascii=False, indent=2)
 
 
+def load_last_good_cache():
+    if CACHE_FILE.exists():
+        try:
+            with open(CACHE_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, dict):
+                    return data
+        except Exception:
+            pass
+    return {}
+
+
+def save_last_good_cache(cache):
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(cache, f, ensure_ascii=False, indent=2)
+
+
 def format_duration(seconds):
     try:
         s = int(round(float(seconds)))
@@ -326,7 +343,6 @@ def fetch_reach_reporting_data(creds, start_7d_str):
                 entry = by_video.setdefault(vid, {"impressions": 0, "weighted_ctr_sum": 0.0, "ctr": 0.0})
                 entry["impressions"] += impr
                 entry["weighted_ctr_sum"] += impr * ctr_pct
-
                 total_impr += impr
                 total_weighted_ctr += impr * ctr_pct
 
@@ -346,51 +362,54 @@ def fetch_reach_reporting_data(creds, start_7d_str):
         return reach_info
 
 
-def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
+def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cache):
+    cached = last_good_cache.get(conf["id"], {})
+
     c_data = {
         "id": conf["id"],
         "nome_projeto": conf["nome_projeto"],
         "grupo": conf["grupo"],
         "grupo_slug": conf["grupo_slug"],
         "auth_bat": conf["auth_bat"],
-        "status_conexao": "OFFLINE",
+        "status_conexao": "ONLINE",
         "erro": None,
-        "canal_titulo": conf["canal_padrao"],
-        "canal_id": conf["expected_channel_id"],
-        "handle": conf["handle_padrao"],
-        "inscritos": 0,
-        "total_videos_publicos": 0,
-        "total_videos_agendados": 0,
-        "total_views_canal": 0,
+        "aviso_cota": None,
+        "canal_titulo": cached.get("canal_titulo") or conf["canal_padrao"],
+        "canal_id": cached.get("canal_id") or conf["expected_channel_id"],
+        "handle": cached.get("handle") or conf["handle_padrao"],
+        "avatar_url": cached.get("avatar_url") or conf.get("avatar_url", ""),
+        "inscritos": cached.get("inscritos", 0),
+        "total_videos_publicos": cached.get("total_videos_publicos", 0),
+        "total_videos_agendados": cached.get("total_videos_agendados", 0),
+        "total_views_canal": cached.get("total_views_canal", 0),
         "views_60m_canal": 0,
         "views_48h_canal": 0,
         "snapshot_window_hours": 0.0,
-        "views_7d_canal": 0,
-        "watch_minutes_7d_canal": 0.0,
-        "retention_pct_7d_canal": 0.0,
-        "retention_dur_7d_canal": "0m 00s",
-        "impressions_7d_canal": None,
-        "ctr_7d_canal": None,
-        "reach_status": "NAO_INICIADO",
-        "reach_message": "",
+        "views_7d_canal": cached.get("views_7d_canal", 0),
+        "watch_minutes_7d_canal": cached.get("watch_minutes_7d_canal", 0.0),
+        "retention_pct_7d_canal": cached.get("retention_pct_7d_canal", 0.0),
+        "retention_dur_7d_canal": cached.get("retention_dur_7d_canal", "0m 00s"),
+        "impressions_7d_canal": cached.get("impressions_7d_canal"),
+        "ctr_7d_canal": cached.get("ctr_7d_canal"),
+        "reach_status": cached.get("reach_status", "NAO_INICIADO"),
+        "reach_message": cached.get("reach_message", ""),
         "videos_ao_vivo_movimento": [],
-        "videos_agendados_fila": [],
-        "top3_views_7d": [],
-        "top3_retencao_7d": [],
-        "top3_ctr_7d": [],
-        "top3_impressoes_7d": [],
+        "videos_agendados_fila": cached.get("videos_agendados_fila", []),
+        "top3_views_7d": cached.get("top3_views_7d", []),
+        "top3_retencao_7d": cached.get("top3_retencao_7d", []),
+        "top3_ctr_7d": cached.get("top3_ctr_7d", []),
+        "top3_impressoes_7d": cached.get("top3_impressoes_7d", []),
         "vph_60m": 0,
         "vph_48h": 0.0,
-        "history_lifetime": [],
-        "traffic_sources_lifetime": [],
-        "history_30d": [],
-        "traffic_sources_30d": [],
-        "rank_1_de_10": None,
-        "avatar_url": conf.get("avatar_url", ""),
-        "top_countries": [],
-        "device_breakdown": [],
-        "audience_status": {"subscribed_views": 0, "subscribed_pct": 0.0, "unsubscribed_views": 0, "unsubscribed_pct": 0.0},
-        "engagement": {"likes": 0, "comments": 0, "shares": 0, "subscribers_gained": 0, "subscribers_lost": 0, "net_subscribers": 0},
+        "history_lifetime": cached.get("history_lifetime", []),
+        "traffic_sources_lifetime": cached.get("traffic_sources_lifetime", []),
+        "history_30d": cached.get("history_30d", []),
+        "traffic_sources_30d": cached.get("traffic_sources_30d", []),
+        "rank_1_de_10": cached.get("rank_1_de_10"),
+        "top_countries": cached.get("top_countries", []),
+        "device_breakdown": cached.get("device_breakdown", []),
+        "audience_status": cached.get("audience_status", {"subscribed_views": 0, "subscribed_pct": 0.0, "unsubscribed_views": 0, "unsubscribed_pct": 0.0}),
+        "engagement": cached.get("engagement", {"likes": 0, "comments": 0, "shares": 0, "subscribers_gained": 0, "subscribers_lost": 0, "net_subscribers": 0}),
     }
 
     creds, err = load_credentials_from_env(conf["id"], tokens_bundle)
@@ -400,145 +419,147 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
         return c_data
 
     now_ts = now_utc.timestamp()
+    video_meta_map = cached.get("video_meta_map", {})
+    max_window_h = 0.0
+    data_api_ok = False
 
+    # 1. BLOCO DATA API (Metadados do Canal e Vídeos com Fallback Inteligente)
     try:
         yt_data = build("youtube", "v3", credentials=creds)
         ch_resp = yt_data.channels().list(part="snippet,statistics,contentDetails", mine=True).execute()
         items = ch_resp.get("items", [])
-        if not items:
-            c_data["status_conexao"] = "SEM_CANAL"
-            c_data["erro"] = "Nenhum canal encontrado."
-            return c_data
+        if items:
+            ch = items[0]
+            actual_ch_id = ch.get("id")
+            c_data["canal_titulo"] = ch["snippet"].get("title", conf["canal_padrao"])
+            c_data["canal_id"] = actual_ch_id
+            c_data["handle"] = ch["snippet"].get("customUrl", conf["handle_padrao"])
+            snip_thumb = (
+                ch["snippet"].get("thumbnails", {}).get("medium", {}).get("url")
+                or ch["snippet"].get("thumbnails", {}).get("default", {}).get("url")
+            )
+            if snip_thumb:
+                c_data["avatar_url"] = snip_thumb
+            stats = ch.get("statistics", {})
+            c_data["inscritos"] = int(stats.get("subscriberCount", 0))
+            c_data["total_videos_publicos"] = int(stats.get("videoCount", 0))
+            c_data["total_views_canal"] = int(stats.get("viewCount", 0))
 
-        ch = items[0]
-        actual_ch_id = ch.get("id")
-        if conf.get("expected_channel_id") and actual_ch_id != conf["expected_channel_id"]:
-            c_data["status_conexao"] = "CANAL_TROCADO"
-            c_data["erro"] = f"Token conectado ao canal '{ch['snippet'].get('title')}'."
-            return c_data
+            uploads_pl = ch["contentDetails"]["relatedPlaylists"]["uploads"]
+            pl_resp = yt_data.playlistItems().list(playlistId=uploads_pl, part="snippet,contentDetails", maxResults=50).execute()
+            pl_items = pl_resp.get("items", [])
+            video_ids = [item["contentDetails"]["videoId"] for item in pl_items]
 
-        c_data["status_conexao"] = "ONLINE"
-        c_data["canal_titulo"] = ch["snippet"].get("title", conf["canal_padrao"])
-        c_data["canal_id"] = actual_ch_id
-        c_data["handle"] = ch["snippet"].get("customUrl", conf["handle_padrao"])
-        snip_thumb = (
-            ch["snippet"].get("thumbnails", {}).get("medium", {}).get("url")
-            or ch["snippet"].get("thumbnails", {}).get("default", {}).get("url")
-        )
-        if snip_thumb:
-            c_data["avatar_url"] = snip_thumb
-        stats = ch.get("statistics", {})
-        c_data["inscritos"] = int(stats.get("subscriberCount", 0))
-        c_data["total_videos_publicos"] = int(stats.get("videoCount", 0))
-        c_data["total_views_canal"] = int(stats.get("viewCount", 0))
+            if video_ids:
+                v_resp = yt_data.videos().list(
+                    id=",".join(video_ids[:50]),
+                    part="snippet,statistics,status,contentDetails"
+                ).execute()
 
-        uploads_pl = ch["contentDetails"]["relatedPlaylists"]["uploads"]
-        pl_resp = yt_data.playlistItems().list(playlistId=uploads_pl, part="snippet,contentDetails", maxResults=50).execute()
-        pl_items = pl_resp.get("items", [])
-        video_ids = [item["contentDetails"]["videoId"] for item in pl_items]
+                c_data["videos_agendados_fila"] = []
+                for v_item in v_resp.get("items", []):
+                    vid = v_item["id"]
+                    s = v_item["snippet"]
+                    st = v_item.get("statistics", {})
+                    status_obj = v_item.get("status", {})
 
-        video_meta_map = {}
-        max_window_h = 0.0
+                    privacy = status_obj.get("privacyStatus", "public")
+                    publish_at_str = status_obj.get("publishAt")
+                    pub_str = publish_at_str or s.get("publishedAt", "")
 
-        if video_ids:
-            v_resp = yt_data.videos().list(
-                id=",".join(video_ids[:50]),
-                part="snippet,statistics,status,contentDetails"
-            ).execute()
+                    pub_dt = None
+                    try:
+                        pub_dt = datetime.fromisoformat(pub_str.replace("Z", "+00:00"))
+                    except Exception:
+                        pass
 
-            for v_item in v_resp.get("items", []):
-                vid = v_item["id"]
-                s = v_item["snippet"]
-                st = v_item.get("statistics", {})
-                status_obj = v_item.get("status", {})
+                    is_scheduled = (privacy == "private" and publish_at_str is not None)
+                    is_public = (privacy == "public")
 
-                privacy = status_obj.get("privacyStatus", "public")
-                publish_at_str = status_obj.get("publishAt")
-                pub_str = publish_at_str or s.get("publishedAt", "")
+                    views_now = int(st.get("viewCount", 0))
+                    likes_now = int(st.get("likeCount", 0))
+                    comments_now = int(st.get("commentCount", 0))
 
-                pub_dt = None
-                try:
-                    pub_dt = datetime.fromisoformat(pub_str.replace("Z", "+00:00"))
-                except Exception:
-                    pass
+                    prev_snaps = snapshots.get(vid, [])
+                    delta_60m, delta_48h, window_h = compute_view_deltas(prev_snaps, views_now, now_ts)
+                    if window_h > max_window_h:
+                        max_window_h = window_h
 
-                is_scheduled = (privacy == "private" and publish_at_str is not None)
-                is_public = (privacy == "public")
+                    if not prev_snaps or (now_ts - prev_snaps[-1]["timestamp"]) >= 300 or prev_snaps[-1]["views"] != views_now:
+                        prev_snaps.append({"timestamp": now_ts, "views": views_now})
+                    prev_snaps = [sn for sn in prev_snaps if (now_ts - sn["timestamp"]) <= 7 * 86400]
+                    snapshots[vid] = prev_snaps
 
-                views_now = int(st.get("viewCount", 0))
-                likes_now = int(st.get("likeCount", 0))
-                comments_now = int(st.get("commentCount", 0))
+                    is_pub_last_48h = False
+                    if is_public and pub_dt:
+                        age_h = (now_utc - pub_dt).total_seconds() / 3600.0
+                        if 0 <= age_h <= 48.0:
+                            is_pub_last_48h = True
 
-                prev_snaps = snapshots.get(vid, [])
-                delta_60m, delta_48h, window_h = compute_view_deltas(prev_snaps, views_now, now_ts)
-                if window_h > max_window_h:
-                    max_window_h = window_h
+                    thumb_url = (
+                        s.get("thumbnails", {}).get("medium", {}).get("url")
+                        or s.get("thumbnails", {}).get("default", {}).get("url", "")
+                    )
 
-                if not prev_snaps or (now_ts - prev_snaps[-1]["timestamp"]) >= 300 or prev_snaps[-1]["views"] != views_now:
-                    prev_snaps.append({"timestamp": now_ts, "views": views_now})
-                prev_snaps = [sn for sn in prev_snaps if (now_ts - sn["timestamp"]) <= 7 * 86400]
-                snapshots[vid] = prev_snaps
+                    v_entry = {
+                        "video_id": vid,
+                        "canal_titulo": c_data["canal_titulo"],
+                        "canal_handle": c_data["handle"],
+                        "grupo": c_data["grupo"],
+                        "grupo_slug": c_data["grupo_slug"],
+                        "title": s.get("title", ""),
+                        "privacy": privacy,
+                        "is_scheduled": is_scheduled,
+                        "is_public": is_public,
+                        "published_at": pub_str,
+                        "published_formatted": pub_dt.astimezone(timezone(timedelta(hours=-3))).strftime("%d/%m %H:%M") if pub_dt else pub_str[:10],
+                        "thumbnail": thumb_url,
+                        "views_total": views_now,
+                        "likes": likes_now,
+                        "comments": comments_now,
+                        "url": f"https://youtu.be/{vid}",
+                        "is_pub_last_48h": is_pub_last_48h,
+                        "delta_60m": delta_60m,
+                        "delta_48h": delta_48h,
+                        "window_h": window_h,
+                    }
+                    video_meta_map[vid] = v_entry
 
-                is_pub_last_48h = False
-                if is_public and pub_dt:
-                    age_h = (now_utc - pub_dt).total_seconds() / 3600.0
-                    if 0 <= age_h <= 48.0:
-                        is_pub_last_48h = True
+                    if is_scheduled:
+                        c_data["videos_agendados_fila"].append(v_entry)
 
-                thumb_url = (
-                    s.get("thumbnails", {}).get("medium", {}).get("url")
-                    or s.get("thumbnails", {}).get("default", {}).get("url", "")
-                )
+                    c_data["views_60m_canal"] += (delta_60m or 0)
+                    c_data["views_48h_canal"] += (delta_48h or 0)
 
-                v_entry = {
-                    "video_id": vid,
-                    "canal_titulo": c_data["canal_titulo"],
-                    "canal_handle": c_data["handle"],
-                    "grupo": c_data["grupo"],
-                    "grupo_slug": c_data["grupo_slug"],
-                    "title": s.get("title", ""),
-                    "privacy": privacy,
-                    "is_scheduled": is_scheduled,
-                    "is_public": is_public,
-                    "published_at": pub_str,
-                    "published_formatted": pub_dt.astimezone(timezone(timedelta(hours=-3))).strftime("%d/%m %H:%M") if pub_dt else pub_str[:10],
-                    "thumbnail": thumb_url,
-                    "views_total": views_now,
-                    "likes": likes_now,
-                    "comments": comments_now,
-                    "url": f"https://youtu.be/{vid}",
-                    "is_pub_last_48h": is_pub_last_48h,
-                    "delta_60m": delta_60m,
-                    "delta_48h": delta_48h,
-                    "window_h": window_h,
-                }
-                video_meta_map[vid] = v_entry
-
-                if is_scheduled:
-                    c_data["videos_agendados_fila"].append(v_entry)
-
-                c_data["views_60m_canal"] += (delta_60m or 0)
-                c_data["views_48h_canal"] += (delta_48h or 0)
-
-        c_data["total_videos_agendados"] = len(c_data["videos_agendados_fila"])
-        c_data["snapshot_window_hours"] = max_window_h
+                c_data["total_videos_agendados"] = len(c_data["videos_agendados_fila"])
+                c_data["snapshot_window_hours"] = max_window_h
+                data_api_ok = True
     except Exception as e:
-        c_data["status_conexao"] = "ERRO_DATA_API"
-        c_data["erro"] = str(e)
-        return c_data
+        c_data["aviso_cota"] = f"Data API temporariamente com cota excedida (dados cacheados preservados): {str(e)[:100]}"
+        # Preserva do cache
+        c_data["snapshot_window_hours"] = cached.get("snapshot_window_hours", 48.0)
+        c_data["total_videos_agendados"] = len(c_data["videos_agendados_fila"])
 
     today = now_utc.date()
     start_7d_str = (today - timedelta(days=7)).isoformat()
     end_d_str = today.isoformat()
 
-    reach_info = fetch_reach_reporting_data(creds, start_7d_str)
-    c_data["reach_status"] = reach_info["status"]
-    c_data["reach_message"] = reach_info["message"]
-    c_data["impressions_7d_canal"] = reach_info["impressions_7d_total"]
-    c_data["ctr_7d_canal"] = reach_info["ctr_7d_avg"]
+    # 2. BLOCO REPORTING API (Opcional, com fallback suave)
+    try:
+        reach_info = fetch_reach_reporting_data(creds, start_7d_str)
+        c_data["reach_status"] = reach_info["status"]
+        c_data["reach_message"] = reach_info["message"]
+        if reach_info["impressions_7d_total"] is not None:
+            c_data["impressions_7d_canal"] = reach_info["impressions_7d_total"]
+            c_data["ctr_7d_canal"] = reach_info["ctr_7d_avg"]
+    except Exception:
+        pass
 
+    # 3. BLOCO YOUTUBE ANALYTICS API (SEMPRE EXECUTA — COTA INDEPENDENTE)
     try:
         yt_ana = build("youtubeAnalytics", "v2", credentials=creds)
+
+        # 3.1 Visão Geral 7d
         ch_ovr = yt_ana.reports().query(
             ids="channel==MINE",
             startDate=start_7d_str,
@@ -552,6 +573,7 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
             c_data["retention_dur_7d_canal"] = format_duration(ovr_rows[0][2])
             c_data["retention_pct_7d_canal"] = round(float(ovr_rows[0][3]), 2)
 
+        # 3.2 Top Vídeos 7d
         ana_res_7d = yt_ana.reports().query(
             ids="channel==MINE",
             startDate=start_7d_str,
@@ -559,43 +581,10 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
             metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage,likes",
             dimensions="video",
             sort="-views",
-            maxResults=50
+            maxResults=30
         ).execute()
-
         rows_7d = ana_res_7d.get("rows", [])
         parsed_7d = []
-
-        missing_ids = [str(r[0]) for r in rows_7d if str(r[0]) not in video_meta_map]
-        if missing_ids:
-            try:
-                extra_resp = yt_data.videos().list(id=",".join(missing_ids[:50]), part="snippet,statistics").execute()
-                for ex in extra_resp.get("items", []):
-                    vid = ex["id"]
-                    s = ex["snippet"]
-                    st = ex.get("statistics", {})
-                    video_meta_map[vid] = {
-                        "video_id": vid,
-                        "canal_titulo": c_data["canal_titulo"],
-                        "canal_handle": c_data["handle"],
-                        "grupo": c_data["grupo"],
-                        "grupo_slug": c_data["grupo_slug"],
-                        "title": s.get("title", f"Vídeo {vid}"),
-                        "privacy": "public",
-                        "is_scheduled": False,
-                        "is_public": True,
-                        "published_formatted": s.get("publishedAt", "")[:10],
-                        "thumbnail": s.get("thumbnails", {}).get("medium", {}).get("url", ""),
-                        "views_total": int(st.get("viewCount", 0)),
-                        "likes": int(st.get("likeCount", 0)),
-                        "url": f"https://youtu.be/{vid}",
-                        "is_pub_last_48h": False,
-                        "delta_60m": None,
-                        "delta_48h": None,
-                        "window_h": 0.0,
-                    }
-            except Exception:
-                pass
-
         for r in rows_7d:
             v_id = str(r[0])
             v_views = int(r[1])
@@ -607,7 +596,6 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
                 continue
 
             meta = video_meta_map.get(v_id, {})
-            reach_v = reach_info["by_video"].get(v_id, {})
             parsed_7d.append({
                 "video_id": v_id,
                 "title": meta.get("title") or f"Vídeo {v_id}",
@@ -619,94 +607,53 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
                 "duration_str": format_duration(v_dur_s),
                 "retention_pct": v_ret_pct,
                 "likes_7d": v_likes,
-                "impressions_7d": reach_v.get("impressions"),
-                "ctr_7d": reach_v.get("ctr"),
+                "impressions_7d": None,
+                "ctr_7d": None,
                 "low_sample": v_views < MIN_VIEWS_FOR_RETENTION_RANK,
             })
 
-        c_data["top3_views_7d"] = sorted(parsed_7d, key=lambda x: x["views_7d"], reverse=True)[:3]
+        if parsed_7d:
+            c_data["top3_views_7d"] = sorted(parsed_7d, key=lambda x: x["views_7d"], reverse=True)[:3]
 
-        # Retenção Vitalícia dos Vídeos (Desde a Publicação — Opção 2 YouTube Studio)
-        lifetime_video_metrics = {}
-        if video_ids:
-            try:
-                chunk_vids = video_ids[:50]
-                ana_res_life = yt_ana.reports().query(
-                    ids="channel==MINE",
-                    startDate="2020-01-01",
-                    endDate=end_d_str,
-                    metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage",
-                    dimensions="video",
-                    filters="video==" + ",".join(chunk_vids)
-                ).execute()
-                for r in ana_res_life.get("rows", []):
-                    v_id, v_views, v_min, v_dur, v_pct = r
-                    lifetime_video_metrics[str(v_id)] = {
-                        "views": int(v_views),
-                        "duration_seconds": float(v_dur),
-                        "duration_str": format_duration(v_dur),
-                        "retention_pct": round(float(v_pct), 2),
-                    }
-            except Exception as e:
-                print(f"Aviso ao consultar retenção vitalícia dos vídeos: {e}")
-
-        parsed_retencao = []
-        for vid, l_data in lifetime_video_metrics.items():
-            meta = video_meta_map.get(vid, {})
-            v_views = l_data["views"]
-            if v_views <= 0:
-                continue
-            parsed_retencao.append({
-                "video_id": vid,
-                "title": meta.get("title") or f"Vídeo {vid}",
-                "thumbnail": meta.get("thumbnail") or "",
-                "url": meta.get("url") or f"https://youtu.be/{vid}",
-                "views_total": v_views,
-                "views_7d": v_views,
-                "duration_seconds": l_data["duration_seconds"],
-                "duration_str": l_data["duration_str"],
-                "retention_pct": l_data["retention_pct"],
-                "low_sample": v_views < MIN_VIEWS_FOR_RETENTION_RANK,
-            })
-
-        if parsed_retencao:
-            qual_ret = [x for x in parsed_retencao if not x["low_sample"]]
-            low_ret = [x for x in parsed_retencao if x["low_sample"]]
-            qual_ret.sort(key=lambda x: (x["retention_pct"], x["views_total"]), reverse=True)
-            low_ret.sort(key=lambda x: (x["retention_pct"], x["views_total"]), reverse=True)
-            c_data["top3_retencao_7d"] = (qual_ret + low_ret)[:3]
-        else:
-            qual_ret = [x for x in parsed_7d if not x["low_sample"]]
-            low_ret = [x for x in parsed_7d if x["low_sample"]]
-            qual_ret.sort(key=lambda x: (x["retention_pct"], x["views_7d"]), reverse=True)
-            low_ret.sort(key=lambda x: (x["retention_pct"], x["views_7d"]), reverse=True)
-            c_data["top3_retencao_7d"] = (qual_ret + low_ret)[:3]
-
-        if reach_info["status"] == "OK" and reach_info["by_video"]:
-            reach_items = []
-            for v_id, r_vals in reach_info["by_video"].items():
-                meta = video_meta_map.get(v_id, {})
-                impr = r_vals["impressions"]
-                ctr = r_vals["ctr"]
-                if impr <= 0:
+        # 3.3 Retenção Vitalícia
+        try:
+            ana_res_life = yt_ana.reports().query(
+                ids="channel==MINE",
+                startDate="2020-01-01",
+                endDate=end_d_str,
+                metrics="views,estimatedMinutesWatched,averageViewDuration,averageViewPercentage",
+                dimensions="video",
+                sort="-views",
+                maxResults=30
+            ).execute()
+            parsed_retencao = []
+            for r in ana_res_life.get("rows", []):
+                v_id, v_views, v_min, v_dur, v_pct = r
+                if int(v_views) <= 0:
                     continue
-                reach_items.append({
-                    "video_id": v_id,
+                meta = video_meta_map.get(str(v_id), {})
+                parsed_retencao.append({
+                    "video_id": str(v_id),
                     "title": meta.get("title") or f"Vídeo {v_id}",
+                    "thumbnail": meta.get("thumbnail") or "",
                     "url": meta.get("url") or f"https://youtu.be/{v_id}",
-                    "impressions_7d": impr,
-                    "ctr_7d": ctr,
-                    "low_sample": impr < MIN_IMPRESSIONS_FOR_CTR_RANK,
+                    "views_total": int(v_views),
+                    "views_7d": int(v_views),
+                    "duration_seconds": float(v_dur),
+                    "duration_str": format_duration(v_dur),
+                    "retention_pct": round(float(v_pct), 2),
+                    "low_sample": int(v_views) < MIN_VIEWS_FOR_RETENTION_RANK,
                 })
-            c_data["top3_impressoes_7d"] = sorted(reach_items, key=lambda x: x["impressions_7d"], reverse=True)[:3]
-            qual_ctr = [x for x in reach_items if not x["low_sample"]]
-            low_ctr = [x for x in reach_items if x["low_sample"]]
-            qual_ctr.sort(key=lambda x: (x["ctr_7d"], x["impressions_7d"]), reverse=True)
-            low_ctr.sort(key=lambda x: (x["ctr_7d"], x["impressions_7d"]), reverse=True)
-            c_data["top3_ctr_7d"] = (qual_ctr + low_ctr)[:3]
+            if parsed_retencao:
+                qual_ret = [x for x in parsed_retencao if not x["low_sample"]]
+                low_ret = [x for x in parsed_retencao if x["low_sample"]]
+                qual_ret.sort(key=lambda x: (x["retention_pct"], x["views_total"]), reverse=True)
+                low_ret.sort(key=lambda x: (x["retention_pct"], x["views_total"]), reverse=True)
+                c_data["top3_retencao_7d"] = (qual_ret + low_ret)[:3]
+        except Exception:
+            pass
 
-        # 5. Histórico Completo desde o início (com separação de Shorts vs Vídeos)
-        c_data["history_lifetime"] = []
+        # 3.4 Histórico Vitalício (Shorts vs Longos)
         try:
             rep_d = yt_ana.reports().query(
                 ids="channel==MINE",
@@ -716,30 +663,32 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
                 dimensions="day,creatorContentType",
                 sort="day"
             ).execute()
-            for row in rep_d.get("rows", []):
-                day_str, c_type, vws, mins, sub_g, sub_l = row
-                fmt_type = "shorts" if str(c_type).lower() == "shorts" else "video"
-                entry = {
-                    "day": day_str,
-                    "type": fmt_type,
-                    "views": int(vws),
-                    "minutes": round(float(mins), 1),
-                    "net_subs": int(sub_g - sub_l),
-                }
-                c_data["history_lifetime"].append(entry)
-                # Mantém history_30d retrocompatível
-                if day_str >= (today - timedelta(days=30)).isoformat():
-                    c_data["history_30d"].append({
+            rows_hist = rep_d.get("rows", [])
+            if rows_hist:
+                c_data["history_lifetime"] = []
+                c_data["history_30d"] = []
+                for row in rows_hist:
+                    day_str, c_type, vws, mins, sub_g, sub_l = row
+                    fmt_type = "shorts" if str(c_type).lower() == "shorts" else "video"
+                    entry = {
                         "day": day_str,
+                        "type": fmt_type,
                         "views": int(vws),
                         "minutes": round(float(mins), 1),
                         "net_subs": int(sub_g - sub_l),
-                    })
+                    }
+                    c_data["history_lifetime"].append(entry)
+                    if day_str >= (today - timedelta(days=30)).isoformat():
+                        c_data["history_30d"].append({
+                            "day": day_str,
+                            "views": int(vws),
+                            "minutes": round(float(mins), 1),
+                            "net_subs": int(sub_g - sub_l),
+                        })
         except Exception:
             pass
 
-        # 6. Origens do Tráfego Detalhadas (por dia e por formato: Shorts vs Vídeos)
-        c_data["traffic_sources_lifetime"] = []
+        # 3.5 Origens de Tráfego Detalhadas
         try:
             rep_tr = yt_ana.reports().query(
                 ids="channel==MINE",
@@ -749,24 +698,25 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
                 dimensions="day,insightTrafficSourceType,creatorContentType",
                 sort="day"
             ).execute()
-            for row in rep_tr.get("rows", []):
-                day_str, src, c_type, vws = row
-                if int(vws) <= 0:
-                    continue
-                fmt_type = "shorts" if str(c_type).lower() == "shorts" else "video"
-                item = {
-                    "day": day_str,
-                    "source": src,
-                    "label": TRAFFIC_SOURCE_LABELS.get(src, src),
-                    "type": fmt_type,
-                    "views": int(vws),
-                }
-                c_data["traffic_sources_lifetime"].append(item)
+            rows_tr = rep_tr.get("rows", [])
+            if rows_tr:
+                c_data["traffic_sources_lifetime"] = []
+                for row in rows_tr:
+                    day_str, src, c_type, vws = row
+                    if int(vws) <= 0:
+                        continue
+                    fmt_type = "shorts" if str(c_type).lower() == "shorts" else "video"
+                    c_data["traffic_sources_lifetime"].append({
+                        "day": day_str,
+                        "source": src,
+                        "label": TRAFFIC_SOURCE_LABELS.get(src, src),
+                        "type": fmt_type,
+                        "views": int(vws),
+                    })
         except Exception:
             pass
 
-        # 7. Geografia e Top Países (Desde o Início)
-        c_data["top_countries"] = []
+        # 3.6 Geografia e Top Países
         try:
             q_geo = yt_ana.reports().query(
                 ids="channel==MINE",
@@ -778,26 +728,27 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
                 maxResults=8
             ).execute()
             geo_rows = q_geo.get("rows", [])
-            total_geo_views = sum(int(r[1]) for r in geo_rows)
-            for r in geo_rows:
-                cc = str(r[0])
-                vws = int(r[1])
-                mins = round(float(r[2]), 1)
-                name, flag = COUNTRY_METADATA.get(cc, (cc, "🌐"))
-                pct = round((vws / total_geo_views * 100), 1) if total_geo_views > 0 else 0.0
-                c_data["top_countries"].append({
-                    "code": cc,
-                    "name": name,
-                    "flag": flag,
-                    "views": vws,
-                    "watch_minutes": mins,
-                    "pct": pct
-                })
+            if geo_rows:
+                c_data["top_countries"] = []
+                total_geo_views = sum(int(r[1]) for r in geo_rows)
+                for r in geo_rows:
+                    cc = str(r[0])
+                    vws = int(r[1])
+                    mins = round(float(r[2]), 1)
+                    name, flag = COUNTRY_METADATA.get(cc, (cc, "🌐"))
+                    pct = round((vws / total_geo_views * 100), 1) if total_geo_views > 0 else 0.0
+                    c_data["top_countries"].append({
+                        "code": cc,
+                        "name": name,
+                        "flag": flag,
+                        "views": vws,
+                        "watch_minutes": mins,
+                        "pct": pct
+                    })
         except Exception:
             pass
 
-        # 8. Distribuição por Dispositivos
-        c_data["device_breakdown"] = []
+        # 3.7 Distribuição por Dispositivos
         try:
             q_dev = yt_ana.reports().query(
                 ids="channel==MINE",
@@ -808,24 +759,25 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
                 sort="-views"
             ).execute()
             dev_rows = q_dev.get("rows", [])
-            total_dev_views = sum(int(r[1]) for r in dev_rows)
-            for r in dev_rows:
-                dt = str(r[0])
-                vws = int(r[1])
-                lbl, ico = DEVICE_METADATA.get(dt, (dt, "help-circle"))
-                pct = round((vws / total_dev_views * 100), 1) if total_dev_views > 0 else 0.0
-                c_data["device_breakdown"].append({
-                    "device": dt,
-                    "label": lbl,
-                    "icon": ico,
-                    "views": vws,
-                    "pct": pct
-                })
+            if dev_rows:
+                c_data["device_breakdown"] = []
+                total_dev_views = sum(int(r[1]) for r in dev_rows)
+                for r in dev_rows:
+                    dt = str(r[0])
+                    vws = int(r[1])
+                    lbl, ico = DEVICE_METADATA.get(dt, (dt, "help-circle"))
+                    pct = round((vws / total_dev_views * 100), 1) if total_dev_views > 0 else 0.0
+                    c_data["device_breakdown"].append({
+                        "device": dt,
+                        "label": lbl,
+                        "icon": ico,
+                        "views": vws,
+                        "pct": pct
+                    })
         except Exception:
             pass
 
-        # 9. Status de Audiência: Descoberta vs Inscritos
-        c_data["audience_status"] = {"subscribed_views": 0, "subscribed_pct": 0.0, "unsubscribed_views": 0, "unsubscribed_pct": 0.0}
+        # 3.8 Descoberta vs Inscritos
         try:
             q_sub = yt_ana.reports().query(
                 ids="channel==MINE",
@@ -835,25 +787,22 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
                 dimensions="subscribedStatus"
             ).execute()
             sub_rows = q_sub.get("rows", [])
-            tot_sub_vws = sum(int(r[1]) for r in sub_rows)
-            for r in sub_rows:
-                sc = str(r[0])
-                vws = int(r[1])
-                pct = round((vws / tot_sub_vws * 100), 1) if tot_sub_vws > 0 else 0.0
-                if sc == "SUBSCRIBED":
-                    c_data["audience_status"]["subscribed_views"] = vws
-                    c_data["audience_status"]["subscribed_pct"] = pct
-                else:
-                    c_data["audience_status"]["unsubscribed_views"] = vws
-                    c_data["audience_status"]["unsubscribed_pct"] = pct
+            if sub_rows:
+                tot_sub_vws = sum(int(r[1]) for r in sub_rows)
+                for r in sub_rows:
+                    sc = str(r[0])
+                    vws = int(r[1])
+                    pct = round((vws / tot_sub_vws * 100), 1) if tot_sub_vws > 0 else 0.0
+                    if sc == "SUBSCRIBED":
+                        c_data["audience_status"]["subscribed_views"] = vws
+                        c_data["audience_status"]["subscribed_pct"] = pct
+                    else:
+                        c_data["audience_status"]["unsubscribed_views"] = vws
+                        c_data["audience_status"]["unsubscribed_pct"] = pct
         except Exception:
             pass
 
-        # 10. Engajamento Vitalício e Saldo Real de Inscritos
-        c_data["engagement"] = {
-            "likes": 0, "comments": 0, "shares": 0,
-            "subscribers_gained": 0, "subscribers_lost": 0, "net_subscribers": 0
-        }
+        # 3.9 Engajamento Vitalício
         try:
             q_eng = yt_ana.reports().query(
                 ids="channel==MINE",
@@ -875,11 +824,10 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
         except Exception:
             pass
 
-
     except Exception as e:
         c_data["erro"] = f"Analytics: {e}"
 
-    # 7. Cálculo Desempenho '1 de 10' (Último Lançamento vs 10 Anteriores)
+    # 4. Cálculo Desempenho 1 de 10
     public_vids = [v for v in video_meta_map.values() if v.get("is_public") and v.get("published_at")]
     public_vids.sort(key=lambda x: x.get("published_at", ""), reverse=True)
     if public_vids:
@@ -903,22 +851,60 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
             "avg_prev": round(avg_prev),
         }
 
-    # 8. Velocímetro de Views por Hora (VPH)
+    # 5. Velocímetro VPH
     c_data["vph_60m"] = c_data["views_60m_canal"]
     c_data["vph_48h"] = round(c_data["views_48h_canal"] / max(1.0, c_data["snapshot_window_hours"]), 1)
 
     for v_entry in video_meta_map.values():
-        if not v_entry["is_public"]:
+        if not v_entry.get("is_public"):
             continue
-        d60 = v_entry["delta_60m"] or 0
-        d48 = v_entry["delta_48h"] or 0
-        if d60 > 0 or d48 > 0 or (v_entry["is_pub_last_48h"] and v_entry["views_total"] > 0):
+        d60 = v_entry.get("delta_60m") or 0
+        d48 = v_entry.get("delta_48h") or 0
+        if d60 > 0 or d48 > 0 or (v_entry.get("is_pub_last_48h") and v_entry.get("views_total", 0) > 0):
             c_data["videos_ao_vivo_movimento"].append(v_entry)
 
     c_data["videos_ao_vivo_movimento"].sort(
-        key=lambda x: (x["delta_60m"] or 0, x["delta_48h"] or 0, x["views_total"]),
+        key=lambda x: (x.get("delta_60m") or 0, x.get("delta_48h") or 0, x.get("views_total", 0)),
         reverse=True,
     )
+
+    # 6. Salvar no Cache de 'Último Dado Bom'
+    last_good_cache[conf["id"]] = {
+        "canal_titulo": c_data["canal_titulo"],
+        "canal_id": c_data["canal_id"],
+        "handle": c_data["handle"],
+        "avatar_url": c_data["avatar_url"],
+        "inscritos": c_data["inscritos"],
+        "total_videos_publicos": c_data["total_videos_publicos"],
+        "total_videos_agendados": c_data["total_videos_agendados"],
+        "total_views_canal": c_data["total_views_canal"],
+        "views_7d_canal": c_data["views_7d_canal"],
+        "watch_minutes_7d_canal": c_data["watch_minutes_7d_canal"],
+        "retention_pct_7d_canal": c_data["retention_pct_7d_canal"],
+        "retention_dur_7d_canal": c_data["retention_dur_7d_canal"],
+        "impressions_7d_canal": c_data["impressions_7d_canal"],
+        "ctr_7d_canal": c_data["ctr_7d_canal"],
+        "reach_status": c_data["reach_status"],
+        "reach_message": c_data["reach_message"],
+        "video_meta_map": video_meta_map,
+        "videos_agendados_fila": c_data["videos_agendados_fila"],
+        "top3_views_7d": c_data["top3_views_7d"],
+        "top3_retencao_7d": c_data["top3_retencao_7d"],
+        "top3_ctr_7d": c_data["top3_ctr_7d"],
+        "top3_impressoes_7d": c_data["top3_impressoes_7d"],
+        "history_lifetime": c_data["history_lifetime"],
+        "traffic_sources_lifetime": c_data["traffic_sources_lifetime"],
+        "history_30d": c_data["history_30d"],
+        "traffic_sources_30d": c_data["traffic_sources_30d"],
+        "rank_1_de_10": c_data["rank_1_de_10"],
+        "top_countries": c_data["top_countries"],
+        "device_breakdown": c_data["device_breakdown"],
+        "audience_status": c_data["audience_status"],
+        "engagement": c_data["engagement"],
+        "snapshot_window_hours": c_data["snapshot_window_hours"],
+        "updated_at_utc": now_utc.isoformat(),
+    }
+
     return c_data
 
 
@@ -934,12 +920,14 @@ def main():
     tokens_bundle = json.loads(raw_secret)
     now_utc = datetime.now(timezone.utc)
     snapshots = load_snapshots()
+    last_good_cache = load_last_good_cache()
     results = []
 
     for conf in CHANNELS_CONFIG:
-        c_res = collect_channel_data(conf, tokens_bundle, snapshots, now_utc)
+        c_res = collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cache)
         results.append(c_res)
-        print(f" • [{c_res['status_conexao']}] {c_res['canal_titulo']}: Views 7d={c_res['views_7d_canal']}")
+        warn_txt = f" [AVISO: {c_res['aviso_cota'][:40]}...]" if c_res.get("aviso_cota") else ""
+        print(f" • [{c_res['status_conexao']}] {c_res['canal_titulo']}: Views 7d={c_res['views_7d_canal']} | Países={len(c_res['top_countries'])}{warn_txt}")
 
     all_scheduled = []
     for c in results:
@@ -974,9 +962,10 @@ def main():
     HISTORY_FILE.write_text(json.dumps(hist_payload, ensure_ascii=False, indent=2), encoding="utf-8")
 
     save_snapshots(snapshots)
+    save_last_good_cache(last_good_cache)
     html_out = render_html(results, now_utc, all_scheduled)
     HTML_OUTPUT.write_text(html_out, encoding="utf-8")
-    print("✅ index.html, snapshots e histórico 30d atualizados com sucesso na nuvem!")
+    print("✅ index.html, last_good_cache, snapshots e histórico 30d atualizados com sucesso na nuvem!")
 
 
 if __name__ == "__main__":
