@@ -362,7 +362,7 @@ def fetch_reach_reporting_data(creds, start_7d_str):
         return reach_info
 
 
-def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cache):
+def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cache, tokens_backup_bundle=None):
     cached = last_good_cache.get(conf["id"], {})
 
     c_data = {
@@ -413,20 +413,46 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
     }
 
     creds, err = load_credentials_from_env(conf["id"], tokens_bundle)
-    if not creds:
+    b_creds = None
+    if tokens_backup_bundle:
+        b_creds, _ = load_credentials_from_env(conf["id"], tokens_backup_bundle)
+
+    if not creds and not b_creds:
         c_data["status_conexao"] = "PENDENTE_AUTH"
-        c_data["erro"] = err
+        c_data["erro"] = err or "Credenciais ausentes no projeto primário e backup."
         return c_data
 
+    active_creds = creds or b_creds
     now_ts = now_utc.timestamp()
     video_meta_map = cached.get("video_meta_map", {})
     max_window_h = 0.0
     data_api_ok = False
 
     # 1. BLOCO DATA API (Metadados do Canal e Vídeos com Fallback Inteligente)
+    active_yt_data = None
+    ch_resp = None
     try:
-        yt_data = build("youtube", "v3", credentials=creds)
-        ch_resp = yt_data.channels().list(part="snippet,statistics,contentDetails", mine=True).execute()
+        cand_data = build("youtube", "v3", credentials=active_creds)
+        ch_resp = cand_data.channels().list(part="snippet,statistics,contentDetails", mine=True).execute()
+        active_yt_data = cand_data
+    except Exception as e1:
+        if b_creds and b_creds != active_creds and "quotaExceeded" in str(e1):
+            try:
+                cand_backup = build("youtube", "v3", credentials=b_creds)
+                ch_resp = cand_backup.channels().list(part="snippet,statistics,contentDetails", mine=True).execute()
+                active_yt_data = cand_backup
+                c_data["aviso_cota"] = "Operando via Projeto Google Cloud 2 (Backup)"
+            except Exception as e2:
+                active_yt_data = None
+                e1 = e2
+        if not active_yt_data:
+            c_data["aviso_cota"] = f"Data API temporariamente com cota excedida (dados cacheados preservados): {str(e1)[:100]}"
+            c_data["snapshot_window_hours"] = cached.get("snapshot_window_hours", 48.0)
+            c_data["total_videos_agendados"] = len(c_data["videos_agendados_fila"])
+
+    try:
+        if active_yt_data and ch_resp:
+            yt_data = active_yt_data
         items = ch_resp.get("items", [])
         if items:
             ch = items[0]
@@ -913,18 +939,24 @@ from painel_template import render_html  # noqa: E402
 
 def main():
     raw_secret = os.environ.get("CHANNELS_TOKENS_JSON", "").strip()
-    if not raw_secret:
-        print("❌ Variável CHANNELS_TOKENS_JSON não encontrada no ambiente.")
+    raw_backup_secret = os.environ.get("CHANNELS_TOKENS_BACKUP_JSON", "").strip()
+
+    if not raw_secret and not raw_backup_secret:
+        print("❌ Nenhuma variável de tokens encontrada (CHANNELS_TOKENS_JSON ou CHANNELS_TOKENS_BACKUP_JSON).")
         sys.exit(1)
 
-    tokens_bundle = json.loads(raw_secret)
+    tokens_bundle = json.loads(raw_secret) if raw_secret else {}
+    tokens_backup_bundle = json.loads(raw_backup_secret) if raw_backup_secret else {}
+    if tokens_backup_bundle:
+        print(f"🛡️ Contingência Ativa: Bundle de Backup disponível ({len(tokens_backup_bundle)} canais)")
+
     now_utc = datetime.now(timezone.utc)
     snapshots = load_snapshots()
     last_good_cache = load_last_good_cache()
     results = []
 
     for conf in CHANNELS_CONFIG:
-        c_res = collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cache)
+        c_res = collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cache, tokens_backup_bundle)
         results.append(c_res)
         warn_txt = f" [AVISO: {c_res['aviso_cota'][:40]}...]" if c_res.get("aviso_cota") else ""
         print(f" • [{c_res['status_conexao']}] {c_res['canal_titulo']}: Views 7d={c_res['views_7d_canal']} | Países={len(c_res['top_countries'])}{warn_txt}")
