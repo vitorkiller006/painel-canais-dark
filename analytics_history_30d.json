@@ -1,13 +1,13 @@
 {
-  "updated_at_utc": "2026-10-28T09:45:15.258428+00:00",
+  "updated_at_utc": "2026-10-28T10:00:26.194423+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
       "handle": "@howitsmadeoficial",
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
-      "vph_60m": 1,
-      "vph_48h": 0.2,
+      "vph_60m": 3,
+      "vph_48h": 0.3,
       "history_30d": [
         {
           "day": "2026-09-28",
@@ -184,12 +184,12 @@
         "title": "How Instant Ramen Noodles Are Actually Made! 🍜 (Stickman Host) #Shorts",
         "url": "https://youtu.be/GzhxN8KXdG8",
         "thumbnail": "https://i.ytimg.com/vi/GzhxN8KXdG8/mqdefault.jpg",
-        "views": 3,
+        "views": 5,
         "published_formatted": "27/10 20:30",
         "rank": 1,
         "out_of": 1,
         "diff_pct": 0.0,
-        "avg_prev": 3
+        "avg_prev": 5
       }
     },
     "biblia": {
@@ -468,7 +468,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "vph_60m": 0,
-      "vph_48h": 2.5,
+      "vph_48h": 2.6,
       "history_30d": [
         {
           "day": "2026-09-28",
@@ -694,11 +694,11 @@
         "title": "1984 में अमेरिकी कंपनी ने भोपाल को कैसे बेचा? | The $470 Million Union Carbide Betrayal",
         "url": "https://youtu.be/uh1Wk880WTY",
         "thumbnail": "https://i.ytimg.com/vi/uh1Wk880WTY/mqdefault.jpg",
-        "views": 17,
+        "views": 18,
         "published_formatted": "26/10 12:22",
         "rank": 8,
         "out_of": 10,
-        "diff_pct": -94.3,
+        "diff_pct": -94.0,
         "avg_prev": 301
       }
     },
@@ -948,7 +948,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "vph_60m": 0,
-      "vph_48h": 7.7,
+      "vph_48h": 7.6,
       "history_30d": [
         {
           "day": "2026-09-28",
@@ -1146,7 +1146,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "vph_60m": 0,
-      "vph_48h": 9.5,
+      "vph_48h": 9.3,
       "history_30d": [
         {
           "day": "2026-09-28",
