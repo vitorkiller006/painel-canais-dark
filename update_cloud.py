@@ -37,6 +37,7 @@ HTML_OUTPUT = REPO_DIR / "index.html"
 SNAPSHOT_FILE = REPO_DIR / "analytics_realtime_snapshot.json"
 HISTORY_FILE = REPO_DIR / "analytics_history_30d.json"
 CACHE_FILE = REPO_DIR / "last_good_cache.json"
+DAILY_ARCHIVE_FILE = REPO_DIR / "daily_history_archive.json"
 
 MIN_VIEWS_FOR_RETENTION_RANK = 10
 MIN_IMPRESSIONS_FOR_CTR_RANK = 20
@@ -239,6 +240,23 @@ def load_last_good_cache():
 def save_last_good_cache(cache):
     with open(CACHE_FILE, "w", encoding="utf-8") as f:
         json.dump(cache, f, ensure_ascii=False, indent=2)
+
+
+def load_daily_archive():
+    if DAILY_ARCHIVE_FILE.exists():
+        try:
+            with open(DAILY_ARCHIVE_FILE, "r", encoding="utf-8") as f:
+                data = json.load(f)
+                if isinstance(data, dict):
+                    return data
+        except Exception:
+            pass
+    return {"created_at_utc": datetime.now(timezone.utc).isoformat(), "days": {}}
+
+
+def save_daily_archive(archive):
+    with open(DAILY_ARCHIVE_FILE, "w", encoding="utf-8") as f:
+        json.dump(archive, f, ensure_ascii=False, indent=2)
 
 
 def format_duration(seconds):
@@ -708,7 +726,7 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
         except Exception:
             pass
 
-        # 3.4 Histórico Vitalício (Shorts vs Longos)
+        # 3.4 Histórico Vitalício (Shorts vs Longos) com Merge Cumulativo Não-Destrutivo
         try:
             rep_d = yt_ana.reports().query(
                 ids="channel==MINE",
@@ -720,30 +738,37 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
             ).execute()
             rows_hist = rep_d.get("rows", [])
             if rows_hist:
-                c_data["history_lifetime"] = []
-                c_data["history_30d"] = []
+                existing_hist = {
+                    (h.get("day"), h.get("type", "video")): h
+                    for h in cached.get("history_lifetime", [])
+                    if h.get("day")
+                }
                 for row in rows_hist:
                     day_str, c_type, vws, mins, sub_g, sub_l = row
                     fmt_type = "shorts" if str(c_type).lower() == "shorts" else "video"
-                    entry = {
+                    existing_hist[(day_str, fmt_type)] = {
                         "day": day_str,
                         "type": fmt_type,
                         "views": int(vws),
                         "minutes": round(float(mins), 1),
                         "net_subs": int(sub_g - sub_l),
                     }
-                    c_data["history_lifetime"].append(entry)
-                    if day_str >= (today - timedelta(days=30)).isoformat():
-                        c_data["history_30d"].append({
-                            "day": day_str,
-                            "views": int(vws),
-                            "minutes": round(float(mins), 1),
-                            "net_subs": int(sub_g - sub_l),
-                        })
+                c_data["history_lifetime"] = sorted(existing_hist.values(), key=lambda x: x["day"])
+                cutoff_30d = (today - timedelta(days=30)).isoformat()
+                c_data["history_30d"] = [
+                    {
+                        "day": h["day"],
+                        "views": h["views"],
+                        "minutes": h["minutes"],
+                        "net_subs": h["net_subs"],
+                    }
+                    for h in c_data["history_lifetime"]
+                    if h.get("day", "") >= cutoff_30d
+                ]
         except Exception:
             pass
 
-        # 3.5 Origens de Tráfego Detalhadas
+        # 3.5 Origens de Tráfego Detalhadas com Merge Cumulativo Não-Destrutivo
         try:
             rep_tr = yt_ana.reports().query(
                 ids="channel==MINE",
@@ -755,19 +780,26 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc, last_good_cach
             ).execute()
             rows_tr = rep_tr.get("rows", [])
             if rows_tr:
-                c_data["traffic_sources_lifetime"] = []
+                existing_tr = {
+                    (t.get("day"), t.get("source"), t.get("type")): t
+                    for t in cached.get("traffic_sources_lifetime", [])
+                    if t.get("day") and t.get("source")
+                }
                 for row in rows_tr:
                     day_str, src, c_type, vws = row
                     if int(vws) <= 0:
                         continue
                     fmt_type = "shorts" if str(c_type).lower() == "shorts" else "video"
-                    c_data["traffic_sources_lifetime"].append({
+                    existing_tr[(day_str, src, fmt_type)] = {
                         "day": day_str,
                         "source": src,
                         "label": TRAFFIC_SOURCE_LABELS.get(src, src),
                         "type": fmt_type,
                         "views": int(vws),
-                    })
+                    }
+                c_data["traffic_sources_lifetime"] = sorted(
+                    existing_tr.values(), key=lambda x: x["day"]
+                )
         except Exception:
             pass
 
@@ -1103,12 +1135,27 @@ def main():
     raw_secret = os.environ.get("CHANNELS_TOKENS_JSON", "").strip()
     raw_backup_secret = os.environ.get("CHANNELS_TOKENS_BACKUP_JSON", "").strip()
 
-    if not raw_secret and not raw_backup_secret:
-        print("❌ Nenhuma variável de tokens encontrada (CHANNELS_TOKENS_JSON ou CHANNELS_TOKENS_BACKUP_JSON).")
-        sys.exit(1)
-
     tokens_bundle = json.loads(raw_secret) if raw_secret else {}
     tokens_backup_bundle = json.loads(raw_backup_secret) if raw_backup_secret else {}
+
+    if not tokens_bundle and not tokens_backup_bundle:
+        local_candidates = [
+            Path(r"H:\Meu Drive\Novos Projetos Dark\_CORE_ENGINE\tokens_backup_bundle.json"),
+            REPO_DIR / "tokens_backup_bundle.json",
+        ]
+        for lc in local_candidates:
+            if lc.exists():
+                try:
+                    tokens_backup_bundle = json.loads(lc.read_text(encoding="utf-8"))
+                    print(f"🔒 [LOCAL] Carregado bundle de contingência: {lc} ({len(tokens_backup_bundle)} canais)")
+                    break
+                except Exception as e:
+                    print(f"⚠️ Erro ao ler {lc}: {e}")
+
+    if not tokens_bundle and not tokens_backup_bundle:
+        print("❌ Nenhuma variável de tokens encontrada (CHANNELS_TOKENS_JSON ou CHANNELS_TOKENS_BACKUP_JSON) e nenhum bundle local encontrado.")
+        sys.exit(1)
+
     if tokens_backup_bundle:
         print(f"🛡️ Contingência Ativa: Bundle de Backup disponível ({len(tokens_backup_bundle)} canais)")
 
@@ -1157,9 +1204,71 @@ def main():
 
     save_snapshots(snapshots)
     save_last_good_cache(last_good_cache)
+
+    # 4. Gravação do Arquivo Histórico Diário Permanente (Daily Archive)
+    daily_archive = load_daily_archive()
+    today_key = now_utc.strftime("%Y-%m-%d")
+    if "days" not in daily_archive or not isinstance(daily_archive.get("days"), dict):
+        daily_archive["days"] = {}
+    if today_key not in daily_archive["days"]:
+        daily_archive["days"][today_key] = {"date": today_key, "updated_at_utc": now_utc.isoformat(), "channels": {}}
+
+    day_entry = daily_archive["days"][today_key]
+    day_entry["updated_at_utc"] = now_utc.isoformat()
+
+    for c in results:
+        cid = c["id"]
+        vids_dict = {}
+        for v in c.get("videos_publicos_recentes", []):
+            vid = v.get("id")
+            if vid:
+                vids_dict[vid] = {
+                    "title": v.get("title", ""),
+                    "views": int(v.get("views", 0) or 0),
+                    "likes": int(v.get("likes", 0) or 0),
+                    "format": v.get("format", "video"),
+                    "published_at": v.get("published_at", "")
+                }
+
+        day_entry["channels"][cid] = {
+            "title": c.get("canal_titulo"),
+            "handle": c.get("handle"),
+            "subscribers": int(c.get("inscritos", 0) or 0),
+            "total_views": int(c.get("total_views_canal", 0) or 0),
+            "views_48h": int(c.get("views_48h_canal", 0) or 0),
+            "views_60m": int(c.get("views_60m_canal", 0) or 0),
+            "views_7d": int(c.get("views_7d_canal", 0) or 0),
+            "watch_minutes_7d": round(float(c.get("watch_minutes_7d_canal", 0.0) or 0.0), 1),
+            "total_videos_publicos": int(c.get("total_videos_publicos", 0) or 0),
+            "total_videos_agendados": int(c.get("total_videos_agendados", 0) or 0),
+            "videos": vids_dict,
+        }
+
+    save_daily_archive(daily_archive)
+    print(f"📁 Arquivo diário permanente atualizado: {len(daily_archive['days'])} dia(s) registrados!")
+
     html_out = render_html(results, now_utc, all_scheduled)
     HTML_OUTPUT.write_text(html_out, encoding="utf-8")
     print("✅ index.html, last_good_cache, snapshots e histórico 30d atualizados com sucesso na nuvem!")
+
+    core_engine_dir = Path(r"H:\Meu Drive\Novos Projetos Dark\_CORE_ENGINE")
+    if core_engine_dir.exists():
+        try:
+            (core_engine_dir / "PAINEL_ANALYTICS_MASTER.html").write_text(html_out, encoding="utf-8")
+            cache_payload = {
+                "atualizado_em_utc": now_utc.isoformat(),
+                "total_canais": len(results),
+                "canais": results,
+            }
+            (core_engine_dir / "analytics_cache_master.json").write_text(
+                json.dumps(cache_payload, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+            (core_engine_dir / "daily_history_archive.json").write_text(
+                json.dumps(daily_archive, ensure_ascii=False, indent=2), encoding="utf-8"
+            )
+            print("💾 Cópia local sincronizada com sucesso em _CORE_ENGINE (PAINEL_ANALYTICS_MASTER.html + analytics_cache_master.json)!")
+        except Exception as e:
+            print(f"⚠️ Aviso ao salvar em _CORE_ENGINE: {e}")
 
 
 if __name__ == "__main__":
