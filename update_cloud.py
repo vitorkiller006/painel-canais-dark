@@ -65,6 +65,7 @@ CHANNELS_CONFIG = [
         "handle_padrao": "@howitsmadeoficial",
         "expected_channel_id": "UCnhTlPoh9oJ9wzvt7zeG_Sg",
         "auth_bat": "AUTORIZAR_YOUTUBE.bat",
+        "avatar_url": "https://yt3.ggpht.com/goglhVSAtKGaDmImc5ImFHN2xuRVe6nO1kEAgvRRcCFNDnc2Ll9gExh9kTtvyWzn7cWvBOZF=s240-c-k-c0x00ffffff-no-rj",
     },
     {
         "id": "biblia",
@@ -75,6 +76,7 @@ CHANNELS_CONFIG = [
         "handle_padrao": "@bibliaoculta7",
         "expected_channel_id": "UCvYkrgAEbT7vm1nPY-ssGMA",
         "auth_bat": "AUTORIZAR_YOUTUBE.bat",
+        "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
     },
     {
         "id": "indiano_doc",
@@ -85,6 +87,7 @@ CHANNELS_CONFIG = [
         "handle_padrao": "@uuntoldbharat2d",
         "expected_channel_id": "UCPvwh6a2S_29fpeNiluP5Vw",
         "auth_bat": "AUTORIZAR_UNTOLD_BHARAT.bat",
+        "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
     },
     {
         "id": "espaco",
@@ -95,6 +98,7 @@ CHANNELS_CONFIG = [
         "handle_padrao": "@cosmicabyssdoc",
         "expected_channel_id": "UCNUMK-cBY6g2mztWXRO9z7g",
         "auth_bat": "AUTORIZAR_YOUTUBE.bat",
+        "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
     },
     {
         "id": "novela",
@@ -105,6 +109,7 @@ CHANNELS_CONFIG = [
         "handle_padrao": "@lorenavane1",
         "expected_channel_id": "UCYaE8-AZDscjX9Og_S7fLXw",
         "auth_bat": "AUTORIZAR_YOUTUBE.bat",
+        "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
     },
     {
         "id": "hearttangle",
@@ -115,6 +120,7 @@ CHANNELS_CONFIG = [
         "handle_padrao": "@heartangle2d",
         "expected_channel_id": "UCVzhK47egvPSjSKUTU_zzvg",
         "auth_bat": "AUTORIZAR_HEARTTANGLE.bat",
+        "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
     },
     {
         "id": "segredos_olga",
@@ -122,9 +128,10 @@ CHANNELS_CONFIG = [
         "grupo": "Startup GVG (Vitor + Amigo)",
         "grupo_slug": "gvg",
         "canal_padrao": "Segredos da Olga",
-        "handle_padrao": "@segredosdaolga",
+        "handle_padrao": "@segredosdaolga2d",
         "expected_channel_id": "UCs7UIbmLCqwJUmALKYuR5yQ",
-        "auth_bat": "AUTORIZAR_CANAL_BRASILEIRO.bat",
+        "auth_bat": "AUTORIZAR_SEGREDOS_OLGA.bat",
+        "avatar_url": "https://yt3.ggpht.com/t1Eiys8HqrCd5SX9moZeU1YitQofpQvWxfoS3xD_HxnLYznco-LqvSlPEVLG4mZytRryx7Kr2w=s240-c-k-c0x00ffffff-no-rj",
     },
 ]
 
@@ -324,6 +331,7 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
         "history_30d": [],
         "traffic_sources_30d": [],
         "rank_1_de_10": None,
+        "avatar_url": conf.get("avatar_url", ""),
     }
 
     creds, err = load_credentials_from_env(conf["id"], tokens_bundle)
@@ -354,6 +362,12 @@ def collect_channel_data(conf, tokens_bundle, snapshots, now_utc):
         c_data["canal_titulo"] = ch["snippet"].get("title", conf["canal_padrao"])
         c_data["canal_id"] = actual_ch_id
         c_data["handle"] = ch["snippet"].get("customUrl", conf["handle_padrao"])
+        snip_thumb = (
+            ch["snippet"].get("thumbnails", {}).get("medium", {}).get("url")
+            or ch["snippet"].get("thumbnails", {}).get("default", {}).get("url")
+        )
+        if snip_thumb:
+            c_data["avatar_url"] = snip_thumb
         stats = ch.get("statistics", {})
         c_data["inscritos"] = int(stats.get("subscriberCount", 0))
         c_data["total_videos_publicos"] = int(stats.get("videoCount", 0))
@@ -721,6 +735,7 @@ def main():
                 "handle": c.get("handle"),
                 "group": c.get("grupo"),
                 "group_slug": c.get("grupo_slug"),
+                "avatar_url": c.get("avatar_url", ""),
                 "vph_60m": c.get("vph_60m", 0),
                 "vph_48h": c.get("vph_48h", 0.0),
                 "history_lifetime": c.get("history_lifetime", []),
