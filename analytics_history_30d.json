@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-29T12:15:19.514797+00:00",
+  "updated_at_utc": "2026-10-29T12:30:21.700015+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -7,8 +7,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/goglhVSAtKGaDmImc5ImFHN2xuRVe6nO1kEAgvRRcCFNDnc2Ll9gExh9kTtvyWzn7cWvBOZF=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 3,
-      "vph_48h": 0.5,
+      "vph_60m": 4,
+      "vph_48h": 0.6,
       "history_lifetime": [
         {
           "day": "2026-10-26",
@@ -37,8 +37,8 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 9,
-          "minutes": 13.5,
+          "views": 10,
+          "minutes": 15.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -65,8 +65,8 @@
         },
         {
           "day": "2026-10-29",
-          "views": 9,
-          "minutes": 13.5,
+          "views": 10,
+          "minutes": 15.0,
           "net_subs": 0
         }
       ],
@@ -80,8 +80,8 @@
         "published_formatted": "28/10 20:30",
         "rank": 2,
         "out_of": 2,
-        "diff_pct": -90.0,
-        "avg_prev": 20
+        "diff_pct": -90.5,
+        "avg_prev": 21
       },
       "top_countries": [],
       "device_breakdown": [],
@@ -106,7 +106,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 0,
       "vph_48h": 0.5,
       "history_lifetime": [
         {
@@ -2446,8 +2446,8 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 5,
+          "minutes": 7.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9228,8 +9228,8 @@
         },
         {
           "day": "2026-10-29",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 5,
+          "minutes": 7.5,
           "net_subs": 0
         }
       ],
@@ -9363,7 +9363,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 0,
       "vph_48h": 3.5,
       "history_lifetime": [
         {
@@ -9477,8 +9477,8 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 25,
-          "minutes": 37.5,
+          "views": 27,
+          "minutes": 40.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9998,8 +9998,8 @@
         },
         {
           "day": "2026-10-29",
-          "views": 25,
-          "minutes": 37.5,
+          "views": 27,
+          "minutes": 40.5,
           "net_subs": 0
         }
       ],
@@ -11206,8 +11206,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
-      "vph_48h": 6.0,
+      "vph_60m": 0,
+      "vph_48h": 5.9,
       "history_lifetime": [
         {
           "day": "2024-06-11",
@@ -11594,8 +11594,8 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 75,
-          "minutes": 112.5,
+          "views": 74,
+          "minutes": 111.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12321,8 +12321,8 @@
         },
         {
           "day": "2026-10-29",
-          "views": 75,
-          "minutes": 112.5,
+          "views": 74,
+          "minutes": 111.0,
           "net_subs": 0
         }
       ],
@@ -12332,12 +12332,12 @@
         "title": "Eu Odiava Meu VIZINHO RANZINZA… Até Ele Me RESGATAR na Tempestade!",
         "url": "https://youtu.be/WEmJ9PGCNZU",
         "thumbnail": "https://i.ytimg.com/vi/WEmJ9PGCNZU/mqdefault.jpg",
-        "views": 243,
+        "views": 242,
         "published_formatted": "27/10 19:30",
         "rank": 1,
         "out_of": 1,
         "diff_pct": 0.0,
-        "avg_prev": 243
+        "avg_prev": 242
       },
       "top_countries": [
         {
@@ -12416,7 +12416,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 13.9,
       "history_lifetime": [
         {
@@ -12502,8 +12502,8 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 12,
-          "minutes": 18.0,
+          "views": 13,
+          "minutes": 19.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12817,23 +12817,23 @@
         },
         {
           "day": "2026-10-29",
-          "views": 12,
-          "minutes": 18.0,
+          "views": 13,
+          "minutes": 19.5,
           "net_subs": 0
         }
       ],
       "traffic_sources_30d": [],
       "rank_1_de_10": {
-        "video_id": "VcwTHmj9EuI",
-        "title": "चाचा ने अनाथ भतीजी को खौफनाक लोहार से ब्याह दिया, लेकिन जब सच सामने आया... | दिल छू लेने वाली कहानी",
-        "url": "https://youtu.be/VcwTHmj9EuI",
-        "thumbnail": "https://i.ytimg.com/vi/VcwTHmj9EuI/mqdefault.jpg",
+        "video_id": "bA_mvDdEi_4",
+        "title": "दहेज के लिए मंडप में रोती दुल्हन को छोड़ भागा अमीर दूल्हा, फिर गरीब बढ़ई ने जो किया... | दिल छू लेने",
+        "url": "https://youtu.be/bA_mvDdEi_4",
+        "thumbnail": "https://i.ytimg.com/vi/bA_mvDdEi_4/mqdefault.jpg",
         "views": 0,
-        "published_formatted": "28/10 09:30",
-        "rank": 9,
+        "published_formatted": "29/10 09:30",
+        "rank": 8,
         "out_of": 10,
         "diff_pct": -100.0,
-        "avg_prev": 470
+        "avg_prev": 227
       },
       "top_countries": [
         {
