@@ -100,7 +100,7 @@
     },
     "2026-10-29": {
       "date": "2026-10-29",
-      "updated_at_utc": "2026-10-29T09:00:25.623320+00:00",
+      "updated_at_utc": "2026-10-29T09:15:15.560608+00:00",
       "channels": {
         "stickman": {
           "title": "How It's Made Oficial",
@@ -120,8 +120,8 @@
           "handle": "@bibliaoculta7",
           "subscribers": 289,
           "total_views": 334,
-          "views_48h": 19,
-          "views_60m": 0,
+          "views_48h": 20,
+          "views_60m": 1,
           "views_7d": 388,
           "watch_minutes_7d": 1040.0,
           "total_videos_publicos": 4,
