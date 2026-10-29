@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-29T11:45:21.958828+00:00",
+  "updated_at_utc": "2026-10-29T12:00:26.396046+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -2401,8 +2401,8 @@
         {
           "day": "2026-10-24",
           "type": "video",
-          "views": 126,
-          "minutes": 716.0,
+          "views": 124,
+          "minutes": 715.0,
           "net_subs": 3
         },
         {
@@ -2446,8 +2446,8 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 5,
-          "minutes": 7.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9192,8 +9192,8 @@
         },
         {
           "day": "2026-10-24",
-          "views": 126,
-          "minutes": 716.0,
+          "views": 124,
+          "minutes": 715.0,
           "net_subs": 3
         },
         {
@@ -9228,8 +9228,8 @@
         },
         {
           "day": "2026-10-29",
-          "views": 5,
-          "minutes": 7.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0
         }
       ],
@@ -9363,8 +9363,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
-      "vph_48h": 3.6,
+      "vph_60m": 0,
+      "vph_48h": 3.5,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -10077,7 +10077,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 2,
       "vph_48h": 1.9,
       "history_lifetime": [
         {
@@ -10230,7 +10230,7 @@
         {
           "day": "2026-10-24",
           "type": "video",
-          "views": 55,
+          "views": 52,
           "minutes": 338.0,
           "net_subs": 1
         },
@@ -11091,7 +11091,7 @@
         },
         {
           "day": "2026-10-24",
-          "views": 55,
+          "views": 52,
           "minutes": 338.0,
           "net_subs": 1
         },
@@ -12416,8 +12416,8 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
-      "vph_48h": 14.1,
+      "vph_60m": 2,
+      "vph_48h": 14.0,
       "history_lifetime": [
         {
           "day": "2026-10-19",
@@ -12502,8 +12502,8 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 11,
-          "minutes": 16.5,
+          "views": 12,
+          "minutes": 18.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12817,8 +12817,8 @@
         },
         {
           "day": "2026-10-29",
-          "views": 11,
-          "minutes": 16.5,
+          "views": 12,
+          "minutes": 18.0,
           "net_subs": 0
         }
       ],
@@ -12896,7 +12896,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/t1Eiys8HqrCd5SX9moZeU1YitQofpQvWxfoS3xD_HxnLYznco-LqvSlPEVLG4mZytRryx7Kr2w=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 0,
       "vph_48h": 0.0,
       "history_lifetime": [
         {
@@ -12931,8 +12931,8 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 2,
-          "minutes": 3.0,
+          "views": 1,
+          "minutes": 1.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12987,8 +12987,8 @@
         },
         {
           "day": "2026-10-29",
-          "views": 2,
-          "minutes": 3.0,
+          "views": 1,
+          "minutes": 1.5,
           "net_subs": 0
         }
       ],
@@ -12998,11 +12998,11 @@
         "title": "A Tia Dizia Que Ninguém Queria Uma Cozinheira... Mas O Viajante Mais Honrado Fez a Escolha Certa",
         "url": "https://youtu.be/qfCSYj6tLV8",
         "thumbnail": "https://i.ytimg.com/vi/qfCSYj6tLV8/mqdefault.jpg",
-        "views": 2,
+        "views": 1,
         "published_formatted": "28/10 19:30",
         "rank": 3,
         "out_of": 6,
-        "diff_pct": 66.7,
+        "diff_pct": -16.7,
         "avg_prev": 1
       },
       "top_countries": [],
