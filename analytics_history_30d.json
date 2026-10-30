@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-30T08:15:15.469154+00:00",
+  "updated_at_utc": "2026-10-30T08:30:21.109062+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -163,7 +163,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 0.4,
       "history_lifetime": [
         {
@@ -9435,7 +9435,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 5,
+      "vph_60m": 6,
       "vph_48h": 3.2,
       "history_lifetime": [
         {
@@ -9556,8 +9556,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 21,
-          "minutes": 31.5,
+          "views": 19,
+          "minutes": 28.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10132,8 +10132,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 21,
-          "minutes": 31.5,
+          "views": 19,
+          "minutes": 28.5,
           "net_subs": 0
         }
       ],
@@ -10145,10 +10145,10 @@
         "thumbnail": "https://i.ytimg.com/vi/MvjI_yFijNo/mqdefault.jpg",
         "views": 19,
         "published_formatted": "28/10 10:00",
-        "rank": 8,
+        "rank": 7,
         "out_of": 10,
         "diff_pct": -93.9,
-        "avg_prev": 310
+        "avg_prev": 309
       },
       "top_countries": [
         {
@@ -10211,7 +10211,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 1.5,
       "history_lifetime": [
         {
@@ -10416,8 +10416,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 18,
-          "minutes": 27.0,
+          "views": 17,
+          "minutes": 25.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -11316,8 +11316,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 18,
-          "minutes": 27.0,
+          "views": 17,
+          "minutes": 25.5,
           "net_subs": 0
         }
       ],
@@ -11327,11 +11327,11 @@
         "title": "Why PHOENIX A Is the Most Terrifying Black Hole in the Universe",
         "url": "https://youtu.be/KSCMCdhmlAI",
         "thumbnail": "https://i.ytimg.com/vi/KSCMCdhmlAI/mqdefault.jpg",
-        "views": 15,
+        "views": 16,
         "published_formatted": "28/10 20:30",
         "rank": 9,
         "out_of": 10,
-        "diff_pct": -88.9,
+        "diff_pct": -88.2,
         "avg_prev": 135
       },
       "top_countries": [
@@ -11395,7 +11395,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 13,
       "vph_48h": 4.1,
       "history_lifetime": [
         {
@@ -11797,8 +11797,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 65,
-          "minutes": 97.5,
+          "views": 66,
+          "minutes": 99.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12578,8 +12578,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 65,
-          "minutes": 97.5,
+          "views": 66,
+          "minutes": 99.0,
           "net_subs": 0
         }
       ],
@@ -12589,12 +12589,12 @@
         "title": "Ele Me Pagou 1 MILHÃO Por 30 Dias… Até Quebrar a Própria REGRA!",
         "url": "https://youtu.be/QI_SFj7jvv4",
         "thumbnail": "https://i.ytimg.com/vi/QI_SFj7jvv4/mqdefault.jpg",
-        "views": 1,
+        "views": 0,
         "published_formatted": "29/10 19:30",
         "rank": 2,
         "out_of": 2,
-        "diff_pct": -99.7,
-        "avg_prev": 340
+        "diff_pct": -100.0,
+        "avg_prev": 342
       },
       "top_countries": [
         {
@@ -12673,7 +12673,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 2.1,
       "history_lifetime": [
         {
