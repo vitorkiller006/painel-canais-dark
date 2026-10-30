@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-30T00:00:23.959737+00:00",
+  "updated_at_utc": "2026-10-30T00:15:17.370021+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -163,7 +163,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 0.4,
       "history_lifetime": [
         {
@@ -2510,8 +2510,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 1,
+          "minutes": 1.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9300,8 +9300,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 1,
+          "minutes": 1.5,
           "net_subs": 0
         }
       ],
@@ -9556,8 +9556,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 4,
-          "minutes": 6.0,
+          "views": 3,
+          "minutes": 4.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10132,8 +10132,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 4,
-          "minutes": 6.0,
+          "views": 3,
+          "minutes": 4.5,
           "net_subs": 0
         }
       ],
@@ -10147,7 +10147,7 @@
         "published_formatted": "28/10 10:00",
         "rank": 8,
         "out_of": 10,
-        "diff_pct": -94.2,
+        "diff_pct": -94.1,
         "avg_prev": 308
       },
       "top_countries": [
@@ -10211,7 +10211,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 2,
       "vph_48h": 1.6,
       "history_lifetime": [
         {
@@ -10416,8 +10416,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 2,
+          "minutes": 3.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -11316,8 +11316,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 2,
+          "minutes": 3.0,
           "net_subs": 0
         }
       ],
@@ -11797,8 +11797,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 1,
-          "minutes": 1.5,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12578,8 +12578,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 1,
-          "minutes": 1.5,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0
         }
       ],
@@ -12594,7 +12594,7 @@
         "rank": 2,
         "out_of": 2,
         "diff_pct": -100.0,
-        "avg_prev": 277
+        "avg_prev": 276
       },
       "top_countries": [
         {
@@ -13209,7 +13209,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/t1Eiys8HqrCd5SX9moZeU1YitQofpQvWxfoS3xD_HxnLYznco-LqvSlPEVLG4mZytRryx7Kr2w=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 0,
       "vph_48h": 0.1,
       "history_lifetime": [
         {
