@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-30T17:15:19.294074+00:00",
+  "updated_at_utc": "2026-10-30T17:30:21.865445+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -9435,7 +9435,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 5,
+      "vph_60m": 2,
       "vph_48h": 2.3,
       "history_lifetime": [
         {
@@ -9556,8 +9556,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 35,
-          "minutes": 52.5,
+          "views": 32,
+          "minutes": 48.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10132,8 +10132,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 35,
-          "minutes": 52.5,
+          "views": 32,
+          "minutes": 48.0,
           "net_subs": 0
         }
       ],
@@ -10212,7 +10212,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 2,
-      "vph_48h": 1.3,
+      "vph_48h": 1.2,
       "history_lifetime": [
         {
           "day": "2026-10-03",
@@ -11395,7 +11395,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 0,
       "vph_48h": 3.3,
       "history_lifetime": [
         {
@@ -11797,8 +11797,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 76,
-          "minutes": 114.0,
+          "views": 73,
+          "minutes": 109.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12578,8 +12578,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 76,
-          "minutes": 114.0,
+          "views": 73,
+          "minutes": 109.5,
           "net_subs": 0
         }
       ],
@@ -12589,12 +12589,12 @@
         "title": "Ele Me Pagou 1 MILHÃO Por 30 Dias… Até Quebrar a Própria REGRA!",
         "url": "https://youtu.be/QI_SFj7jvv4",
         "thumbnail": "https://i.ytimg.com/vi/QI_SFj7jvv4/mqdefault.jpg",
-        "views": 3,
+        "views": 1,
         "published_formatted": "29/10 19:30",
         "rank": 2,
         "out_of": 2,
-        "diff_pct": -99.1,
-        "avg_prev": 349
+        "diff_pct": -99.7,
+        "avg_prev": 348
       },
       "top_countries": [
         {
