@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-30T13:00:26.841120+00:00",
+  "updated_at_utc": "2026-10-30T13:15:15.390935+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -9435,8 +9435,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 3,
-      "vph_48h": 2.8,
+      "vph_60m": 2,
+      "vph_48h": 2.6,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9556,8 +9556,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 27,
-          "minutes": 40.5,
+          "views": 29,
+          "minutes": 43.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10132,23 +10132,23 @@
         },
         {
           "day": "2026-10-30",
-          "views": 27,
-          "minutes": 40.5,
+          "views": 29,
+          "minutes": 43.5,
           "net_subs": 0
         }
       ],
       "traffic_sources_30d": [],
       "rank_1_de_10": {
-        "video_id": "MvjI_yFijNo",
-        "title": "1991 में भारत को अपना 47 टन सोना चुपचाप विदेश क्यों भेजना पड़ा? | The Secret Gold Airlift",
-        "url": "https://youtu.be/MvjI_yFijNo",
-        "thumbnail": "https://i.ytimg.com/vi/MvjI_yFijNo/mqdefault.jpg",
-        "views": 20,
-        "published_formatted": "28/10 10:00",
-        "rank": 7,
+        "video_id": "XB9dzGv1Ejg",
+        "title": "1997 में अमेरिका ने भारत की बासमती और हल्दी क्यों चुरा ली थी? | The Great Patent War",
+        "url": "https://youtu.be/XB9dzGv1Ejg",
+        "thumbnail": "https://i.ytimg.com/vi/XB9dzGv1Ejg/mqdefault.jpg",
+        "views": 0,
+        "published_formatted": "30/10 10:00",
+        "rank": 10,
         "out_of": 10,
-        "diff_pct": -93.6,
-        "avg_prev": 310
+        "diff_pct": -100.0,
+        "avg_prev": 159
       },
       "top_countries": [
         {
@@ -10211,8 +10211,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 5,
-      "vph_48h": 1.4,
+      "vph_60m": 2,
+      "vph_48h": 1.3,
       "history_lifetime": [
         {
           "day": "2026-10-03",
@@ -10416,8 +10416,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 28,
-          "minutes": 42.0,
+          "views": 25,
+          "minutes": 37.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -11316,8 +11316,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 28,
-          "minutes": 42.0,
+          "views": 25,
+          "minutes": 37.5,
           "net_subs": 0
         }
       ],
@@ -11331,7 +11331,7 @@
         "published_formatted": "28/10 20:30",
         "rank": 9,
         "out_of": 10,
-        "diff_pct": -88.3,
+        "diff_pct": -88.2,
         "avg_prev": 136
       },
       "top_countries": [
@@ -11396,7 +11396,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 3.6,
+      "vph_48h": 3.5,
       "history_lifetime": [
         {
           "day": "2024-06-11",
@@ -11797,8 +11797,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 70,
-          "minutes": 105.0,
+          "views": 69,
+          "minutes": 103.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12578,8 +12578,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 70,
-          "minutes": 105.0,
+          "views": 69,
+          "minutes": 103.5,
           "net_subs": 0
         }
       ],
@@ -12594,7 +12594,7 @@
         "rank": 2,
         "out_of": 2,
         "diff_pct": -99.7,
-        "avg_prev": 345
+        "avg_prev": 344
       },
       "top_countries": [
         {
