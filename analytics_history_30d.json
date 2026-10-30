@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-30T11:00:26.753108+00:00",
+  "updated_at_utc": "2026-10-30T11:15:16.536406+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -7,7 +7,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/goglhVSAtKGaDmImc5ImFHN2xuRVe6nO1kEAgvRRcCFNDnc2Ll9gExh9kTtvyWzn7cWvBOZF=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 2,
       "vph_48h": 0.3,
       "history_lifetime": [
         {
@@ -52,8 +52,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 1,
-          "minutes": 1.5,
+          "views": 3,
+          "minutes": 4.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -107,8 +107,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 1,
-          "minutes": 1.5,
+          "views": 3,
+          "minutes": 4.5,
           "net_subs": 0
         }
       ],
@@ -118,11 +118,11 @@
         "title": "Why Bowling Balls Have Bizarre Cores Inside! 🎳 #Shorts",
         "url": "https://youtu.be/VVzF4bGicCA",
         "thumbnail": "https://i.ytimg.com/vi/VVzF4bGicCA/mqdefault.jpg",
-        "views": 1,
+        "views": 2,
         "published_formatted": "29/10 20:30",
         "rank": 3,
         "out_of": 3,
-        "diff_pct": -91.7,
+        "diff_pct": -84.0,
         "avg_prev": 12
       },
       "top_countries": [],
@@ -10143,11 +10143,11 @@
         "title": "1991 में भारत को अपना 47 टन सोना चुपचाप विदेश क्यों भेजना पड़ा? | The Secret Gold Airlift",
         "url": "https://youtu.be/MvjI_yFijNo",
         "thumbnail": "https://i.ytimg.com/vi/MvjI_yFijNo/mqdefault.jpg",
-        "views": 19,
+        "views": 20,
         "published_formatted": "28/10 10:00",
         "rank": 7,
         "out_of": 10,
-        "diff_pct": -93.9,
+        "diff_pct": -93.5,
         "avg_prev": 310
       },
       "top_countries": [
@@ -10416,8 +10416,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 23,
-          "minutes": 34.5,
+          "views": 25,
+          "minutes": 37.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -11072,7 +11072,7 @@
           "source": "NO_LINK_OTHER",
           "label": "Direto / Desconhecido",
           "type": "video",
-          "views": 2
+          "views": 1
         },
         {
           "day": "2026-10-26",
@@ -11316,8 +11316,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 23,
-          "minutes": 34.5,
+          "views": 25,
+          "minutes": 37.5,
           "net_subs": 0
         }
       ],
@@ -11395,8 +11395,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
-      "vph_48h": 3.6,
+      "vph_60m": 1,
+      "vph_48h": 3.7,
       "history_lifetime": [
         {
           "day": "2024-06-11",
@@ -11797,8 +11797,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 67,
-          "minutes": 100.5,
+          "views": 69,
+          "minutes": 103.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12578,8 +12578,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 67,
-          "minutes": 100.5,
+          "views": 69,
+          "minutes": 103.5,
           "net_subs": 0
         }
       ],
@@ -12594,7 +12594,7 @@
         "rank": 2,
         "out_of": 2,
         "diff_pct": -99.7,
-        "avg_prev": 342
+        "avg_prev": 344
       },
       "top_countries": [
         {
@@ -12674,7 +12674,7 @@
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 1.5,
+      "vph_48h": 1.2,
       "history_lifetime": [
         {
           "day": "2026-10-19",
