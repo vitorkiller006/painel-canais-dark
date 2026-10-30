@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-30T06:45:17.649447+00:00",
+  "updated_at_utc": "2026-10-30T07:00:23.213893+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -163,8 +163,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
-      "vph_48h": 0.5,
+      "vph_60m": 1,
+      "vph_48h": 0.4,
       "history_lifetime": [
         {
           "day": "2023-10-12",
@@ -2510,8 +2510,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 9,
-          "minutes": 13.5,
+          "views": 8,
+          "minutes": 12.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9300,8 +9300,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 9,
-          "minutes": 13.5,
+          "views": 8,
+          "minutes": 12.0,
           "net_subs": 0
         }
       ],
@@ -9435,8 +9435,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 3,
-      "vph_48h": 3.5,
+      "vph_60m": 2,
+      "vph_48h": 3.2,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9556,8 +9556,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 16,
-          "minutes": 24.0,
+          "views": 13,
+          "minutes": 19.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10132,8 +10132,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 16,
-          "minutes": 24.0,
+          "views": 13,
+          "minutes": 19.5,
           "net_subs": 0
         }
       ],
@@ -10211,8 +10211,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 7,
-      "vph_48h": 1.7,
+      "vph_60m": 5,
+      "vph_48h": 1.5,
       "history_lifetime": [
         {
           "day": "2026-10-03",
@@ -10416,8 +10416,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 18,
-          "minutes": 27.0,
+          "views": 16,
+          "minutes": 24.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -11316,8 +11316,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 18,
-          "minutes": 27.0,
+          "views": 16,
+          "minutes": 24.0,
           "net_subs": 0
         }
       ],
@@ -11395,8 +11395,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 39,
-      "vph_48h": 4.5,
+      "vph_60m": 0,
+      "vph_48h": 4.0,
       "history_lifetime": [
         {
           "day": "2024-06-11",
@@ -11797,8 +11797,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 64,
-          "minutes": 96.0,
+          "views": 53,
+          "minutes": 79.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12578,8 +12578,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 64,
-          "minutes": 96.0,
+          "views": 53,
+          "minutes": 79.5,
           "net_subs": 0
         }
       ],
@@ -12594,7 +12594,7 @@
         "rank": 2,
         "out_of": 2,
         "diff_pct": -100.0,
-        "avg_prev": 340
+        "avg_prev": 329
       },
       "top_countries": [
         {
@@ -12673,8 +12673,8 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
-      "vph_48h": 3.0,
+      "vph_60m": 1,
+      "vph_48h": 2.1,
       "history_lifetime": [
         {
           "day": "2026-10-19",
@@ -12766,8 +12766,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 3,
-          "minutes": 4.5,
+          "views": 2,
+          "minutes": 3.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -13122,8 +13122,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 3,
-          "minutes": 4.5,
+          "views": 2,
+          "minutes": 3.0,
           "net_subs": 0
         }
       ],
