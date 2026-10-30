@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-30T14:15:18.932763+00:00",
+  "updated_at_utc": "2026-10-30T14:30:22.322654+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -9556,8 +9556,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 29,
-          "minutes": 43.5,
+          "views": 27,
+          "minutes": 40.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10132,8 +10132,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 29,
-          "minutes": 43.5,
+          "views": 27,
+          "minutes": 40.5,
           "net_subs": 0
         }
       ],
@@ -10211,7 +10211,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 0,
       "vph_48h": 1.3,
       "history_lifetime": [
         {
@@ -10416,8 +10416,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 28,
-          "minutes": 42.0,
+          "views": 26,
+          "minutes": 39.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -11316,8 +11316,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 28,
-          "minutes": 42.0,
+          "views": 26,
+          "minutes": 39.0,
           "net_subs": 0
         }
       ],
@@ -11395,7 +11395,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 3.5,
       "history_lifetime": [
         {
@@ -11797,8 +11797,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 70,
-          "minutes": 105.0,
+          "views": 71,
+          "minutes": 106.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12578,8 +12578,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 70,
-          "minutes": 105.0,
+          "views": 71,
+          "minutes": 106.5,
           "net_subs": 0
         }
       ],
@@ -12594,7 +12594,7 @@
         "rank": 2,
         "out_of": 2,
         "diff_pct": -99.7,
-        "avg_prev": 345
+        "avg_prev": 346
       },
       "top_countries": [
         {
