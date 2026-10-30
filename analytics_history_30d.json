@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-30T19:15:18.114124+00:00",
+  "updated_at_utc": "2026-10-30T19:18:59.833091+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -7,7 +7,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/goglhVSAtKGaDmImc5ImFHN2xuRVe6nO1kEAgvRRcCFNDnc2Ll9gExh9kTtvyWzn7cWvBOZF=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 2,
       "vph_48h": 0.2,
       "history_lifetime": [
         {
@@ -51,8 +51,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 3,
-          "minutes": 4.5,
+          "views": 5,
+          "minutes": 7.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -120,8 +120,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 3,
-          "minutes": 4.5,
+          "views": 5,
+          "minutes": 7.5,
           "net_subs": 0
         }
       ],
@@ -135,8 +135,8 @@
         "published_formatted": "29/10 20:30",
         "rank": 3,
         "out_of": 3,
-        "diff_pct": -84.0,
-        "avg_prev": 12
+        "diff_pct": -85.2,
+        "avg_prev": 14
       },
       "top_countries": [],
       "device_breakdown": [
@@ -13386,7 +13386,7 @@
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/t1Eiys8HqrCd5SX9moZeU1YitQofpQvWxfoS3xD_HxnLYznco-LqvSlPEVLG4mZytRryx7Kr2w=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 0.0,
+      "vph_48h": 0.1,
       "history_lifetime": [
         {
           "day": "2026-10-22",
@@ -13435,8 +13435,8 @@
         {
           "day": "2026-10-30",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 1,
+          "minutes": 1.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -13510,8 +13510,8 @@
         },
         {
           "day": "2026-10-30",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 1,
+          "minutes": 1.5,
           "net_subs": 0
         }
       ],
@@ -13523,7 +13523,7 @@
         "thumbnail": "https://i.ytimg.com/vi/vZaUGKZchH8/mqdefault.jpg",
         "views": 0,
         "published_formatted": "29/10 19:30",
-        "rank": 4,
+        "rank": 5,
         "out_of": 7,
         "diff_pct": -100.0,
         "avg_prev": 2
