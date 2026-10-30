@@ -197,7 +197,7 @@
     },
     "2026-10-30": {
       "date": "2026-10-30",
-      "updated_at_utc": "2026-10-30T14:45:17.085343+00:00",
+      "updated_at_utc": "2026-10-30T15:00:26.031835+00:00",
       "channels": {
         "stickman": {
           "title": "How It's Made Oficial",
@@ -244,7 +244,7 @@
           "subscribers": 9,
           "total_views": 1291,
           "views_48h": 90,
-          "views_60m": 3,
+          "views_60m": 0,
           "views_7d": 194,
           "watch_minutes_7d": 2329.0,
           "total_videos_publicos": 11,
@@ -256,9 +256,9 @@
           "handle": "@lorenavane1",
           "subscribers": 27,
           "total_views": 276,
-          "views_48h": 233,
-          "views_60m": 1,
-          "views_7d": 233,
+          "views_48h": 235,
+          "views_60m": 3,
+          "views_7d": 235,
           "watch_minutes_7d": 600.0,
           "total_videos_publicos": 2,
           "total_videos_agendados": 4,
