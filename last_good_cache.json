@@ -7,9 +7,9 @@
     "inscritos": 0,
     "total_videos_publicos": 3,
     "total_videos_agendados": 9,
-    "total_views_canal": 24,
-    "views_60m_canal": 0,
-    "views_48h_canal": 18,
+    "total_views_canal": 27,
+    "views_60m_canal": 1,
+    "views_48h_canal": 19,
     "views_7d_canal": 23,
     "watch_minutes_7d_canal": 2.0,
     "retention_pct_7d_canal": 20.89,
@@ -40,7 +40,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 11,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "gMs2JzgucJE": {
         "video_id": "gMs2JzgucJE",
@@ -55,7 +55,7 @@
         "is_public": false,
         "published_at": "2026-11-07T23:30:00Z",
         "published_formatted": "07/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/gMs2JzgucJE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCzxsX5Ts1jmgflrjWUmtO9wRn_eg",
+        "thumbnail": "https://i9.ytimg.com/vi/gMs2JzgucJE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLC4jxrj137yI645jqWIcCJq9I0mDw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -63,7 +63,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 71.2
+        "window_h": 71.45
       },
       "yqEevskJ2pI": {
         "video_id": "yqEevskJ2pI",
@@ -78,7 +78,7 @@
         "is_public": false,
         "published_at": "2026-11-06T23:30:00Z",
         "published_formatted": "06/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/yqEevskJ2pI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLD4P-22hNWEDR047K__0E7rmyIYDA",
+        "thumbnail": "https://i9.ytimg.com/vi/yqEevskJ2pI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAsZTWUwJ7USZOwbK7xZFhKDqHFgA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -86,7 +86,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "FmWEqGBzLvI": {
         "video_id": "FmWEqGBzLvI",
@@ -101,7 +101,7 @@
         "is_public": false,
         "published_at": "2026-11-05T23:30:00Z",
         "published_formatted": "05/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/FmWEqGBzLvI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBBoPXLKAz4QreCJAEhHReHF-932Q",
+        "thumbnail": "https://i9.ytimg.com/vi/FmWEqGBzLvI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDOf2Fe7eCzpYgFJ3BMLXJNyzBzeQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -109,7 +109,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "xSzj-IEiOv0": {
         "video_id": "xSzj-IEiOv0",
@@ -124,7 +124,7 @@
         "is_public": false,
         "published_at": "2026-11-04T23:30:00Z",
         "published_formatted": "04/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/xSzj-IEiOv0/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAD_g7J6xgVXq7eQHhZqxeXAOhcpg",
+        "thumbnail": "https://i9.ytimg.com/vi/xSzj-IEiOv0/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCX6wQE9aGEGnJKkQXf5_4c9CZrDQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -132,7 +132,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "yTo5pYpO59o": {
         "video_id": "yTo5pYpO59o",
@@ -147,7 +147,7 @@
         "is_public": false,
         "published_at": "2026-11-03T23:30:00Z",
         "published_formatted": "03/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/yTo5pYpO59o/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDF4Si5u196TB0MuEpy7JIEYH4Bqw",
+        "thumbnail": "https://i9.ytimg.com/vi/yTo5pYpO59o/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBHHbPa0g8euSNw1ZmJBYr_4a-EYw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -155,7 +155,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "cioYRiOrcos": {
         "video_id": "cioYRiOrcos",
@@ -170,7 +170,7 @@
         "is_public": false,
         "published_at": "2026-11-02T23:30:00Z",
         "published_formatted": "02/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/cioYRiOrcos/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAdbuU69EeqLXPRt90zAEGaem29FA",
+        "thumbnail": "https://i9.ytimg.com/vi/cioYRiOrcos/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBlQ-u70irPws-WT-17hv8OQnzx_A",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -178,7 +178,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "i6fx5c4t34o": {
         "video_id": "i6fx5c4t34o",
@@ -193,7 +193,7 @@
         "is_public": false,
         "published_at": "2026-11-01T23:30:00Z",
         "published_formatted": "01/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/i6fx5c4t34o/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLC0HCV-nuCjFZeeAvO5uQuJiFFIKw",
+        "thumbnail": "https://i9.ytimg.com/vi/i6fx5c4t34o/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCukY_24gL6wgTmhtCuGXwzv_tiXQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -201,7 +201,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "ZgBHwkLYDjE": {
         "video_id": "ZgBHwkLYDjE",
@@ -216,7 +216,7 @@
         "is_public": false,
         "published_at": "2026-10-31T23:30:00Z",
         "published_formatted": "31/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/ZgBHwkLYDjE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCM8UjOkyriSyAcZ7y7yW0C0kG9SA",
+        "thumbnail": "https://i9.ytimg.com/vi/ZgBHwkLYDjE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAFAdvuFI6sI6OB5AifyOM8FZl-9Q",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -224,7 +224,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "89Lsk6ECN2g": {
         "video_id": "89Lsk6ECN2g",
@@ -239,7 +239,7 @@
         "is_public": false,
         "published_at": "2026-10-30T23:30:00Z",
         "published_formatted": "30/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/89Lsk6ECN2g/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLA40EB3Jz_L1trf5xPJ-k6ZQgt6Mw",
+        "thumbnail": "https://i9.ytimg.com/vi/89Lsk6ECN2g/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAhwj7itzuatE0W7lY5fNAchHfoKQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -247,7 +247,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "VVzF4bGicCA": {
         "video_id": "VVzF4bGicCA",
@@ -263,14 +263,14 @@
         "published_at": "2026-10-29T23:30:37Z",
         "published_formatted": "29/10 20:30",
         "thumbnail": "https://i.ytimg.com/vi/VVzF4bGicCA/mqdefault.jpg",
-        "views_total": 2,
+        "views_total": 3,
         "likes": 0,
         "comments": 0,
         "url": "https://youtu.be/VVzF4bGicCA",
         "is_pub_last_48h": true,
-        "delta_60m": 0,
-        "delta_48h": 2,
-        "window_h": 74.57
+        "delta_60m": 1,
+        "delta_48h": 3,
+        "window_h": 74.82
       },
       "kk9JUFeJofo": {
         "video_id": "kk9JUFeJofo",
@@ -293,7 +293,7 @@
         "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 5,
-        "window_h": 74.57
+        "window_h": 74.82
       }
     },
     "videos_agendados_fila": [
@@ -310,7 +310,7 @@
         "is_public": false,
         "published_at": "2026-11-07T23:30:00Z",
         "published_formatted": "07/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/gMs2JzgucJE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCzxsX5Ts1jmgflrjWUmtO9wRn_eg",
+        "thumbnail": "https://i9.ytimg.com/vi/gMs2JzgucJE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLC4jxrj137yI645jqWIcCJq9I0mDw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -318,7 +318,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 71.2
+        "window_h": 71.45
       },
       {
         "video_id": "yqEevskJ2pI",
@@ -333,7 +333,7 @@
         "is_public": false,
         "published_at": "2026-11-06T23:30:00Z",
         "published_formatted": "06/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/yqEevskJ2pI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLD4P-22hNWEDR047K__0E7rmyIYDA",
+        "thumbnail": "https://i9.ytimg.com/vi/yqEevskJ2pI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAsZTWUwJ7USZOwbK7xZFhKDqHFgA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -341,7 +341,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "FmWEqGBzLvI",
@@ -356,7 +356,7 @@
         "is_public": false,
         "published_at": "2026-11-05T23:30:00Z",
         "published_formatted": "05/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/FmWEqGBzLvI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBBoPXLKAz4QreCJAEhHReHF-932Q",
+        "thumbnail": "https://i9.ytimg.com/vi/FmWEqGBzLvI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDOf2Fe7eCzpYgFJ3BMLXJNyzBzeQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -364,7 +364,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "xSzj-IEiOv0",
@@ -379,7 +379,7 @@
         "is_public": false,
         "published_at": "2026-11-04T23:30:00Z",
         "published_formatted": "04/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/xSzj-IEiOv0/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAD_g7J6xgVXq7eQHhZqxeXAOhcpg",
+        "thumbnail": "https://i9.ytimg.com/vi/xSzj-IEiOv0/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCX6wQE9aGEGnJKkQXf5_4c9CZrDQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -387,7 +387,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "yTo5pYpO59o",
@@ -402,7 +402,7 @@
         "is_public": false,
         "published_at": "2026-11-03T23:30:00Z",
         "published_formatted": "03/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/yTo5pYpO59o/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDF4Si5u196TB0MuEpy7JIEYH4Bqw",
+        "thumbnail": "https://i9.ytimg.com/vi/yTo5pYpO59o/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBHHbPa0g8euSNw1ZmJBYr_4a-EYw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -410,7 +410,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "cioYRiOrcos",
@@ -425,7 +425,7 @@
         "is_public": false,
         "published_at": "2026-11-02T23:30:00Z",
         "published_formatted": "02/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/cioYRiOrcos/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAdbuU69EeqLXPRt90zAEGaem29FA",
+        "thumbnail": "https://i9.ytimg.com/vi/cioYRiOrcos/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBlQ-u70irPws-WT-17hv8OQnzx_A",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -433,7 +433,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "i6fx5c4t34o",
@@ -448,7 +448,7 @@
         "is_public": false,
         "published_at": "2026-11-01T23:30:00Z",
         "published_formatted": "01/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/i6fx5c4t34o/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLC0HCV-nuCjFZeeAvO5uQuJiFFIKw",
+        "thumbnail": "https://i9.ytimg.com/vi/i6fx5c4t34o/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCukY_24gL6wgTmhtCuGXwzv_tiXQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -456,7 +456,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "ZgBHwkLYDjE",
@@ -471,7 +471,7 @@
         "is_public": false,
         "published_at": "2026-10-31T23:30:00Z",
         "published_formatted": "31/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/ZgBHwkLYDjE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCM8UjOkyriSyAcZ7y7yW0C0kG9SA",
+        "thumbnail": "https://i9.ytimg.com/vi/ZgBHwkLYDjE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAFAdvuFI6sI6OB5AifyOM8FZl-9Q",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -479,7 +479,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "89Lsk6ECN2g",
@@ -494,7 +494,7 @@
         "is_public": false,
         "published_at": "2026-10-30T23:30:00Z",
         "published_formatted": "30/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/89Lsk6ECN2g/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLA40EB3Jz_L1trf5xPJ-k6ZQgt6Mw",
+        "thumbnail": "https://i9.ytimg.com/vi/89Lsk6ECN2g/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAhwj7itzuatE0W7lY5fNAchHfoKQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -502,7 +502,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       }
     ],
     "top3_views_7d": [
@@ -607,8 +607,8 @@
       {
         "day": "2026-10-30",
         "type": "video",
-        "views": 6,
-        "minutes": 9.0,
+        "views": 7,
+        "minutes": 10.5,
         "net_subs": 0,
         "is_realtime": true
       }
@@ -676,8 +676,8 @@
       },
       {
         "day": "2026-10-30",
-        "views": 6,
-        "minutes": 9.0,
+        "views": 7,
+        "minutes": 10.5,
         "net_subs": 0
       }
     ],
@@ -687,11 +687,11 @@
       "title": "Why Bowling Balls Have Bizarre Cores Inside! 🎳 #Shorts",
       "url": "https://youtu.be/VVzF4bGicCA",
       "thumbnail": "https://i.ytimg.com/vi/VVzF4bGicCA/mqdefault.jpg",
-      "views": 2,
+      "views": 3,
       "published_formatted": "29/10 20:30",
       "rank": 3,
       "out_of": 3,
-      "diff_pct": -85.7,
+      "diff_pct": -78.6,
       "avg_prev": 14
     },
     "top_countries": [],
@@ -802,8 +802,8 @@
         9.1
       ]
     },
-    "snapshot_window_hours": 74.57,
-    "updated_at_utc": "2026-10-30T22:15:17.441234+00:00"
+    "snapshot_window_hours": 74.82,
+    "updated_at_utc": "2026-10-30T22:30:24.057059+00:00"
   },
   "biblia": {
     "canal_titulo": "Bíblia Oculta",
@@ -811,9 +811,9 @@
     "handle": "@bibliaoculta7",
     "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
     "inscritos": 289,
-    "total_videos_publicos": 4,
-    "total_videos_agendados": 4,
-    "total_views_canal": 343,
+    "total_videos_publicos": 5,
+    "total_videos_agendados": 3,
+    "total_views_canal": 353,
     "views_60m_canal": 0,
     "views_48h_canal": 24,
     "views_7d_canal": 342,
@@ -846,7 +846,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 4,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "qVuCsOXPGT4": {
         "video_id": "qVuCsOXPGT4",
@@ -861,7 +861,7 @@
         "is_public": false,
         "published_at": "2026-11-02T22:30:00Z",
         "published_formatted": "02/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/qVuCsOXPGT4/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAEHlTp9LUSBm20B4NgQunnmJBTNA",
+        "thumbnail": "https://i9.ytimg.com/vi/qVuCsOXPGT4/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDoeNd3zDuUylh6AFDFzfm8Wtwttg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -869,7 +869,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "6QNJ91QSyP0": {
         "video_id": "6QNJ91QSyP0",
@@ -884,7 +884,7 @@
         "is_public": false,
         "published_at": "2026-11-04T22:30:00Z",
         "published_formatted": "04/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/6QNJ91QSyP0/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCef_XZzSwKPX5d5k0bZ3pocWQlfw",
+        "thumbnail": "https://i9.ytimg.com/vi/6QNJ91QSyP0/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBzQAEgMZTis10EUACRW1qK-Qb7Cg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -892,7 +892,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "oZy8b7oIqfk": {
         "video_id": "oZy8b7oIqfk",
@@ -902,20 +902,20 @@
         "grupo": "Pessoais (Vitor)",
         "grupo_slug": "pessoal",
         "title": "A História COMPLETA da ARCA DA ALIANÇA: De Êxodo a Apocalipse, Como Você Nunca Viu Antes",
-        "privacy": "private",
-        "is_scheduled": true,
-        "is_public": false,
-        "published_at": "2026-10-30T22:30:00Z",
+        "privacy": "public",
+        "is_scheduled": false,
+        "is_public": true,
+        "published_at": "2026-10-30T22:30:16Z",
         "published_formatted": "30/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/oZy8b7oIqfk/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCRP-NFx88xuqNlBWHwM7_uLhxMKA",
+        "thumbnail": "https://i.ytimg.com/vi/oZy8b7oIqfk/mqdefault.jpg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
         "url": "https://youtu.be/oZy8b7oIqfk",
-        "is_pub_last_48h": false,
+        "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "DsOAE8nxwO8": {
         "video_id": "DsOAE8nxwO8",
@@ -930,7 +930,7 @@
         "is_public": false,
         "published_at": "2026-11-06T22:30:00Z",
         "published_formatted": "06/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/DsOAE8nxwO8/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBl_f3S4vhYqNruPJ1xIM0kjLNVFQ",
+        "thumbnail": "https://i9.ytimg.com/vi/DsOAE8nxwO8/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDy-iUAnWY4bUL1f8kSXA9nu5PWNg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -938,7 +938,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "nkLU3lp7VRU": {
         "video_id": "nkLU3lp7VRU",
@@ -958,10 +958,10 @@
         "likes": 0,
         "comments": 0,
         "url": "https://youtu.be/nkLU3lp7VRU",
-        "is_pub_last_48h": true,
+        "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 2,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "UW8SYlNDUaM": {
         "video_id": "UW8SYlNDUaM",
@@ -984,7 +984,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 7,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "m0e71Vu35eI": {
         "video_id": "m0e71Vu35eI",
@@ -1007,7 +1007,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 11,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "n6IGLCEk9BY": {
         "video_id": "n6IGLCEk9BY",
@@ -1022,7 +1022,7 @@
         "is_public": false,
         "published_at": "2026-10-22T21:00:07Z",
         "published_formatted": "22/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/n6IGLCEk9BY/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAQdKJMYmGa6S1FIn2UyTJxFWBVAA",
+        "thumbnail": "https://i9.ytimg.com/vi/n6IGLCEk9BY/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLD3pmKdOgdfjOHT5p7jPxDXCCi1Zw",
         "views_total": 1,
         "likes": 0,
         "comments": 0,
@@ -1030,7 +1030,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "aDkruwBmRd0": {
         "video_id": "aDkruwBmRd0",
@@ -1045,7 +1045,7 @@
         "is_public": false,
         "published_at": "2026-10-21T21:00:14Z",
         "published_formatted": "21/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/aDkruwBmRd0/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBgUfK6l-JInNSdxzWlu8xScd7IjQ",
+        "thumbnail": "https://i9.ytimg.com/vi/aDkruwBmRd0/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDtgxoCpAtAHnaepOCBvAXDdNKLrQ",
         "views_total": 11,
         "likes": 0,
         "comments": 0,
@@ -1053,7 +1053,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "aMd7KsNowWU": {
         "video_id": "aMd7KsNowWU",
@@ -1068,7 +1068,7 @@
         "is_public": false,
         "published_at": "2026-10-20T21:00:21Z",
         "published_formatted": "20/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/aMd7KsNowWU/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBq1It6Vo9_uEOnlSlDk0udkqLj7w",
+        "thumbnail": "https://i9.ytimg.com/vi/aMd7KsNowWU/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAr2ET9Bg8vT8Pp-9PNDZC6jK9M-w",
         "views_total": 48,
         "likes": 1,
         "comments": 0,
@@ -1076,7 +1076,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "X60KlfDrh48": {
         "video_id": "X60KlfDrh48",
@@ -1091,7 +1091,7 @@
         "is_public": false,
         "published_at": "2026-10-19T21:00:00Z",
         "published_formatted": "19/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/X60KlfDrh48/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBkvEixH6o7Pejwd50N0xWjrCZN6w",
+        "thumbnail": "https://i9.ytimg.com/vi/X60KlfDrh48/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDI3r0NQtvTgwuevKYd5cLPwIwZlw",
         "views_total": 29,
         "likes": 1,
         "comments": 0,
@@ -1099,7 +1099,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "7MwmjNyB6PA": {
         "video_id": "7MwmjNyB6PA",
@@ -1114,7 +1114,7 @@
         "is_public": false,
         "published_at": "2026-10-18T21:00:14Z",
         "published_formatted": "18/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/7MwmjNyB6PA/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBvHJx8aPJC4AIq_uRydblHp5vuAw",
+        "thumbnail": "https://i9.ytimg.com/vi/7MwmjNyB6PA/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDKMNTQnoB7psWpgf0LBzZFgev0-w",
         "views_total": 77,
         "likes": 1,
         "comments": 0,
@@ -1122,7 +1122,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "XRwXml15Dp4": {
         "video_id": "XRwXml15Dp4",
@@ -1137,7 +1137,7 @@
         "is_public": false,
         "published_at": "2026-10-17T21:00:11Z",
         "published_formatted": "17/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/XRwXml15Dp4/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBLci2rwpF7pARsTPQZ2RUk1g2sPw",
+        "thumbnail": "https://i9.ytimg.com/vi/XRwXml15Dp4/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCyoknZbckQQb8PPbXLIaNu8BwASA",
         "views_total": 26,
         "likes": 1,
         "comments": 0,
@@ -1145,7 +1145,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "VhDg5tZ1esw": {
         "video_id": "VhDg5tZ1esw",
@@ -1160,7 +1160,7 @@
         "is_public": false,
         "published_at": "2026-10-16T21:00:21Z",
         "published_formatted": "16/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/VhDg5tZ1esw/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCAnXOXkRrNsNkLJsfe0tW9lgpzqQ",
+        "thumbnail": "https://i9.ytimg.com/vi/VhDg5tZ1esw/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCT6kmskxv7CZwea60whx5771hErw",
         "views_total": 27,
         "likes": 0,
         "comments": 0,
@@ -1168,7 +1168,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "6BgAQSj0hAQ": {
         "video_id": "6BgAQSj0hAQ",
@@ -1183,7 +1183,7 @@
         "is_public": false,
         "published_at": "2026-10-15T21:00:01Z",
         "published_formatted": "15/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/6BgAQSj0hAQ/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLD0_nurIEBUNvcM38R47sRPNinMmw",
+        "thumbnail": "https://i9.ytimg.com/vi/6BgAQSj0hAQ/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCklNq1DY1HGdrreCkeA89iX8fqlg",
         "views_total": 44,
         "likes": 1,
         "comments": 0,
@@ -1191,7 +1191,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "ijYKSUZ20bw": {
         "video_id": "ijYKSUZ20bw",
@@ -1206,7 +1206,7 @@
         "is_public": false,
         "published_at": "2026-10-14T11:19:56Z",
         "published_formatted": "14/10 08:19",
-        "thumbnail": "https://i9.ytimg.com/vi/ijYKSUZ20bw/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAfLPE-kdZzop321JT4WSXjjrRDig",
+        "thumbnail": "https://i9.ytimg.com/vi/ijYKSUZ20bw/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLB7og3XUUXSz3HgYXF6YFa3V9T0_g",
         "views_total": 392,
         "likes": 11,
         "comments": 0,
@@ -1214,7 +1214,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "2d1C5RMTexU": {
         "video_id": "2d1C5RMTexU",
@@ -1229,7 +1229,7 @@
         "is_public": false,
         "published_at": "2026-10-09T21:30:47Z",
         "published_formatted": "09/10 18:30",
-        "thumbnail": "https://i9.ytimg.com/vi/2d1C5RMTexU/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLB_yiklkOHxgbYYn0RuPNmFvmevMQ",
+        "thumbnail": "https://i9.ytimg.com/vi/2d1C5RMTexU/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLA81dZwB4UA5Dl-mf_aFR-C0dakYQ",
         "views_total": 61,
         "likes": 3,
         "comments": 0,
@@ -1237,7 +1237,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "Vi1LmflBVs0": {
         "video_id": "Vi1LmflBVs0",
@@ -1252,7 +1252,7 @@
         "is_public": false,
         "published_at": "2026-10-07T21:00:27Z",
         "published_formatted": "07/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/Vi1LmflBVs0/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCzvfbCGWM6KV7KQE3D3ButnUf8sw",
+        "thumbnail": "https://i9.ytimg.com/vi/Vi1LmflBVs0/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAXbnGB7B3AWeKiSkNZkW7M76iung",
         "views_total": 96,
         "likes": 1,
         "comments": 0,
@@ -1260,7 +1260,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "4MJbJZP8I44": {
         "video_id": "4MJbJZP8I44",
@@ -1275,7 +1275,7 @@
         "is_public": false,
         "published_at": "2026-10-06T21:00:03Z",
         "published_formatted": "06/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/4MJbJZP8I44/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAPmLVE-idka4vnoBBtAeIoYQ8miw",
+        "thumbnail": "https://i9.ytimg.com/vi/4MJbJZP8I44/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDSOnu6zIkMt9Qy8_3nn4EcZY-ewQ",
         "views_total": 164,
         "likes": 3,
         "comments": 0,
@@ -1283,7 +1283,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "k1pgpxfNMwk": {
         "video_id": "k1pgpxfNMwk",
@@ -1298,7 +1298,7 @@
         "is_public": false,
         "published_at": "2026-10-05T22:30:21Z",
         "published_formatted": "05/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/k1pgpxfNMwk/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDijYq28af9tpLKfymw66crKj3mZg",
+        "thumbnail": "https://i9.ytimg.com/vi/k1pgpxfNMwk/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCcigmBSZLCfRS3u7lyLS7q1hxKTQ",
         "views_total": 607,
         "likes": 11,
         "comments": 0,
@@ -1306,7 +1306,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "GX_YJQAVTgA": {
         "video_id": "GX_YJQAVTgA",
@@ -1321,7 +1321,7 @@
         "is_public": false,
         "published_at": "2026-10-05T21:00:06Z",
         "published_formatted": "05/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/GX_YJQAVTgA/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAMFy0lvQDGAjS5wVwzgB5ktRVZOw",
+        "thumbnail": "https://i9.ytimg.com/vi/GX_YJQAVTgA/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCjl2gSMvD_FN1HAmKx_l6P5lt2UA",
         "views_total": 207,
         "likes": 2,
         "comments": 0,
@@ -1329,7 +1329,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "FIK2jsAqoZg": {
         "video_id": "FIK2jsAqoZg",
@@ -1344,7 +1344,7 @@
         "is_public": false,
         "published_at": "2026-10-04T21:00:02Z",
         "published_formatted": "04/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/FIK2jsAqoZg/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCB1L_8LA8snspZbCu4zcVsuTU2gg",
+        "thumbnail": "https://i9.ytimg.com/vi/FIK2jsAqoZg/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAMk0HglbZGJmkaDt1s5Bgks5Ipvw",
         "views_total": 63,
         "likes": 5,
         "comments": 0,
@@ -1352,7 +1352,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "W8eJceLJHuY": {
         "video_id": "W8eJceLJHuY",
@@ -1367,7 +1367,7 @@
         "is_public": false,
         "published_at": "2026-10-03T21:00:11Z",
         "published_formatted": "03/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/W8eJceLJHuY/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAp_5ygz-O-9ORmXvi5TPFip9NeBw",
+        "thumbnail": "https://i9.ytimg.com/vi/W8eJceLJHuY/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDqKJ13Vz2qN1mTsYDKY0XEQJM7CQ",
         "views_total": 196,
         "likes": 3,
         "comments": 0,
@@ -1375,7 +1375,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "ZDMP0PXm00k": {
         "video_id": "ZDMP0PXm00k",
@@ -1390,7 +1390,7 @@
         "is_public": false,
         "published_at": "2026-10-02T21:00:22Z",
         "published_formatted": "02/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/ZDMP0PXm00k/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDFrmeUqC2MQTd25r8LOBrDwJH5vg",
+        "thumbnail": "https://i9.ytimg.com/vi/ZDMP0PXm00k/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCt5_mTiSOU4-1nEIuYWT0_xxmFMA",
         "views_total": 293,
         "likes": 5,
         "comments": 0,
@@ -1398,7 +1398,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "4Xf0VkMLwZg": {
         "video_id": "4Xf0VkMLwZg",
@@ -1413,7 +1413,7 @@
         "is_public": false,
         "published_at": "2026-10-01T21:00:26Z",
         "published_formatted": "01/10 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/4Xf0VkMLwZg/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDyfEMWcYRFU6AKGifW0d5QgNco5g",
+        "thumbnail": "https://i9.ytimg.com/vi/4Xf0VkMLwZg/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLClAE5YGwv-Vc4toEkADqBavxizrg",
         "views_total": 112,
         "likes": 3,
         "comments": 0,
@@ -1421,7 +1421,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "fUEojb-pCoo": {
         "video_id": "fUEojb-pCoo",
@@ -1436,7 +1436,7 @@
         "is_public": false,
         "published_at": "2026-09-30T21:00:18Z",
         "published_formatted": "30/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/fUEojb-pCoo/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDl2NcBcRE0oSeATfsGDu-HgLWJPg",
+        "thumbnail": "https://i9.ytimg.com/vi/fUEojb-pCoo/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCDwY9pNGCA4ht2ZMhZsjcBJ_XOxg",
         "views_total": 21,
         "likes": 0,
         "comments": 0,
@@ -1444,7 +1444,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "VbJwl6N_U3Y": {
         "video_id": "VbJwl6N_U3Y",
@@ -1459,7 +1459,7 @@
         "is_public": false,
         "published_at": "2026-09-29T21:00:31Z",
         "published_formatted": "29/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/VbJwl6N_U3Y/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDWALPXeqMj1BcBU382n1hDsRUopg",
+        "thumbnail": "https://i9.ytimg.com/vi/VbJwl6N_U3Y/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBw_3goD5QrhV5KFzZJ7CaO2PcKqg",
         "views_total": 100,
         "likes": 2,
         "comments": 0,
@@ -1467,7 +1467,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "ME-nFLsSdfU": {
         "video_id": "ME-nFLsSdfU",
@@ -1482,7 +1482,7 @@
         "is_public": false,
         "published_at": "2026-09-28T23:33:17Z",
         "published_formatted": "28/09 20:33",
-        "thumbnail": "https://i9.ytimg.com/vi/ME-nFLsSdfU/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLC1ieU44nTZhB_J5T6GJ0IBhn0QuQ",
+        "thumbnail": "https://i9.ytimg.com/vi/ME-nFLsSdfU/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAmkOXxihMbTmysDhKYZcfThkbkKw",
         "views_total": 188,
         "likes": 3,
         "comments": 0,
@@ -1490,7 +1490,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "HcrQhMCTOZw": {
         "video_id": "HcrQhMCTOZw",
@@ -1505,7 +1505,7 @@
         "is_public": false,
         "published_at": "2026-09-27T21:21:32Z",
         "published_formatted": "27/09 18:21",
-        "thumbnail": "https://i9.ytimg.com/vi/HcrQhMCTOZw/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAOi1LPBmSXPF4KKpqLr6tQpPHLqw",
+        "thumbnail": "https://i9.ytimg.com/vi/HcrQhMCTOZw/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCL_g3Xgv6jtBItmtp3ToGt1MGp5g",
         "views_total": 139,
         "likes": 2,
         "comments": 0,
@@ -1513,7 +1513,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "ae1D5Q4f3DI": {
         "video_id": "ae1D5Q4f3DI",
@@ -1528,7 +1528,7 @@
         "is_public": false,
         "published_at": "2026-09-26T21:00:06Z",
         "published_formatted": "26/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/ae1D5Q4f3DI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLA1AV4wOc4K4DmOJY9_YRc6aLh5rA",
+        "thumbnail": "https://i9.ytimg.com/vi/ae1D5Q4f3DI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAtZIr2l9NDenBwYH64kp_edIhefg",
         "views_total": 102,
         "likes": 1,
         "comments": 0,
@@ -1536,7 +1536,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "lKVS5wC-KZE": {
         "video_id": "lKVS5wC-KZE",
@@ -1551,7 +1551,7 @@
         "is_public": false,
         "published_at": "2026-09-25T21:00:02Z",
         "published_formatted": "25/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/lKVS5wC-KZE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLArCWhajQlQDtAhasZ-rfEuXaTqzg",
+        "thumbnail": "https://i9.ytimg.com/vi/lKVS5wC-KZE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDNJtWUPLlZg-IIIBJnnThfR27Wqw",
         "views_total": 47,
         "likes": 0,
         "comments": 0,
@@ -1559,7 +1559,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "2UhIkm3r3dk": {
         "video_id": "2UhIkm3r3dk",
@@ -1574,7 +1574,7 @@
         "is_public": false,
         "published_at": "2026-09-24T21:00:36Z",
         "published_formatted": "24/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/2UhIkm3r3dk/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBG6Mnt1NLxqUJYbDXLlIwQPvNOHw",
+        "thumbnail": "https://i9.ytimg.com/vi/2UhIkm3r3dk/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCYQDCsjAd1eklb2jo_CcwmHBHkWg",
         "views_total": 218,
         "likes": 5,
         "comments": 0,
@@ -1582,7 +1582,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "3j-g-JA9jRg": {
         "video_id": "3j-g-JA9jRg",
@@ -1597,7 +1597,7 @@
         "is_public": false,
         "published_at": "2026-09-23T21:00:29Z",
         "published_formatted": "23/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/3j-g-JA9jRg/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBl1ek6NJwyDX_CVbLDX21lY2m11w",
+        "thumbnail": "https://i9.ytimg.com/vi/3j-g-JA9jRg/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDHhOi6Tr2Eti7Shbx2ToHXDZomnA",
         "views_total": 113,
         "likes": 0,
         "comments": 0,
@@ -1605,7 +1605,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "AYCZY4T-jjg": {
         "video_id": "AYCZY4T-jjg",
@@ -1620,7 +1620,7 @@
         "is_public": false,
         "published_at": "2026-09-22T21:00:34Z",
         "published_formatted": "22/09 18:00",
-        "thumbnail": "https://i9.ytimg.com/vi/AYCZY4T-jjg/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBCrZ-a4QGZc9kZz5kQDx4rFkfWIw",
+        "thumbnail": "https://i9.ytimg.com/vi/AYCZY4T-jjg/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBprbCyy34ccu4AkkTQbiRbP3jUsQ",
         "views_total": 113,
         "likes": 2,
         "comments": 0,
@@ -1628,7 +1628,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "_u7bldUvK0U": {
         "video_id": "_u7bldUvK0U",
@@ -1643,7 +1643,7 @@
         "is_public": false,
         "published_at": "2026-09-21T22:00:32Z",
         "published_formatted": "21/09 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/_u7bldUvK0U/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAdu61OQ52SjaIjLqoWek5pHVNESw",
+        "thumbnail": "https://i9.ytimg.com/vi/_u7bldUvK0U/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLD-xbHLd4KeZRmotPllwpf41eAQKw",
         "views_total": 198,
         "likes": 1,
         "comments": 0,
@@ -1651,7 +1651,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       }
     },
     "videos_agendados_fila": [
@@ -1668,7 +1668,7 @@
         "is_public": false,
         "published_at": "2026-11-02T22:30:00Z",
         "published_formatted": "02/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/qVuCsOXPGT4/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAEHlTp9LUSBm20B4NgQunnmJBTNA",
+        "thumbnail": "https://i9.ytimg.com/vi/qVuCsOXPGT4/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDoeNd3zDuUylh6AFDFzfm8Wtwttg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -1676,7 +1676,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "6QNJ91QSyP0",
@@ -1691,7 +1691,7 @@
         "is_public": false,
         "published_at": "2026-11-04T22:30:00Z",
         "published_formatted": "04/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/6QNJ91QSyP0/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCef_XZzSwKPX5d5k0bZ3pocWQlfw",
+        "thumbnail": "https://i9.ytimg.com/vi/6QNJ91QSyP0/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBzQAEgMZTis10EUACRW1qK-Qb7Cg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -1699,30 +1699,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
-      },
-      {
-        "video_id": "oZy8b7oIqfk",
-        "canal_id": "biblia",
-        "canal_titulo": "Bíblia Oculta",
-        "canal_handle": "@bibliaoculta7",
-        "grupo": "Pessoais (Vitor)",
-        "grupo_slug": "pessoal",
-        "title": "A História COMPLETA da ARCA DA ALIANÇA: De Êxodo a Apocalipse, Como Você Nunca Viu Antes",
-        "privacy": "private",
-        "is_scheduled": true,
-        "is_public": false,
-        "published_at": "2026-10-30T22:30:00Z",
-        "published_formatted": "30/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/oZy8b7oIqfk/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCRP-NFx88xuqNlBWHwM7_uLhxMKA",
-        "views_total": 0,
-        "likes": 0,
-        "comments": 0,
-        "url": "https://youtu.be/oZy8b7oIqfk",
-        "is_pub_last_48h": false,
-        "delta_60m": 0,
-        "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "DsOAE8nxwO8",
@@ -1737,7 +1714,7 @@
         "is_public": false,
         "published_at": "2026-11-06T22:30:00Z",
         "published_formatted": "06/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/DsOAE8nxwO8/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBl_f3S4vhYqNruPJ1xIM0kjLNVFQ",
+        "thumbnail": "https://i9.ytimg.com/vi/DsOAE8nxwO8/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDy-iUAnWY4bUL1f8kSXA9nu5PWNg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -1745,7 +1722,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       }
     ],
     "top3_views_7d": [
@@ -1799,7 +1776,7 @@
       {
         "video_id": "ijYKSUZ20bw",
         "title": "O Confronto que Destruiu o Império Romano: O Filme Completo de Jesus",
-        "thumbnail": "https://i9.ytimg.com/vi/ijYKSUZ20bw/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAfLPE-kdZzop321JT4WSXjjrRDig",
+        "thumbnail": "https://i9.ytimg.com/vi/ijYKSUZ20bw/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLB7og3XUUXSz3HgYXF6YFa3V9T0_g",
         "url": "https://youtu.be/ijYKSUZ20bw",
         "views_total": 392,
         "views_7d": 392,
@@ -1811,7 +1788,7 @@
       {
         "video_id": "k1pgpxfNMwk",
         "title": "Do Dilúvio ao Juízo Final: O Filme Bíblico de 1 Hora que Chocou o Mundo",
-        "thumbnail": "https://i9.ytimg.com/vi/k1pgpxfNMwk/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDijYq28af9tpLKfymw66crKj3mZg",
+        "thumbnail": "https://i9.ytimg.com/vi/k1pgpxfNMwk/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCcigmBSZLCfRS3u7lyLS7q1hxKTQ",
         "url": "https://youtu.be/k1pgpxfNMwk",
         "views_total": 607,
         "views_7d": 607,
@@ -10992,16 +10969,16 @@
     ],
     "traffic_sources_30d": [],
     "rank_1_de_10": {
-      "video_id": "nkLU3lp7VRU",
-      "title": "Por Que o Evangelho de LUCAS é a Chave Para Entender a Vida de Jesus?",
-      "url": "https://youtu.be/nkLU3lp7VRU",
-      "thumbnail": "https://i.ytimg.com/vi/nkLU3lp7VRU/mqdefault.jpg",
-      "views": 2,
-      "published_formatted": "28/10 19:30",
-      "rank": 4,
-      "out_of": 4,
-      "diff_pct": -98.3,
-      "avg_prev": 118
+      "video_id": "oZy8b7oIqfk",
+      "title": "A História COMPLETA da ARCA DA ALIANÇA: De Êxodo a Apocalipse, Como Você Nunca Viu Antes",
+      "url": "https://youtu.be/oZy8b7oIqfk",
+      "thumbnail": "https://i.ytimg.com/vi/oZy8b7oIqfk/mqdefault.jpg",
+      "views": 0,
+      "published_formatted": "30/10 19:30",
+      "rank": 5,
+      "out_of": 5,
+      "diff_pct": -100.0,
+      "avg_prev": 89
     },
     "top_countries": [
       {
@@ -11269,8 +11246,8 @@
         14.2
       ]
     },
-    "snapshot_window_hours": 74.57,
-    "updated_at_utc": "2026-10-30T22:15:17.441234+00:00"
+    "snapshot_window_hours": 74.82,
+    "updated_at_utc": "2026-10-30T22:30:24.057059+00:00"
   },
   "indiano_doc": {
     "canal_titulo": "Untold Bharat",
@@ -11281,8 +11258,8 @@
     "total_videos_publicos": 12,
     "total_videos_agendados": 3,
     "total_views_canal": 2907,
-    "views_60m_canal": 1,
-    "views_48h_canal": 139,
+    "views_60m_canal": 3,
+    "views_48h_canal": 126,
     "views_7d_canal": 729,
     "watch_minutes_7d_canal": 7432.0,
     "retention_pct_7d_canal": 25.14,
@@ -11313,7 +11290,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 18,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "Sr_Flo9RjBs": {
         "video_id": "Sr_Flo9RjBs",
@@ -11328,7 +11305,7 @@
         "is_public": false,
         "published_at": "2026-11-02T13:00:00Z",
         "published_formatted": "02/11 10:00",
-        "thumbnail": "https://i9.ytimg.com/vi/Sr_Flo9RjBs/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLA9GAM-3Nv7Vxn2H_6nkrndepPwQw",
+        "thumbnail": "https://i9.ytimg.com/vi/Sr_Flo9RjBs/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBh2sLKj4XCihFNCiNxMJeUPpLlNw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -11336,7 +11313,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "iEzajDZRNSE": {
         "video_id": "iEzajDZRNSE",
@@ -11351,7 +11328,7 @@
         "is_public": false,
         "published_at": "2026-11-04T13:00:00Z",
         "published_formatted": "04/11 10:00",
-        "thumbnail": "https://i9.ytimg.com/vi/iEzajDZRNSE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBAdmJbiQSrOvxX6eHTOeYAY6uF3Q",
+        "thumbnail": "https://i9.ytimg.com/vi/iEzajDZRNSE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAUhk7UgoBBxSYmbkenzEtTF46D1A",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -11359,7 +11336,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "5f9nJLZkpaU": {
         "video_id": "5f9nJLZkpaU",
@@ -11374,7 +11351,7 @@
         "is_public": false,
         "published_at": "2026-11-06T13:00:00Z",
         "published_formatted": "06/11 10:00",
-        "thumbnail": "https://i9.ytimg.com/vi/5f9nJLZkpaU/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDHK9TrS7J0ewQ2Ch5ybu4iMyv1Ow",
+        "thumbnail": "https://i9.ytimg.com/vi/5f9nJLZkpaU/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBd4M5A9pLyo45PJRo95Nf4-H_COA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -11382,7 +11359,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "uh1Wk880WTY": {
         "video_id": "uh1Wk880WTY",
@@ -11405,7 +11382,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "XB9dzGv1Ejg": {
         "video_id": "XB9dzGv1Ejg",
@@ -11428,7 +11405,7 @@
         "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "rPeXQyOtm78": {
         "video_id": "rPeXQyOtm78",
@@ -11451,7 +11428,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "oW6lA0757M8": {
         "video_id": "oW6lA0757M8",
@@ -11474,7 +11451,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 16,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "9UTbJ0fZlB0": {
         "video_id": "9UTbJ0fZlB0",
@@ -11497,7 +11474,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "Au4ihfn4Ijs": {
         "video_id": "Au4ihfn4Ijs",
@@ -11513,14 +11490,14 @@
         "published_at": "2026-10-20T12:30:00Z",
         "published_formatted": "20/10 09:30",
         "thumbnail": "https://i.ytimg.com/vi/Au4ihfn4Ijs/mqdefault.jpg",
-        "views_total": 664,
+        "views_total": 665,
         "likes": 7,
         "comments": 1,
         "url": "https://youtu.be/Au4ihfn4Ijs",
         "is_pub_last_48h": false,
-        "delta_60m": 0,
-        "delta_48h": 35,
-        "window_h": 70.8
+        "delta_60m": 1,
+        "delta_48h": 23,
+        "window_h": 71.05
       },
       "3RBIrSOEWQs": {
         "video_id": "3RBIrSOEWQs",
@@ -11543,7 +11520,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 8,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "G7j8a3ef3hI": {
         "video_id": "G7j8a3ef3hI",
@@ -11566,7 +11543,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 34,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "rOfRAdBiKZ0": {
         "video_id": "rOfRAdBiKZ0",
@@ -11582,14 +11559,14 @@
         "published_at": "2026-10-17T12:30:27Z",
         "published_formatted": "17/10 09:30",
         "thumbnail": "https://i.ytimg.com/vi/rOfRAdBiKZ0/mqdefault.jpg",
-        "views_total": 193,
+        "views_total": 194,
         "likes": 1,
         "comments": 3,
         "url": "https://youtu.be/rOfRAdBiKZ0",
         "is_pub_last_48h": false,
-        "delta_60m": 1,
-        "delta_48h": 19,
-        "window_h": 70.8
+        "delta_60m": 2,
+        "delta_48h": 18,
+        "window_h": 71.05
       },
       "5eaaMrhXigk": {
         "video_id": "5eaaMrhXigk",
@@ -11612,7 +11589,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 5,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       "l-i-bDZweSw": {
         "video_id": "l-i-bDZweSw",
@@ -11635,7 +11612,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 2,
-        "window_h": 70.8
+        "window_h": 71.05
       }
     },
     "videos_agendados_fila": [
@@ -11652,7 +11629,7 @@
         "is_public": false,
         "published_at": "2026-11-02T13:00:00Z",
         "published_formatted": "02/11 10:00",
-        "thumbnail": "https://i9.ytimg.com/vi/Sr_Flo9RjBs/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLA9GAM-3Nv7Vxn2H_6nkrndepPwQw",
+        "thumbnail": "https://i9.ytimg.com/vi/Sr_Flo9RjBs/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBh2sLKj4XCihFNCiNxMJeUPpLlNw",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -11660,7 +11637,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       {
         "video_id": "iEzajDZRNSE",
@@ -11675,7 +11652,7 @@
         "is_public": false,
         "published_at": "2026-11-04T13:00:00Z",
         "published_formatted": "04/11 10:00",
-        "thumbnail": "https://i9.ytimg.com/vi/iEzajDZRNSE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBAdmJbiQSrOvxX6eHTOeYAY6uF3Q",
+        "thumbnail": "https://i9.ytimg.com/vi/iEzajDZRNSE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAUhk7UgoBBxSYmbkenzEtTF46D1A",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -11683,7 +11660,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 70.8
+        "window_h": 71.05
       },
       {
         "video_id": "5f9nJLZkpaU",
@@ -11698,7 +11675,7 @@
         "is_public": false,
         "published_at": "2026-11-06T13:00:00Z",
         "published_formatted": "06/11 10:00",
-        "thumbnail": "https://i9.ytimg.com/vi/5f9nJLZkpaU/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDHK9TrS7J0ewQ2Ch5ybu4iMyv1Ow",
+        "thumbnail": "https://i9.ytimg.com/vi/5f9nJLZkpaU/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBd4M5A9pLyo45PJRo95Nf4-H_COA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -11706,7 +11683,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 70.8
+        "window_h": 71.05
       }
     ],
     "top3_views_7d": [
@@ -11914,8 +11891,8 @@
       {
         "day": "2026-10-30",
         "type": "video",
-        "views": 43,
-        "minutes": 64.5,
+        "views": 45,
+        "minutes": 67.5,
         "net_subs": 0,
         "is_realtime": true
       }
@@ -12518,8 +12495,8 @@
       },
       {
         "day": "2026-10-30",
-        "views": 43,
-        "minutes": 64.5,
+        "views": 45,
+        "minutes": 67.5,
         "net_subs": 0
       }
     ],
@@ -12729,8 +12706,8 @@
         12.7
       ]
     },
-    "snapshot_window_hours": 70.8,
-    "updated_at_utc": "2026-10-30T22:15:17.441234+00:00"
+    "snapshot_window_hours": 71.05,
+    "updated_at_utc": "2026-10-30T22:30:24.057059+00:00"
   },
   "espaco": {
     "canal_titulo": "Cosmic Abyss",
@@ -12773,7 +12750,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 4,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "aUKLXu_9VuY": {
         "video_id": "aUKLXu_9VuY",
@@ -12788,7 +12765,7 @@
         "is_public": false,
         "published_at": "2026-11-06T23:30:00Z",
         "published_formatted": "06/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/aUKLXu_9VuY/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBtxQtcm5lSgRKZeqmShfs1R3c-dg",
+        "thumbnail": "https://i9.ytimg.com/vi/aUKLXu_9VuY/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBncuOi-e6s4jZbkHdp6PFcNlUP-g",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12796,7 +12773,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "b6-PGCIXbKA": {
         "video_id": "b6-PGCIXbKA",
@@ -12811,7 +12788,7 @@
         "is_public": false,
         "published_at": "2026-10-30T23:30:00Z",
         "published_formatted": "30/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/b6-PGCIXbKA/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLB2GB5uOyZfLFOrg9YrD_QDxtKQww",
+        "thumbnail": "https://i9.ytimg.com/vi/b6-PGCIXbKA/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCzWKsjDFrvFUBdBVYpb7lbQ4bYAQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12819,7 +12796,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "Lgb0KsbFVBI": {
         "video_id": "Lgb0KsbFVBI",
@@ -12834,7 +12811,7 @@
         "is_public": false,
         "published_at": "2026-11-02T23:30:00Z",
         "published_formatted": "02/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/Lgb0KsbFVBI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLD5IYz3GQPBlzTeTpuW0QIcCc_5-Q",
+        "thumbnail": "https://i9.ytimg.com/vi/Lgb0KsbFVBI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBW-H_smit-2K9sdqrtD3zKNY9Nqg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12842,7 +12819,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "KSCMCdhmlAI": {
         "video_id": "KSCMCdhmlAI",
@@ -12865,7 +12842,7 @@
         "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 16,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "bfoA-FTYAFE": {
         "video_id": "bfoA-FTYAFE",
@@ -12880,7 +12857,7 @@
         "is_public": false,
         "published_at": "2026-11-04T23:30:00Z",
         "published_formatted": "04/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/bfoA-FTYAFE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCZ0wlM_K9EhJvDF-21K0ejbgiJKg",
+        "thumbnail": "https://i9.ytimg.com/vi/bfoA-FTYAFE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLB2ojtFAZiMAZlDsZktPHim4NQ0EQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -12888,7 +12865,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "awAPbuzZjLM": {
         "video_id": "awAPbuzZjLM",
@@ -12903,7 +12880,7 @@
         "is_public": false,
         "published_at": "2026-10-25T22:00:29Z",
         "published_formatted": "25/10 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/awAPbuzZjLM/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBfo5c4ompshyQs9iTHFG865j_FMQ",
+        "thumbnail": "https://i9.ytimg.com/vi/awAPbuzZjLM/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDu3_HvrX5HuhZHpUhy50tBhES2qg",
         "views_total": 3,
         "likes": 0,
         "comments": 0,
@@ -12911,7 +12888,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "jPKLgNacDms": {
         "video_id": "jPKLgNacDms",
@@ -12926,7 +12903,7 @@
         "is_public": false,
         "published_at": "2026-10-23T22:00:03Z",
         "published_formatted": "23/10 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/jPKLgNacDms/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCAZjauP42Qj04-H1yZnRBRVdatOw",
+        "thumbnail": "https://i9.ytimg.com/vi/jPKLgNacDms/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBA106R1hT0MCKnIOOK2kNIBLWUBQ",
         "views_total": 8,
         "likes": 0,
         "comments": 0,
@@ -12934,7 +12911,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "A6rRIes2gVE": {
         "video_id": "A6rRIes2gVE",
@@ -12949,7 +12926,7 @@
         "is_public": false,
         "published_at": "2026-10-22T22:00:15Z",
         "published_formatted": "22/10 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/A6rRIes2gVE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDo7k_6JHlBpSWL5VmCbZvVS4Wt2g",
+        "thumbnail": "https://i9.ytimg.com/vi/A6rRIes2gVE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLB1xF_C0OC7fFZdUWo0OnmPB05R5w",
         "views_total": 4,
         "likes": 1,
         "comments": 0,
@@ -12957,7 +12934,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "LJulXAEfHH0": {
         "video_id": "LJulXAEfHH0",
@@ -12972,7 +12949,7 @@
         "is_public": false,
         "published_at": "2026-10-21T22:00:18Z",
         "published_formatted": "21/10 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/LJulXAEfHH0/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBYCX0shifPvJGoPqw08kjyPm28ow",
+        "thumbnail": "https://i9.ytimg.com/vi/LJulXAEfHH0/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLD-hfgHATBkjqfU5U2gYozCicjXzw",
         "views_total": 16,
         "likes": 1,
         "comments": 0,
@@ -12980,7 +12957,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "UP7j-8rVr5g": {
         "video_id": "UP7j-8rVr5g",
@@ -12995,7 +12972,7 @@
         "is_public": false,
         "published_at": "2026-10-20T22:00:04Z",
         "published_formatted": "20/10 19:00",
-        "thumbnail": "https://i9.ytimg.com/vi/UP7j-8rVr5g/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLD_YkTQFMZR6bew0QVvEK3DOiRyHA",
+        "thumbnail": "https://i9.ytimg.com/vi/UP7j-8rVr5g/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCG8ajUqxvxEdC_H6VPsBhfiQyKsg",
         "views_total": 10,
         "likes": 0,
         "comments": 0,
@@ -13003,7 +12980,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "ksoGH80QGqU": {
         "video_id": "ksoGH80QGqU",
@@ -13026,7 +13003,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 1,
         "delta_48h": 5,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "AZ1QN3jRi3Y": {
         "video_id": "AZ1QN3jRi3Y",
@@ -13049,7 +13026,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 1,
         "delta_48h": 22,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "Alg7TZ6MeOo": {
         "video_id": "Alg7TZ6MeOo",
@@ -13072,7 +13049,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 14,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "TiVJlqVKeDI": {
         "video_id": "TiVJlqVKeDI",
@@ -13095,7 +13072,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 14,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "EafJ0DjPgrY": {
         "video_id": "EafJ0DjPgrY",
@@ -13118,7 +13095,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 2,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "bNNeghIPxk4": {
         "video_id": "bNNeghIPxk4",
@@ -13141,7 +13118,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 4,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "kHRGomYv9h8": {
         "video_id": "kHRGomYv9h8",
@@ -13164,7 +13141,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "7t-gDnqo8VE": {
         "video_id": "7t-gDnqo8VE",
@@ -13187,7 +13164,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "rMm6QJcGN7I": {
         "video_id": "rMm6QJcGN7I",
@@ -13210,7 +13187,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 74.57
+        "window_h": 74.82
       }
     },
     "videos_agendados_fila": [
@@ -13227,7 +13204,7 @@
         "is_public": false,
         "published_at": "2026-11-06T23:30:00Z",
         "published_formatted": "06/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/aUKLXu_9VuY/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBtxQtcm5lSgRKZeqmShfs1R3c-dg",
+        "thumbnail": "https://i9.ytimg.com/vi/aUKLXu_9VuY/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBncuOi-e6s4jZbkHdp6PFcNlUP-g",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -13235,7 +13212,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "b6-PGCIXbKA",
@@ -13250,7 +13227,7 @@
         "is_public": false,
         "published_at": "2026-10-30T23:30:00Z",
         "published_formatted": "30/10 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/b6-PGCIXbKA/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLB2GB5uOyZfLFOrg9YrD_QDxtKQww",
+        "thumbnail": "https://i9.ytimg.com/vi/b6-PGCIXbKA/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCzWKsjDFrvFUBdBVYpb7lbQ4bYAQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -13258,7 +13235,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "Lgb0KsbFVBI",
@@ -13273,7 +13250,7 @@
         "is_public": false,
         "published_at": "2026-11-02T23:30:00Z",
         "published_formatted": "02/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/Lgb0KsbFVBI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLD5IYz3GQPBlzTeTpuW0QIcCc_5-Q",
+        "thumbnail": "https://i9.ytimg.com/vi/Lgb0KsbFVBI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBW-H_smit-2K9sdqrtD3zKNY9Nqg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -13281,7 +13258,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "bfoA-FTYAFE",
@@ -13296,7 +13273,7 @@
         "is_public": false,
         "published_at": "2026-11-04T23:30:00Z",
         "published_formatted": "04/11 20:30",
-        "thumbnail": "https://i9.ytimg.com/vi/bfoA-FTYAFE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCZ0wlM_K9EhJvDF-21K0ejbgiJKg",
+        "thumbnail": "https://i9.ytimg.com/vi/bfoA-FTYAFE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLB2ojtFAZiMAZlDsZktPHim4NQ0EQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -13304,7 +13281,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       }
     ],
     "top3_views_7d": [
@@ -14736,8 +14713,8 @@
         33.1
       ]
     },
-    "snapshot_window_hours": 74.57,
-    "updated_at_utc": "2026-10-30T22:15:17.441234+00:00"
+    "snapshot_window_hours": 74.82,
+    "updated_at_utc": "2026-10-30T22:30:24.057059+00:00"
   },
   "novela": {
     "canal_titulo": "Lorena Vane",
@@ -14747,9 +14724,9 @@
     "inscritos": 27,
     "total_videos_publicos": 2,
     "total_videos_agendados": 4,
-    "total_views_canal": 345,
+    "total_views_canal": 276,
     "views_60m_canal": 0,
-    "views_48h_canal": 205,
+    "views_48h_canal": 224,
     "views_7d_canal": 243,
     "watch_minutes_7d_canal": 1041.0,
     "retention_pct_7d_canal": 26.46,
@@ -14772,7 +14749,7 @@
         "is_public": false,
         "published_at": "2026-11-04T22:30:00Z",
         "published_formatted": "04/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/uKSEnO70BRI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAliVmccNH01lF1_hsy5c2ab4ZjbQ",
+        "thumbnail": "https://i9.ytimg.com/vi/uKSEnO70BRI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLASFuY6FL2vl863oHhC0WJosc68pg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -14780,7 +14757,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 58.0
+        "window_h": 58.25
       },
       "qIr4Tf2NaVg": {
         "video_id": "qIr4Tf2NaVg",
@@ -14795,7 +14772,7 @@
         "is_public": false,
         "published_at": "2026-11-06T22:30:00Z",
         "published_formatted": "06/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/qIr4Tf2NaVg/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLB5ciSIg7GxnOs4bm_06SPvX7vksw",
+        "thumbnail": "https://i9.ytimg.com/vi/qIr4Tf2NaVg/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCCmKa_vfS8C6mXq5vDHILiIT6Fhg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -14803,7 +14780,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 58.5
+        "window_h": 58.75
       },
       "54YKEDgtwZM": {
         "video_id": "54YKEDgtwZM",
@@ -14818,7 +14795,7 @@
         "is_public": false,
         "published_at": "2026-11-02T22:30:00Z",
         "published_formatted": "02/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/54YKEDgtwZM/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBwSXvSkzUcfyTf-rq_2xiRqnD3Pg",
+        "thumbnail": "https://i9.ytimg.com/vi/54YKEDgtwZM/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAi2ICnrx_ym-YZJaBitNLUH30mag",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -14826,7 +14803,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 58.75
+        "window_h": 59.0
       },
       "QFjn3iV4aRE": {
         "video_id": "QFjn3iV4aRE",
@@ -14841,7 +14818,7 @@
         "is_public": false,
         "published_at": "2026-10-31T22:30:00Z",
         "published_formatted": "31/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/QFjn3iV4aRE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCu_YHqA6NDO1dDLdTglg_uwiItkA",
+        "thumbnail": "https://i9.ytimg.com/vi/QFjn3iV4aRE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAdDm1mL42_G7-Ua287RlP5O65WcQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -14849,7 +14826,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 58.75
+        "window_h": 59.0
       },
       "QI_SFj7jvv4": {
         "video_id": "QI_SFj7jvv4",
@@ -14872,7 +14849,7 @@
         "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 4,
-        "window_h": 58.75
+        "window_h": 59.0
       },
       "WEmJ9PGCNZU": {
         "video_id": "WEmJ9PGCNZU",
@@ -14894,8 +14871,8 @@
         "url": "https://youtu.be/WEmJ9PGCNZU",
         "is_pub_last_48h": false,
         "delta_60m": 0,
-        "delta_48h": 201,
-        "window_h": 71.2
+        "delta_48h": 220,
+        "window_h": 71.45
       },
       "mnV6GYY1JNQ": {
         "video_id": "mnV6GYY1JNQ",
@@ -14910,7 +14887,7 @@
         "is_public": false,
         "published_at": "2026-09-17T21:47:41Z",
         "published_formatted": "17/09 18:47",
-        "thumbnail": "https://i9.ytimg.com/vi/mnV6GYY1JNQ/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDmrqrzFaWIUGTJquPWy9I9tn3dwg",
+        "thumbnail": "https://i9.ytimg.com/vi/mnV6GYY1JNQ/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBbzDqDCLMkIcgIlV0VUJRNHPb87g",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -14918,7 +14895,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "lHwKPpJIc68": {
         "video_id": "lHwKPpJIc68",
@@ -14933,7 +14910,7 @@
         "is_public": false,
         "published_at": "2026-09-15T21:47:24Z",
         "published_formatted": "15/09 18:47",
-        "thumbnail": "https://i9.ytimg.com/vi/lHwKPpJIc68/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCbGrfbVgdZF0jlIWNeT-OH3DzVFQ",
+        "thumbnail": "https://i9.ytimg.com/vi/lHwKPpJIc68/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAWoFtpUrxwqGmCeSNZpUCbqgts-g",
         "views_total": 4,
         "likes": 0,
         "comments": 0,
@@ -14941,7 +14918,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "ouslZ6GZpzI": {
         "video_id": "ouslZ6GZpzI",
@@ -14956,7 +14933,7 @@
         "is_public": false,
         "published_at": "2026-09-14T22:17:38Z",
         "published_formatted": "14/09 19:17",
-        "thumbnail": "https://i9.ytimg.com/vi/ouslZ6GZpzI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLC0ERAQCX_u-lizZ05zpL-j8Fg9UA",
+        "thumbnail": "https://i9.ytimg.com/vi/ouslZ6GZpzI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCQZZ5sCCp0-yyU2kAT_uSv7rjGUQ",
         "views_total": 1,
         "likes": 0,
         "comments": 0,
@@ -14964,7 +14941,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "9dcz_S9rZqU": {
         "video_id": "9dcz_S9rZqU",
@@ -14979,7 +14956,7 @@
         "is_public": false,
         "published_at": "2026-09-13T16:07:24Z",
         "published_formatted": "13/09 13:07",
-        "thumbnail": "https://i9.ytimg.com/vi/9dcz_S9rZqU/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBfxnmV7SIfrsLT7KuBbNcDbf2l3w",
+        "thumbnail": "https://i9.ytimg.com/vi/9dcz_S9rZqU/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCujV_EYurRQ3ccxfou-w4n1bdyhQ",
         "views_total": 7,
         "likes": 0,
         "comments": 0,
@@ -14987,7 +14964,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "--qd76mMLqo": {
         "video_id": "--qd76mMLqo",
@@ -15002,7 +14979,7 @@
         "is_public": false,
         "published_at": "2026-09-11T21:45:39Z",
         "published_formatted": "11/09 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/--qd76mMLqo/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCk513YJWMouNqHHNbJRbv-lNSIiw",
+        "thumbnail": "https://i9.ytimg.com/vi/--qd76mMLqo/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDawBjaO1dXyEPBM1SQsOkZEwHEqg",
         "views_total": 4,
         "likes": 0,
         "comments": 0,
@@ -15010,7 +14987,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "Q-lavp-X1LI": {
         "video_id": "Q-lavp-X1LI",
@@ -15025,7 +15002,7 @@
         "is_public": false,
         "published_at": "2026-09-10T21:45:41Z",
         "published_formatted": "10/09 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/Q-lavp-X1LI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAMk6vWvqaERAqzCnC0_uTyQVZ1_g",
+        "thumbnail": "https://i9.ytimg.com/vi/Q-lavp-X1LI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAdBZvCVEpUUqongZ5-xisay1Fhdg",
         "views_total": 7,
         "likes": 1,
         "comments": 0,
@@ -15033,7 +15010,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "ti9aFPVIMCQ": {
         "video_id": "ti9aFPVIMCQ",
@@ -15048,7 +15025,7 @@
         "is_public": false,
         "published_at": "2026-09-09T21:45:49Z",
         "published_formatted": "09/09 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/ti9aFPVIMCQ/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBTHEnFMTOHx_HV3GaMzWSwHv0KRQ",
+        "thumbnail": "https://i9.ytimg.com/vi/ti9aFPVIMCQ/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDPE7XbpUeVUO1j7WpAmc2TFzHrTA",
         "views_total": 18,
         "likes": 1,
         "comments": 0,
@@ -15056,7 +15033,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "SfTDhGKWoCI": {
         "video_id": "SfTDhGKWoCI",
@@ -15071,7 +15048,7 @@
         "is_public": false,
         "published_at": "2026-09-08T23:48:25Z",
         "published_formatted": "08/09 20:48",
-        "thumbnail": "https://i9.ytimg.com/vi/SfTDhGKWoCI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBx81c19q6FHyya6jGOHrHmsWd6qg",
+        "thumbnail": "https://i9.ytimg.com/vi/SfTDhGKWoCI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLC1v7Q0LFNdOk35Qk94XtoBh9Hxaw",
         "views_total": 2,
         "likes": 0,
         "comments": 0,
@@ -15079,7 +15056,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "hFcnEnN3eO4": {
         "video_id": "hFcnEnN3eO4",
@@ -15094,7 +15071,7 @@
         "is_public": false,
         "published_at": "2026-09-07T21:45:47Z",
         "published_formatted": "07/09 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/hFcnEnN3eO4/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDoYF_9FCINX8TNWkQyGyXbgg5Z4w",
+        "thumbnail": "https://i9.ytimg.com/vi/hFcnEnN3eO4/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCsRMloLYLrWNAwJ8z_UCwjcMoDmw",
         "views_total": 10,
         "likes": 0,
         "comments": 0,
@@ -15102,7 +15079,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "v11oL6AlNaM": {
         "video_id": "v11oL6AlNaM",
@@ -15117,7 +15094,7 @@
         "is_public": false,
         "published_at": "2026-09-06T21:45:39Z",
         "published_formatted": "06/09 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/v11oL6AlNaM/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLA-GJGiJAyJy9xUbECegSb1Om0CGQ",
+        "thumbnail": "https://i9.ytimg.com/vi/v11oL6AlNaM/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLA6uBEi_yHZVT6ABO_Yfj6EWGieXg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -15125,7 +15102,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "tQAr-ntUFAw": {
         "video_id": "tQAr-ntUFAw",
@@ -15140,7 +15117,7 @@
         "is_public": false,
         "published_at": "2026-09-05T21:45:43Z",
         "published_formatted": "05/09 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/tQAr-ntUFAw/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAn5rDz_Ne9_4UiGz4wu78WPv-i5Q",
+        "thumbnail": "https://i9.ytimg.com/vi/tQAr-ntUFAw/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCIUqIUu29c53wv2rdMHp1T6lLXWg",
         "views_total": 2,
         "likes": 0,
         "comments": 0,
@@ -15148,7 +15125,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "zqbBdBPkGQg": {
         "video_id": "zqbBdBPkGQg",
@@ -15163,7 +15140,7 @@
         "is_public": false,
         "published_at": "2026-09-04T21:45:40Z",
         "published_formatted": "04/09 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/zqbBdBPkGQg/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCknxKFTy9akOhK8nn2W7l5N3eH7w",
+        "thumbnail": "https://i9.ytimg.com/vi/zqbBdBPkGQg/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDrJx4zOD1YJ5P4ngpobijPcJ_3jQ",
         "views_total": 1141,
         "likes": 21,
         "comments": 0,
@@ -15171,7 +15148,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "58Mbr0suq4w": {
         "video_id": "58Mbr0suq4w",
@@ -15186,7 +15163,7 @@
         "is_public": false,
         "published_at": "2026-09-03T21:45:35Z",
         "published_formatted": "03/09 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/58Mbr0suq4w/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAHCfaF_9jJYRUkuERSG86QhkGdXg",
+        "thumbnail": "https://i9.ytimg.com/vi/58Mbr0suq4w/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDPWb-EPM3usbjpqXBNq_QTrkUMCQ",
         "views_total": 12,
         "likes": 0,
         "comments": 0,
@@ -15194,7 +15171,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "oJCDDqCUckE": {
         "video_id": "oJCDDqCUckE",
@@ -15209,7 +15186,7 @@
         "is_public": false,
         "published_at": "2026-09-02T21:45:40Z",
         "published_formatted": "02/09 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/oJCDDqCUckE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCTev64VzlvoivOnmXiP-PFKKmIhw",
+        "thumbnail": "https://i9.ytimg.com/vi/oJCDDqCUckE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBnZBqbH0a1uqjBCm_TynmZjhX7Xw",
         "views_total": 333,
         "likes": 7,
         "comments": 0,
@@ -15217,7 +15194,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "n0UMOCe4FAY": {
         "video_id": "n0UMOCe4FAY",
@@ -15232,7 +15209,7 @@
         "is_public": false,
         "published_at": "2026-09-01T21:45:37Z",
         "published_formatted": "01/09 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/n0UMOCe4FAY/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDROOdPiyYs-aBT5jiKHapWfz9jiw",
+        "thumbnail": "https://i9.ytimg.com/vi/n0UMOCe4FAY/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLC6HeaSzCnet624_I72ChuSzjAIog",
         "views_total": 22,
         "likes": 1,
         "comments": 0,
@@ -15240,7 +15217,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "JXPuboCt4WA": {
         "video_id": "JXPuboCt4WA",
@@ -15255,7 +15232,7 @@
         "is_public": false,
         "published_at": "2026-08-31T21:45:40Z",
         "published_formatted": "31/08 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/JXPuboCt4WA/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLC7qaLvX-jMEgj6EkwZP-z8VFBquQ",
+        "thumbnail": "https://i9.ytimg.com/vi/JXPuboCt4WA/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDPvkv4sK9_eUDJpwCBS66xUvvZhg",
         "views_total": 35,
         "likes": 2,
         "comments": 0,
@@ -15263,7 +15240,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "RbBL4Bi2Ml4": {
         "video_id": "RbBL4Bi2Ml4",
@@ -15278,7 +15255,7 @@
         "is_public": false,
         "published_at": "2026-08-30T21:45:40Z",
         "published_formatted": "30/08 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/RbBL4Bi2Ml4/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCiKGO58NNgGVMcBrSsjAuOPEWzFg",
+        "thumbnail": "https://i9.ytimg.com/vi/RbBL4Bi2Ml4/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAru7LNnY_OjQt3Q1FPrqM6c3wJvg",
         "views_total": 7,
         "likes": 0,
         "comments": 0,
@@ -15286,7 +15263,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "8mF5tLo6-e8": {
         "video_id": "8mF5tLo6-e8",
@@ -15301,7 +15278,7 @@
         "is_public": false,
         "published_at": "2026-08-29T21:45:40Z",
         "published_formatted": "29/08 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/8mF5tLo6-e8/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCn-E5GLstEZ6ohbVOzysw3irspmQ",
+        "thumbnail": "https://i9.ytimg.com/vi/8mF5tLo6-e8/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAWMTvcqYZnLzSXusvhCk8zPFW6cA",
         "views_total": 222,
         "likes": 7,
         "comments": 0,
@@ -15309,7 +15286,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "Tbbc7Gsar0c": {
         "video_id": "Tbbc7Gsar0c",
@@ -15324,7 +15301,7 @@
         "is_public": false,
         "published_at": "2026-08-28T21:45:40Z",
         "published_formatted": "28/08 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/Tbbc7Gsar0c/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLC8daFVydAeXOKdFh4FcsCPGFff-A",
+        "thumbnail": "https://i9.ytimg.com/vi/Tbbc7Gsar0c/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCWX9LV2FTSKzQ6-H8yebNrGXJMHg",
         "views_total": 48,
         "likes": 2,
         "comments": 0,
@@ -15332,7 +15309,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "mmWy2IDfR3s": {
         "video_id": "mmWy2IDfR3s",
@@ -15347,7 +15324,7 @@
         "is_public": false,
         "published_at": "2026-08-27T21:45:45Z",
         "published_formatted": "27/08 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/mmWy2IDfR3s/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCmWAei-LdX-06sGKxmv54sR1ADHw",
+        "thumbnail": "https://i9.ytimg.com/vi/mmWy2IDfR3s/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLC03e_AyL4U9Db0t1eiy3Wdl3_SGw",
         "views_total": 21,
         "likes": 0,
         "comments": 0,
@@ -15355,7 +15332,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "etdNh-rfRMA": {
         "video_id": "etdNh-rfRMA",
@@ -15370,7 +15347,7 @@
         "is_public": false,
         "published_at": "2026-08-26T21:45:41Z",
         "published_formatted": "26/08 18:45",
-        "thumbnail": "https://i9.ytimg.com/vi/etdNh-rfRMA/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAKmRdjmtt4CafUczlWdxBXhkfpfw",
+        "thumbnail": "https://i9.ytimg.com/vi/etdNh-rfRMA/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCA7YGpQ3o6Tv_C8uHv-bUAwjN5WA",
         "views_total": 45,
         "likes": 1,
         "comments": 0,
@@ -15378,7 +15355,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "_NjGWBfmvMk": {
         "video_id": "_NjGWBfmvMk",
@@ -15393,7 +15370,7 @@
         "is_public": false,
         "published_at": "2026-08-25T23:15:41Z",
         "published_formatted": "25/08 20:15",
-        "thumbnail": "https://i9.ytimg.com/vi/_NjGWBfmvMk/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBvJuBFpLYUgdAOJQk9lO-r6sPGRA",
+        "thumbnail": "https://i9.ytimg.com/vi/_NjGWBfmvMk/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCJWoLoIUnDSVo2bvwy92A3JhJNiw",
         "views_total": 37,
         "likes": 2,
         "comments": 0,
@@ -15401,7 +15378,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "7I_1X6zMN4Y": {
         "video_id": "7I_1X6zMN4Y",
@@ -15416,7 +15393,7 @@
         "is_public": false,
         "published_at": "2026-08-25T01:20:58Z",
         "published_formatted": "24/08 22:20",
-        "thumbnail": "https://i9.ytimg.com/vi/7I_1X6zMN4Y/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDSUncPFm77IdeaT6jgA1SaE6WFAw",
+        "thumbnail": "https://i9.ytimg.com/vi/7I_1X6zMN4Y/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLC7a6lMhwDDz6ggkDOaaYk5v40h4Q",
         "views_total": 8,
         "likes": 0,
         "comments": 0,
@@ -15424,7 +15401,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       }
     },
     "videos_agendados_fila": [
@@ -15441,7 +15418,7 @@
         "is_public": false,
         "published_at": "2026-11-04T22:30:00Z",
         "published_formatted": "04/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/uKSEnO70BRI/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAliVmccNH01lF1_hsy5c2ab4ZjbQ",
+        "thumbnail": "https://i9.ytimg.com/vi/uKSEnO70BRI/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLASFuY6FL2vl863oHhC0WJosc68pg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -15449,7 +15426,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 58.0
+        "window_h": 58.25
       },
       {
         "video_id": "qIr4Tf2NaVg",
@@ -15464,7 +15441,7 @@
         "is_public": false,
         "published_at": "2026-11-06T22:30:00Z",
         "published_formatted": "06/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/qIr4Tf2NaVg/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLB5ciSIg7GxnOs4bm_06SPvX7vksw",
+        "thumbnail": "https://i9.ytimg.com/vi/qIr4Tf2NaVg/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCCmKa_vfS8C6mXq5vDHILiIT6Fhg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -15472,7 +15449,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 58.5
+        "window_h": 58.75
       },
       {
         "video_id": "54YKEDgtwZM",
@@ -15487,7 +15464,7 @@
         "is_public": false,
         "published_at": "2026-11-02T22:30:00Z",
         "published_formatted": "02/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/54YKEDgtwZM/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBwSXvSkzUcfyTf-rq_2xiRqnD3Pg",
+        "thumbnail": "https://i9.ytimg.com/vi/54YKEDgtwZM/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAi2ICnrx_ym-YZJaBitNLUH30mag",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -15495,7 +15472,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 58.75
+        "window_h": 59.0
       },
       {
         "video_id": "QFjn3iV4aRE",
@@ -15510,7 +15487,7 @@
         "is_public": false,
         "published_at": "2026-10-31T22:30:00Z",
         "published_formatted": "31/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/QFjn3iV4aRE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCu_YHqA6NDO1dDLdTglg_uwiItkA",
+        "thumbnail": "https://i9.ytimg.com/vi/QFjn3iV4aRE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAdDm1mL42_G7-Ua287RlP5O65WcQ",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -15518,7 +15495,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 58.75
+        "window_h": 59.0
       }
     ],
     "top3_views_7d": [
@@ -15540,7 +15517,7 @@
       {
         "video_id": "9dcz_S9rZqU",
         "title": "Capítulo 2 • O Lado Ruim do Meu Vizinho | Guerra Fria na Cerca #Shorts",
-        "thumbnail": "https://i9.ytimg.com/vi/9dcz_S9rZqU/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLBfxnmV7SIfrsLT7KuBbNcDbf2l3w",
+        "thumbnail": "https://i9.ytimg.com/vi/9dcz_S9rZqU/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLCujV_EYurRQ3ccxfou-w4n1bdyhQ",
         "url": "https://youtu.be/9dcz_S9rZqU",
         "views_7d": 1,
         "watch_minutes_7d": 0.0,
@@ -15557,7 +15534,7 @@
       {
         "video_id": "mmWy2IDfR3s",
         "title": "Capítulo 4 • Acordo com o Bilionário | Novela de Romance #Shorts",
-        "thumbnail": "https://i9.ytimg.com/vi/mmWy2IDfR3s/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCmWAei-LdX-06sGKxmv54sR1ADHw",
+        "thumbnail": "https://i9.ytimg.com/vi/mmWy2IDfR3s/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLC03e_AyL4U9Db0t1eiy3Wdl3_SGw",
         "url": "https://youtu.be/mmWy2IDfR3s",
         "views_total": 21,
         "views_7d": 21,
@@ -15569,7 +15546,7 @@
       {
         "video_id": "58Mbr0suq4w",
         "title": "Capítulo 2 • Fora dos Meus Limites | A Madrugada Proibida #Shorts",
-        "thumbnail": "https://i9.ytimg.com/vi/58Mbr0suq4w/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAHCfaF_9jJYRUkuERSG86QhkGdXg",
+        "thumbnail": "https://i9.ytimg.com/vi/58Mbr0suq4w/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLDPWb-EPM3usbjpqXBNq_QTrkUMCQ",
         "url": "https://youtu.be/58Mbr0suq4w",
         "views_total": 12,
         "views_7d": 12,
@@ -15581,7 +15558,7 @@
       {
         "video_id": "8mF5tLo6-e8",
         "title": "Capítulo 6 • Acordo com o Bilionário | Novela de Romance #Shorts",
-        "thumbnail": "https://i9.ytimg.com/vi/8mF5tLo6-e8/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLCn-E5GLstEZ6ohbVOzysw3irspmQ",
+        "thumbnail": "https://i9.ytimg.com/vi/8mF5tLo6-e8/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLAWMTvcqYZnLzSXusvhCk8zPFW6cA",
         "url": "https://youtu.be/8mF5tLo6-e8",
         "views_total": 222,
         "views_7d": 222,
@@ -17040,8 +17017,8 @@
         16.4
       ]
     },
-    "snapshot_window_hours": 74.57,
-    "updated_at_utc": "2026-10-30T22:15:17.441234+00:00"
+    "snapshot_window_hours": 74.82,
+    "updated_at_utc": "2026-10-30T22:30:24.057059+00:00"
   },
   "hearttangle": {
     "canal_titulo": "HeartTangle",
@@ -17053,7 +17030,7 @@
     "total_videos_agendados": 0,
     "total_views_canal": 4244,
     "views_60m_canal": 2,
-    "views_48h_canal": 33,
+    "views_48h_canal": 34,
     "views_7d_canal": 2356,
     "watch_minutes_7d_canal": 7352.0,
     "retention_pct_7d_canal": 16.02,
@@ -17084,7 +17061,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "sdfmDHYBJqQ": {
         "video_id": "sdfmDHYBJqQ",
@@ -17106,8 +17083,8 @@
         "url": "https://youtu.be/sdfmDHYBJqQ",
         "is_pub_last_48h": false,
         "delta_60m": 1,
-        "delta_48h": 8,
-        "window_h": 74.57
+        "delta_48h": 9,
+        "window_h": 74.82
       },
       "bA_mvDdEi_4": {
         "video_id": "bA_mvDdEi_4",
@@ -17130,7 +17107,7 @@
         "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "E4NHCpevLf8": {
         "video_id": "E4NHCpevLf8",
@@ -17153,7 +17130,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "HbF4gGAOgqQ": {
         "video_id": "HbF4gGAOgqQ",
@@ -17176,7 +17153,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 4,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "v1_AjS_U1xE": {
         "video_id": "v1_AjS_U1xE",
@@ -17199,7 +17176,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 4,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "DEcmYdZ-3Pk": {
         "video_id": "DEcmYdZ-3Pk",
@@ -17222,7 +17199,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 4,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "PnKlCdNnXu4": {
         "video_id": "PnKlCdNnXu4",
@@ -17245,7 +17222,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "SXPCrRUeS-4": {
         "video_id": "SXPCrRUeS-4",
@@ -17268,7 +17245,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "VPdHo_ZJLYc": {
         "video_id": "VPdHo_ZJLYc",
@@ -17291,7 +17268,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 2,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "rHESlSIHFT4": {
         "video_id": "rHESlSIHFT4",
@@ -17314,7 +17291,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 1,
         "delta_48h": 9,
-        "window_h": 74.57
+        "window_h": 74.82
       }
     },
     "videos_agendados_fila": [],
@@ -18110,8 +18087,8 @@
         16.4
       ]
     },
-    "snapshot_window_hours": 74.57,
-    "updated_at_utc": "2026-10-30T22:15:17.441234+00:00"
+    "snapshot_window_hours": 74.82,
+    "updated_at_utc": "2026-10-30T22:30:24.057059+00:00"
   },
   "segredos_olga": {
     "canal_titulo": "Segredos da Olga",
@@ -18119,9 +18096,9 @@
     "handle": "@segredosdaolga",
     "avatar_url": "https://yt3.ggpht.com/t1Eiys8HqrCd5SX9moZeU1YitQofpQvWxfoS3xD_HxnLYznco-LqvSlPEVLG4mZytRryx7Kr2w=s240-c-k-c0x00ffffff-no-rj",
     "inscritos": 0,
-    "total_videos_publicos": 7,
-    "total_videos_agendados": 3,
-    "total_views_canal": 8,
+    "total_videos_publicos": 8,
+    "total_videos_agendados": 2,
+    "total_views_canal": 9,
     "views_60m_canal": 0,
     "views_48h_canal": 4,
     "views_7d_canal": 6,
@@ -18154,7 +18131,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "LqI-ZFBsorE": {
         "video_id": "LqI-ZFBsorE",
@@ -18169,7 +18146,7 @@
         "is_public": false,
         "published_at": "2026-10-31T22:30:00Z",
         "published_formatted": "31/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/LqI-ZFBsorE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDzeyUCnTh4p7ofXeJkTRp9YlMVVQ",
+        "thumbnail": "https://i9.ytimg.com/vi/LqI-ZFBsorE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBoQFqpTv00ypojSY8d-60keFQ_lg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -18177,7 +18154,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "qfCSYj6tLV8": {
         "video_id": "qfCSYj6tLV8",
@@ -18200,7 +18177,7 @@
         "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 2,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "vZaUGKZchH8": {
         "video_id": "vZaUGKZchH8",
@@ -18223,7 +18200,7 @@
         "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "gDU0wKUZgrY": {
         "video_id": "gDU0wKUZgrY",
@@ -18238,7 +18215,7 @@
         "is_public": false,
         "published_at": "2026-11-01T22:30:00Z",
         "published_formatted": "01/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/gDU0wKUZgrY/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAZkVg8OGQDBk_ghUBG5QXc1WwJSw",
+        "thumbnail": "https://i9.ytimg.com/vi/gDU0wKUZgrY/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBBAdMUi1msIpJ8_2dACVmGUj-buA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -18246,7 +18223,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "Rx0561olFZ8": {
         "video_id": "Rx0561olFZ8",
@@ -18256,20 +18233,20 @@
         "grupo": "Startup GVG (Vitor + Amigo)",
         "grupo_slug": "gvg",
         "title": "As Filhas Ricas Abandonaram a Mãe Doente na Chácara… Mas Se Ajoelharam no Chão Quando o Juiz Leu o T",
-        "privacy": "private",
-        "is_scheduled": true,
-        "is_public": false,
-        "published_at": "2026-10-30T22:30:00Z",
+        "privacy": "public",
+        "is_scheduled": false,
+        "is_public": true,
+        "published_at": "2026-10-30T22:30:12Z",
         "published_formatted": "30/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/Rx0561olFZ8/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAfkOQeiEQpg4jPDmgVd7ETJ0PmYQ",
+        "thumbnail": "https://i.ytimg.com/vi/Rx0561olFZ8/mqdefault.jpg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
         "url": "https://youtu.be/Rx0561olFZ8",
-        "is_pub_last_48h": false,
+        "is_pub_last_48h": true,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "UnU7ujzYuvY": {
         "video_id": "UnU7ujzYuvY",
@@ -18292,7 +18269,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "8Y1-gp5OhC0": {
         "video_id": "8Y1-gp5OhC0",
@@ -18315,7 +18292,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "YdvbwHGhwgI": {
         "video_id": "YdvbwHGhwgI",
@@ -18338,7 +18315,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       "truw_5dIhD8": {
         "video_id": "truw_5dIhD8",
@@ -18361,7 +18338,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 1,
-        "window_h": 74.57
+        "window_h": 74.82
       }
     },
     "videos_agendados_fila": [
@@ -18378,7 +18355,7 @@
         "is_public": false,
         "published_at": "2026-10-31T22:30:00Z",
         "published_formatted": "31/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/LqI-ZFBsorE/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLDzeyUCnTh4p7ofXeJkTRp9YlMVVQ",
+        "thumbnail": "https://i9.ytimg.com/vi/LqI-ZFBsorE/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBoQFqpTv00ypojSY8d-60keFQ_lg",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -18386,7 +18363,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       },
       {
         "video_id": "gDU0wKUZgrY",
@@ -18401,7 +18378,7 @@
         "is_public": false,
         "published_at": "2026-11-01T22:30:00Z",
         "published_formatted": "01/11 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/gDU0wKUZgrY/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAZkVg8OGQDBk_ghUBG5QXc1WwJSw",
+        "thumbnail": "https://i9.ytimg.com/vi/gDU0wKUZgrY/mqdefault.jpg?sqp=COi0lNcG&rs=AOn4CLBBAdMUi1msIpJ8_2dACVmGUj-buA",
         "views_total": 0,
         "likes": 0,
         "comments": 0,
@@ -18409,30 +18386,7 @@
         "is_pub_last_48h": false,
         "delta_60m": 0,
         "delta_48h": 0,
-        "window_h": 74.57
-      },
-      {
-        "video_id": "Rx0561olFZ8",
-        "canal_id": "segredos_olga",
-        "canal_titulo": "Segredos da Olga",
-        "canal_handle": "@segredosdaolga",
-        "grupo": "Startup GVG (Vitor + Amigo)",
-        "grupo_slug": "gvg",
-        "title": "As Filhas Ricas Abandonaram a Mãe Doente na Chácara… Mas Se Ajoelharam no Chão Quando o Juiz Leu o T",
-        "privacy": "private",
-        "is_scheduled": true,
-        "is_public": false,
-        "published_at": "2026-10-30T22:30:00Z",
-        "published_formatted": "30/10 19:30",
-        "thumbnail": "https://i9.ytimg.com/vi/Rx0561olFZ8/mqdefault.jpg?sqp=COStlNcG&rs=AOn4CLAfkOQeiEQpg4jPDmgVd7ETJ0PmYQ",
-        "views_total": 0,
-        "likes": 0,
-        "comments": 0,
-        "url": "https://youtu.be/Rx0561olFZ8",
-        "is_pub_last_48h": false,
-        "delta_60m": 0,
-        "delta_48h": 0,
-        "window_h": 74.57
+        "window_h": 74.82
       }
     ],
     "top3_views_7d": [
@@ -18652,16 +18606,16 @@
     ],
     "traffic_sources_30d": [],
     "rank_1_de_10": {
-      "video_id": "vZaUGKZchH8",
-      "title": "O Tio Tentou Vendê-la em Casamento Para Pagar Uma Dívida… Mas Na Hora do Altar a Verdade Veio à Tona",
-      "url": "https://youtu.be/vZaUGKZchH8",
-      "thumbnail": "https://i.ytimg.com/vi/vZaUGKZchH8/mqdefault.jpg",
+      "video_id": "Rx0561olFZ8",
+      "title": "As Filhas Ricas Abandonaram a Mãe Doente na Chácara… Mas Se Ajoelharam no Chão Quando o Juiz Leu o T",
+      "url": "https://youtu.be/Rx0561olFZ8",
+      "thumbnail": "https://i.ytimg.com/vi/Rx0561olFZ8/mqdefault.jpg",
       "views": 0,
-      "published_formatted": "29/10 19:30",
+      "published_formatted": "30/10 19:30",
       "rank": 5,
-      "out_of": 7,
+      "out_of": 8,
       "diff_pct": -100.0,
-      "avg_prev": 2
+      "avg_prev": 1
     },
     "top_countries": [],
     "device_breakdown": [
@@ -18706,7 +18660,7 @@
     "top_retention_curve": {
       "has_data": false
     },
-    "snapshot_window_hours": 74.57,
-    "updated_at_utc": "2026-10-30T22:15:17.441234+00:00"
+    "snapshot_window_hours": 74.82,
+    "updated_at_utc": "2026-10-30T22:30:24.057059+00:00"
   }
 }
