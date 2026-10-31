@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-31T21:15:29.566831+00:00",
+  "updated_at_utc": "2026-10-31T21:30:20.297967+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -10593,8 +10593,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 20,
-          "minutes": 30.0,
+          "views": 18,
+          "minutes": 27.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -11576,8 +11576,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 20,
-          "minutes": 30.0,
+          "views": 18,
+          "minutes": 27.0,
           "net_subs": 0
         }
       ],
@@ -11587,11 +11587,11 @@
         "title": "Why a Gamma-Ray Burst Is Much Scarier Than a Black Hole",
         "url": "https://youtu.be/b6-PGCIXbKA",
         "thumbnail": "https://i.ytimg.com/vi/b6-PGCIXbKA/mqdefault.jpg",
-        "views": 2,
+        "views": 0,
         "published_formatted": "30/10 20:30",
         "rank": 10,
         "out_of": 10,
-        "diff_pct": -98.4,
+        "diff_pct": -100.0,
         "avg_prev": 123
       },
       "top_countries": [
