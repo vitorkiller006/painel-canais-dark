@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-31T04:00:22.057158+00:00",
+  "updated_at_utc": "2026-10-31T04:15:16.763569+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -204,7 +204,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 0.3,
       "history_lifetime": [
         {
@@ -2558,8 +2558,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 2,
-          "minutes": 3.0,
+          "views": 3,
+          "minutes": 4.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9370,8 +9370,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 2,
-          "minutes": 3.0,
+          "views": 3,
+          "minutes": 4.5,
           "net_subs": 0
         }
       ],
@@ -9381,11 +9381,11 @@
         "title": "A História COMPLETA da ARCA DA ALIANÇA: De Êxodo a Apocalipse, Como Você Nunca Viu Antes",
         "url": "https://youtu.be/oZy8b7oIqfk",
         "thumbnail": "https://i.ytimg.com/vi/oZy8b7oIqfk/mqdefault.jpg",
-        "views": 1,
+        "views": 2,
         "published_formatted": "30/10 19:30",
-        "rank": 5,
+        "rank": 4,
         "out_of": 5,
-        "diff_pct": -98.9,
+        "diff_pct": -97.8,
         "avg_prev": 90
       },
       "top_countries": [
@@ -9505,7 +9505,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 4,
       "vph_48h": 1.6,
       "history_lifetime": [
         {
@@ -9633,8 +9633,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 9,
-          "minutes": 13.5,
+          "views": 11,
+          "minutes": 16.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10243,8 +10243,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 9,
-          "minutes": 13.5,
+          "views": 11,
+          "minutes": 16.5,
           "net_subs": 0
         }
       ],
@@ -11562,7 +11562,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 1.9,
+      "vph_48h": 1.8,
       "history_lifetime": [
         {
           "day": "2024-06-11",
@@ -11970,8 +11970,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 4,
+          "minutes": 6.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12785,8 +12785,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 4,
+          "minutes": 6.0,
           "net_subs": 0
         }
       ],
@@ -12801,7 +12801,7 @@
         "rank": 2,
         "out_of": 2,
         "diff_pct": -98.9,
-        "avg_prev": 365
+        "avg_prev": 363
       },
       "top_countries": [
         {
