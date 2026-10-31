@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-31T18:52:39.456721+00:00",
+  "updated_at_utc": "2026-10-31T19:00:28.007518+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -34,11 +34,10 @@
         },
         {
           "day": "2026-10-29",
-          "type": "video",
-          "views": 11,
-          "minutes": 16.5,
-          "net_subs": 0,
-          "is_realtime": true
+          "type": "shorts",
+          "views": 2,
+          "minutes": 0.0,
+          "net_subs": 0
         },
         {
           "day": "2026-10-30",
@@ -93,6 +92,13 @@
           "label": "Pesquisa do YouTube",
           "type": "shorts",
           "views": 19
+        },
+        {
+          "day": "2026-10-29",
+          "source": "YT_SEARCH",
+          "label": "Pesquisa do YouTube",
+          "type": "shorts",
+          "views": 2
         }
       ],
       "history_30d": [
@@ -116,8 +122,8 @@
         },
         {
           "day": "2026-10-29",
-          "views": 11,
-          "minutes": 16.5,
+          "views": 2,
+          "minutes": 0.0,
           "net_subs": 0
         },
         {
@@ -158,29 +164,29 @@
           "device": "MOBILE",
           "label": "Celular / Mobile",
           "icon": "smartphone",
-          "views": 18,
-          "pct": 78.3
+          "views": 19,
+          "pct": 76.0
+        },
+        {
+          "device": "DESKTOP",
+          "label": "Computador / Desktop",
+          "icon": "monitor",
+          "views": 2,
+          "pct": 8.0
         },
         {
           "device": "TV",
           "label": "TV Conectada",
           "icon": "tv",
           "views": 2,
-          "pct": 8.7
+          "pct": 8.0
         },
         {
           "device": "TABLET",
           "label": "Tablet",
           "icon": "tablet",
           "views": 2,
-          "pct": 8.7
-        },
-        {
-          "device": "DESKTOP",
-          "label": "Computador / Desktop",
-          "icon": "monitor",
-          "views": 1,
-          "pct": 4.3
+          "pct": 8.0
         }
       ],
       "audience_status": {
@@ -204,8 +210,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
-      "vph_48h": 0.2,
+      "vph_60m": 5,
+      "vph_48h": 0.3,
       "history_lifetime": [
         {
           "day": "2023-10-12",
@@ -2534,10 +2540,9 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 8,
-          "minutes": 12.0,
-          "net_subs": 0,
-          "is_realtime": true
+          "views": 13,
+          "minutes": 37.0,
+          "net_subs": 0
         },
         {
           "day": "2026-10-30",
@@ -2558,8 +2563,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 7,
-          "minutes": 10.5,
+          "views": 12,
+          "minutes": 18.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9137,6 +9142,34 @@
           "label": "Navegação / Início",
           "type": "video",
           "views": 1
+        },
+        {
+          "day": "2026-10-29",
+          "source": "NO_LINK_OTHER",
+          "label": "Direto / Desconhecido",
+          "type": "video",
+          "views": 1
+        },
+        {
+          "day": "2026-10-29",
+          "source": "SUBSCRIBER",
+          "label": "Feed de Inscrições",
+          "type": "video",
+          "views": 4
+        },
+        {
+          "day": "2026-10-29",
+          "source": "YT_SEARCH",
+          "label": "Pesquisa do YouTube",
+          "type": "video",
+          "views": 3
+        },
+        {
+          "day": "2026-10-29",
+          "source": "RELATED_VIDEO",
+          "label": "Vídeos Sugeridos",
+          "type": "video",
+          "views": 5
         }
       ],
       "history_30d": [
@@ -9352,8 +9385,8 @@
         },
         {
           "day": "2026-10-29",
-          "views": 8,
-          "minutes": 12.0,
+          "views": 13,
+          "minutes": 37.0,
           "net_subs": 0
         },
         {
@@ -9370,8 +9403,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 7,
-          "minutes": 10.5,
+          "views": 12,
+          "minutes": 18.0,
           "net_subs": 0
         }
       ],
@@ -9381,12 +9414,12 @@
         "title": "A História COMPLETA da ARCA DA ALIANÇA: De Êxodo a Apocalipse, Como Você Nunca Viu Antes",
         "url": "https://youtu.be/oZy8b7oIqfk",
         "thumbnail": "https://i.ytimg.com/vi/oZy8b7oIqfk/mqdefault.jpg",
-        "views": 3,
+        "views": 5,
         "published_formatted": "30/10 19:30",
         "rank": 4,
         "out_of": 5,
-        "diff_pct": -96.7,
-        "avg_prev": 90
+        "diff_pct": -94.5,
+        "avg_prev": 91
       },
       "top_countries": [
         {
@@ -9459,21 +9492,21 @@
           "device": "MOBILE",
           "label": "Celular / Mobile",
           "icon": "smartphone",
-          "views": 50160,
+          "views": 50167,
           "pct": 88.1
         },
         {
           "device": "TV",
           "label": "TV Conectada",
           "icon": "tv",
-          "views": 3678,
+          "views": 3682,
           "pct": 6.5
         },
         {
           "device": "DESKTOP",
           "label": "Computador / Desktop",
           "icon": "monitor",
-          "views": 2372,
+          "views": 2374,
           "pct": 4.2
         },
         {
@@ -9487,7 +9520,7 @@
       "audience_status": {
         "subscribed_views": 1394,
         "subscribed_pct": 2.4,
-        "unsubscribed_views": 55524,
+        "unsubscribed_views": 55537,
         "unsubscribed_pct": 97.6
       },
       "engagement": {
@@ -9506,7 +9539,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 1.4,
+      "vph_48h": 1.3,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9610,9 +9643,8 @@
           "day": "2026-10-29",
           "type": "video",
           "views": 81,
-          "minutes": 121.5,
-          "net_subs": 0,
-          "is_realtime": true
+          "minutes": 1113.0,
+          "net_subs": 0
         },
         {
           "day": "2026-10-30",
@@ -10136,6 +10168,34 @@
           "label": "Navegação / Início",
           "type": "video",
           "views": 1
+        },
+        {
+          "day": "2026-10-29",
+          "source": "NO_LINK_OTHER",
+          "label": "Direto / Desconhecido",
+          "type": "video",
+          "views": 2
+        },
+        {
+          "day": "2026-10-29",
+          "source": "SUBSCRIBER",
+          "label": "Feed de Inscrições",
+          "type": "video",
+          "views": 24
+        },
+        {
+          "day": "2026-10-29",
+          "source": "YT_SEARCH",
+          "label": "Pesquisa do YouTube",
+          "type": "video",
+          "views": 5
+        },
+        {
+          "day": "2026-10-29",
+          "source": "RELATED_VIDEO",
+          "label": "Vídeos Sugeridos",
+          "type": "video",
+          "views": 50
         }
       ],
       "history_30d": [
@@ -10226,7 +10286,7 @@
         {
           "day": "2026-10-29",
           "views": 81,
-          "minutes": 121.5,
+          "minutes": 1113.0,
           "net_subs": 0
         },
         {
@@ -10266,8 +10326,8 @@
           "code": "IN",
           "name": "Índia",
           "flag": "🇮🇳",
-          "views": 2579,
-          "watch_minutes": 11098.0,
+          "views": 2643,
+          "watch_minutes": 11886.0,
           "pct": 100.0
         }
       ],
@@ -10276,35 +10336,35 @@
           "device": "MOBILE",
           "label": "Celular / Mobile",
           "icon": "smartphone",
-          "views": 2582,
-          "pct": 91.4
+          "views": 2648,
+          "pct": 91.2
         },
         {
           "device": "DESKTOP",
           "label": "Computador / Desktop",
           "icon": "monitor",
-          "views": 141,
-          "pct": 5.0
+          "views": 147,
+          "pct": 5.1
         },
         {
           "device": "TV",
           "label": "TV Conectada",
           "icon": "tv",
-          "views": 71,
-          "pct": 2.5
+          "views": 77,
+          "pct": 2.7
         },
         {
           "device": "TABLET",
           "label": "Tablet",
           "icon": "tablet",
-          "views": 31,
+          "views": 32,
           "pct": 1.1
         }
       ],
       "audience_status": {
         "subscribed_views": 11,
         "subscribed_pct": 0.4,
-        "unsubscribed_views": 2815,
+        "unsubscribed_views": 2896,
         "unsubscribed_pct": 99.6
       },
       "engagement": {
@@ -10510,10 +10570,9 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 47,
-          "minutes": 70.5,
-          "net_subs": 0,
-          "is_realtime": true
+          "views": 39,
+          "minutes": 618.0,
+          "net_subs": 1
         },
         {
           "day": "2026-10-30",
@@ -11303,6 +11362,41 @@
           "label": "Playlists",
           "type": "video",
           "views": 1
+        },
+        {
+          "day": "2026-10-29",
+          "source": "NO_LINK_OTHER",
+          "label": "Direto / Desconhecido",
+          "type": "video",
+          "views": 5
+        },
+        {
+          "day": "2026-10-29",
+          "source": "SUBSCRIBER",
+          "label": "Feed de Inscrições",
+          "type": "video",
+          "views": 5
+        },
+        {
+          "day": "2026-10-29",
+          "source": "YT_SEARCH",
+          "label": "Pesquisa do YouTube",
+          "type": "video",
+          "views": 9
+        },
+        {
+          "day": "2026-10-29",
+          "source": "RELATED_VIDEO",
+          "label": "Vídeos Sugeridos",
+          "type": "video",
+          "views": 19
+        },
+        {
+          "day": "2026-10-29",
+          "source": "EXT_URL",
+          "label": "Sites Externos",
+          "type": "video",
+          "views": 1
         }
       ],
       "history_30d": [
@@ -11464,9 +11558,9 @@
         },
         {
           "day": "2026-10-29",
-          "views": 47,
-          "minutes": 70.5,
-          "net_subs": 0
+          "views": 39,
+          "minutes": 618.0,
+          "net_subs": 1
         },
         {
           "day": "2026-10-30",
@@ -11505,8 +11599,8 @@
           "code": "US",
           "name": "Estados Unidos",
           "flag": "🇺🇸",
-          "views": 457,
-          "watch_minutes": 3438.0,
+          "views": 480,
+          "watch_minutes": 3783.0,
           "pct": 100.0
         }
       ],
@@ -11515,44 +11609,44 @@
           "device": "MOBILE",
           "label": "Celular / Mobile",
           "icon": "smartphone",
-          "views": 695,
-          "pct": 52.7
+          "views": 714,
+          "pct": 52.6
         },
         {
           "device": "DESKTOP",
           "label": "Computador / Desktop",
           "icon": "monitor",
-          "views": 415,
-          "pct": 31.5
+          "views": 418,
+          "pct": 30.8
         },
         {
           "device": "TV",
           "label": "TV Conectada",
           "icon": "tv",
-          "views": 158,
-          "pct": 12.0
+          "views": 174,
+          "pct": 12.8
         },
         {
           "device": "TABLET",
           "label": "Tablet",
           "icon": "tablet",
-          "views": 51,
-          "pct": 3.9
+          "views": 52,
+          "pct": 3.8
         }
       ],
       "audience_status": {
-        "subscribed_views": 22,
+        "subscribed_views": 23,
         "subscribed_pct": 1.7,
-        "unsubscribed_views": 1297,
+        "unsubscribed_views": 1335,
         "unsubscribed_pct": 98.3
       },
       "engagement": {
-        "likes": 18,
+        "likes": 20,
         "comments": 5,
         "shares": 5,
-        "subscribers_gained": 10,
+        "subscribers_gained": 11,
         "subscribers_lost": 2,
-        "net_subscribers": 8
+        "net_subscribers": 9
       }
     },
     "novela": {
@@ -11562,7 +11656,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 1.3,
+      "vph_48h": 1.4,
       "history_lifetime": [
         {
           "day": "2024-06-11",
@@ -11946,10 +12040,9 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 108,
-          "minutes": 162.0,
-          "net_subs": 0,
-          "is_realtime": true
+          "views": 101,
+          "minutes": 93.0,
+          "net_subs": 1
         },
         {
           "day": "2026-10-30",
@@ -12690,6 +12783,27 @@
           "label": "Navegação / Início",
           "type": "video",
           "views": 2
+        },
+        {
+          "day": "2026-10-29",
+          "source": "SUBSCRIBER",
+          "label": "Feed de Inscrições",
+          "type": "video",
+          "views": 95
+        },
+        {
+          "day": "2026-10-29",
+          "source": "YT_SEARCH",
+          "label": "Pesquisa do YouTube",
+          "type": "video",
+          "views": 5
+        },
+        {
+          "day": "2026-10-29",
+          "source": "RELATED_VIDEO",
+          "label": "Vídeos Sugeridos",
+          "type": "video",
+          "views": 1
         }
       ],
       "history_30d": [
@@ -12767,9 +12881,9 @@
         },
         {
           "day": "2026-10-29",
-          "views": 108,
-          "minutes": 162.0,
-          "net_subs": 0
+          "views": 101,
+          "minutes": 93.0,
+          "net_subs": 1
         },
         {
           "day": "2026-10-30",
@@ -12808,9 +12922,9 @@
           "code": "BR",
           "name": "Brasil",
           "flag": "🇧🇷",
-          "views": 1731,
-          "watch_minutes": 1466.0,
-          "pct": 92.3
+          "views": 1828,
+          "watch_minutes": 1560.0,
+          "pct": 92.7
         },
         {
           "code": "PT",
@@ -12818,7 +12932,7 @@
           "flag": "🇵🇹",
           "views": 121,
           "watch_minutes": 34.0,
-          "pct": 6.5
+          "pct": 6.1
         },
         {
           "code": "AO",
@@ -12834,44 +12948,44 @@
           "device": "MOBILE",
           "label": "Celular / Mobile",
           "icon": "smartphone",
-          "views": 1933,
-          "pct": 82.8
+          "views": 2027,
+          "pct": 83.2
         },
         {
           "device": "TV",
           "label": "TV Conectada",
           "icon": "tv",
           "views": 246,
-          "pct": 10.5
+          "pct": 10.1
         },
         {
           "device": "TABLET",
           "label": "Tablet",
           "icon": "tablet",
           "views": 96,
-          "pct": 4.1
+          "pct": 3.9
         },
         {
           "device": "DESKTOP",
           "label": "Computador / Desktop",
           "icon": "monitor",
-          "views": 59,
-          "pct": 2.5
+          "views": 66,
+          "pct": 2.7
         }
       ],
       "audience_status": {
         "subscribed_views": 89,
-        "subscribed_pct": 3.8,
-        "unsubscribed_views": 2245,
-        "unsubscribed_pct": 96.2
+        "subscribed_pct": 3.7,
+        "unsubscribed_views": 2346,
+        "unsubscribed_pct": 96.3
       },
       "engagement": {
-        "likes": 79,
+        "likes": 80,
         "comments": 5,
         "shares": 17,
-        "subscribers_gained": 32,
+        "subscribers_gained": 33,
         "subscribers_lost": 6,
-        "net_subscribers": 26
+        "net_subscribers": 27
       }
     },
     "hearttangle": {
@@ -12880,7 +12994,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 3,
+      "vph_60m": 0,
       "vph_48h": 0.2,
       "history_lifetime": [
         {
@@ -12956,10 +13070,9 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 25,
-          "minutes": 37.5,
-          "net_subs": 0,
-          "is_realtime": true
+          "views": 16,
+          "minutes": 183.0,
+          "net_subs": 0
         },
         {
           "day": "2026-10-30",
@@ -12980,8 +13093,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 14,
-          "minutes": 21.0,
+          "views": 13,
+          "minutes": 19.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -13287,6 +13400,34 @@
           "label": "Navegação / Início",
           "type": "video",
           "views": 8
+        },
+        {
+          "day": "2026-10-29",
+          "source": "SUBSCRIBER",
+          "label": "Feed de Inscrições",
+          "type": "video",
+          "views": 6
+        },
+        {
+          "day": "2026-10-29",
+          "source": "YT_SEARCH",
+          "label": "Pesquisa do YouTube",
+          "type": "video",
+          "views": 1
+        },
+        {
+          "day": "2026-10-29",
+          "source": "RELATED_VIDEO",
+          "label": "Vídeos Sugeridos",
+          "type": "video",
+          "views": 4
+        },
+        {
+          "day": "2026-10-29",
+          "source": "YT_OTHER_PAGE",
+          "label": "Navegação / Início",
+          "type": "video",
+          "views": 5
         }
       ],
       "history_30d": [
@@ -13352,8 +13493,8 @@
         },
         {
           "day": "2026-10-29",
-          "views": 25,
-          "minutes": 37.5,
+          "views": 16,
+          "minutes": 183.0,
           "net_subs": 0
         },
         {
@@ -13370,8 +13511,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 14,
-          "minutes": 21.0,
+          "views": 13,
+          "minutes": 19.5,
           "net_subs": 0
         }
       ],
@@ -13393,8 +13534,8 @@
           "code": "IN",
           "name": "Índia",
           "flag": "🇮🇳",
-          "views": 4037,
-          "watch_minutes": 11547.0,
+          "views": 4052,
+          "watch_minutes": 11730.0,
           "pct": 99.7
         },
         {
@@ -13411,7 +13552,7 @@
           "device": "MOBILE",
           "label": "Celular / Mobile",
           "icon": "smartphone",
-          "views": 4118,
+          "views": 4134,
           "pct": 97.3
         },
         {
@@ -13439,7 +13580,7 @@
       "audience_status": {
         "subscribed_views": 0,
         "subscribed_pct": 0.0,
-        "unsubscribed_views": 4231,
+        "unsubscribed_views": 4247,
         "unsubscribed_pct": 100.0
       },
       "engagement": {
@@ -13491,10 +13632,9 @@
         {
           "day": "2026-10-29",
           "type": "video",
-          "views": 3,
-          "minutes": 4.5,
-          "net_subs": 0,
-          "is_realtime": true
+          "views": 2,
+          "minutes": 0.0,
+          "net_subs": 0
         },
         {
           "day": "2026-10-30",
@@ -13549,6 +13689,20 @@
           "label": "Pesquisa do YouTube",
           "type": "video",
           "views": 1
+        },
+        {
+          "day": "2026-10-29",
+          "source": "NO_LINK_OTHER",
+          "label": "Direto / Desconhecido",
+          "type": "video",
+          "views": 1
+        },
+        {
+          "day": "2026-10-29",
+          "source": "YT_SEARCH",
+          "label": "Pesquisa do YouTube",
+          "type": "video",
+          "views": 1
         }
       ],
       "history_30d": [
@@ -13578,8 +13732,8 @@
         },
         {
           "day": "2026-10-29",
-          "views": 3,
-          "minutes": 4.5,
+          "views": 2,
+          "minutes": 0.0,
           "net_subs": 0
         },
         {
@@ -13620,7 +13774,7 @@
           "device": "MOBILE",
           "label": "Celular / Mobile",
           "icon": "smartphone",
-          "views": 7,
+          "views": 9,
           "pct": 100.0
         }
       ],
