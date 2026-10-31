@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-31T15:30:26.946680+00:00",
+  "updated_at_utc": "2026-10-31T15:45:16.483810+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -205,7 +205,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 0.3,
+      "vph_48h": 0.2,
       "history_lifetime": [
         {
           "day": "2023-10-12",
@@ -9633,8 +9633,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 33,
-          "minutes": 49.5,
+          "views": 30,
+          "minutes": 45.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10243,8 +10243,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 33,
-          "minutes": 49.5,
+          "views": 30,
+          "minutes": 45.0,
           "net_subs": 0
         }
       ],
@@ -12880,7 +12880,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 3,
       "vph_48h": 0.3,
       "history_lifetime": [
         {
@@ -12980,8 +12980,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 10,
-          "minutes": 15.0,
+          "views": 12,
+          "minutes": 18.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -13370,8 +13370,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 10,
-          "minutes": 15.0,
+          "views": 12,
+          "minutes": 18.0,
           "net_subs": 0
         }
       ],
