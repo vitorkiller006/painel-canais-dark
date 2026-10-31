@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-31T20:15:21.307300+00:00",
+  "updated_at_utc": "2026-10-31T20:30:20.660906+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -210,7 +210,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 5,
+      "vph_60m": 0,
       "vph_48h": 0.3,
       "history_lifetime": [
         {
@@ -9538,8 +9538,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 10,
-      "vph_48h": 1.3,
+      "vph_60m": 13,
+      "vph_48h": 1.4,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9665,8 +9665,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 47,
-          "minutes": 70.5,
+          "views": 52,
+          "minutes": 78.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10303,8 +10303,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 47,
-          "minutes": 70.5,
+          "views": 52,
+          "minutes": 78.0,
           "net_subs": 0
         }
       ],
@@ -10314,12 +10314,12 @@
         "title": "1997 में अमेरिका ने भारत की बासमती और हल्दी क्यों चुरा ली थी? | The Great Patent War",
         "url": "https://youtu.be/XB9dzGv1Ejg",
         "thumbnail": "https://i.ytimg.com/vi/XB9dzGv1Ejg/mqdefault.jpg",
-        "views": 4,
+        "views": 5,
         "published_formatted": "30/10 10:00",
         "rank": 10,
         "out_of": 10,
-        "diff_pct": -97.6,
-        "avg_prev": 165
+        "diff_pct": -97.0,
+        "avg_prev": 166
       },
       "top_countries": [
         {
@@ -10382,7 +10382,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 2,
       "vph_48h": 0.6,
       "history_lifetime": [
         {
@@ -10593,8 +10593,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 18,
-          "minutes": 27.0,
+          "views": 20,
+          "minutes": 30.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -11576,8 +11576,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 18,
-          "minutes": 27.0,
+          "views": 20,
+          "minutes": 30.0,
           "net_subs": 0
         }
       ],
@@ -11587,11 +11587,11 @@
         "title": "Why a Gamma-Ray Burst Is Much Scarier Than a Black Hole",
         "url": "https://youtu.be/b6-PGCIXbKA",
         "thumbnail": "https://i.ytimg.com/vi/b6-PGCIXbKA/mqdefault.jpg",
-        "views": 0,
+        "views": 2,
         "published_formatted": "30/10 20:30",
         "rank": 10,
         "out_of": 10,
-        "diff_pct": -100.0,
+        "diff_pct": -98.4,
         "avg_prev": 123
       },
       "top_countries": [
@@ -12994,7 +12994,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 0.2,
       "history_lifetime": [
         {
