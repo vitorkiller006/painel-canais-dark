@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-10-31T22:25:57.360379+00:00",
+  "updated_at_utc": "2026-10-31T22:30:19.827748+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -9538,7 +9538,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 3,
       "vph_48h": 1.1,
       "history_lifetime": [
         {
@@ -9665,8 +9665,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 55,
-          "minutes": 82.5,
+          "views": 57,
+          "minutes": 85.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10303,8 +10303,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 55,
-          "minutes": 82.5,
+          "views": 57,
+          "minutes": 85.5,
           "net_subs": 0
         }
       ],
@@ -12906,16 +12906,16 @@
       ],
       "traffic_sources_30d": [],
       "rank_1_de_10": {
-        "video_id": "QI_SFj7jvv4",
-        "title": "Ele Me Pagou 1 MILHÃO Por 30 Dias… Até Quebrar a Própria REGRA!",
-        "url": "https://youtu.be/QI_SFj7jvv4",
-        "thumbnail": "https://i.ytimg.com/vi/QI_SFj7jvv4/mqdefault.jpg",
-        "views": 5,
-        "published_formatted": "29/10 19:30",
-        "rank": 2,
-        "out_of": 2,
-        "diff_pct": -98.7,
-        "avg_prev": 377
+        "video_id": "QFjn3iV4aRE",
+        "title": "Fiquei Sozinha Com o AMIGO do Meu Irmão na Praia… e Quebrei a REGRA!",
+        "url": "https://youtu.be/QFjn3iV4aRE",
+        "thumbnail": "https://i.ytimg.com/vi/QFjn3iV4aRE/mqdefault.jpg",
+        "views": 0,
+        "published_formatted": "31/10 19:30",
+        "rank": 3,
+        "out_of": 3,
+        "diff_pct": -100.0,
+        "avg_prev": 191
       },
       "top_countries": [
         {
@@ -13093,8 +13093,8 @@
         {
           "day": "2026-10-31",
           "type": "video",
-          "views": 14,
-          "minutes": 21.0,
+          "views": 15,
+          "minutes": 22.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -13511,8 +13511,8 @@
         },
         {
           "day": "2026-10-31",
-          "views": 14,
-          "minutes": 21.0,
+          "views": 15,
+          "minutes": 22.5,
           "net_subs": 0
         }
       ],
@@ -13757,16 +13757,16 @@
       ],
       "traffic_sources_30d": [],
       "rank_1_de_10": {
-        "video_id": "Rx0561olFZ8",
-        "title": "As Filhas Ricas Abandonaram a Mãe Doente na Chácara… Mas Se Ajoelharam no Chão Quando o Juiz Leu o T",
-        "url": "https://youtu.be/Rx0561olFZ8",
-        "thumbnail": "https://i.ytimg.com/vi/Rx0561olFZ8/mqdefault.jpg",
-        "views": 2,
-        "published_formatted": "30/10 19:30",
-        "rank": 3,
-        "out_of": 8,
-        "diff_pct": 40.0,
-        "avg_prev": 1
+        "video_id": "LqI-ZFBsorE",
+        "title": "O Coronel Tentou Despejar a Professora das Crianças Pobres… Mas Não Esperava Quem Estava Por Trás",
+        "url": "https://youtu.be/LqI-ZFBsorE",
+        "thumbnail": "https://i.ytimg.com/vi/LqI-ZFBsorE/mqdefault.jpg",
+        "views": 0,
+        "published_formatted": "31/10 19:30",
+        "rank": 6,
+        "out_of": 9,
+        "diff_pct": -100.0,
+        "avg_prev": 2
       },
       "top_countries": [],
       "device_breakdown": [
