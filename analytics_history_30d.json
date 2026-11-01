@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-01T08:15:16.930740+00:00",
+  "updated_at_utc": "2026-11-01T08:30:19.706521+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -9554,7 +9554,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 4,
+      "vph_60m": 0,
       "vph_48h": 1.0,
       "history_lifetime": [
         {
@@ -9689,8 +9689,8 @@
         {
           "day": "2026-11-01",
           "type": "video",
-          "views": 17,
-          "minutes": 25.5,
+          "views": 13,
+          "minutes": 19.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10333,8 +10333,8 @@
         },
         {
           "day": "2026-11-01",
-          "views": 17,
-          "minutes": 25.5,
+          "views": 13,
+          "minutes": 19.5,
           "net_subs": 0
         }
       ],
@@ -10344,11 +10344,11 @@
         "title": "1997 में अमेरिका ने भारत की बासमती और हल्दी क्यों चुरा ली थी? | The Great Patent War",
         "url": "https://youtu.be/XB9dzGv1Ejg",
         "thumbnail": "https://i.ytimg.com/vi/XB9dzGv1Ejg/mqdefault.jpg",
-        "views": 6,
+        "views": 5,
         "published_formatted": "30/10 10:00",
-        "rank": 9,
+        "rank": 10,
         "out_of": 10,
-        "diff_pct": -96.4,
+        "diff_pct": -97.0,
         "avg_prev": 168
       },
       "top_countries": [

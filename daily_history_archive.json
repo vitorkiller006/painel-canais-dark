@@ -391,7 +391,7 @@
     },
     "2026-11-01": {
       "date": "2026-11-01",
-      "updated_at_utc": "2026-11-01T08:15:16.930740+00:00",
+      "updated_at_utc": "2026-11-01T08:30:19.706521+00:00",
       "channels": {
         "stickman": {
           "title": "How It's Made Oficial",
@@ -424,8 +424,8 @@
           "handle": "@uuntoldbharat2d",
           "subscribers": 7,
           "total_views": 2985,
-          "views_48h": 104,
-          "views_60m": 4,
+          "views_48h": 100,
+          "views_60m": 0,
           "views_7d": 479,
           "watch_minutes_7d": 5307.0,
           "total_videos_publicos": 12,
