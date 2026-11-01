@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-01T12:15:16.401480+00:00",
+  "updated_at_utc": "2026-11-01T12:30:20.649783+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -12122,8 +12122,8 @@
         {
           "day": "2026-11-01",
           "type": "video",
-          "views": 1,
-          "minutes": 1.5,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12964,8 +12964,8 @@
         },
         {
           "day": "2026-11-01",
-          "views": 1,
-          "minutes": 1.5,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0
         }
       ],
