@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-01T14:45:17.245751+00:00",
+  "updated_at_utc": "2026-11-01T15:00:22.873691+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -2585,8 +2585,8 @@
         {
           "day": "2026-11-01",
           "type": "video",
-          "views": 18,
-          "minutes": 27.0,
+          "views": 19,
+          "minutes": 28.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9419,8 +9419,8 @@
         },
         {
           "day": "2026-11-01",
-          "views": 18,
-          "minutes": 27.0,
+          "views": 19,
+          "minutes": 28.5,
           "net_subs": 0
         }
       ],
@@ -9435,7 +9435,7 @@
         "rank": 4,
         "out_of": 5,
         "diff_pct": -89.4,
-        "avg_prev": 94
+        "avg_prev": 95
       },
       "top_countries": [
         {
@@ -9554,7 +9554,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 5,
+      "vph_60m": 0,
       "vph_48h": 1.0,
       "history_lifetime": [
         {
@@ -9689,8 +9689,8 @@
         {
           "day": "2026-11-01",
           "type": "video",
-          "views": 29,
-          "minutes": 43.5,
+          "views": 28,
+          "minutes": 42.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10340,8 +10340,8 @@
         },
         {
           "day": "2026-11-01",
-          "views": 29,
-          "minutes": 43.5,
+          "views": 28,
+          "minutes": 42.0,
           "net_subs": 0
         }
       ],
@@ -10356,7 +10356,7 @@
         "rank": 9,
         "out_of": 10,
         "diff_pct": -96.5,
-        "avg_prev": 170
+        "avg_prev": 169
       },
       "top_countries": [
         {
@@ -10419,7 +10419,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 4,
+      "vph_60m": 2,
       "vph_48h": 0.3,
       "history_lifetime": [
         {
