@@ -391,7 +391,7 @@
     },
     "2026-11-01": {
       "date": "2026-11-01",
-      "updated_at_utc": "2026-11-01T23:15:17.465482+00:00",
+      "updated_at_utc": "2026-11-01T23:30:19.714716+00:00",
       "channels": {
         "stickman": {
           "title": "How It's Made Oficial",
@@ -402,8 +402,8 @@
           "views_60m": 0,
           "views_7d": 42,
           "watch_minutes_7d": 9.0,
-          "total_videos_publicos": 5,
-          "total_videos_agendados": 7,
+          "total_videos_publicos": 6,
+          "total_videos_agendados": 6,
           "videos": {}
         },
         "biblia": {
@@ -412,7 +412,7 @@
           "subscribers": 289,
           "total_views": 387,
           "views_48h": 41,
-          "views_60m": 3,
+          "views_60m": 0,
           "views_7d": 224,
           "watch_minutes_7d": 144.0,
           "total_videos_publicos": 5,
@@ -424,8 +424,8 @@
           "handle": "@uuntoldbharat2d",
           "subscribers": 7,
           "total_views": 3015,
-          "views_48h": 138,
-          "views_60m": 6,
+          "views_48h": 131,
+          "views_60m": 8,
           "views_7d": 519,
           "watch_minutes_7d": 5845.0,
           "total_videos_publicos": 12,
@@ -437,8 +437,8 @@
           "handle": "@cosmicabyssdoc",
           "subscribers": 10,
           "total_views": 1357,
-          "views_48h": 40,
-          "views_60m": 1,
+          "views_48h": 41,
+          "views_60m": 2,
           "views_7d": 223,
           "watch_minutes_7d": 3347.0,
           "total_videos_publicos": 11,
