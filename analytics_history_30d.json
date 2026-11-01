@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-01T22:00:22.300110+00:00",
+  "updated_at_utc": "2026-11-01T22:15:14.874603+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -244,7 +244,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 4,
+      "vph_60m": 3,
       "vph_48h": 0.3,
       "history_lifetime": [
         {
@@ -2604,8 +2604,8 @@
         {
           "day": "2026-11-01",
           "type": "video",
-          "views": 27,
-          "minutes": 40.5,
+          "views": 26,
+          "minutes": 39.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9452,8 +9452,8 @@
         },
         {
           "day": "2026-11-01",
-          "views": 27,
-          "minutes": 40.5,
+          "views": 26,
+          "minutes": 39.0,
           "net_subs": 0
         }
       ],
@@ -9587,8 +9587,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 4,
-      "vph_48h": 1.0,
+      "vph_60m": 13,
+      "vph_48h": 1.1,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9721,8 +9721,8 @@
         {
           "day": "2026-11-01",
           "type": "video",
-          "views": 61,
-          "minutes": 91.5,
+          "views": 70,
+          "minutes": 105.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10407,8 +10407,8 @@
         },
         {
           "day": "2026-11-01",
-          "views": 61,
-          "minutes": 91.5,
+          "views": 70,
+          "minutes": 105.0,
           "net_subs": 0
         }
       ],
@@ -10423,7 +10423,7 @@
         "rank": 9,
         "out_of": 10,
         "diff_pct": -96.5,
-        "avg_prev": 173
+        "avg_prev": 174
       },
       "top_countries": [
         {
