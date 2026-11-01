@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-01T04:30:18.874607+00:00",
+  "updated_at_utc": "2026-11-01T04:45:17.354181+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -7,7 +7,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/goglhVSAtKGaDmImc5ImFHN2xuRVe6nO1kEAgvRRcCFNDnc2Ll9gExh9kTtvyWzn7cWvBOZF=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 0,
       "vph_48h": 0.2,
       "history_lifetime": [
         {
@@ -66,8 +66,8 @@
         {
           "day": "2026-11-01",
           "type": "video",
-          "views": 2,
-          "minutes": 3.0,
+          "views": 1,
+          "minutes": 1.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -154,8 +154,8 @@
         },
         {
           "day": "2026-11-01",
-          "views": 2,
-          "minutes": 3.0,
+          "views": 1,
+          "minutes": 1.5,
           "net_subs": 0
         }
       ],
@@ -165,11 +165,11 @@
         "title": "The Impossible Core of Cat's Eye Marbles #Shorts",
         "url": "https://youtu.be/ZgBHwkLYDjE",
         "thumbnail": "https://i.ytimg.com/vi/ZgBHwkLYDjE/mqdefault.jpg",
-        "views": 2,
+        "views": 1,
         "published_formatted": "31/10 20:30",
-        "rank": 4,
+        "rank": 5,
         "out_of": 5,
-        "diff_pct": -81.4,
+        "diff_pct": -90.7,
         "avg_prev": 11
       },
       "top_countries": [],
@@ -224,7 +224,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 4,
+      "vph_60m": 5,
       "vph_48h": 0.3,
       "history_lifetime": [
         {
@@ -2585,8 +2585,8 @@
         {
           "day": "2026-11-01",
           "type": "video",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 10,
+          "minutes": 15.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9419,8 +9419,8 @@
         },
         {
           "day": "2026-11-01",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 10,
+          "minutes": 15.0,
           "net_subs": 0
         }
       ],
@@ -9430,11 +9430,11 @@
         "title": "A História COMPLETA da ARCA DA ALIANÇA: De Êxodo a Apocalipse, Como Você Nunca Viu Antes",
         "url": "https://youtu.be/oZy8b7oIqfk",
         "thumbnail": "https://i.ytimg.com/vi/oZy8b7oIqfk/mqdefault.jpg",
-        "views": 6,
+        "views": 10,
         "published_formatted": "30/10 19:30",
         "rank": 4,
         "out_of": 5,
-        "diff_pct": -93.5,
+        "diff_pct": -89.2,
         "avg_prev": 92
       },
       "top_countries": [
@@ -9554,8 +9554,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 8,
-      "vph_48h": 1.1,
+      "vph_60m": 5,
+      "vph_48h": 1.0,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -10586,7 +10586,7 @@
         {
           "day": "2026-10-27",
           "type": "video",
-          "views": 32,
+          "views": 31,
           "minutes": 408.0,
           "net_subs": 1
         },
@@ -10631,8 +10631,8 @@
         {
           "day": "2026-11-01",
           "type": "video",
-          "views": 5,
-          "minutes": 7.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -11584,7 +11584,7 @@
         },
         {
           "day": "2026-10-27",
-          "views": 32,
+          "views": 31,
           "minutes": 408.0,
           "net_subs": 1
         },
@@ -11620,8 +11620,8 @@
         },
         {
           "day": "2026-11-01",
-          "views": 5,
-          "minutes": 7.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0
         }
       ],
