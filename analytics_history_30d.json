@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-02T11:30:28.317718+00:00",
+  "updated_at_utc": "2026-11-02T11:45:27.539528+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -9571,7 +9571,7 @@
           "device": "DESKTOP",
           "label": "Computador / Desktop",
           "icon": "monitor",
-          "views": 2374,
+          "views": 2373,
           "pct": 4.2
         },
         {
@@ -9585,7 +9585,7 @@
       "audience_status": {
         "subscribed_views": 1397,
         "subscribed_pct": 2.5,
-        "unsubscribed_views": 55545,
+        "unsubscribed_views": 55544,
         "unsubscribed_pct": 97.5
       },
       "engagement": {
@@ -9603,8 +9603,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
-      "vph_48h": 1.0,
+      "vph_60m": 3,
+      "vph_48h": 1.1,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9745,8 +9745,8 @@
         {
           "day": "2026-11-02",
           "type": "video",
-          "views": 28,
-          "minutes": 42.0,
+          "views": 31,
+          "minutes": 46.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10261,7 +10261,7 @@
           "source": "NO_LINK_OTHER",
           "label": "Direto / Desconhecido",
           "type": "video",
-          "views": 2
+          "views": 1
         },
         {
           "day": "2026-10-29",
@@ -10282,7 +10282,7 @@
           "source": "RELATED_VIDEO",
           "label": "Vídeos Sugeridos",
           "type": "video",
-          "views": 50
+          "views": 51
         },
         {
           "day": "2026-10-30",
@@ -10437,8 +10437,8 @@
         },
         {
           "day": "2026-11-02",
-          "views": 28,
-          "minutes": 42.0,
+          "views": 31,
+          "minutes": 46.5,
           "net_subs": 0
         }
       ],
@@ -10453,7 +10453,7 @@
         "rank": 9,
         "out_of": 10,
         "diff_pct": -96.6,
-        "avg_prev": 176
+        "avg_prev": 177
       },
       "top_countries": [
         {
@@ -11517,7 +11517,7 @@
           "source": "NO_LINK_OTHER",
           "label": "Direto / Desconhecido",
           "type": "video",
-          "views": 5
+          "views": 1
         },
         {
           "day": "2026-10-29",
@@ -11538,7 +11538,7 @@
           "source": "RELATED_VIDEO",
           "label": "Vídeos Sugeridos",
           "type": "video",
-          "views": 19
+          "views": 23
         },
         {
           "day": "2026-10-29",
@@ -11837,7 +11837,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 3,
       "vph_48h": 0.6,
       "history_lifetime": [
         {
@@ -12986,7 +12986,7 @@
           "source": "SUBSCRIBER",
           "label": "Feed de Inscrições",
           "type": "video",
-          "views": 95
+          "views": 94
         },
         {
           "day": "2026-10-29",
@@ -13185,7 +13185,7 @@
           "device": "MOBILE",
           "label": "Celular / Mobile",
           "icon": "smartphone",
-          "views": 2061,
+          "views": 2060,
           "pct": 83.3
         },
         {
@@ -13213,7 +13213,7 @@
       "audience_status": {
         "subscribed_views": 89,
         "subscribed_pct": 3.6,
-        "unsubscribed_views": 2384,
+        "unsubscribed_views": 2383,
         "unsubscribed_pct": 96.4
       },
       "engagement": {
@@ -13231,7 +13231,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 0.1,
       "history_lifetime": [
         {
@@ -13345,8 +13345,8 @@
         {
           "day": "2026-11-02",
           "type": "video",
-          "views": 2,
-          "minutes": 3.0,
+          "views": 3,
+          "minutes": 4.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -13789,8 +13789,8 @@
         },
         {
           "day": "2026-11-02",
-          "views": 2,
-          "minutes": 3.0,
+          "views": 3,
+          "minutes": 4.5,
           "net_subs": 0
         }
       ],
