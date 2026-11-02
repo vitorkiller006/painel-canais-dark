@@ -488,7 +488,7 @@
     },
     "2026-11-02": {
       "date": "2026-11-02",
-      "updated_at_utc": "2026-11-02T23:15:19.030929+00:00",
+      "updated_at_utc": "2026-11-02T23:30:24.365650+00:00",
       "channels": {
         "stickman": {
           "title": "How It's Made Oficial",
@@ -499,8 +499,8 @@
           "views_60m": 0,
           "views_7d": 45,
           "watch_minutes_7d": 9.0,
-          "total_videos_publicos": 6,
-          "total_videos_agendados": 6,
+          "total_videos_publicos": 7,
+          "total_videos_agendados": 5,
           "videos": {}
         },
         "biblia": {
@@ -508,7 +508,7 @@
           "handle": "@bibliaoculta7",
           "subscribers": 289,
           "total_views": 411,
-          "views_48h": 45,
+          "views_48h": 41,
           "views_60m": 0,
           "views_7d": 176,
           "watch_minutes_7d": 93.0,
@@ -520,7 +520,7 @@
           "title": "Untold Bharat",
           "handle": "@uuntoldbharat2d",
           "subscribers": 7,
-          "total_views": 3068,
+          "total_views": 3110,
           "views_48h": 184,
           "views_60m": 8,
           "views_7d": 502,
@@ -533,13 +533,13 @@
           "title": "Cosmic Abyss",
           "handle": "@cosmicabyssdoc",
           "subscribers": 10,
-          "total_views": 1368,
+          "total_views": 1375,
           "views_48h": 40,
           "views_60m": 3,
           "views_7d": 212,
           "watch_minutes_7d": 3265.0,
-          "total_videos_publicos": 12,
-          "total_videos_agendados": 3,
+          "total_videos_publicos": 13,
+          "total_videos_agendados": 2,
           "videos": {}
         },
         "novela": {
@@ -547,7 +547,7 @@
           "handle": "@lorenavane1",
           "subscribers": 28,
           "total_views": 459,
-          "views_48h": 78,
+          "views_48h": 77,
           "views_60m": 0,
           "views_7d": 386,
           "watch_minutes_7d": 1247.0,
