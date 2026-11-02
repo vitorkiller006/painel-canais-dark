@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-02T17:30:20.138335+00:00",
+  "updated_at_utc": "2026-11-02T17:45:18.856368+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -9603,8 +9603,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 7,
-      "vph_48h": 1.2,
+      "vph_60m": 0,
+      "vph_48h": 1.1,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9745,8 +9745,8 @@
         {
           "day": "2026-11-02",
           "type": "video",
-          "views": 67,
-          "minutes": 100.5,
+          "views": 60,
+          "minutes": 90.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10437,8 +10437,8 @@
         },
         {
           "day": "2026-11-02",
-          "views": 67,
-          "minutes": 100.5,
+          "views": 60,
+          "minutes": 90.0,
           "net_subs": 0
         }
       ],
@@ -10453,7 +10453,7 @@
         "rank": 10,
         "out_of": 10,
         "diff_pct": -100.0,
-        "avg_prev": 158
+        "avg_prev": 157
       },
       "top_countries": [
         {
@@ -13231,7 +13231,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 0.1,
       "history_lifetime": [
         {
@@ -13345,8 +13345,8 @@
         {
           "day": "2026-11-02",
           "type": "video",
-          "views": 5,
-          "minutes": 7.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -13789,8 +13789,8 @@
         },
         {
           "day": "2026-11-02",
-          "views": 5,
-          "minutes": 7.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0
         }
       ],
