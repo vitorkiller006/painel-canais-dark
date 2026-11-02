@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-02T20:45:17.980002+00:00",
+  "updated_at_utc": "2026-11-02T21:00:38.810024+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -72,8 +72,8 @@
         {
           "day": "2026-11-02",
           "type": "video",
-          "views": 1,
-          "minutes": 1.5,
+          "views": 2,
+          "minutes": 3.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -194,8 +194,8 @@
         },
         {
           "day": "2026-11-02",
-          "views": 1,
-          "minutes": 1.5,
+          "views": 2,
+          "minutes": 3.0,
           "net_subs": 0
         }
       ],
@@ -9777,8 +9777,8 @@
         {
           "day": "2026-11-02",
           "type": "video",
-          "views": 87,
-          "minutes": 130.5,
+          "views": 88,
+          "minutes": 132.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10511,8 +10511,8 @@
         },
         {
           "day": "2026-11-02",
-          "views": 87,
-          "minutes": 130.5,
+          "views": 88,
+          "minutes": 132.0,
           "net_subs": 0
         }
       ],
@@ -10522,11 +10522,11 @@
         "title": "1999 कारगिल युद्ध के बीच अमेरिका ने भारत का GPS क्यों बंद किया? | The Secret Tech Betrayal",
         "url": "https://youtu.be/Sr_Flo9RjBs",
         "thumbnail": "https://i.ytimg.com/vi/Sr_Flo9RjBs/mqdefault.jpg",
-        "views": 0,
+        "views": 1,
         "published_formatted": "02/11 10:00",
         "rank": 10,
         "out_of": 10,
-        "diff_pct": -100.0,
+        "diff_pct": -99.4,
         "avg_prev": 159
       },
       "top_countries": [
@@ -10590,7 +10590,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 0,
       "vph_48h": 0.3,
       "history_lifetime": [
         {
@@ -10815,8 +10815,8 @@
         {
           "day": "2026-11-02",
           "type": "video",
-          "views": 18,
-          "minutes": 27.0,
+          "views": 16,
+          "minutes": 24.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -11873,8 +11873,8 @@
         },
         {
           "day": "2026-11-02",
-          "views": 18,
-          "minutes": 27.0,
+          "views": 16,
+          "minutes": 24.0,
           "net_subs": 0
         }
       ],
@@ -11884,11 +11884,11 @@
         "title": "Why a Gamma-Ray Burst Is Much Scarier Than a Black Hole",
         "url": "https://youtu.be/b6-PGCIXbKA",
         "thumbnail": "https://i.ytimg.com/vi/b6-PGCIXbKA/mqdefault.jpg",
-        "views": 4,
+        "views": 3,
         "published_formatted": "30/10 20:30",
         "rank": 10,
         "out_of": 10,
-        "diff_pct": -96.9,
+        "diff_pct": -97.6,
         "avg_prev": 127
       },
       "top_countries": [
