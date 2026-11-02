@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-02T15:15:22.005533+00:00",
+  "updated_at_utc": "2026-11-02T15:30:28.977936+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -2626,8 +2626,8 @@
         {
           "day": "2026-11-02",
           "type": "video",
-          "views": 15,
-          "minutes": 22.5,
+          "views": 14,
+          "minutes": 21.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9468,8 +9468,8 @@
         },
         {
           "day": "2026-11-02",
-          "views": 15,
-          "minutes": 22.5,
+          "views": 14,
+          "minutes": 21.0,
           "net_subs": 0
         }
       ],
@@ -9484,7 +9484,7 @@
         "rank": 4,
         "out_of": 5,
         "diff_pct": -85.9,
-        "avg_prev": 100
+        "avg_prev": 99
       },
       "top_countries": [
         {
@@ -9745,8 +9745,8 @@
         {
           "day": "2026-11-02",
           "type": "video",
-          "views": 54,
-          "minutes": 81.0,
+          "views": 60,
+          "minutes": 90.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10437,8 +10437,8 @@
         },
         {
           "day": "2026-11-02",
-          "views": 54,
-          "minutes": 81.0,
+          "views": 60,
+          "minutes": 90.0,
           "net_subs": 0
         }
       ],
@@ -10453,7 +10453,7 @@
         "rank": 10,
         "out_of": 10,
         "diff_pct": -100.0,
-        "avg_prev": 156
+        "avg_prev": 157
       },
       "top_countries": [
         {
@@ -10742,8 +10742,8 @@
         {
           "day": "2026-11-02",
           "type": "video",
-          "views": 9,
-          "minutes": 13.5,
+          "views": 10,
+          "minutes": 15.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -11758,8 +11758,8 @@
         },
         {
           "day": "2026-11-02",
-          "views": 9,
-          "minutes": 13.5,
+          "views": 10,
+          "minutes": 15.0,
           "net_subs": 0
         }
       ],
@@ -13231,7 +13231,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 1,
       "vph_48h": 0.1,
       "history_lifetime": [
         {
