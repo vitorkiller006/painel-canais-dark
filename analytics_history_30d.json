@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-03T10:00:27.219213+00:00",
+  "updated_at_utc": "2026-11-03T10:15:16.073523+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -219,11 +219,11 @@
         "title": "How Microfiber Traps Bacteria Without Soap! 🧼 #Shorts",
         "url": "https://youtu.be/cioYRiOrcos",
         "thumbnail": "https://i.ytimg.com/vi/cioYRiOrcos/mqdefault.jpg",
-        "views": 82,
+        "views": 81,
         "published_formatted": "02/11 20:30",
         "rank": 1,
         "out_of": 7,
-        "diff_pct": 828.3,
+        "diff_pct": 800.0,
         "avg_prev": 9
       },
       "top_countries": [],
@@ -278,7 +278,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 1,
       "vph_48h": 0.2,
       "history_lifetime": [
         {
@@ -2653,8 +2653,8 @@
         {
           "day": "2026-11-03",
           "type": "video",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 5,
+          "minutes": 7.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9517,8 +9517,8 @@
         },
         {
           "day": "2026-11-03",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 5,
+          "minutes": 7.5,
           "net_subs": 0
         }
       ],
@@ -9652,8 +9652,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 13,
-      "vph_48h": 1.2,
+      "vph_60m": 5,
+      "vph_48h": 1.1,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9801,8 +9801,8 @@
         {
           "day": "2026-11-03",
           "type": "video",
-          "views": 30,
-          "minutes": 45.0,
+          "views": 22,
+          "minutes": 33.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10541,8 +10541,8 @@
         },
         {
           "day": "2026-11-03",
-          "views": 30,
-          "minutes": 45.0,
+          "views": 22,
+          "minutes": 33.0,
           "net_subs": 0
         }
       ],
@@ -10557,7 +10557,7 @@
         "rank": 10,
         "out_of": 10,
         "diff_pct": -99.4,
-        "avg_prev": 164
+        "avg_prev": 163
       },
       "top_countries": [
         {
