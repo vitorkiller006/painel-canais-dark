@@ -682,16 +682,16 @@
     },
     "2026-11-04": {
       "date": "2026-11-04",
-      "updated_at_utc": "2026-11-04T16:15:17.781550+00:00",
+      "updated_at_utc": "2026-11-04T16:30:24.216369+00:00",
       "channels": {
         "stickman": {
           "title": "How It's Made Oficial",
           "handle": "@howitsmadeoficial",
           "subscribers": 1,
           "total_views": 137,
-          "views_48h": 94,
+          "views_48h": 99,
           "views_60m": 0,
-          "views_7d": 94,
+          "views_7d": 99,
           "watch_minutes_7d": 10.0,
           "total_videos_publicos": 8,
           "total_videos_agendados": 4,
@@ -729,7 +729,7 @@
           "subscribers": 10,
           "total_views": 1413,
           "views_48h": 51,
-          "views_60m": 3,
+          "views_60m": 1,
           "views_7d": 153,
           "watch_minutes_7d": 2291.0,
           "total_videos_publicos": 13,
