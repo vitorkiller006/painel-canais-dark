@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-04T22:00:36.125506+00:00",
+  "updated_at_utc": "2026-11-04T22:15:18.389086+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -334,7 +334,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 3,
       "vph_48h": 0.2,
       "history_lifetime": [
         {
@@ -9757,8 +9757,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 5,
-      "vph_48h": 0.9,
+      "vph_60m": 12,
+      "vph_48h": 1.0,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9912,8 +9912,8 @@
         {
           "day": "2026-11-04",
           "type": "video",
-          "views": 71,
-          "minutes": 106.5,
+          "views": 80,
+          "minutes": 120.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10735,8 +10735,8 @@
         },
         {
           "day": "2026-11-04",
-          "views": 71,
-          "minutes": 106.5,
+          "views": 80,
+          "minutes": 120.0,
           "net_subs": 0
         }
       ],
@@ -10751,7 +10751,7 @@
         "rank": 9,
         "out_of": 10,
         "diff_pct": -99.3,
-        "avg_prev": 148
+        "avg_prev": 149
       },
       "top_countries": [
         {
@@ -10814,7 +10814,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 0.3,
       "history_lifetime": [
         {
@@ -11053,8 +11053,8 @@
         {
           "day": "2026-11-04",
           "type": "video",
-          "views": 22,
-          "minutes": 33.0,
+          "views": 23,
+          "minutes": 34.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12174,8 +12174,8 @@
         },
         {
           "day": "2026-11-04",
-          "views": 22,
-          "minutes": 33.0,
+          "views": 23,
+          "minutes": 34.5,
           "net_subs": 0
         }
       ],
@@ -12185,11 +12185,11 @@
         "title": "Why Jupiter Is the Most Violent Planet (The Radioactive Hell of the Solar System)",
         "url": "https://youtu.be/Lgb0KsbFVBI",
         "thumbnail": "https://i.ytimg.com/vi/Lgb0KsbFVBI/mqdefault.jpg",
-        "views": 4,
+        "views": 5,
         "published_formatted": "02/11 20:30",
         "rank": 10,
         "out_of": 10,
-        "diff_pct": -96.9,
+        "diff_pct": -96.1,
         "avg_prev": 128
       },
       "top_countries": [
@@ -13745,7 +13745,7 @@
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 0.1,
+      "vph_48h": 0.0,
       "history_lifetime": [
         {
           "day": "2026-10-19",
