@@ -682,7 +682,7 @@
     },
     "2026-11-04": {
       "date": "2026-11-04",
-      "updated_at_utc": "2026-11-04T22:15:18.389086+00:00",
+      "updated_at_utc": "2026-11-04T22:30:19.439236+00:00",
       "channels": {
         "stickman": {
           "title": "How It's Made Oficial",
@@ -706,8 +706,8 @@
           "views_60m": 3,
           "views_7d": 92,
           "watch_minutes_7d": 451.0,
-          "total_videos_publicos": 6,
-          "total_videos_agendados": 2,
+          "total_videos_publicos": 7,
+          "total_videos_agendados": 1,
           "videos": {}
         },
         "indiano_doc": {
@@ -715,8 +715,8 @@
           "handle": "@uuntoldbharat2d",
           "subscribers": 9,
           "total_views": 3278,
-          "views_48h": 171,
-          "views_60m": 12,
+          "views_48h": 152,
+          "views_60m": 4,
           "views_7d": 458,
           "watch_minutes_7d": 6049.0,
           "total_videos_publicos": 14,
@@ -728,7 +728,7 @@
           "handle": "@cosmicabyssdoc",
           "subscribers": 10,
           "total_views": 1426,
-          "views_48h": 46,
+          "views_48h": 44,
           "views_60m": 1,
           "views_7d": 178,
           "watch_minutes_7d": 2603.0,
@@ -740,13 +740,13 @@
           "title": "Lorena Vane",
           "handle": "@lorenavane1",
           "subscribers": 28,
-          "total_views": 495,
+          "total_views": 497,
           "views_48h": 38,
           "views_60m": 0,
           "views_7d": 382,
           "watch_minutes_7d": 975.0,
-          "total_videos_publicos": 4,
-          "total_videos_agendados": 2,
+          "total_videos_publicos": 5,
+          "total_videos_agendados": 1,
           "videos": {}
         },
         "hearttangle": {
