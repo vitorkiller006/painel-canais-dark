@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-05T05:15:15.133347+00:00",
+  "updated_at_utc": "2026-11-05T05:30:18.651705+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -349,7 +349,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 0.2,
+      "vph_48h": 0.3,
       "history_lifetime": [
         {
           "day": "2023-10-12",
@@ -14629,8 +14629,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 1,
-          "minutes": 1.5,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -14756,8 +14756,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 1,
-          "minutes": 1.5,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0
         }
       ],
@@ -14769,7 +14769,7 @@
         "thumbnail": "https://i.ytimg.com/vi/gDU0wKUZgrY/mqdefault.jpg",
         "views": 0,
         "published_formatted": "01/11 19:30",
-        "rank": 8,
+        "rank": 7,
         "out_of": 10,
         "diff_pct": -100.0,
         "avg_prev": 2
