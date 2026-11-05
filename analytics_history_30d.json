@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-05T00:30:24.569857+00:00",
+  "updated_at_utc": "2026-11-05T00:45:20.876285+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -348,7 +348,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 1,
       "vph_48h": 0.2,
       "history_lifetime": [
         {
@@ -9773,8 +9773,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 7,
-      "vph_48h": 0.9,
+      "vph_60m": 2,
+      "vph_48h": 1.0,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9936,8 +9936,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 2,
+          "minutes": 3.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10765,8 +10765,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 2,
+          "minutes": 3.0,
           "net_subs": 0
         }
       ],
@@ -10776,11 +10776,11 @@
         "title": "1992 के ₹5,000 करोड़ घोटाले में विदेशी बैंकों का असली राज़ क्या था? | The Untold Banking Nexus",
         "url": "https://youtu.be/iEzajDZRNSE",
         "thumbnail": "https://i.ytimg.com/vi/iEzajDZRNSE/mqdefault.jpg",
-        "views": 1,
+        "views": 2,
         "published_formatted": "04/11 10:00",
         "rank": 9,
         "out_of": 10,
-        "diff_pct": -99.3,
+        "diff_pct": -98.7,
         "avg_prev": 149
       },
       "top_countries": [
