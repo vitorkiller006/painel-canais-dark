@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-05T04:30:27.634014+00:00",
+  "updated_at_utc": "2026-11-05T04:45:19.834763+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -348,8 +348,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
-      "vph_48h": 0.2,
+      "vph_60m": 3,
+      "vph_48h": 0.3,
       "history_lifetime": [
         {
           "day": "2023-10-12",
@@ -2737,8 +2737,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 5,
-          "minutes": 7.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9638,8 +9638,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 5,
-          "minutes": 7.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0
         }
       ],
@@ -9773,7 +9773,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 0,
       "vph_48h": 0.9,
       "history_lifetime": [
         {
@@ -9936,8 +9936,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 5,
+          "minutes": 7.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10765,8 +10765,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 5,
+          "minutes": 7.5,
           "net_subs": 0
         }
       ],
@@ -10844,7 +10844,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 0.2,
       "history_lifetime": [
         {
@@ -11091,8 +11091,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 2,
-          "minutes": 3.0,
+          "views": 3,
+          "minutes": 4.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12212,8 +12212,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 2,
-          "minutes": 3.0,
+          "views": 3,
+          "minutes": 4.5,
           "net_subs": 0
         }
       ],
@@ -12223,11 +12223,11 @@
         "title": "How Much ONE GALACTIC YEAR Really Is (It's Not What You Imagine)",
         "url": "https://youtu.be/bfoA-FTYAFE",
         "thumbnail": "https://i.ytimg.com/vi/bfoA-FTYAFE/mqdefault.jpg",
-        "views": 0,
+        "views": 1,
         "published_formatted": "04/11 20:30",
         "rank": 10,
         "out_of": 10,
-        "diff_pct": -100.0,
+        "diff_pct": -99.0,
         "avg_prev": 102
       },
       "top_countries": [
