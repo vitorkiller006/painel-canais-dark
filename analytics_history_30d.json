@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-05T23:00:26.932034+00:00",
+  "updated_at_utc": "2026-11-05T23:15:16.690983+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -2749,8 +2749,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 59,
-          "minutes": 88.5,
+          "views": 60,
+          "minutes": 90.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9678,8 +9678,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 59,
-          "minutes": 88.5,
+          "views": 60,
+          "minutes": 90.0,
           "net_subs": 0
         }
       ],
@@ -9689,11 +9689,11 @@
         "title": "Por Que Deus AFOGOU o Mundo Antigo? A ORIGEM dos Gigantes que a Bíblia Não te Contou!",
         "url": "https://youtu.be/6QNJ91QSyP0",
         "thumbnail": "https://i.ytimg.com/vi/6QNJ91QSyP0/mqdefault.jpg",
-        "views": 37,
+        "views": 38,
         "published_formatted": "04/11 19:30",
         "rank": 3,
         "out_of": 7,
-        "diff_pct": -53.3,
+        "diff_pct": -52.0,
         "avg_prev": 79
       },
       "top_countries": [
@@ -9813,8 +9813,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 11,
-      "vph_48h": 0.7,
+      "vph_60m": 27,
+      "vph_48h": 0.8,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9975,8 +9975,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 37,
-          "minutes": 55.5,
+          "views": 56,
+          "minutes": 84.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10839,8 +10839,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 37,
-          "minutes": 55.5,
+          "views": 56,
+          "minutes": 84.0,
           "net_subs": 0
         }
       ],
@@ -10854,8 +10854,8 @@
         "published_formatted": "04/11 10:00",
         "rank": 9,
         "out_of": 10,
-        "diff_pct": -98.0,
-        "avg_prev": 152
+        "diff_pct": -98.1,
+        "avg_prev": 154
       },
       "top_countries": [
         {
@@ -12835,8 +12835,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 5,
-          "minutes": 7.5,
+          "views": 7,
+          "minutes": 10.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -13815,8 +13815,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 5,
-          "minutes": 7.5,
+          "views": 7,
+          "minutes": 10.5,
           "net_subs": 0
         }
       ],
@@ -13910,7 +13910,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 0,
       "vph_48h": 0.1,
       "history_lifetime": [
         {
@@ -14044,8 +14044,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 12,
-          "minutes": 18.0,
+          "views": 10,
+          "minutes": 15.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -14597,8 +14597,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 12,
-          "minutes": 18.0,
+          "views": 10,
+          "minutes": 15.0,
           "net_subs": 0
         }
       ],
