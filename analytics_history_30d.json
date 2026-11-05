@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-05T07:15:16.017580+00:00",
+  "updated_at_utc": "2026-11-05T07:30:19.058137+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -348,8 +348,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
-      "vph_48h": 0.2,
+      "vph_60m": 3,
+      "vph_48h": 0.3,
       "history_lifetime": [
         {
           "day": "2023-10-12",
@@ -2737,8 +2737,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 9,
+          "minutes": 13.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9638,8 +9638,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 9,
+          "minutes": 13.5,
           "net_subs": 0
         }
       ],
@@ -9654,7 +9654,7 @@
         "rank": 7,
         "out_of": 7,
         "diff_pct": -100.0,
-        "avg_prev": 76
+        "avg_prev": 77
       },
       "top_countries": [
         {
@@ -10844,7 +10844,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 0,
       "vph_48h": 0.2,
       "history_lifetime": [
         {
@@ -11091,8 +11091,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 7,
-          "minutes": 10.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12212,8 +12212,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 7,
-          "minutes": 10.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0
         }
       ],
