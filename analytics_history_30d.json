@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-05T09:45:16.435748+00:00",
+  "updated_at_utc": "2026-11-05T10:00:25.706024+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -348,7 +348,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 3,
       "vph_48h": 0.3,
       "history_lifetime": [
         {
@@ -2737,8 +2737,8 @@
         {
           "day": "2026-11-05",
           "type": "video",
-          "views": 13,
-          "minutes": 19.5,
+          "views": 12,
+          "minutes": 18.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9638,8 +9638,8 @@
         },
         {
           "day": "2026-11-05",
-          "views": 13,
-          "minutes": 19.5,
+          "views": 12,
+          "minutes": 18.0,
           "net_subs": 0
         }
       ],
@@ -9649,11 +9649,11 @@
         "title": "Por Que Deus AFOGOU o Mundo Antigo? A ORIGEM dos Gigantes que a Bíblia Não te Contou!",
         "url": "https://youtu.be/6QNJ91QSyP0",
         "thumbnail": "https://i.ytimg.com/vi/6QNJ91QSyP0/mqdefault.jpg",
-        "views": 2,
+        "views": 3,
         "published_formatted": "04/11 19:30",
         "rank": 7,
         "out_of": 7,
-        "diff_pct": -97.4,
+        "diff_pct": -96.1,
         "avg_prev": 77
       },
       "top_countries": [
@@ -9773,8 +9773,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
-      "vph_48h": 0.9,
+      "vph_60m": 0,
+      "vph_48h": 0.8,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -10515,7 +10515,7 @@
           "source": "NO_LINK_OTHER",
           "label": "Direto / Desconhecido",
           "type": "video",
-          "views": 2
+          "views": 1
         },
         {
           "day": "2026-10-31",
@@ -10536,7 +10536,7 @@
           "source": "RELATED_VIDEO",
           "label": "Vídeos Sugeridos",
           "type": "video",
-          "views": 45
+          "views": 46
         },
         {
           "day": "2026-10-31",
@@ -11922,7 +11922,7 @@
           "source": "NO_LINK_OTHER",
           "label": "Direto / Desconhecido",
           "type": "video",
-          "views": 2
+          "views": 1
         },
         {
           "day": "2026-10-31",
@@ -11943,7 +11943,7 @@
           "source": "RELATED_VIDEO",
           "label": "Vídeos Sugeridos",
           "type": "video",
-          "views": 9
+          "views": 10
         },
         {
           "day": "2026-10-31",
@@ -13796,7 +13796,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 0,
       "vph_48h": 0.1,
       "history_lifetime": [
         {
@@ -14307,7 +14307,7 @@
           "source": "RELATED_VIDEO",
           "label": "Vídeos Sugeridos",
           "type": "video",
-          "views": 1
+          "views": 2
         },
         {
           "day": "2026-10-31",
