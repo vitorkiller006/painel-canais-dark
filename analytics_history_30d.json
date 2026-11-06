@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-06T09:45:17.831444+00:00",
+  "updated_at_utc": "2026-11-06T10:00:24.383253+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -375,7 +375,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 1,
       "vph_48h": 0.6,
       "history_lifetime": [
         {
@@ -2771,8 +2771,8 @@
         {
           "day": "2026-11-06",
           "type": "video",
-          "views": 10,
-          "minutes": 15.0,
+          "views": 9,
+          "minutes": 13.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9694,8 +9694,8 @@
         },
         {
           "day": "2026-11-06",
-          "views": 10,
-          "minutes": 15.0,
+          "views": 9,
+          "minutes": 13.5,
           "net_subs": 0
         }
       ],
@@ -9709,7 +9709,7 @@
         "published_formatted": "04/11 19:30",
         "rank": 3,
         "out_of": 7,
-        "diff_pct": -41.2,
+        "diff_pct": -41.1,
         "avg_prev": 82
       },
       "top_countries": [
@@ -9830,7 +9830,7 @@
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
       "vph_60m": 0,
-      "vph_48h": 1.4,
+      "vph_48h": 1.3,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -12430,7 +12430,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 0,
       "vph_48h": 0.1,
       "history_lifetime": [
         {
@@ -12881,8 +12881,8 @@
         {
           "day": "2026-11-06",
           "type": "video",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 4,
+          "minutes": 6.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -13861,8 +13861,8 @@
         },
         {
           "day": "2026-11-06",
-          "views": 6,
-          "minutes": 9.0,
+          "views": 4,
+          "minutes": 6.0,
           "net_subs": 0
         }
       ],
