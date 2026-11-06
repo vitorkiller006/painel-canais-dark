@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-06T07:00:24.548154+00:00",
+  "updated_at_utc": "2026-11-06T07:03:26.146883+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -9999,8 +9999,8 @@
         {
           "day": "2026-11-06",
           "type": "video",
-          "views": 92,
-          "minutes": 138.0,
+          "views": 93,
+          "minutes": 139.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10869,8 +10869,8 @@
         },
         {
           "day": "2026-11-06",
-          "views": 92,
-          "minutes": 138.0,
+          "views": 93,
+          "minutes": 139.5,
           "net_subs": 0
         }
       ],
@@ -12881,8 +12881,8 @@
         {
           "day": "2026-11-06",
           "type": "video",
-          "views": 3,
-          "minutes": 4.5,
+          "views": 4,
+          "minutes": 6.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -13861,8 +13861,8 @@
         },
         {
           "day": "2026-11-06",
-          "views": 3,
-          "minutes": 4.5,
+          "views": 4,
+          "minutes": 6.0,
           "net_subs": 0
         }
       ],
@@ -13877,7 +13877,7 @@
         "rank": 5,
         "out_of": 5,
         "diff_pct": -98.4,
-        "avg_prev": 126
+        "avg_prev": 127
       },
       "top_countries": [
         {
