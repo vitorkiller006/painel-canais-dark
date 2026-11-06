@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-05T23:45:17.299777+00:00",
+  "updated_at_utc": "2026-11-06T00:00:24.520421+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -84,6 +84,14 @@
         },
         {
           "day": "2026-11-05",
+          "type": "video",
+          "views": 5,
+          "minutes": 7.5,
+          "net_subs": 0,
+          "is_realtime": true
+        },
+        {
+          "day": "2026-11-06",
           "type": "shorts",
           "views": 0,
           "minutes": 0.0,
@@ -91,10 +99,10 @@
           "is_realtime": true
         },
         {
-          "day": "2026-11-05",
+          "day": "2026-11-06",
           "type": "video",
-          "views": 5,
-          "minutes": 7.5,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -276,14 +284,20 @@
         },
         {
           "day": "2026-11-05",
+          "views": 5,
+          "minutes": 7.5,
+          "net_subs": 0
+        },
+        {
+          "day": "2026-11-06",
           "views": 0,
           "minutes": 0.0,
           "net_subs": 0
         },
         {
-          "day": "2026-11-05",
-          "views": 5,
-          "minutes": 7.5,
+          "day": "2026-11-06",
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0
         }
       ],
@@ -361,7 +375,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 16,
+      "vph_60m": 10,
       "vph_48h": 0.5,
       "history_lifetime": [
         {
@@ -2740,6 +2754,14 @@
         },
         {
           "day": "2026-11-05",
+          "type": "video",
+          "views": 75,
+          "minutes": 112.5,
+          "net_subs": 0,
+          "is_realtime": true
+        },
+        {
+          "day": "2026-11-06",
           "type": "shorts",
           "views": 0,
           "minutes": 0.0,
@@ -2747,10 +2769,10 @@
           "is_realtime": true
         },
         {
-          "day": "2026-11-05",
+          "day": "2026-11-06",
           "type": "video",
-          "views": 75,
-          "minutes": 112.5,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9479,18 +9501,6 @@
       ],
       "history_30d": [
         {
-          "day": "2026-10-06",
-          "views": 16,
-          "minutes": 6.0,
-          "net_subs": 0
-        },
-        {
-          "day": "2026-10-06",
-          "views": 307,
-          "minutes": 1453.0,
-          "net_subs": 1
-        },
-        {
           "day": "2026-10-07",
           "views": 1,
           "minutes": 0.0,
@@ -9672,14 +9682,20 @@
         },
         {
           "day": "2026-11-05",
+          "views": 75,
+          "minutes": 112.5,
+          "net_subs": 0
+        },
+        {
+          "day": "2026-11-06",
           "views": 0,
           "minutes": 0.0,
           "net_subs": 0
         },
         {
-          "day": "2026-11-05",
-          "views": 75,
-          "minutes": 112.5,
+          "day": "2026-11-06",
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0
         }
       ],
@@ -9689,11 +9705,11 @@
         "title": "Por Que Deus AFOGOU o Mundo Antigo? A ORIGEM dos Gigantes que a Bíblia Não te Contou!",
         "url": "https://youtu.be/6QNJ91QSyP0",
         "thumbnail": "https://i.ytimg.com/vi/6QNJ91QSyP0/mqdefault.jpg",
-        "views": 48,
+        "views": 42,
         "published_formatted": "04/11 19:30",
         "rank": 3,
         "out_of": 7,
-        "diff_pct": -40.0,
+        "diff_pct": -47.5,
         "avg_prev": 80
       },
       "top_countries": [
@@ -9966,6 +9982,14 @@
         },
         {
           "day": "2026-11-05",
+          "type": "video",
+          "views": 70,
+          "minutes": 105.0,
+          "net_subs": 0,
+          "is_realtime": true
+        },
+        {
+          "day": "2026-11-06",
           "type": "shorts",
           "views": 0,
           "minutes": 0.0,
@@ -9973,10 +9997,10 @@
           "is_realtime": true
         },
         {
-          "day": "2026-11-05",
+          "day": "2026-11-06",
           "type": "video",
-          "views": 70,
-          "minutes": 105.0,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10833,14 +10857,20 @@
         },
         {
           "day": "2026-11-05",
+          "views": 70,
+          "minutes": 105.0,
+          "net_subs": 0
+        },
+        {
+          "day": "2026-11-06",
           "views": 0,
           "minutes": 0.0,
           "net_subs": 0
         },
         {
-          "day": "2026-11-05",
-          "views": 70,
-          "minutes": 105.0,
+          "day": "2026-11-06",
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0
         }
       ],
@@ -10918,7 +10948,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 1,
       "vph_48h": 0.2,
       "history_lifetime": [
         {
@@ -11155,6 +11185,14 @@
         },
         {
           "day": "2026-11-05",
+          "type": "video",
+          "views": 11,
+          "minutes": 16.5,
+          "net_subs": 0,
+          "is_realtime": true
+        },
+        {
+          "day": "2026-11-06",
           "type": "shorts",
           "views": 0,
           "minutes": 0.0,
@@ -11162,10 +11200,10 @@
           "is_realtime": true
         },
         {
-          "day": "2026-11-05",
+          "day": "2026-11-06",
           "type": "video",
-          "views": 11,
-          "minutes": 16.5,
+          "views": 1,
+          "minutes": 1.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12126,12 +12164,6 @@
       ],
       "history_30d": [
         {
-          "day": "2026-10-06",
-          "views": 22,
-          "minutes": 211.0,
-          "net_subs": 0
-        },
-        {
           "day": "2026-10-07",
           "views": 35,
           "minutes": 66.0,
@@ -12307,14 +12339,20 @@
         },
         {
           "day": "2026-11-05",
+          "views": 11,
+          "minutes": 16.5,
+          "net_subs": 0
+        },
+        {
+          "day": "2026-11-06",
           "views": 0,
           "minutes": 0.0,
           "net_subs": 0
         },
         {
-          "day": "2026-11-05",
-          "views": 11,
-          "minutes": 16.5,
+          "day": "2026-11-06",
+          "views": 1,
+          "minutes": 1.5,
           "net_subs": 0
         }
       ],
@@ -12392,7 +12430,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/GvkrbIFed7MJzRUtmKbOctx9f7-Az6du7c2VVq7FMf9LqUbyzO4zuMzmO7_MrAj8wWNj1d5Q1Q=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 0,
       "vph_48h": 0.1,
       "history_lifetime": [
         {
@@ -12826,6 +12864,14 @@
         },
         {
           "day": "2026-11-05",
+          "type": "video",
+          "views": 7,
+          "minutes": 10.5,
+          "net_subs": 0,
+          "is_realtime": true
+        },
+        {
+          "day": "2026-11-06",
           "type": "shorts",
           "views": 0,
           "minutes": 0.0,
@@ -12833,10 +12879,10 @@
           "is_realtime": true
         },
         {
-          "day": "2026-11-05",
+          "day": "2026-11-06",
           "type": "video",
-          "views": 7,
-          "minutes": 10.5,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -13706,12 +13752,6 @@
       ],
       "history_30d": [
         {
-          "day": "2026-10-06",
-          "views": 1,
-          "minutes": 0.0,
-          "net_subs": 0
-        },
-        {
           "day": "2026-10-07",
           "views": 0,
           "minutes": 0.0,
@@ -13809,14 +13849,20 @@
         },
         {
           "day": "2026-11-05",
+          "views": 7,
+          "minutes": 10.5,
+          "net_subs": 0
+        },
+        {
+          "day": "2026-11-06",
           "views": 0,
           "minutes": 0.0,
           "net_subs": 0
         },
         {
-          "day": "2026-11-05",
-          "views": 7,
-          "minutes": 10.5,
+          "day": "2026-11-06",
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0
         }
       ],
@@ -13910,7 +13956,7 @@
       "group": "Startup GVG (Vitor + Amigo)",
       "group_slug": "gvg",
       "avatar_url": "https://yt3.ggpht.com/BVmsrWlRE6h3-C7jk6vUOqa3hpdBSjGJQ1JkkvXV0tnOItk5ev9t-VE8WYtOnGE-VAZcfmgsMw=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 0,
       "vph_48h": 0.1,
       "history_lifetime": [
         {
@@ -14035,6 +14081,14 @@
         },
         {
           "day": "2026-11-05",
+          "type": "video",
+          "views": 13,
+          "minutes": 19.5,
+          "net_subs": 0,
+          "is_realtime": true
+        },
+        {
+          "day": "2026-11-06",
           "type": "shorts",
           "views": 0,
           "minutes": 0.0,
@@ -14042,10 +14096,10 @@
           "is_realtime": true
         },
         {
-          "day": "2026-11-05",
+          "day": "2026-11-06",
           "type": "video",
-          "views": 13,
-          "minutes": 19.5,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -14591,14 +14645,20 @@
         },
         {
           "day": "2026-11-05",
+          "views": 13,
+          "minutes": 19.5,
+          "net_subs": 0
+        },
+        {
+          "day": "2026-11-06",
           "views": 0,
           "minutes": 0.0,
           "net_subs": 0
         },
         {
-          "day": "2026-11-05",
-          "views": 13,
-          "minutes": 19.5,
+          "day": "2026-11-06",
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0
         }
       ],
@@ -14753,6 +14813,14 @@
         },
         {
           "day": "2026-11-05",
+          "type": "video",
+          "views": 2,
+          "minutes": 3.0,
+          "net_subs": 0,
+          "is_realtime": true
+        },
+        {
+          "day": "2026-11-06",
           "type": "shorts",
           "views": 0,
           "minutes": 0.0,
@@ -14760,10 +14828,10 @@
           "is_realtime": true
         },
         {
-          "day": "2026-11-05",
+          "day": "2026-11-06",
           "type": "video",
-          "views": 2,
-          "minutes": 3.0,
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -14890,14 +14958,20 @@
         },
         {
           "day": "2026-11-05",
+          "views": 2,
+          "minutes": 3.0,
+          "net_subs": 0
+        },
+        {
+          "day": "2026-11-06",
           "views": 0,
           "minutes": 0.0,
           "net_subs": 0
         },
         {
-          "day": "2026-11-05",
-          "views": 2,
-          "minutes": 3.0,
+          "day": "2026-11-06",
+          "views": 0,
+          "minutes": 0.0,
           "net_subs": 0
         }
       ],
