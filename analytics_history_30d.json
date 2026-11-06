@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-06T14:30:23.423428+00:00",
+  "updated_at_utc": "2026-11-06T14:45:17.402486+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -9829,8 +9829,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 13,
-      "vph_48h": 1.5,
+      "vph_60m": 7,
+      "vph_48h": 1.4,
       "history_lifetime": [
         {
           "day": "2026-10-15",
@@ -9999,8 +9999,8 @@
         {
           "day": "2026-11-06",
           "type": "video",
-          "views": 139,
-          "minutes": 208.5,
+          "views": 133,
+          "minutes": 199.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10869,8 +10869,8 @@
         },
         {
           "day": "2026-11-06",
-          "views": 139,
-          "minutes": 208.5,
+          "views": 133,
+          "minutes": 199.5,
           "net_subs": 0
         }
       ],
