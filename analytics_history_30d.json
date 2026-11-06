@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-06T03:00:28.364702+00:00",
+  "updated_at_utc": "2026-11-06T03:15:20.066324+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -7,7 +7,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/goglhVSAtKGaDmImc5ImFHN2xuRVe6nO1kEAgvRRcCFNDnc2Ll9gExh9kTtvyWzn7cWvBOZF=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
+      "vph_60m": 4,
       "vph_48h": 0.1,
       "history_lifetime": [
         {
@@ -101,8 +101,8 @@
         {
           "day": "2026-11-06",
           "type": "video",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 4,
+          "minutes": 6.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -296,8 +296,8 @@
         },
         {
           "day": "2026-11-06",
-          "views": 0,
-          "minutes": 0.0,
+          "views": 4,
+          "minutes": 6.0,
           "net_subs": 0
         }
       ],
@@ -307,11 +307,11 @@
         "title": "The 15-Atmosphere Autoclave: How Bulletproof Glass Stops Snipers #Shorts",
         "url": "https://youtu.be/FmWEqGBzLvI",
         "thumbnail": "https://i.ytimg.com/vi/FmWEqGBzLvI/mqdefault.jpg",
-        "views": 0,
+        "views": 6,
         "published_formatted": "05/11 20:30",
-        "rank": 9,
+        "rank": 6,
         "out_of": 10,
-        "diff_pct": -100.0,
+        "diff_pct": -64.7,
         "avg_prev": 17
       },
       "top_countries": [
@@ -375,7 +375,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 3,
+      "vph_60m": 2,
       "vph_48h": 0.5,
       "history_lifetime": [
         {
@@ -2771,8 +2771,8 @@
         {
           "day": "2026-11-06",
           "type": "video",
-          "views": 3,
-          "minutes": 4.5,
+          "views": 5,
+          "minutes": 7.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9694,8 +9694,8 @@
         },
         {
           "day": "2026-11-06",
-          "views": 3,
-          "minutes": 4.5,
+          "views": 5,
+          "minutes": 7.5,
           "net_subs": 0
         }
       ],
@@ -9709,8 +9709,8 @@
         "published_formatted": "04/11 19:30",
         "rank": 3,
         "out_of": 7,
-        "diff_pct": -40.4,
-        "avg_prev": 80
+        "diff_pct": -40.6,
+        "avg_prev": 81
       },
       "top_countries": [
         {
@@ -9829,7 +9829,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 2,
+      "vph_60m": 3,
       "vph_48h": 1.2,
       "history_lifetime": [
         {
@@ -9999,8 +9999,8 @@
         {
           "day": "2026-11-06",
           "type": "video",
-          "views": 58,
-          "minutes": 87.0,
+          "views": 59,
+          "minutes": 88.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -10869,8 +10869,8 @@
         },
         {
           "day": "2026-11-06",
-          "views": 58,
-          "minutes": 87.0,
+          "views": 59,
+          "minutes": 88.5,
           "net_subs": 0
         }
       ],
