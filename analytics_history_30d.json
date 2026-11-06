@@ -1,5 +1,5 @@
 {
-  "updated_at_utc": "2026-11-06T08:30:25.604426+00:00",
+  "updated_at_utc": "2026-11-06T08:45:23.083228+00:00",
   "channels": {
     "stickman": {
       "title": "How It's Made Oficial",
@@ -375,8 +375,8 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/FCvbK6LfJRHAeqdwQ7p9tqlCn31dvnzWK5xupy98ZsjSkk5eaT36cjcIsut9iS1miawMe_61uQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 0,
-      "vph_48h": 0.5,
+      "vph_60m": 1,
+      "vph_48h": 0.6,
       "history_lifetime": [
         {
           "day": "2023-10-12",
@@ -2771,8 +2771,8 @@
         {
           "day": "2026-11-06",
           "type": "video",
-          "views": 8,
-          "minutes": 12.0,
+          "views": 9,
+          "minutes": 13.5,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -9694,8 +9694,8 @@
         },
         {
           "day": "2026-11-06",
-          "views": 8,
-          "minutes": 12.0,
+          "views": 9,
+          "minutes": 13.5,
           "net_subs": 0
         }
       ],
@@ -9709,8 +9709,8 @@
         "published_formatted": "04/11 19:30",
         "rank": 3,
         "out_of": 7,
-        "diff_pct": -41.0,
-        "avg_prev": 81
+        "diff_pct": -41.1,
+        "avg_prev": 82
       },
       "top_countries": [
         {
@@ -9829,7 +9829,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/devCRpUBJrmk-rVr8u2bGpku825XI6JGqHlfSu6Lm9qCe0GdpliqhwLKL6sek4FQSa2EwYuJ5GQ=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 14,
+      "vph_60m": 15,
       "vph_48h": 1.4,
       "history_lifetime": [
         {
@@ -10948,7 +10948,7 @@
       "group": "Pessoais (Vitor)",
       "group_slug": "pessoal",
       "avatar_url": "https://yt3.ggpht.com/JXn7kKX_0a8Pjo_M5i900WpQozgiEPkFMB--rPeiG3LpLepp5FUlo-iK-R_xnSFhzxNMzAjX=s240-c-k-c0x00ffffff-no-rj",
-      "vph_60m": 1,
+      "vph_60m": 0,
       "vph_48h": 0.2,
       "history_lifetime": [
         {
@@ -11202,8 +11202,8 @@
         {
           "day": "2026-11-06",
           "type": "video",
-          "views": 7,
-          "minutes": 10.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0,
           "is_realtime": true
         }
@@ -12351,8 +12351,8 @@
         },
         {
           "day": "2026-11-06",
-          "views": 7,
-          "minutes": 10.5,
+          "views": 6,
+          "minutes": 9.0,
           "net_subs": 0
         }
       ],
